@@ -1,0 +1,5 @@
+<nav>
+  {{ range where site.Sections "Kind" "section" }}
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</nav>

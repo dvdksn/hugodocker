@@ -1,0 +1,17 @@
+@use "../components/links";
+
+.sidenav {
+
+  @include links.linklist;
+  .section.expanded ul {
+    border-left: 1px solid var(--divider);
+    margin-left: 11.5px;
+  }
+  .btn-expander {
+    background: none;
+    padding: 0;
+  }
+  li.section:not(.expanded) > ul {
+    display: none;
+  }
+}

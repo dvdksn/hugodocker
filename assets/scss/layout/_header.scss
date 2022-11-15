@@ -1,0 +1,118 @@
+@use "breakpoints" as bp;
+@use "../colors" as *;
+@use "../components/links";
+@use "../components/cards";
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  position: sticky;
+  top: 0;
+  padding: 0 16px;
+  background-color: var(--header);
+  * {
+    color: $white;
+  }
+
+  .header--left {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .header-menu-wrapper {
+      @include links.reset-lists;
+
+      @include bp.sm {
+        display: none;
+      }
+
+      @include bp.xs {
+        display: none;
+      }
+
+      .header-menu {
+        position: relative;
+        display: flex;
+        gap: 1em;
+
+        .header-menu-item {
+          width: max-content;
+          text-align: center;
+          cursor: pointer;
+          a {
+            text-decoration: none;
+          }
+          &:hover {
+            .header-submenu {
+              @include cards.card;
+              padding: 0;
+              display: flex;
+            }
+          }
+        }
+
+        .header-submenu {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header--right {
+    display: flex;
+    flex-direction: row-reverse;
+    .menu-btn {
+      display: none;
+    }
+
+    @include bp.sm {
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    @include bp.xs {
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    .search-wrapper {
+      display: flex;
+      align-items: center;
+
+      .search-icon {
+        user-select: none;
+        margin: 8px;
+      }
+
+      input {
+        border: none;
+        background: none;
+        height: 30px;
+        width: 0px;
+        transition: width 0.1s;
+        outline: none;
+        text-indent: 4px;
+
+        @include bp.xl {
+          width: 100px;
+        }
+
+        &:focus {
+          width: 20vw;
+          border: none;
+
+          background-color: $blue-400--light;
+          border-bottom: 1px solid $blue-300--light;
+          .dark & {
+            background-color: $blue-300--dark;
+            border-bottom: 1px solid $blue-400--dark;
+          }
+        }
+      }
+    }
+  }
+}

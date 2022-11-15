@@ -1,0 +1,14 @@
+@use "../colors" as *;
+
+table {
+  font-size: 14px;
+  td,
+  th {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid var(--divider);
+  }
+  th {
+    font-weight: 500;
+  }
+}

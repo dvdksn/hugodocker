@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="main--center home">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="home-grid">
+      <div class="home-grid-item">
+        <h2><a href="/guides">Guides</a></h2>
+      </div>
+      <div class="home-grid-item">
+        <h2><a href="/manuals">Manuals</a></h2>
+      </div>
+      <div class="home-grid-item">
+        <h2><a href="/reference">Reference</a></h2>
+      </div>
+    </div>
+  </article>
+{{ end }}

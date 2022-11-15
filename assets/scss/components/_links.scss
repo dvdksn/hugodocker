@@ -1,0 +1,64 @@
+@use "../colors" as *;
+
+a {
+  color: $blue-600--light;
+  .dark & {
+    color: $blue-600--dark;
+  }
+  text-decoration-thickness: 0.094rem;
+
+  .link-symbol {
+    font-size: 14px;
+    vertical-align: top;
+  }
+}
+
+@mixin reset-lists {
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    ul,
+    ol {
+      padding-left: 1em;
+    }
+  }
+}
+
+@mixin treelink($padding: 4px, $radius: 4px) {
+  $active-light: $blue-200--light;
+  $active-dark: $gray-100--dark;
+
+  a {
+    color: var(--text-primary) !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    padding: $padding;
+    border-radius: $radius;
+    opacity: 0.6;
+  }
+  a.active,
+  a:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  a.active {
+    text-shadow: 0.5px 0px 0px $black;
+    .dark & {
+      text-shadow: 0.5px 0px 0px $white;
+    }
+  }
+}
+
+@mixin linklist {
+  font-size: 14px;
+  @include treelink;
+  @include reset-lists;
+  li > span {
+    display: flex;
+  }
+}

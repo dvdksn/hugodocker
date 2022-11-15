@@ -1,0 +1,20 @@
+@use "../components/links";
+
+.breadcrumbs {
+  font-size: 14px;
+  @include links.reset-lists;
+  ol {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+}

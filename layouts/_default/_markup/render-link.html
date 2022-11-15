@@ -1,0 +1,14 @@
+{{ $isExternal := strings.HasPrefix .Destination "http" }}
+<a
+  href="{{ .Destination | safeURL }}"
+  {{ with .Title }}
+    title="{{ . }}"
+  {{ end }}
+  {{ if $isExternal }}
+    target="_blank" rel="noopener"
+  {{ end }}
+  >{{ .Text | safeHTML }}
+  {{- if $isExternal -}}
+  <span class="link-symbol material-symbols-rounded">open_in_new</span>
+  {{- end -}}</a
+>

@@ -1,0 +1,47 @@
+@use "../colors" as *;
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+button.btn-icon-round {
+  border-radius: 100%;
+  background: none;
+}
+
+.menu-item {
+  background: $white;
+  .dark & {
+    background: $black;
+  }
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  &:hover, .active > & {
+    background-color: $gray-100--light;
+    .dark & {
+      background-color: $gray-200--dark;
+    }
+  }
+}
+
+.link-btn-round {
+  background-color: $blue-400--light;
+  .dark & {
+    background-color: $blue-300--dark;
+  }
+  color: $white !important;
+  border-radius: 2em;
+  text-decoration: none;
+  padding: 8px 12px;
+  &:hover,
+  &.active {
+    background-color: rgba($blue-400--light, 0.6);
+    .dark & {
+      background-color: $blue-400--dark;
+    }
+  }
+}

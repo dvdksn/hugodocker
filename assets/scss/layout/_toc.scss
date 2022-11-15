@@ -1,0 +1,28 @@
+@use "../components/links";
+
+.main--right {
+  background-color: var(--bg);
+  .pageinfo {
+    font-size: 14px;
+    .details p {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-right: 1em;
+    }
+    .toc-wrapper {
+      .toc-header {
+        color: var(--text-secondary);
+        margin-bottom: 8px;
+      }
+      #TableOfContents {
+        @include links.linklist;
+      }
+    }
+  }
+}

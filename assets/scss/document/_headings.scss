@@ -1,0 +1,17 @@
+a.anchor {
+  visibility: hidden;
+  position: relative;
+  top: -50px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  a {
+    color: var(--text);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

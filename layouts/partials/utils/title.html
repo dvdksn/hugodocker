@@ -1,0 +1,7 @@
+{{ $title := "" }}
+{{ if .LinkTitle }}
+  {{ $title = .LinkTitle }}
+{{ else }}
+  {{ $title = index (findRE `# .*` .RawContent) 0 | strings.TrimLeft "# " }}
+{{ end }}
+{{ return $title }}

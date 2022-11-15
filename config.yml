@@ -1,0 +1,31 @@
+baseURL: https://docs.docker.com/
+languageCode: en-us
+title: Docker Docs
+pluralizeListTitles: false
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+module:
+  imports:
+    - path: github.com/moby/moby
+      mounts:
+        - source: docs/api
+          target: content/reference/engine
+          includeFiles: "*.md"
+    - path: github.com/docker/buildx
+      mounts:
+        - source: docs/reference
+          target: content/reference/cli
+    - path: github.com/docker/cli
+      mounts:
+        - source: docs/reference/commandline
+          target: content/reference/cli
+          excludeFiles: index.md

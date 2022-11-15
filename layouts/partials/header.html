@@ -1,0 +1,67 @@
+<div class="header--left">
+  <div class="site-logo">
+    <a href="{{ site.BaseURL }}">
+      <img src="/images/logo-docs-white.svg" />
+    </a>
+  </div>
+  <div class="header-menu-wrapper">
+    <nav>
+      <ul class="header-menu">
+        {{ $ctx := . }}
+        {{ range site.Menus.header }}
+          <li
+            class="header-menu-item{{ if or ($ctx.IsDescendant .Page) (eq $ctx.Permalink .Page.Permalink) }}
+              active
+            {{ end }}"
+          >
+            <a class="link-btn-round" href="{{ .URL }}">{{ .Page.LinkTitle }}
+            {{ if not .HasChildren }}
+              </a>
+            {{ else }}
+            <span class="material-symbols-rounded" style="vertical-align: middle;">expand_more</span>
+            </a>
+              <ul class="header-submenu card">
+                {{ range .Children }}
+                  <li
+                    class="header-submenu-item{{ if or ($ctx.IsDescendant .Page) (eq $ctx.Permalink .Page.Permalink) }}
+                      active
+                    {{ end }}"
+                  >
+                    <a class="menu-item" href="{{ .URL }}">{{ .Page.LinkTitle }}</a>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="header--right">
+  <button
+    tabindex="4"
+    class="btn-icon-round menu-btn material-symbols-rounded"
+    aria-label="Menu"
+  >
+    menu
+  </button>
+  <div class="search-wrapper">
+    <button
+      tabindex="2"
+      id="search-btn"
+      class="btn-icon-round material-symbols-rounded"
+    >
+      search
+    </button>
+    <input tabindex="3" placeholder="Search..." type="search" />
+  </div>
+  <button
+    tabindex="1"
+    class="btn-icon-round material-symbols-rounded"
+    arial-label="Theme toggle"
+    id="theme-toggle"
+  >
+    light_mode
+  </button>
+</div>

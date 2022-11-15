@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="main--center document">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Data.Plural }}</h1>
+    {{ .Content }}
+    <nav>
+      <div>Browse pages by tag:</div>
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}"><span class="material-symbols-rounded">sell</span> {{ partial "utils/title.html" . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </article>
+{{ end }}

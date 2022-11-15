@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ partial "sidenav.html" . }}
+  <article class="main--center document">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <nav>
+      <div>In this section:</div>
+      <ul>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">{{ partial "utils/title.html" . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </article>
+  {{ partial "pageinfo.html" . }}
+{{ end }}
