@@ -1,4 +1,7 @@
+**/.DS_Store
+**/desktop.ini
 .hugo_build.lock
+.vscode
 resources
 public
 node_modules
