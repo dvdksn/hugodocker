@@ -55,14 +55,14 @@ Sets the URL of the Docker daemon.
 
 ## DOCKER\_TLS\_VERIFY
 
-See `DOCKER_TLS_VERIFY` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){:target="_blank" rel="noopener" class="_"} page.
+See `DOCKER_TLS_VERIFY` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){target="_blank" rel="noopener" class="_"} page.
 
 ## DOCKER\_CERT\_PATH
 
 Configures the path to the `ca.pem`, `cert.pem`, and `key.pem` files used for TLS verification.  
 * **Defaults to:** `~/.docker`.
 
-See, `DOCKER_CERT_PATH` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){:target="_blank" rel="noopener" class="_"} page.
+See, `DOCKER_CERT_PATH` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){target="_blank" rel="noopener" class="_"} page.
 
 ## COMPOSE\_CONVERT\_WINDOWS\_PATHS
 
@@ -100,7 +100,7 @@ When enabled, Compose doesn't try to detect orphaned containers for the project.
 
 Deprecated in v2.  
 By default the API version is negotiated with the server. Use `DOCKER_API_VERSION`.  
-See `DOCKER_API_VERSION` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){:target="_blank" rel="noopener" class="_"} page.
+See `DOCKER_API_VERSION` on the [Use the Docker command line](../../../engine/reference/commandline/cli/#environment-variables){target="_blank" rel="noopener" class="_"} page.
 
 ### COMPOSE\_HTTP\_TIMEOUT
 
@@ -121,7 +121,7 @@ Deprecated in v2.
 ### COMPOSE\_INTERACTIVE\_NO\_CLI
 
 Deprecated in v2.  
-As v2 now uses the vendored code of [Docker CLI](https://github.com/docker/cli){:target="_blank" rel="noopener" class="_"}.
+As v2 now uses the vendored code of [Docker CLI](https://github.com/docker/cli){target="_blank" rel="noopener" class="_"}.
 
 ### COMPOSE\_DOCKER\_CLI\_BUILDx
 

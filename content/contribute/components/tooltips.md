@@ -17,7 +17,7 @@ only way to communicate important info.
   <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
 
 This is a paragraph that has a tooltip. We position it to the left so it doesn't align with the middle top of the paragraph (that looks weird).
-{:data-toggle="tooltip" data-placement="left" title="Markdown tooltip example"}
+{data-toggle="tooltip" data-placement="left" title="Markdown tooltip example"}
 
 <a href="/contribute/components/tooltips" target="_blank" rel="noopener" class="_"><span class="badge badge-info" data-toggle="tooltip" data-placement="right" title="Open the test page (in a new window)">Test</span></a>
 
@@ -33,7 +33,7 @@ This is a paragraph that has a tooltip. We position it to the left so it doesn't
   <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
 
 This is a paragraph that has a tooltip. We position it to the left so it doesn't align with the middle top of the paragraph (that looks weird).
-{:data-toggle="tooltip" data-placement="left" title="Markdown tooltip example"}
+{data-toggle="tooltip" data-placement="left" title="Markdown tooltip example"}
 
 <a href="/contribute/components" target="_blank" rel="noopener" class="_"><span class="badge badge-info" data-toggle="tooltip" data-placement="right" title="Open the test page (in a new window)">Test</span></a>
 ```

@@ -16,7 +16,7 @@ This did not conflict with any of the local files or local tooling set up on you
 
 The simplest way to get started with Dev Environments is to create a new environment by cloning the Git repository of the project you are working on. 
 
-For example, create a new Dev Environment using the simple `single-dev-env` project from the [Docker Samples](https://github.com/dockersamples/single-dev-env){:target="_blank" rel="noopener" class="_"} GitHub repository.
+For example, create a new Dev Environment using the simple `single-dev-env` project from the [Docker Samples](https://github.com/dockersamples/single-dev-env){target="_blank" rel="noopener" class="_"} GitHub repository.
 
 > **Note**
 >
@@ -25,7 +25,7 @@ For example, create a new Dev Environment using the simple `single-dev-env` proj
 > **Important**
 >
 > If you have enabled the WSL 2 integration in Docker Desktop for Windows, make sure you have an SSH agent running in your WSL 2 distribution.
-{: .important}
+{ .important}
 
 <div class="panel panel-default">
     <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapse-wsl2-ssh" style="cursor: pointer">
@@ -37,15 +37,15 @@ For example, create a new Dev Environment using the simple `single-dev-env` proj
 SSH_ENV="$HOME/.ssh/agent-environment"
 function start_agent {
     echo "Initialising new SSH agent..."
-    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SH_ENV}"
     echo succeeded
-    chmod 600 "${SSH_ENV}"
-    . "${SSH_ENV}" > /dev/null
+    chmod 600 "${SH_ENV}"
+    . "${SH_ENV}" > /dev/null
 }
 # Source SSH settings, if applicable
-if [ -f "${SSH_ENV}" ]; then
-    . "${SSH_ENV}" > /dev/null
-    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+if [ -f "${SH_ENV}" ]; then
+    . "${SH_ENV}" > /dev/null
+    ps -ef | grep ${SH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
         start_agent;
     }
 else

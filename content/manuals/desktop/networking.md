@@ -12,17 +12,6 @@ redirect_from:
 - /desktop/windows/networking/
 ---
 
-Docker Desktop provides several networking features to make it easier to
-use.
-
-## Features for all platforms
-
-### VPN Passthrough
-
-Docker Desktop networking can work when attached to a VPN. To do this,
-Docker Desktop intercepts traffic from the containers and injects it into
-the host as if it originated from the Docker application.
-
 ### Port Mapping
 
 When you run a container with the `-p` argument, for example:

@@ -169,7 +169,7 @@ Combined with the `$()` syntax, the command below works on Linux, however, it fa
 
 ```console
 $ docker run --rm -ti -v $(pwd):/work alpine
-docker: Error response from daemon: OCI runtime create failed: invalid mount {Destination:\Program Files\Git\work Type:bind Source:/run/desktop/mnt/host/c/Users/user/work;C Options:[rbind rprivate]}: mount destination \Program Files\Git\work not absolute: unknown.
+docker: Error response from daemon: OCI runtime create failed: invalid mount {estination:\Program Files\Git\work Type:bind Source:/run/desktop/mnt/host/c/Users/user/work;C Options:[rbind rprivate]}: mount destination \Program Files\Git\work not absolute: unknown.
 ```
 
 You can work around this issue by using an extra `/`
@@ -211,22 +211,22 @@ Your machine must have the following features for Docker Desktop to function cor
 #### WSL 2 and Windows Home
 
 1. Virtual Machine Platform
-2. [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10){:target="_blank" rel="noopener" class="_"}
-3. [Virtualization enabled in the BIOS](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html){:target="_blank" rel="noopener" class="_"}
+2. [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10){target="_blank" rel="noopener" class="_"}
+3. [Virtualization enabled in the BIOS](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html){target="_blank" rel="noopener" class="_"}
 4. Hypervisor enabled at Windows startup
 
-![WSL 2 enabled](../images/wsl2-enabled.png){:width="600px"}
+![WSL 2 enabled](../images/wsl2-enabled.png){width="600px"}
 
 #### Hyper-V
 
 On Windows 10 Pro or Enterprise, you can also use Hyper-V with the following features enabled:
 
-1. [Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview){:target="_blank" rel="noopener" class="_"}
+1. [Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview){target="_blank" rel="noopener" class="_"}
    installed and working
-2. [Virtualization enabled in the BIOS](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html){:target="_blank" rel="noopener" class="_"}
+2. [Virtualization enabled in the BIOS](https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html){target="_blank" rel="noopener" class="_"}
 3. Hypervisor enabled at Windows startup
 
-![Hyper-V on Windows features](../images/hyperv-enabled.png){:width="600px"}
+![Hyper-V on Windows features](../images/hyperv-enabled.png){width="600px"}
 
 Docker Desktop requires Hyper-V as well as the Hyper-V Module for Windows
 Powershell to be installed and enabled. The Docker Desktop installer enables
@@ -244,7 +244,7 @@ In the subsequent screen, verify that Hyper-V is enabled.
 In addition to [Hyper-V](#hyper-v) or [WSL 2](../windows/wsl.md), virtualization must be enabled. Check the
 Performance tab on the Task Manager:
 
-![Task Manager](../images/virtualization-enabled.png){:width="700px"}
+![Task Manager](../images/virtualization-enabled.png){width="700px"}
 
 If you manually uninstall Hyper-V, WSL 2 or disable virtualization,
 Docker Desktop cannot start. See [Unable to run Docker for Windows on
@@ -261,7 +261,7 @@ Virtual Box) and video game installers disable hypervisor on boot. To reenable i
 2. Run `bcdedit /set hypervisorlaunchtype auto`.
 3. Restart Windows.
 
-You can also refer to the [Microsoft TechNet article](https://social.technet.microsoft.com/Forums/en-US/ee5b1d6b-09e2-49f3-a52c-820aafc316f9/hyperv-doesnt-work-after-upgrade-to-windows-10-1809?forum=win10itprovirt){:target="_blank" rel="noopener" class="_"} on Code flow guard (CFG) settings.
+You can also refer to the [Microsoft TechNet article](https://social.technet.microsoft.com/Forums/en-US/ee5b1d6b-09e2-49f3-a52c-820aafc316f9/hyperv-doesnt-work-after-upgrade-to-windows-10-1809?forum=win10itprovirt){target="_blank" rel="noopener" class="_"} on Code flow guard (CFG) settings.
 
 ### Windows containers and Windows Server
 

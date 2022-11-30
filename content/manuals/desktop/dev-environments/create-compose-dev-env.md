@@ -18,7 +18,7 @@ As with a simple Dev Environment, you can create a Compose Dev Environment from 
 
 ## Create a Compose Dev Environment
 
-The example below, taken from the `compose-dev-env` project from the [Docker Samples](https://github.com/dockersamples/compose-dev-env){:target="_blank" rel="noopener" class="_"} GitHub repository, demonstrates how to create a Compose Dev Environment from a Git repository. 
+The example below, taken from the `compose-dev-env` project from the [Docker Samples](https://github.com/dockersamples/compose-dev-env){target="_blank" rel="noopener" class="_"} GitHub repository, demonstrates how to create a Compose Dev Environment from a Git repository. 
 
 >Note
 >
@@ -49,7 +49,7 @@ To set up a Dev Environment for your own Compose-based project, there are additi
 
 Dev Environments use an additional `docker-compose.yaml` file located in the `.docker` directory at the root of your project. This file allows you to define the image required for a dedicated service, the ports you'd like to expose, along with additional configuration options dedicated to Dev Environments coming in the future.
 
-Take a detailed look at the `docker-compose.yaml` file used in the [compose-dev-env](https://github.com/dockersamples/compose-dev-env/blob/main/.docker/docker-compose.yaml){:target="_blank" rel="noopener" class="_"} sample project.
+Take a detailed look at the `docker-compose.yaml` file used in the [compose-dev-env](https://github.com/dockersamples/compose-dev-env/blob/main/.docker/docker-compose.yaml){target="_blank" rel="noopener" class="_"} sample project.
 
 ```yaml
 version: "3.7"

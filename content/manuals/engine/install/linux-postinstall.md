@@ -26,7 +26,7 @@ creates a Unix socket accessible by members of the `docker` group.
 > The `docker` group grants privileges equivalent to the `root`
 > user. For details on how this impacts security in your system, see
 > [*Docker Daemon Attack Surface*](../security/index.md#docker-daemon-attack-surface).
-{: .warning}
+{ .warning}
 
 > **Note**:
 >
@@ -150,7 +150,7 @@ the [Docker CLI Reference](/engine/reference/commandline/dockerd/) article.
 > it is possible for remote non-root users to gain root access on the host. For more information on how to use TLS 
 > certificates to secure this connection, check this article on 
 > [how to protect the Docker daemon socket](../security/protect-access.md).
-{: .warning}
+{ .warning}
 
 Configuring Docker to accept remote connections can be done with the `docker.service`
 systemd unit file for Linux distributions using systemd, such as recent versions
@@ -426,7 +426,7 @@ To disable `dnsmasq` on RHEL, CentOS, or Fedora:
     ```
 
 2.  Configure the DNS servers manually using the
-    [Red Hat documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s1-networkscripts-interfaces.html){: target="_blank" rel="noopener" class="_"}.
+    [Red Hat documentation](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s1-networkscripts-interfaces.html){ target="_blank" rel="noopener" class="_"}.
 
 ### Allow access to the remote API through a firewall
 

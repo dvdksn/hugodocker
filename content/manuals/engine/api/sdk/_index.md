@@ -101,7 +101,7 @@ func main() {
         panic(err)
     }
 
-    reader, err := cli.ImagePull(ctx, "docker.io/library/alpine", types.ImagePullOptions{})
+    reader, err := cli.ImagePull(ctx, "docker.io/library/alpine", types.ImagePullOptions{)
     if err != nil {
         panic(err)
     }
@@ -109,13 +109,13 @@ func main() {
 
     resp, err := cli.ContainerCreate(ctx, &container.Config{
         Image: "alpine",
-        Cmd:   []string{"echo", "hello world"},
+        Cmd:   []string{echo", "hello world"},
     }, nil, nil, nil, "")
     if err != nil {
         panic(err)
     }
 
-    if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{}); err != nil {
+    if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{); err != nil {
         panic(err)
     }
 
@@ -128,7 +128,7 @@ func main() {
     case <-statusCh:
     }
 
-    out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{ShowStdout: true})
+    out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{howStdout: true})
     if err != nil {
         panic(err)
     }
@@ -151,16 +151,16 @@ print client.containers.run("alpine", ["echo", "hello", "world"])
 
 ```console
 $ curl --unix-socket /var/run/docker.sock -H "Content-Type: application/json" \
-  -d '{"Image": "alpine", "Cmd": ["echo", "hello world"]}' \
-  -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/create
-{"Id":"1c6594faf5","Warnings":null}
+  -d '{Image": "alpine", "Cmd": ["echo", "hello world"]}' \
+  -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/create
+{Id":"1c6594faf5","Warnings":null}
 
-$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/start
+$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/start
 
-$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/wait
-{"StatusCode":0}
+$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/wait
+{StatusCode":0}
 
-$ curl --unix-socket /var/run/docker.sock "http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/logs?stdout=1"
+$ curl --unix-socket /var/run/docker.sock "http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/logs?stdout=1"
 hello world
 ```
 
@@ -170,12 +170,12 @@ examples above use `localhost`, but any hostname would work.
 > **Using cURL 7.47.0 or below?**
 >
 > The examples above assume you are using cURL 7.50.0 or above. Older versions of
-> cURL used a [non-standard URL notation](https://github.com/moby/moby/issues/17960){:target="_blank" rel="noopener" class="_"}
+> cURL used a [non-standard URL notation](https://github.com/moby/moby/issues/17960){target="_blank" rel="noopener" class="_"}
 > when using a socket connection.
 > 
 > If you are using an older version of cURL, use `http:/<API version>/` instead,
-> for example, `http:/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/start`
-{: .important}
+> for example, `http:/v{ site.latest_engine_api_version}}/containers/1c6594faf5/start`
+{ .important}
 
   </div>
 </div>

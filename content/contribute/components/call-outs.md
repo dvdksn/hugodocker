@@ -7,8 +7,8 @@ toc_max: 3
 We support these broad categories of call outs:
 
 - Notes (no Liquid tag required)
-- Important, which use the `{: .important}` tag
-- Warning , which use the `{: .warning}` tag
+- Important, which use the `{ .important}` tag
+- Warning , which use the `{ .warning}` tag
 
 ## Examples
 
@@ -26,7 +26,7 @@ We support these broad categories of call outs:
 >
 > Treat access tokens like your password and keep them secret. Store your
 > tokens securely (for example, in a credential manager).
-{: .important}
+{ .important}
 
 
 > **Warning**
@@ -38,7 +38,7 @@ We support these broad categories of call outs:
 > the `--volumes` flag.
 >
 > The Docker Dashboard does _not_ remove volumes when you delete the app stack.
-{: .warning}
+{ .warning}
 
 ## HTML
 
@@ -57,7 +57,7 @@ We support these broad categories of call outs:
 >
 > Treat access tokens like your password and keep them secret. Store your
 > tokens securely (for example, in a credential manager).
-{: .important} 
+{ .important} 
 
 > **Warning**
 >
@@ -68,5 +68,5 @@ We support these broad categories of call outs:
 > the `--volumes` flag.
 >
 > The Docker Dashboard does _not_ remove volumes when you delete the app stack.
-{: .warning}
+{ .warning}
 ```

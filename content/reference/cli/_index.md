@@ -1,8 +1,5 @@
 ---
 title: CLI reference
-linkTitle: CLI
-description: 
-keywords: 
+description:
+keywords:
 ---
-
-

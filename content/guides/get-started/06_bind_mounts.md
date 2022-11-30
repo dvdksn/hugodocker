@@ -1,4 +1,5 @@
 ---
+weight: 6
 title: "Use bind mounts"
 keywords: get started, setup, orientation, quickstart, intro, concepts, containers, docker desktop
 description: Using bind mounts in our application
@@ -13,13 +14,13 @@ used to provide additional data into containers. When working on an application,
 mount our source code into the container to let it see code changes, respond, and let us see the changes right
 away.
 
-For Node-based applications, [nodemon](https://npmjs.com/package/nodemon){:target="_blank" rel="noopener" class="_"} is a great tool to watch for file
+For Node-based applications, [nodemon](https://npmjs.com/package/nodemon){target="_blank" rel="noopener" class="_"} is a great tool to watch for file
 changes and then restart the application. There are equivalent tools in most other languages and frameworks.
 
 ## Quick volume type comparisons
 
 Bind mounts and named volumes are the two main types of volumes that come with the Docker engine. However, additional
-volume drivers are available to support other use cases ([SFTP](https://github.com/vieux/docker-volume-sshfs){:target="_blank" rel="noopener" class="_"}, [Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/){:target="_blank" rel="noopener" class="_"}, [NetApp](https://netappdvp.readthedocs.io/en/stable/){:target="_blank" rel="noopener" class="_"}, [S3](https://github.com/elementar/docker-s3-volume){:target="_blank" rel="noopener" class="_"}, and more).
+volume drivers are available to support other use cases ([SFTP](https://github.com/vieux/docker-volume-sshfs){target="_blank" rel="noopener" class="_"}, [Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/){target="_blank" rel="noopener" class="_"}, [NetApp](https://netappdvp.readthedocs.io/en/stable/){target="_blank" rel="noopener" class="_"}, [S3](https://github.com/elementar/docker-s3-volume){target="_blank" rel="noopener" class="_"}, and more).
 
 |   | Named Volumes | Bind Mounts |
 | - | ------------- | ----------- |
@@ -96,15 +97,15 @@ So, let's do it!
    "Add". This change will be on line 109:
 
     ```diff
-    -                         {submitting ? 'Adding...' : 'Add Item'}
-    +                         {submitting ? 'Adding...' : 'Add'}
+    -                         {ubmitting ? 'Adding...' : 'Add Item'}
+    +                         {ubmitting ? 'Adding...' : 'Add'}
     ```
 
 5. Simply refresh the page (or open it) and you should see the change reflected in the browser almost immediately. It might
    take a few seconds for the Node server to restart, so if you get an error, just try refreshing after a few seconds.
 
-    ![Screenshot of updated label for Add button](images/updated-add-button.png){: style="width:75%;"}
-    {: .text-center }
+    ![Screenshot of updated label for Add button](images/updated-add-button.png){ style="width:75%;"}
+    { .text-center }
 
 6. Feel free to make any other changes you'd like to make. When you're done, stop the container and build your new image
    using:

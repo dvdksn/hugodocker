@@ -13,7 +13,7 @@ redirect_from:
 - /docker-for-windows/troubleshoot/
 ---
 
-{% include upgrade-cta.html
+{ include upgrade-cta.html
   body="Did you know that Docker Desktop offers support for developers on a paid Docker subscription (Pro, Team, or Business)? Upgrade now to benefit from Docker Support. Click [here](../../support/index.md) to learn more."
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_desktop_support"
 %}
@@ -27,10 +27,10 @@ This page contains information on:
 
 To navigate to **Troubleshoot** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Troubleshoot**
+- Select the Docker menu ![whale menu](../images/whale-x.svg){ .inline} and then **Troubleshoot**
 - Select the **Troubleshoot** icon from the Docker Dashboard
 
-![Troubleshoot Docker Desktop](../images/troubleshoot.png){:width="600px"}
+![Troubleshoot Docker Desktop](../images/troubleshoot.png){width="600px"}
 
 The Troubleshoot page contains the following options:
 
@@ -52,14 +52,14 @@ If you are a Mac user, you also have the option to **Uninstall** Docker Desktop 
 
 ### Diagnose from the app
 
-Make sure you are signed in to Docker Desktop and your [Docker Hub](https://hub.docker.com/){:target="_blank" rel="noopener" class="_"} account.
+Make sure you are signed in to Docker Desktop and your [Docker Hub](https://hub.docker.com/){target="_blank" rel="noopener" class="_"} account.
 
 1. From **Troubleshoot**, select **Get support**. 
 This opens the in-app **Support** page and starts collecting the diagnostics.
-    ![Diagnose & Feedback](../images/diagnose-support.png){:width="600px"}
+    ![Diagnose & Feedback](../images/diagnose-support.png){width="600px"}
 2. When the diagnostics collection process is complete, click **Upload to get a Diagnostic ID**.
 3. When the diagnostics have been uploaded, Docker Desktop prints a diagnostic ID. Copy this ID.
-4. If you have a paid Docker subscription, click **Contact Support**. This opens the [Docker Desktop support](https://hub.docker.com/support/desktop/){:target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID you copied in step four to the **Diagnostics ID** field. 
+4. If you have a paid Docker subscription, click **Contact Support**. This opens the [Docker Desktop support](https://hub.docker.com/support/desktop/){target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID you copied in step four to the **Diagnostics ID** field. 
 5. Click **Submit** to request Docker Desktop support.
    > **Note**
     >
@@ -137,7 +137,7 @@ $ unzip –l /tmp/BE9AFAAF-F68B-41D0-9D12-84760E6B8740/20190905152051.zip
 </div>
 </div>
 
-If you have a paid Docker subscription, open the [Docker Desktop support](https://hub.docker.com/support/desktop/){:target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID to the Diagnostics ID field. Click **Submit** to request Docker Desktop support.
+If you have a paid Docker subscription, open the [Docker Desktop support](https://hub.docker.com/support/desktop/){target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID to the Diagnostics ID field. Click **Submit** to request Docker Desktop support.
 
 ### Self-diagnose tool
 
@@ -203,7 +203,7 @@ In addition to using the diagnose option to submit logs, you can browse the logs
 To watch the live flow of Docker Desktop logs in the command line, run the following script from your favorite shell.
 
 ```console
-$ pred='process matches ".*(ocker|vpnkit).*" || (process in {"taskgated-helper", "launchservicesd", "kernel"} && eventMessage contains[c] "docker")'
+$ pred='process matches ".*(ocker|vpnkit).*" || (process in {taskgated-helper", "launchservicesd", "kernel"} && eventMessage contains[c] "docker")'
 $ /usr/bin/log stream --style syslog --level=debug --color=always --predicate "$pred"
 ```
 

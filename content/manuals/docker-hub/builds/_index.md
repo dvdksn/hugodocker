@@ -10,8 +10,8 @@ redirect_from:
 title: Set up Automated Builds
 ---
 
-{% include upgrade-cta.html
-  body="The Automated Builds feature is available for Docker Pro, Team, and Business users. Upgrade now to automatically build and push your images. If you are using automated builds for an open-source project, you can join our [Open Source Community](https://www.docker.com/community/open-source/application){: target='_blank' rel='noopener' class='_'} program to learn how Docker can support your project on Docker Hub."
+{ include upgrade-cta.html
+  body="The Automated Builds feature is available for Docker Pro, Team, and Business users. Upgrade now to automatically build and push your images. If you are using automated builds for an open-source project, you can join our [Open Source Community](https://www.docker.com/community/open-source/application){ target='_blank' rel='noopener' class='_'} program to learn how Docker can support your project on Docker Hub."
   header-text="This feature requires a Docker subscription"
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_auto_builds"
 %}
@@ -37,7 +37,7 @@ pushing to the registry. You can use these tests to create a continuous
 integration workflow where a build that fails its tests does not push the built
 image. Automated tests do not push images to the registry on their own. [Learn more about automated image testing here.](automated-testing.md)
 
-Depending on your [plan](https://www.docker.com/pricing){: target="_blank" rel="noopener" class="_"},
+Depending on your [plan](https://www.docker.com/pricing){ target="_blank" rel="noopener" class="_"},
 you may get concurrent builds, which means that `N` autobuilds can be run at the
 same time. `N` is configured by the plan that you subscribe to. Once `N+1` builds
 are running, any additional builds are queued to be run later.
@@ -297,7 +297,7 @@ tag that is applied to the built image.
 
 You can use up to nine regular expression capture groups
 (expressions enclosed in parentheses) to select a source to build, and reference
-these in the **Docker Tag** field using `{\1}` through `{\9}`.
+these in the **Docker Tag** field using `{1}` through `{9}`.
 
 <!-- Capture groups Not a priority
 #### Regex example: build from version number branch and tag with version number
@@ -310,7 +310,7 @@ sources. For example, you might have
 ### Build images with BuildKit
 
 Autobuilds use the BuildKit build system by default. If you want to use the legacy
-Docker build system, add the [environment variable](index.md#environment-variables-for-builds){: target="_blank" rel="noopener" class="_"}
+Docker build system, add the [environment variable](index.md#environment-variables-for-builds){ target="_blank" rel="noopener" class="_"}
 `DOCKER_BUILDKIT=0`. Refer to the [build images with BuildKit](../../develop/develop-images/build_enhancements.md)
 page for more information on BuildKit.
 

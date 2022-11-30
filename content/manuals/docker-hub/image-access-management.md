@@ -18,10 +18,10 @@ The following video walks you through the process of configuring Image Access Ma
 
 To configure Image Access Management permissions, perform the following steps:
 
-1. Log into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account as an organization administrator.
+1. Log into your [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} account as an organization administrator.
 2. Select an organization, and navigate to the **Settings** tab on the **Organizations** page and click Org Permissions.
 
-    ![Image Access Management](images/image-access-management.png){:width="700px"}
+    ![Image Access Management](images/image-access-management.png){width="700px"}
 
 3. Enable Image Access Management to set the permissions for the following categories of images you can manage:
 - **Organization Images**: When Image Access Management is enabled, images from your organization are always allowed. These images can be public or private created by members within your organization.
@@ -51,7 +51,7 @@ Download Docker Desktop 4.0 or a later release.
 - [Download and install for Mac](/desktop/install/mac-install/)
 - [Download and install for Linux](/desktop/install/linux-install)
 
-{% include configure-registry-json.md %}
+{ include configure-registry-json.md %}
 
 ## Verify the restrictions
 
@@ -59,4 +59,4 @@ Download Docker Desktop 4.0 or a later release.
 
    For example, if you enable Image Access Management, your members can pull an Organization Image, Docker Official Image, or Verified Publisher Image onto their local machine. If you disable the restrictions, your members can pull any image, including Community Images.
 
-   ![Image Access Management](images/image-access-management-error.png){:width="700px"}
+   ![Image Access Management](images/image-access-management-error.png){width="700px"}

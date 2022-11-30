@@ -1,4 +1,5 @@
 ---
+weight: 3
 title: "Update the application"
 keywords: get started, setup, orientation, quickstart, intro, concepts, containers, docker desktop
 description: Making changes to our example learning application
@@ -102,8 +103,8 @@ much easier than having to look up the container ID and remove it.
 
 2. Refresh your browser on [http://localhost:3000](http://localhost:3000) and you should see your updated help text!
 
-![Updated application with updated empty text](images/todo-list-updated-empty-text.png){: style="width:55%" }
-{: .text-center }
+![Updated application with updated empty text](images/todo-list-updated-empty-text.png){ style="width:55%" }
+{ .text-center }
 
 ## Recap
 

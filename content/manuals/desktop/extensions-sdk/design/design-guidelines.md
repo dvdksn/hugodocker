@@ -30,7 +30,7 @@ Use the [Docker Material UI Theme](https://www.npmjs.com/package/@docker/docker-
 
 - Avoid embedding terminal windows. The advantage we have with Docker Desktop over the CLI is that we have the opportunity to provide rich information to users. Make use of this interface as much as possible. 
 
-![terminal window dont](images/terminal_window_dont.png){:height="=50%" width="50%"}
+![terminal window dont](images/terminal_window_dont.png){height="=50%" width="50%"}
 
 ![terminal window do](images/terminal_window_do.png)
 
@@ -38,7 +38,7 @@ Use the [Docker Material UI Theme](https://www.npmjs.com/package/@docker/docker-
 
 - In order not to disrupt the flow of users, avoid scenarios where the user has to navigate outside Docker Desktop, to the CLI or a webpage for example, in order to carry out certain functionalities. Instead, build features that are native to Docker Desktop.
 
-![switch context dont](images/switch_context_dont.png){:height="=50%" width="50%"}
+![switch context dont](images/switch_context_dont.png){height="=50%" width="50%"}
 
 ![switch context do](images/switch_context_do.png)
 
@@ -62,7 +62,7 @@ When building your extension, ensure that first time users of the extension and 
   - Link to necessary resources such as documentation.
 - If your extension has particularly complex functionality, add a demo or video to the start page. This helps onboard a first time user quickly.
 
-![start page](images/start_page.png){:height="50%" width="50%"}
+![start page](images/start_page.png){height="50%" width="50%"}
 
 ## What's next?
 

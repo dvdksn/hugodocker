@@ -76,7 +76,7 @@ from the repository.
 
 #### Set up the repository
 
-{% assign download-url-base = "https://download.docker.com/linux/debian" %}
+{ assign download-url-base = "https://download.docker.com/linux/debian" %}
 
 1.  Update the `apt` package index and install packages to allow `apt` to use a
     repository over HTTPS:
@@ -95,14 +95,14 @@ from the repository.
 
     ```console
     $ sudo mkdir -p /etc/apt/keyrings
-    $ curl -fsSL {{ download-url-base }}/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    $ curl -fsSL { download-url-base }}/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
     ```
 
 3.  Use the following command to set up the repository:
 
     ```console
     $ echo \
-      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] {{ download-url-base }} \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] { download-url-base }} \
       $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     ```
 
@@ -132,10 +132,10 @@ This procedure works for Debian on `x86_64` / `amd64`, `armhf`, `arm64`, and Ras
     ```console
     $ apt-cache madison docker-ce
 
-      docker-ce | 5:18.09.1~3-0~debian-stretch | {{ download-url-base }} stretch/stable amd64 Packages
-      docker-ce | 5:18.09.0~3-0~debian-stretch | {{ download-url-base }} stretch/stable amd64 Packages
-      docker-ce | 18.06.1~ce~3-0~debian        | {{ download-url-base }} stretch/stable amd64 Packages
-      docker-ce | 18.06.0~ce~3-0~debian        | {{ download-url-base }} stretch/stable amd64 Packages
+      docker-ce | 5:18.09.1~3-0~debian-stretch | { download-url-base }} stretch/stable amd64 Packages
+      docker-ce | 5:18.09.0~3-0~debian-stretch | { download-url-base }} stretch/stable amd64 Packages
+      docker-ce | 18.06.1~ce~3-0~debian        | { download-url-base }} stretch/stable amd64 Packages
+      docker-ce | 18.06.0~ce~3-0~debian        | { download-url-base }} stretch/stable amd64 Packages
     ```
 
     b. Install a specific version using the version string from the second column,
@@ -172,7 +172,7 @@ If you cannot use Docker's repository to install Docker Engine, you can download
 `.deb` file for your release and install it manually. You need to download
 a new file each time you want to upgrade Docker.
 
-1.  Go to [`{{ download-url-base }}/dists/`]({{ download-url-base }}/dists/){: target="_blank" rel="noopener" class="_" },
+1.  Go to [`{ download-url-base }}/dists/`]({ download-url-base }}/dists/){ target="_blank" rel="noopener" class="_" },
     choose your Debian version, then browse to `pool/stable/`, choose `amd64`,
     `armhf`, or `arm64`, and download the `.deb` file for the Docker Engine
     version you want to install.
@@ -207,7 +207,7 @@ steps.
 To upgrade Docker Engine, download the newer package file and repeat the
 [installation procedure](#install-from-a-package), pointing to the new file.
 
-{% include install-script.md %}
+{ include install-script.md %}
 
 ## Uninstall Docker Engine
 

@@ -4,7 +4,7 @@ keywords: Node.js, build, Mocha, test
 description: How to Build and Run your Tests using Node.js and Mocha frameworks
 ---
 
-{% include_relative nav.html selected="4" %}
+{ include_relative nav.html selected="4" %}
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Now let’s test our application by POSTing a JSON payload and then make an HTTP
 $ curl --request POST \
   --url http://localhost:8000/test \
   --header 'content-type: application/json' \
-  --data '{"msg": "testing"}'
+  --data '{msg": "testing"}'
 ```
 
 Now, perform a GET request to the same endpoint to make sure our JSON payload was saved and retrieved correctly. The “id” and “createDate” will be different for you.
@@ -57,7 +57,7 @@ Now, perform a GET request to the same endpoint to make sure our JSON payload wa
 ```console
 $ curl http://localhost:8000/test
 
-{"code":"success","payload":[{"msg":"testing","id":"e88acedb-203d-4a7d-8269-1df6c1377512","createDate":"2020-10-11T23:21:16.378Z"}]}
+{code":"success","payload":[{msg":"testing","id":"e88acedb-203d-4a7d-8269-1df6c1377512","createDate":"2020-10-11T23:21:16.378Z"}]}
 ```
 
 ## Install Mocha
@@ -287,8 +287,8 @@ In this module, we took a look at running tests as part of our Docker image buil
 
 In the next module, we’ll take a look at how to set up a CI/CD pipeline using GitHub Actions. See:
 
-[Configure CI/CD](configure-ci-cd.md){: .button .primary-btn}
+[Configure CI/CD](configure-ci-cd.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

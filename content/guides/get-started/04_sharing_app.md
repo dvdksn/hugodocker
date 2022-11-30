@@ -1,4 +1,5 @@
 ---
+weight: 4
 title: "Share the application"
 keywords: get started, setup, orientation, quickstart, intro, concepts, containers, docker desktop, docker hub, sharing 
 redirect_from:
@@ -11,13 +12,13 @@ registry. The default registry is Docker Hub and is where all of the images we'v
 
 > **Docker ID**
 >
-> A Docker ID allows you to access Docker Hub which is the world's largest library and community for container images. Create a [Docker ID](https://hub.docker.com/signup){:target="_blank" rel="noopener" class="_"} for free if you don't have one.
+> A Docker ID allows you to access Docker Hub which is the world's largest library and community for container images. Create a [Docker ID](https://hub.docker.com/signup){target="_blank" rel="noopener" class="_"} for free if you don't have one.
 
 ## Create a repo
 
 To push an image, we first need to create a repository on Docker Hub.
 
-1. [Sign up](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){:target="_blank" rel="noopener" class="_"} or Sign in to [Docker Hub](https://hub.docker.com){:target="_blank" rel="noopener" class="_"}.
+1. [Sign up](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){target="_blank" rel="noopener" class="_"} or Sign in to [Docker Hub](https://hub.docker.com){target="_blank" rel="noopener" class="_"}.
 
 2. Click the **Create Repository** button.
 
@@ -25,14 +26,14 @@ To push an image, we first need to create a repository on Docker Hub.
 
     > **Private repositories**
     >
-    > Did you know that Docker offers private repositories which allows you to restrict content to specific users or teams? Check out the details on the [Docker pricing](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){:target="_blank" rel="noopener" class="_"} page.
+    > Did you know that Docker offers private repositories which allows you to restrict content to specific users or teams? Check out the details on the [Docker pricing](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){target="_blank" rel="noopener" class="_"} page.
 
 4. Click the **Create** button!
 
 If you look at the image below an example **Docker command** can be seen. This command will push to this repo.
 
-![Docker command with push example](images/push-command.png){: style=width:75% }
-{: .text-center }
+![Docker command with push example](images/push-command.png){ style=width:75% }
+{ .text-center }
 
 ## Push the image
 
@@ -73,7 +74,7 @@ If you look at the image below an example **Docker command** can be seen. This c
 Now that our image has been built and pushed into a registry, let's try running our app on a brand
 new instance that has never seen this container image! To do this, we will use Play with Docker.
 
-1. Open your browser to [Play with Docker](https://labs.play-with-docker.com/){:target="_blank" rel="noopener" class="_"}.
+1. Open your browser to [Play with Docker](https://labs.play-with-docker.com/){target="_blank" rel="noopener" class="_"}.
 
 2. Click **Login** and then select **docker** from the drop-down list.
 
@@ -81,7 +82,7 @@ new instance that has never seen this container image! To do this, we will use P
 
 4. Once you're logged in, click on the **ADD NEW INSTANCE** option on the left side bar. If you don't see it, make your browser a little wider. After a few seconds, a terminal window opens in your browser.
 
-    ![Play with Docker add new instance](images/pwd-add-new-instance.png){: style=width:75% }
+    ![Play with Docker add new instance](images/pwd-add-new-instance.png){ style=width:75% }
 
 5. In the terminal, start your freshly pushed app.
 

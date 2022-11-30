@@ -5,7 +5,7 @@ toc_max: 3
 ---
 ## Examples
 
-It is best practice if [a link opens in a new window](https://docker.com/){: target="_blank" rel="noopener" class="_" }
+It is best practice if [a link opens in a new window](https://docker.com/){ target="_blank" rel="noopener" class="_" }
 
 #### Links to auto-generated content
 
@@ -29,7 +29,7 @@ An example of a link to an auto-generated reference page that we pull in during 
 
 ```html
 
-It is best practice if [a link opens in a new window](https://docker.com/){: target="_blank" rel="noopener" class="_" }
+It is best practice if [a link opens in a new window](https://docker.com/){ target="_blank" rel="noopener" class="_" }
 
 You can also have [a markdown link to a custom target ID](#formatting-examples)
 

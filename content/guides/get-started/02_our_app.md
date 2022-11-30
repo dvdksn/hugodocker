@@ -1,4 +1,5 @@
 ---
+weight: 2
 title: "Sample application"
 keywords: get started, setup, orientation, quickstart, intro, concepts, containers, docker desktop
 redirect_from:
@@ -16,7 +17,7 @@ building an app to prove out your MVP (minimum viable product). You want
 to show how it works and what it's capable of doing without needing to
 think about how it will work for a large team, multiple developers, etc.
 
-![Todo List Manager Screenshot](images/todo-list-sample.png){: style="width:50%;" }
+![Todo List Manager Screenshot](images/todo-list-sample.png){ style="width:50%;" }
 
 ## Get the app
 
@@ -24,14 +25,14 @@ Before we can run the application, we need to get the application source code on
 our machine. For real projects, you will typically clone the repo. But, for this tutorial,
 we have created a ZIP file containing the application.
 
-1. Download the App contents from the [getting-started repository](https://github.com/docker/getting-started/tree/master){:target="_blank" rel="noopener" class="_"}. You can either pull the entire project or [download it as a zip](https://github.com/docker/getting-started/archive/refs/heads/master.zip) and extract the app folder out to get started with.
+1. Download the App contents from the [getting-started repository](https://github.com/docker/getting-started/tree/master){target="_blank" rel="noopener" class="_"}. You can either pull the entire project or [download it as a zip](https://github.com/docker/getting-started/archive/refs/heads/master.zip) and extract the app folder out to get started with.
 
 2. Once extracted, use your favorite code editor to open the project. If you're in need of
-    an editor, you can use [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener" class="_"}. You should
+    an editor, you can use [Visual Studio Code](https://code.visualstudio.com/){target="_blank" rel="noopener" class="_"}. You should
     see the `package.json` and two subdirectories (`src` and `spec`).
 
-    ![Screenshot of Visual Studio Code opened with the app loaded](images/ide-screenshot.png){: style="width:650px;margin-top:20px;"}
-    {: .text-center }
+    ![Screenshot of Visual Studio Code opened with the app loaded](images/ide-screenshot.png){ style="width:650px;margin-top:20px;"}
+    { .text-center }
 
 ## Build the app's container image
 
@@ -95,8 +96,8 @@ command (remember that from earlier?).
 2. After a few seconds, open your web browser to [http://localhost:3000](http://localhost:3000).
    You should see our app.
 
-   ![Empty Todo List](images/todo-list-empty.png){: style="width:450px;margin-top:20px;"}
-   {: .text-center }
+   ![Empty Todo List](images/todo-list-empty.png){ style="width:450px;margin-top:20px;"}
+   { .text-center }
 
 3. Go ahead and add an item or two and see that it works as you expect. You can mark items as
    complete and remove items. Your frontend is successfully storing items in the backend.

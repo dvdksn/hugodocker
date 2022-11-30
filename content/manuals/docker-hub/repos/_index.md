@@ -42,7 +42,7 @@ images to this repository.
 
 ## Deleting a repository
 
-1. Sign into [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} and select **Repositories**.
+1. Sign into [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} and select **Repositories**.
 
 2. Select a repository from the list, select **Settings** and then Delete Repository.
 
@@ -58,7 +58,7 @@ images to this repository.
 
 When consolidating personal repositories, you can pull private images from the initial repository and push them into another repository owned by you. To avoid losing your private images, perform the following steps:
 
-1. Navigate to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} create a Docker ID and select the personal subscription.
+1. Navigate to [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} create a Docker ID and select the personal subscription.
 2. Using `docker login` from the CLI, sign in using your original Docker ID and pull your private images.
 3. Tag your private images with your newly created Docker ID using:
 `docker tag namespace1/docker101tutorial new_namespace/docker101tutorial`
@@ -70,9 +70,9 @@ When consolidating personal repositories, you can pull private images from the i
 
 To avoid losing your private images, you can pull your private images from your personal namespace and push them to an organization that's owned by you.
 
-1. Navigate to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} and select **Organizations**.
+1. Navigate to [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} and select **Organizations**.
 2. Select the applicable organization and verify that your user account is a member of the organization.
-3. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} using your original Docker ID, and pull your images from the initial namespace.
+3. Sign in to [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} using your original Docker ID, and pull your images from the initial namespace.
 `docker pull namespace1/docker101tutorial`
 4. Tag your images with your new organization namespace.
 `docker tag namespace1/docker101tutorial <new_org>/docker101tutorial`

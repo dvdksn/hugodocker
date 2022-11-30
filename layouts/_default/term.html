@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <article class="main--center document">
-    {{ partial "breadcrumbs.html" . }}
+  {{ partial "breadcrumbs.html" . }}
+  <article class="prose max-w-none dark:prose-invert">
     <h1><span class="material-symbols-rounded">sell</span> {{ .Title }}</h1>
     {{ .Content }}
     <nav>

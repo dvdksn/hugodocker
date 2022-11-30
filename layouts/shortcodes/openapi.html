@@ -1,0 +1,44 @@
+{{ $openapi := index site.Data.api (.Get 0) }}
+{{ printf "## %s version %s" $openapi.info.title $openapi.info.version | .Page.RenderString }}
+{{ .Page.RenderString $openapi.info.description }}
+{{ range $path, $pathKeys := $openapi.paths }}
+  {{ range $key, $properties := $pathKeys }}
+    {{ if in "get put patch post delete" $key }}
+      {{ printf "### %s" .summary | $.Page.RenderString }}
+      {{ $badgeColors := (dict
+        "get" "bg-blue-light-500 dark:bg-blue-dark-300"
+        "put" "bg-green-light-500 dark:bg-green-dark-300"
+        "post" "bg-violet-light-500 dark:bg-violet-dark-300"
+        "delete" "bg-red-light-500 dark:bg-red-dark-300"
+        )
+      }}
+      <span
+        class="p-2 text-white {{ index $badgeColors $key }} rounded uppercase"
+        >{{ $key }}</span
+      >&nbsp;&nbsp;<code>{{ $path }}</code>
+      {{ $properties.description | $.Page.RenderString (dict "display" "block") }}
+      {{ range $responseCode, $responseDetails := $properties.responses }}
+        {{ if isset $responseDetails "content" }}
+          {{ range $exampleName, $example := (index $responseDetails.content "application/json").examples }}
+            {{ if isset $example "schema" }}
+              {{ $refPath := index (index $example "schema") "$ref" }}
+              {{ range $index, $component := (split $refPath "/") }}
+                {{ if (index $openapi.components.examples $component) }}
+                  <div>
+                    <span>Example for Response Code: {{ $responseCode }}</span>
+                    <pre><code>{{ (index $openapi.components.examples $component).value | jsonify (dict "indent" "  ") }}</code></pre>
+                  </div>
+                {{ end }}
+              {{ end }}
+            {{ else }}
+              Example Response:
+              <pre><code>
+              {{- $example.value | jsonify (dict "indent" "  ") }}
+              </code></pre>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

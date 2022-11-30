@@ -1,0 +1,21 @@
+{{ define "left" }}
+  {{ partial "sidebar.html" . }}
+{{ end }}
+
+{{ define "center" }}
+  {{ partial "breadcrumbs.html" . }}
+  <article class="prose max-w-none dark:prose-invert px-5">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <div class="text-2xl my-4">In this section:</div>
+    <nav class="not-prose grid grid-cols-2 md:grid-cols-1 gap-4">
+      {{ range .Params.grid }}
+        {{ partial "components/card.html" (dict "title" .title "link" .link "icon" .icon "description" .description) }}
+      {{ end }}
+    </nav>
+  </article>
+{{ end }}
+
+{{ define "right" }}
+  {{ partial "aside.html" . }}
+{{ end }}

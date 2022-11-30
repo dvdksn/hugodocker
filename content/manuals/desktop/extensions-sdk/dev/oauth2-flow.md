@@ -18,7 +18,7 @@ The Authorization Code grant type is used by confidential and public clients to 
 
 After the user returns to the client via the redirect URL, the application gets the authorization code from the URL and uses it to request an access token.
 
-![oauth2-flow](images/oauth2-flow.png){: style=width:80% }
+![oauth2-flow](images/oauth2-flow.png){ style=width:80% }
 
 The image above shows that:
 - The Docker Extension asks the user to authorize access to their data.
@@ -43,7 +43,7 @@ Use the [ddClient.host.openExternal](api/dashboard.md#open-a-url) API to open a 
 window.ddClient.openExternal("https://authorization-server.com/authorize?
   response_type=code
   &client_id=T70hJ3ls5VTYG8ylX3CZsfIu
-  &redirect_uri=${REDIRECT_URI}
+  &redirect_uri=${EDIRECT_URI}
   &scope=photo+offline_access
   &state=kH_0FdAtjCfYjOkF);
 ```
@@ -55,7 +55,7 @@ window.ddClient.openExternal("https://authorization-server.com/authorize?
 > **Passing the access token**
 >
 > Currently, passing the authorization code as a query parameter to the `docker-desktop://dashboard/open` URL is not supported.
-{: .important}
+{ .important}
 
 You cannot get the authorization code from the extension UI by listing `docker-desktop://dashboard/open` as the `redirect_uri` in the OAuth app you're using and concatenating the authorization code as a query parameter.
 
@@ -85,7 +85,7 @@ POST https://authorization-server.com/token
 grant_type=authorization_code
 &client_id=T70hJ3ls5VTYG8ylX3CZsfIu
 &client_secret=YABbyHQShPeO1T3NDQZP8q5m3Jpb_UPNmIzqhLDCScSnRyVG
-&redirect_uri=${REDIRECT_URI}
+&redirect_uri=${EDIRECT_URI}
 &code=N949tDLuf9ai_DaOKyuFBXStCNMQzuQbtC1QbvLv-AXqPJ_f
 ```
 
@@ -106,7 +106,7 @@ It is highly recommended that you use an external source of storage to store the
 > Warning
 >
 > Storing the access token in a client's localStorage is a security risk as that storage is currently shared amongst all extensions.
-{: .warning}
+{ .warning}
 
 ## What's next 
 Learn how to [publish and distribute your extension](../extensions/index.md)

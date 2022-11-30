@@ -10,8 +10,6 @@ redirect_from:
 Multi-stage builds are useful to anyone who has struggled to optimize
 Dockerfiles while keeping them easy to read and maintain.
 
-> **Acknowledgment**
->
 > Special thanks to [Alex Ellis](https://twitter.com/alexellisuk) for granting
 > permission to use his blog post [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/)
 > as the basis of the examples below.

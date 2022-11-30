@@ -6,7 +6,7 @@ redirect_from:
 - /get-started/nodejs/run-containers/
 ---
 
-{% include_relative nav.html selected="2" %}
+{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Let’s open a new terminal then make a GET request to the server using the curl
 $ curl --request POST \
   --url http://localhost:8000/test \
   --header 'content-type: application/json' \
-  --data '{"msg": "testing"}'
+  --data '{msg": "testing"}'
 curl: (7) Failed to connect to localhost port 8000: Connection refused
 ```
 
@@ -54,8 +54,8 @@ Now let’s rerun the curl command from above. Remember to open a new terminal.
 $ curl --request POST \
   --url http://localhost:8000/test \
   --header 'content-type: application/json' \
-  --data '{"msg": "testing"}'
-{"code":"success","payload":[{"msg":"testing","id":"dc0e2c2b-793d-433c-8645-b3a553ea26de","createDate":"2020-09-01T17:36:09.897Z"}]}
+  --data '{msg": "testing"}'
+{code":"success","payload":[{msg":"testing","id":"dc0e2c2b-793d-433c-8645-b3a553ea26de","createDate":"2020-09-01T17:36:09.897Z"}]}
 ```
 
 Success! We were able to connect to the application running inside of our container on port 8000. Switch back to the terminal where your container is running and you should see the POST request logged to the console.
@@ -81,8 +81,8 @@ Again, let’s make sure that our container is running properly. Run the same cu
 $ curl --request POST \
   --url http://localhost:8000/test \
   --header 'content-type: application/json' \
-  --data '{"msg": "testing"}'
-{"code":"success","payload":[{"msg":"testing","id":"dc0e2c2b-793d-433c-8645-b3a553ea26de","createDate":"2020-09-01T17:36:09.897Z"}]}
+  --data '{msg": "testing"}'
+{code":"success","payload":[{msg":"testing","id":"dc0e2c2b-793d-433c-8645-b3a553ea26de","createDate":"2020-09-01T17:36:09.897Z"}]}
 ```
 
 ## List containers
@@ -193,8 +193,8 @@ Now, we can easily identify our container based on the name.
 
 In this module, we took a look at running containers, publishing ports, and running containers in detached mode. We also took a look at managing containers by starting, stopping, and restarting them. We also looked at naming our containers so they are more easily identifiable. In the next module, we’ll learn how to run a database in a container and connect it to our application. See:
 
-[How to develop your application](develop.md){: .button .primary-btn}
+[How to develop your application](develop.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

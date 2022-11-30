@@ -6,7 +6,7 @@ redirect_from:
 - /get-started/golang/run-tests/
 ---
 
-{% include_relative nav.html selected="4" %}
+{ include_relative nav.html selected="4" %}
 
 Testing is an essential part of modern software development. Yet, testing can mean a lot of things to different development teams. In the name of brevity, we'll only take a look at running isolated, high-level, functional tests.
 
@@ -14,14 +14,14 @@ Testing is an essential part of modern software development. Yet, testing can me
 
 Each test is meant to verify a single business requirement for our example application. The following test is an excerpt from `main_test.go` test suite in our example application.
 
-{% raw %}
+{ raw %}
 ```go
 func TestRespondsWithLove(t *testing.T) {
 
 	pool, err := dockertest.NewPool("")
 	require.NoError(t, err, "could not connect to Docker")
 
-	resource, err := pool.Run("docker-gs-ping", "latest", []string{})
+	resource, err := pool.Run("docker-gs-ping", "latest", []string{)
 	require.NoError(t, err, "could not start container")
 
 	t.Cleanup(func() {
@@ -50,7 +50,7 @@ func TestRespondsWithLove(t *testing.T) {
 	require.Contains(t, string(body), "<3", "does not respond with love?")
 }
 ```
-{% endraw %}
+{ endraw %}
 
 As you can see, this is a high-level test, unconcerned with the implementation details of our example application.
 
@@ -102,8 +102,8 @@ In this module, we've seen an example of using Docker for isolated functional te
 
 In the next module, we’ll take a look at how to set up a CI/CD pipeline using GitHub Actions. See:
 
-[Configure CI/CD](configure-ci-cd.md){: .button .outline-btn}
+[Configure CI/CD](configure-ci-cd.md){ .button .outline-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

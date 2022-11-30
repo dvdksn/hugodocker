@@ -2,7 +2,7 @@ services:
   server:
     build:
       context: .
-    image: docker/docs
+    image: myhugo
     volumes:
       - "${PWD}:/src"
     ports:

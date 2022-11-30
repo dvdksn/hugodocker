@@ -4,7 +4,7 @@ keywords: Python, run, image, container,
 description: Learn how to run the image as a container.
 ---
 
-{% include_relative nav.html selected="2" %}
+{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 
@@ -180,8 +180,8 @@ That’s better! We can now easily identify our container based on the name.
 
 In this module, we took a look at running containers, publishing ports, and running containers in detached mode. We also took a look at managing containers by starting, stopping, and, restarting them. We also looked at naming our containers so they are more easily identifiable. In the next module, we’ll learn how to run a database in a container and connect it to our application. See:
 
-[How to develop your application](develop.md){: .button .primary-btn}
+[How to develop your application](develop.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Python%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Python%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

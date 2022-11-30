@@ -6,7 +6,7 @@ redirect_from:
 - /get-started/nodejs/develop/
 ---
 
-{% include_relative nav.html selected="3" %}
+{ include_relative nav.html selected="3" %}
 
 ## Prerequisites
 
@@ -94,13 +94,13 @@ Let’s test that our application is connected to the database and is able to ad
 $ curl --request POST \
   --url http://localhost:8000/notes \
   --header 'content-type: application/json' \
-  --data '{"name": "this is a note", "text": "this is a note that I wanted to take while I was working on writing a blog post.", "owner": "peter"}'
+  --data '{name": "this is a note", "text": "this is a note that I wanted to take while I was working on writing a blog post.", "owner": "peter"}'
 ```
 
 You should receive the following json back from our service.
 
 ```json
-{"code":"success","payload":{"_id":"5efd0a1552cd422b59d4f994","name":"this is a note","text":"this is a note that I wanted to take while I was working on writing a blog post.","owner":"peter","createDate":"2020-07-01T22:11:33.256Z"}}
+{code":"success","payload":{_id":"5efd0a1552cd422b59d4f994","name":"this is a note","text":"this is a note that I wanted to take while I was working on writing a blog post.","owner":"peter","createDate":"2020-07-01T22:11:33.256Z"}}
 ```
 
 ## Use Compose to develop locally
@@ -168,7 +168,7 @@ We pass the `--build` flag so Docker compiles our image and then starts it.
 
 If all goes well, you should see something similar:
 
-  ![node-compile](images/node-compile.png){:width="800px"}
+  ![node-compile](images/node-compile.png){width="800px"}
 
 Now let’s test our API endpoint. Run the following curl command:
 
@@ -179,7 +179,7 @@ $ curl --request GET --url http://localhost:8000/notes
 You should receive the following response:
 
 ```json
-{"code":"success","meta":{"total":0,"count":0},"payload":[]}
+{code":"success","meta":{total":0,"count":0},"payload":[]}
 ```
 
 ## Connect a debugger
@@ -190,7 +190,7 @@ We’ll use the debugger that comes with the Chrome browser. Open Chrome on your
 
 It opens the following screen.
 
-  ![Chrome-inspect](images/chrome-inspect.png){:width="800px"}
+  ![Chrome-inspect](images/chrome-inspect.png){width="800px"}
 
 Click the **Open dedicated DevTools for Node** link. This opens the DevTools that are connected to the running Node.js process inside our container.
 
@@ -200,15 +200,15 @@ Add the following code above the existing `server.use()` statement, and save the
 
 ```js
  server.use( '/foo', (req, res) => {
-   return res.json({ "foo": "bar" })
+   return res.json({"foo": "bar" })
  })
 ```
 
 If you take a look at the terminal where our Compose application is running, you’ll see that nodemon noticed the changes and reloaded our application.
 
- ![nodemon](images/nodemon.png){:width="800px"}
+ ![nodemon](images/nodemon.png){width="800px"}
 
-Navigate back to the Chrome DevTools and set a breakpoint on the line containing the `return res.json({ "foo": "bar" })` statement, and then run the following curl command to trigger the breakpoint.
+Navigate back to the Chrome DevTools and set a breakpoint on the line containing the `return res.json({"foo": "bar" })` statement, and then run the following curl command to trigger the breakpoint.
 
 ```console
 $ curl --request GET --url http://localhost:8000/foo
@@ -222,8 +222,8 @@ In this module, we took a look at creating a general development image that we c
 
 In the next module, we’ll take a look at how to run unit tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .primary-btn}
+[Run your tests](run-tests.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

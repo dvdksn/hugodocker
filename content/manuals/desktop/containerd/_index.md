@@ -23,7 +23,7 @@ To enable this feature:
 
 To disable this feature, clear the **Use containerd for pulling and storing images** checkbox.
 
-![containerd feature](../images/containerd_feature_activation.png){:width="750px"}
+![containerd feature](../images/containerd_feature_activation.png){width="750px"}
 
 ## Simple usage examples
 
@@ -139,7 +139,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS        
 
 You can also check from the browser that NGINX is running:
 
-![containerd_feature_nginx](../images/containerd_feature_nginx.png){:width="750px"}
+![containerd_feature_nginx](../images/containerd_feature_nginx.png){width="750px"}
 
 ## Building multi-platform images
 
@@ -205,7 +205,7 @@ e41da7320a95: Pushed
 
 View Tags on DockerHub to see multi-platform result:
 
-![containerd_feature_tags](../images/containerd_feature_tags.png){:width="750px"}
+![containerd_feature_tags](../images/containerd_feature_tags.png){width="750px"}
 
 ## Containerd Image Store Release Notes
 
@@ -232,4 +232,4 @@ Initial implementation of the Docker commands: `run`, `commit`, `build`, `push`,
 ## Feedback
 
 Thanks for trying the new features available with `containerd`.   
-We’d love to hear from you! Please feel free to give feedback or report any bugs you may find through the issues tracker on the [feedback form](https://dockr.ly/3PODIhD){: target="_blank" rel="noopener" class="_"}.
+We’d love to hear from you! Please feel free to give feedback or report any bugs you may find through the issues tracker on the [feedback form](https://dockr.ly/3PODIhD){ target="_blank" rel="noopener" class="_"}.

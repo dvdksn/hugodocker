@@ -4,10 +4,6 @@ keywords: Desktop, Docker, GUI, run, docker, local, machine, dashboard
 tags:
 - Docker Desktop
 title: Docker Desktop
-menu:
-  header:
-    parent: Manuals
-    weight: 100
 aliases:
 - /desktop/opensource/
 - /docker-for-mac/dashboard/

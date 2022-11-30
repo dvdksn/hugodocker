@@ -9,7 +9,7 @@ redirect_from:
 You can add seats anytime to your existing subscription,
 to add seats to a subscription:
 
-1. Log into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account.
+1. Log into your [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"} account.
 
 2. Navigate to **Organizations** from the menu at the top of the page and select your organization.
 

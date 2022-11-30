@@ -58,7 +58,7 @@ func main() {
 		panic(err)
 	}
 
-	reader, err := cli.ImagePull(ctx, "docker.io/library/alpine", types.ImagePullOptions{})
+	reader, err := cli.ImagePull(ctx, "docker.io/library/alpine", types.ImagePullOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -68,14 +68,14 @@ func main() {
 
 	resp, err := cli.ContainerCreate(ctx, &container.Config{
 		Image: "alpine",
-		Cmd:   []string{"echo", "hello world"},
+		Cmd:   []string{echo", "hello world"},
 		Tty:   false,
 	}, nil, nil, nil, "")
 	if err != nil {
 		panic(err)
 	}
 
-	if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{}); err != nil {
+	if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{); err != nil {
 		panic(err)
 	}
 
@@ -88,7 +88,7 @@ func main() {
 	case <-statusCh:
 	}
 
-	out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{ShowStdout: true})
+	out, err := cli.ContainerLogs(ctx, resp.ID, types.ContainerLogsOptions{howStdout: true})
 	if err != nil {
 		panic(err)
 	}
@@ -113,16 +113,16 @@ print(client.containers.run("alpine", ["echo", "hello", "world"]))
 
 ```console
 $ curl --unix-socket /var/run/docker.sock -H "Content-Type: application/json" \
-  -d '{"Image": "alpine", "Cmd": ["echo", "hello world"]}' \
-  -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/create
-{"Id":"1c6594faf5","Warnings":null}
+  -d '{Image": "alpine", "Cmd": ["echo", "hello world"]}' \
+  -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/create
+{Id":"1c6594faf5","Warnings":null}
 
-$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/start
+$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/start
 
-$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/wait
-{"StatusCode":0}
+$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/wait
+{StatusCode":0}
 
-$ curl --unix-socket /var/run/docker.sock "http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/logs?stdout=1"
+$ curl --unix-socket /var/run/docker.sock "http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/logs?stdout=1"
 hello world
 ```
 
@@ -132,12 +132,12 @@ examples above use `localhost`, but any hostname would work.
 > **Using cURL 7.47.0 or below?**
 >
 > The examples above assume you are using cURL 7.50.0 or above. Older versions of
-> cURL used a [non-standard URL notation](https://github.com/moby/moby/issues/17960){:target="_blank" rel="noopener" class="_"}
+> cURL used a [non-standard URL notation](https://github.com/moby/moby/issues/17960){target="_blank" rel="noopener" class="_"}
 > when using a socket connection.
 > 
 > If you are using an older version of cURL, use `http:/<API version>/` instead,
-> for example, `http:/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/start`
-{: .important}
+> for example, `http:/v{ site.latest_engine_api_version}}/containers/1c6594faf5/start`
+{ .important}
 
 </div>
 </div><!-- end tab-content -->
@@ -180,7 +180,7 @@ func main() {
 
 	imageName := "bfirsh/reticulate-splines"
 
-	out, err := cli.ImagePull(ctx, imageName, types.ImagePullOptions{})
+	out, err := cli.ImagePull(ctx, imageName, types.ImagePullOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -194,7 +194,7 @@ func main() {
 		panic(err)
 	}
 
-	if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{}); err != nil {
+	if err := cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{); err != nil {
 		panic(err)
 	}
 
@@ -219,11 +219,11 @@ print(container.id)
 
 ```console
 $ curl --unix-socket /var/run/docker.sock -H "Content-Type: application/json" \
-  -d '{"Image": "bfirsh/reticulate-splines"}' \
-  -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/create
-{"Id":"1c6594faf5","Warnings":null}
+  -d '{Image": "bfirsh/reticulate-splines"}' \
+  -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/create
+{Id":"1c6594faf5","Warnings":null}
 
-$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/1c6594faf5/start
+$ curl --unix-socket /var/run/docker.sock -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/1c6594faf5/start
 ```
 
 </div>
@@ -262,7 +262,7 @@ func main() {
 		panic(err)
 	}
 
-	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{})
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -289,7 +289,7 @@ for container in client.containers.list():
 <div id="tab-listcontainers-curl" class="tab-pane fade" markdown="1">
 
 ```console
-$ curl --unix-socket /var/run/docker.sock http://localhost/v{{ site.latest_engine_api_version}}/containers/json
+$ curl --unix-socket /var/run/docker.sock http://localhost/v{ site.latest_engine_api_version}}/containers/json
 [{
   "Id":"ae63e8b89a26f01f6b4b2c9a7817c31a1b6196acf560f66586fbc8809ffcd772",
   "Names":["/tender_wing"],
@@ -338,7 +338,7 @@ func main() {
 		panic(err)
 	}
 
-	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{})
+	containers, err := cli.ContainerList(ctx, types.ContainerListOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -369,7 +369,7 @@ for container in client.containers.list():
 <div id="tab-stopcontainers-curl" class="tab-pane fade" markdown="1">
 
 ```console
-$ curl --unix-socket /var/run/docker.sock http://localhost/v{{ site.latest_engine_api_version}}/containers/json
+$ curl --unix-socket /var/run/docker.sock http://localhost/v{ site.latest_engine_api_version}}/containers/json
 [{
   "Id":"ae63e8b89a26f01f6b4b2c9a7817c31a1b6196acf560f66586fbc8809ffcd772",
   "Names":["/tender_wing"],
@@ -378,7 +378,7 @@ $ curl --unix-socket /var/run/docker.sock http://localhost/v{{ site.latest_engin
 }]
 
 $ curl --unix-socket /var/run/docker.sock \
-  -X POST http://localhost/v{{ site.latest_engine_api_version}}/containers/ae63e8b89a26/stop
+  -X POST http://localhost/v{ site.latest_engine_api_version}}/containers/ae63e8b89a26/stop
 ```
 
 </div>
@@ -419,7 +419,7 @@ func main() {
 		panic(err)
 	}
 
-	options := types.ContainerLogsOptions{ShowStdout: true}
+	options := types.ContainerLogsOptions{howStdout: true}
 	// Replace this ID with a container that really exists
 	out, err := cli.ContainerLogs(ctx, "f1064a8a4c82", options)
 	if err != nil {
@@ -446,7 +446,7 @@ print(container.logs())
 <div id="tab-containerlogs-curl" class="tab-pane fade" markdown="1">
 
 ```console
-$ curl --unix-socket /var/run/docker.sock "http://localhost/v{{ site.latest_engine_api_version}}/containers/ca5f55cdb/logs?stdout=1"
+$ curl --unix-socket /var/run/docker.sock "http://localhost/v{ site.latest_engine_api_version}}/containers/ca5f55cdb/logs?stdout=1"
 Reticulating spline 1...
 Reticulating spline 2...
 Reticulating spline 3...
@@ -489,7 +489,7 @@ func main() {
 		panic(err)
 	}
 
-	images, err := cli.ImageList(ctx, types.ImageListOptions{})
+	images, err := cli.ImageList(ctx, types.ImageListOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -516,7 +516,7 @@ for image in client.images.list():
 <div id="tab-listimages-curl" class="tab-pane fade" markdown="1">
 
 ```console
-$ curl --unix-socket /var/run/docker.sock http://localhost/v{{ site.latest_engine_api_version}}/images/json
+$ curl --unix-socket /var/run/docker.sock http://localhost/v{ site.latest_engine_api_version}}/images/json
 [{
   "Id":"sha256:31d9a31e1dd803470c5a151b8919ef1988ac3efd44281ac59d43ad623f275dcd",
   "ParentId":"sha256:ee4603260daafe1a8c2f3b78fd760922918ab2441cbb2853ed5c439e59c52f96",
@@ -560,7 +560,7 @@ func main() {
 		panic(err)
 	}
 
-	out, err := cli.ImagePull(ctx, "alpine", types.ImagePullOptions{})
+	out, err := cli.ImagePull(ctx, "alpine", types.ImagePullOptions{)
 	if err != nil {
 		panic(err)
 	}
@@ -587,10 +587,10 @@ print(image.id)
 
 ```console
 $ curl --unix-socket /var/run/docker.sock \
-  -X POST "http://localhost/v{{ site.latest_engine_api_version}}/images/create?fromImage=alpine"
-{"status":"Pulling from library/alpine","id":"3.1"}
-{"status":"Pulling fs layer","progressDetail":{},"id":"8f13703509f7"}
-{"status":"Downloading","progressDetail":{"current":32768,"total":2244027},"progress":"[\u003e                                                  ] 32.77 kB/2.244 MB","id":"8f13703509f7"}
+  -X POST "http://localhost/v{ site.latest_engine_api_version}}/images/create?fromImage=alpine"
+{status":"Pulling from library/alpine","id":"3.1"}
+{status":"Pulling fs layer","progressDetail":{,"id":"8f13703509f7"}
+{status":"Downloading","progressDetail":{current":32768,"total":2244027},"progress":"[\u003e                                                  ] 32.77 kB/2.244 MB","id":"8f13703509f7"}
 ...
 ```
 
@@ -646,7 +646,7 @@ func main() {
 	}
 	authStr := base64.URLEncoding.EncodeToString(encodedJSON)
 
-	out, err := cli.ImagePull(ctx, "alpine", types.ImagePullOptions{RegistryAuth: authStr})
+	out, err := cli.ImagePull(ctx, "alpine", types.ImagePullOptions{egistryAuth: authStr})
 	if err != nil {
 		panic(err)
 	}
@@ -663,7 +663,7 @@ func main() {
 The Python SDK retrieves authentication information from the [credentials
 store](/engine/reference/commandline/login/#credentials-store) file and
 integrates with [credential
-helpers](https://github.com/docker/docker-credential-helpers){: target="_blank"
+helpers](https://github.com/docker/docker-credential-helpers){ target="_blank"
 class="_" }. It is possible to override these credentials, but that is out of
 scope for this Getting Started guide. After using `docker login`, the Python SDK
 uses these credentials automatically.
@@ -684,16 +684,16 @@ this a naive implementation. The credentials are passed as a Base-64-encoded
 JSON structure.
 
 ```console
-$ JSON=$(echo '{"username": "string", "password": "string", "serveraddress": "string"}' | base64)
+$ JSON=$(echo '{username": "string", "password": "string", "serveraddress": "string"}' | base64)
 
 $ curl --unix-socket /var/run/docker.sock \
   -H "Content-Type: application/tar"
-  -X POST "http://localhost/v{{ site.latest_engine_api_version}}/images/create?fromImage=alpine"
+  -X POST "http://localhost/v{ site.latest_engine_api_version}}/images/create?fromImage=alpine"
   -H "X-Registry-Auth"
   -d "$JSON"
-{"status":"Pulling from library/alpine","id":"3.1"}
-{"status":"Pulling fs layer","progressDetail":{},"id":"8f13703509f7"}
-{"status":"Downloading","progressDetail":{"current":32768,"total":2244027},"progress":"[\u003e                                                  ] 32.77 kB/2.244 MB","id":"8f13703509f7"}
+{status":"Pulling from library/alpine","id":"3.1"}
+{status":"Pulling fs layer","progressDetail":{,"id":"8f13703509f7"}
+{status":"Downloading","progressDetail":{current":32768,"total":2244027},"progress":"[\u003e                                                  ] 32.77 kB/2.244 MB","id":"8f13703509f7"}
 ...
 ```
 
@@ -735,13 +735,13 @@ func main() {
 
 	createResp, err := cli.ContainerCreate(ctx, &container.Config{
 		Image: "alpine",
-		Cmd:   []string{"touch", "/helloworld"},
+		Cmd:   []string{touch", "/helloworld"},
 	}, nil, nil, nil, "")
 	if err != nil {
 		panic(err)
 	}
 
-	if err := cli.ContainerStart(ctx, createResp.ID, types.ContainerStartOptions{}); err != nil {
+	if err := cli.ContainerStart(ctx, createResp.ID, types.ContainerStartOptions{); err != nil {
 		panic(err)
 	}
 
@@ -754,7 +754,7 @@ func main() {
 	case <-statusCh:
 	}
 
-	commitResp, err := cli.ContainerCommit(ctx, createResp.ID, types.ContainerCommitOptions{Reference: "helloworld"})
+	commitResp, err := cli.ContainerCommit(ctx, createResp.ID, types.ContainerCommitOptions{eference: "helloworld"})
 	if err != nil {
 		panic(err)
 	}
@@ -783,8 +783,8 @@ print(image.id)
 $ docker run -d alpine touch /helloworld
 0888269a9d584f0fa8fc96b3c0d8d57969ceea3a64acf47cd34eebb4744dbc52
 $ curl --unix-socket /var/run/docker.sock\
-  -X POST "http://localhost/v{{ site.latest_engine_api_version}}/commit?container=0888269a9d&repo=helloworld"
-{"Id":"sha256:6c86a5cd4b87f2771648ce619e319f3e508394b5bfc2cdbd2d60f59d52acda6c"}
+  -X POST "http://localhost/v{ site.latest_engine_api_version}}/commit?container=0888269a9d&repo=helloworld"
+{Id":"sha256:6c86a5cd4b87f2771648ce619e319f3e508394b5bfc2cdbd2d60f59d52acda6c"}
 ```
 
 </div>

@@ -37,10 +37,10 @@ detailed instructions on converting an existing user account to an org, see
 
 To create an organization:
 
-1. Sign into [Docker Hub](https://hub.docker.com/){: target="_blank"
+1. Sign into [Docker Hub](https://hub.docker.com/){ target="_blank"
 rel="noopener" class="_"} using your [Docker ID](../docker-id/index.md) or your email address.
 2. Select **Organizations**. Click **Create Organization** to create a new organization.
-3. Choose a plan for your organization. See [Docker Pricing](https://www.docker.com/pricing/){: target="_blank" rel="noopener"
+3. Choose a plan for your organization. See [Docker Pricing](https://www.docker.com/pricing/){ target="_blank" rel="noopener"
 class="_" id="dkr_docs_subscription_btl"} for details on the features offered
 in the Team and Business plan.
 4. Enter a name for your organization. This is the official, unique name for
@@ -85,7 +85,7 @@ To view an organization:
 2. Click **Organizations** in the top navigation bar, then choose your
    organization from the list.
 
-      ![View organization details](images/view-org.png){:width="700px"}
+      ![View organization details](images/view-org.png){width="700px"}
 
 The Organization landing page displays various options that allow you to
 configure your organization.
@@ -169,7 +169,7 @@ To give a team access to a repository
 4. Choose a permission from the **Permissions** drop-down list and click
    **Add**.
 
-    ![Team Repo Permissions](images/team-repo-permission.png){:width="700px"}
+    ![Team Repo Permissions](images/team-repo-permission.png){width="700px"}
 
 ### View a team's permissions for all repositories
 
@@ -183,7 +183,7 @@ To view a team's permissions across all repositories:
 You can also check out the following videos for information about creating Teams
 and Organizations in Docker Hub.
 
-- [Overview of organizations](https://www.youtube-nocookie.com/embed/G7lvSnAqed8){: target="_blank" rel="noopener" class="_"}
-- [Create an organization](https://www.youtube-nocookie.com/embed/b0TKcIqa9Po){: target="_blank" rel="noopener" class="_"}
-- [Working with Teams](https://www.youtube-nocookie.com/embed/MROKmtmWCVI){: target="_blank" rel="noopener" class="_"}
-- [Create Teams](https://www.youtube-nocookie.com/embed/78wbbBoasIc){: target="_blank" rel="noopener" class="_"}
+- [Overview of organizations](https://www.youtube-nocookie.com/embed/G7lvSnAqed8){ target="_blank" rel="noopener" class="_"}
+- [Create an organization](https://www.youtube-nocookie.com/embed/b0TKcIqa9Po){ target="_blank" rel="noopener" class="_"}
+- [Working with Teams](https://www.youtube-nocookie.com/embed/MROKmtmWCVI){ target="_blank" rel="noopener" class="_"}
+- [Create Teams](https://www.youtube-nocookie.com/embed/78wbbBoasIc){ target="_blank" rel="noopener" class="_"}

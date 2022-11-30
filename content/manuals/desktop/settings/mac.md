@@ -13,7 +13,7 @@ This page provides information on how to configure and manage your Docker Deskto
 
 To navigate to **Preferences** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Preferences**
+- Select the Docker menu ![whale menu](../images/whale-x.svg){ .inline} and then **Preferences**
 - Select the **Preferences** icon from the Docker Dashboard.
 
 ## General
@@ -155,13 +155,13 @@ You can configure Docker Desktop networking to work on a virtual private network
 The **Docker Engine** tab allows you to configure the Docker daemon to determine how your containers run.
 
 Type a JSON configuration file in the box to configure the daemon settings. For a full list of options, see the Docker Engine
-[dockerd commandline reference](/engine/reference/commandline/dockerd/){:target="_blank" rel="noopener" class="_"}.
+[dockerd commandline reference](/engine/reference/commandline/dockerd/){target="_blank" rel="noopener" class="_"}.
 
 Click **Apply & Restart** to save your settings and restart Docker Desktop.
 
 ## Experimental Features
 
-{% include experimental.md %}
+{ include experimental.md %}
 
 ### Enable the new Apple Virtualization framework
 
@@ -169,7 +169,7 @@ Select **Use the new Virtualization framework** to allow Docker Desktop to use t
 
 ### Enable VirtioFS
 
- Docker Desktop for Mac lets developers use a new experimental file-sharing implementation called [virtiofS](https://virtio-fs.gitlab.io/){: target='_blank' rel='noopener' class='_'}; the current default is gRPC-FUSE. virtiofs has been found to significantly improve file sharing performance on macOS. For more details, see our blog post [Speed boost achievement unlocked on Docker Desktop 4.6 for Mac](https://www.docker.com/blog/speed-boost-achievement-unlocked-on-docker-desktop-4-6-for-mac/){:target="_blank" rel="noopener" class="_"}.
+ Docker Desktop for Mac lets developers use a new experimental file-sharing implementation called [virtiofS](https://virtio-fs.gitlab.io/){ target='_blank' rel='noopener' class='_'}; the current default is gRPC-FUSE. virtiofs has been found to significantly improve file sharing performance on macOS. For more details, see our blog post [Speed boost achievement unlocked on Docker Desktop 4.6 for Mac](https://www.docker.com/blog/speed-boost-achievement-unlocked-on-docker-desktop-4-6-for-mac/){target="_blank" rel="noopener" class="_"}.
 
 To enable virtioFS:
 
@@ -194,7 +194,7 @@ using Docker commands.
 Select **Reset Kubernetes cluster** to delete all stacks and Kubernetes resources.
 
 For more information about using the Kubernetes integration with Docker Desktop,
-see [Deploy on Kubernetes](../kubernetes.md){:target="_blank" rel="noopener" class="_"}.
+see [Deploy on Kubernetes](../kubernetes.md){target="_blank" rel="noopener" class="_"}.
 
 ## Software Updates
 

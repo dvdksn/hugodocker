@@ -177,7 +177,7 @@ $ sudo apt-get install -y docker-ce-rootless-extras
 </div>
 <div id="install-without-packages" class="tab-pane fade in" markdown="1">
 If you do not have permission to run package managers like `apt-get` and `dnf`,
-consider using the installation script available at [https://get.docker.com/rootless](https://get.docker.com/rootless){: target="_blank" rel="noopener" class="_" }.
+consider using the installation script available at [https://get.docker.com/rootless](https://get.docker.com/rootless){ target="_blank" rel="noopener" class="_" }.
 Since static packages are not available for `s390x`, hence it is not supported for `s390x`.
 
 ```console
@@ -500,7 +500,7 @@ This error occurs mostly when `~/.local/share/docker` is located on NFS.
 
 A workaround is to specify non-NFS `data-root` directory in `~/.config/docker/daemon.json` as follows:
 ```json
-{"data-root":"/somewhere-out-of-nfs"}
+{data-root":"/somewhere-out-of-nfs"}
 ```
 
 ### `docker run` errors
@@ -515,8 +515,8 @@ inactive
 
 $ docker run hello-world
 docker: Error response from daemon: OCI runtime create failed: container_linux.go:380: starting container process caused: process_linux.go:385: applying cgroup configuration for process caused: error while starting unit "docker
--931c15729b5a968ce803784d04c7421f791d87e5ca1891f34387bb9f694c488e.scope" with properties [{Name:Description Value:"libcontainer container 931c15729b5a968ce803784d04c7421f791d87e5ca1891f34387bb9f694c488e"} {Name:Slice Value:"use
-r.slice"} {Name:PIDs Value:@au [4529]} {Name:Delegate Value:true} {Name:MemoryAccounting Value:true} {Name:CPUAccounting Value:true} {Name:IOAccounting Value:true} {Name:TasksAccounting Value:true} {Name:DefaultDependencies Val
+-931c15729b5a968ce803784d04c7421f791d87e5ca1891f34387bb9f694c488e.scope" with properties [{ame:Description Value:"libcontainer container 931c15729b5a968ce803784d04c7421f791d87e5ca1891f34387bb9f694c488e"} {ame:Slice Value:"use
+r.slice"} {ame:PIDs Value:@au [4529]} {ame:Delegate Value:true} {ame:MemoryAccounting Value:true} {ame:CPUAccounting Value:true} {ame:IOAccounting Value:true} {ame:TasksAccounting Value:true} {ame:DefaultDependencies Val
 ue:false}]: read unix @->/run/systemd/private: read: connection reset by peer: unknown.
 ```
 

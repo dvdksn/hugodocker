@@ -3,11 +3,8 @@ title: Overview of Docker Build
 linkTitle: Docker Build
 description: Introduction and overview of Docker Build
 keywords: build, buildx, buildkit
-menu:
-  header:
-    parent: Manuals
-    weight: 300
-redirect_from:
+weight: 10
+aliases:
 - /build/buildx/
 - /buildx/working-with-buildx/
 ---
@@ -26,7 +23,7 @@ sends the request to Docker Engine which, in turn, executes your build.
 
 There are now two components in Engine that can be used to build an image.
 Starting with the [18.09 release](../engine/release-notes/18.09.md#18090), Engine is
-shipped with Moby [BuildKit](https://github.com/moby/buildkit){:target="_blank" rel="noopener" class="_"},
+shipped with Moby [BuildKit](https://github.com/moby/buildkit){target="_blank" rel="noopener" class="_"},
 the new component for executing your builds by default.
 
 BuildKit is the backend evolution from the Legacy Builder, it comes with new
@@ -34,7 +31,7 @@ and much improved functionality that can be powerful tools for improving your
 builds' performance or reusability of your Dockerfiles, and it also introduces
 support for complex scenarios.
 
-The new client [Docker Buildx](https://github.com/docker/buildx){:target="_blank" rel="noopener" class="_"},
+The new client [Docker Buildx](https://github.com/docker/buildx){target="_blank" rel="noopener" class="_"},
 is a CLI plugin that extends the docker command with the full support of the
 features provided by BuildKit builder toolkit. `docker buildx build` provides
 the same user experience as `docker build` with many new features like creating

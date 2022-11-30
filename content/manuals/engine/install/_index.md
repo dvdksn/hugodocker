@@ -34,7 +34,7 @@ redirect_from:
 > Windows as you do on Linux. We are excited to share that Docker Desktop for
 > Linux is now GA. For more information, see
 [Docker Desktop for Linux](../../desktop/install/linux-install.md).
-{: .important}
+{ .important}
 
 ## Supported platforms
 
@@ -45,13 +45,13 @@ your preferred operating system below.
 
 ### Desktop
 
-{% assign yes = '![yes](/assets/images/green-check.svg){: .inline style="height: 14px; margin: 0 auto"}' %}
+{ assign yes = '![yes](/assets/images/green-check.svg){ .inline style="height: 14px; margin: 0 auto"}' %}
 
 | Platform                                                          | x86_64 / amd64                                   | arm64 (Apple Silicon)                            |
 |:------------------------------------------------------------------|:------------------------------------------------:|:------------------------------------------------:|
-| [Docker Desktop for Linux](../../desktop/install/linux-install.md)        | [{{ yes }}](../../desktop/install/linux-install.md)      |                                                  |
-| [Docker Desktop for Mac (macOS)](../../desktop/install/mac-install.md)    | [{{ yes }}](../../desktop/install/mac-install.md)        | [{{ yes }}](../../desktop/install/mac-install.md)        |
-| [Docker Desktop for Windows](../../desktop/install/windows-install.md)    | [{{ yes }}](../../desktop/install/windows-install.md)    |                                                  |
+| [Docker Desktop for Linux](../../desktop/install/linux-install.md)        | [{ yes }}](../../desktop/install/linux-install.md)      |                                                  |
+| [Docker Desktop for Mac (macOS)](../../desktop/install/mac-install.md)    | [{ yes }}](../../desktop/install/mac-install.md)        | [{ yes }}](../../desktop/install/mac-install.md)        |
+| [Docker Desktop for Windows](../../desktop/install/windows-install.md)    | [{ yes }}](../../desktop/install/windows-install.md)    |                                                  |
 
 ### Server
 
@@ -60,14 +60,14 @@ and architectures:
 
 | Platform                | x86_64 / amd64         | arm64 / aarch64        | arm (32-bit)           | s390x                  |
 |:------------------------|:-----------------------|:-----------------------|:-----------------------|:-----------------------|
-| [CentOS](centos.md)     | [{{ yes }}](centos.md) | [{{ yes }}](centos.md) |                        |                        |
-| [Debian](debian.md)     | [{{ yes }}](debian.md) | [{{ yes }}](debian.md) | [{{ yes }}](debian.md) |                        |
-| [Fedora](fedora.md)     | [{{ yes }}](fedora.md) | [{{ yes }}](fedora.md) |                        |                        |
-| [Raspbian](debian.md)   |                        |                        | [{{ yes }}](debian.md) |                        |
-| [RHEL](rhel.md)         |                        |                        |                        | [{{ yes }}](rhel.md)   |
-| [SLES](sles.md)         |                        |                        |                        | [{{ yes }}](sles.md)   |
-| [Ubuntu](ubuntu.md)     | [{{ yes }}](ubuntu.md) | [{{ yes }}](ubuntu.md) | [{{ yes }}](ubuntu.md) | [{{ yes }}](ubuntu.md) |
-| [Binaries](binaries.md) | [{{yes}}](binaries.md) | [{{yes}}](binaries.md) | [{{yes}}](binaries.md) |                        |
+| [CentOS](centos.md)     | [{ yes }}](centos.md) | [{ yes }}](centos.md) |                        |                        |
+| [Debian](debian.md)     | [{ yes }}](debian.md) | [{ yes }}](debian.md) | [{ yes }}](debian.md) |                        |
+| [Fedora](fedora.md)     | [{ yes }}](fedora.md) | [{ yes }}](fedora.md) |                        |                        |
+| [Raspbian](debian.md)   |                        |                        | [{ yes }}](debian.md) |                        |
+| [RHEL](rhel.md)         |                        |                        |                        | [{ yes }}](rhel.md)   |
+| [SLES](sles.md)         |                        |                        |                        | [{ yes }}](sles.md)   |
+| [Ubuntu](ubuntu.md)     | [{ yes }}](ubuntu.md) | [{ yes }}](ubuntu.md) | [{ yes }}](ubuntu.md) | [{ yes }}](ubuntu.md) |
+| [Binaries](binaries.md) | [{yes}}](binaries.md) | [{yes}}](binaries.md) | [{yes}}](binaries.md) |                        |
 
 ### Other Linux distributions
 

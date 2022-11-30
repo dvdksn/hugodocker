@@ -1,14 +1,14 @@
-{{ $isExternal := strings.HasPrefix .Destination "http" }}
-<a
-  href="{{ .Destination | safeURL }}"
-  {{ with .Title }}
-    title="{{ . }}"
-  {{ end }}
-  {{ if $isExternal }}
-    target="_blank" rel="noopener"
-  {{ end }}
-  >{{ .Text | safeHTML }}
-  {{- if $isExternal -}}
-  <span class="link-symbol material-symbols-rounded">open_in_new</span>
-  {{- end -}}</a
->
+{{ if (strings.HasPrefix .Destination "http") }}
+  <a
+    class="link"
+    href="{{ .Destination | safeURL }}"
+    target="_blank"
+    rel="noopener"
+    >{{ .Text | safeHTML }}<span
+      class="ml-1 align-top text-[1em] material-symbols-rounded"
+      >open_in_new</span
+    ></a
+  >
+{{ else }}
+  <a href="{{ ref .Page .Destination }}">{{ .Text | safeHTML }}</a>
+{{ end }}

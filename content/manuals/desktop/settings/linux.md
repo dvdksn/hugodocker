@@ -8,7 +8,7 @@ This page provides information on how to configure and manage your Docker Deskto
 
 To navigate to **Settings** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Settings**
+- Select the Docker menu ![whale menu](../images/whale-x.svg){ .inline} and then **Settings**
 - Select the **Settings** icon from the Docker Dashboard.
 
 ## General
@@ -124,13 +124,13 @@ Docker Desktop uses a private IPv4 network for internal services such as a DNS s
 The **Docker Engine** tab allows you to configure the Docker daemon to determine how your containers run.
 
 Type a JSON configuration file in the box to configure the daemon settings. For a full list of options, see the Docker Engine
-[dockerd commandline reference](/engine/reference/commandline/dockerd/){:target="_blank" rel="noopener" class="_"}.
+[dockerd commandline reference](/engine/reference/commandline/dockerd/){target="_blank" rel="noopener" class="_"}.
 
 Click **Apply & Restart** to save your settings and restart Docker Desktop.
 
 ## Experimental Features
 
-{% include experimental.md %}
+{ include experimental.md %}
 
 From the **Experimental features** tab, you can sign up to the [Developer Preview program](https://www.docker.com/community/get-involved/developer-preview/).
 
@@ -147,7 +147,7 @@ using Docker commands.
 Select **Reset Kubernetes cluster** to delete all stacks and Kubernetes resources.
 
 For more information about using the Kubernetes integration with Docker Desktop,
-see [Deploy on Kubernetes](../kubernetes.md){:target="_blank" rel="noopener" class="_"}.
+see [Deploy on Kubernetes](../kubernetes.md){target="_blank" rel="noopener" class="_"}.
 
 ## Software Updates
 

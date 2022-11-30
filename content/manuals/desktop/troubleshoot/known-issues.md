@@ -73,5 +73,5 @@ title: Known issues for Docker Desktop on Mac
   outside of bind mounts, and use third-party tools like Unison or `rsync` to
   synchronize between container directories and bind-mounted directories. We are
   actively working on performance improvements using a number of different
-  techniques.  To learn more, see the [topic on our roadmap](https://github.com/docker/roadmap/issues/7){: target="_blank" rel="noopener" class="_" }.
+  techniques.  To learn more, see the [topic on our roadmap](https://github.com/docker/roadmap/issues/7){ target="_blank" rel="noopener" class="_" }.
 

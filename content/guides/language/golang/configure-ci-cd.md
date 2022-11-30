@@ -6,9 +6,9 @@ redirect_from:
 - /get-started/golang/configure-ci-cd/
 ---
 
-{% include_relative nav.html selected="5" %}
+{ include_relative nav.html selected="5" %}
 
-This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){:target="_blank" rel="noopener" class="_"} on CI/CD best practices.
+This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){target="_blank" rel="noopener" class="_"} on CI/CD best practices.
 
 This guide contains instructions on how to:
 
@@ -23,7 +23,7 @@ This guide contains instructions on how to:
 
 ## Choose a sample project
 
-Let’s get started. This guide uses a simple Go project as an example. In fact, it is the same project we got acquainted with in [Build Images](build-images.md) part of this guide. The [olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping){:target="_blank" rel="noopener" class="_"} repository contains the full source code and the `Dockerfile`. You can either fork it or to follow along and set up one of your own Go projects in a fashion described in this section.
+Let’s get started. This guide uses a simple Go project as an example. In fact, it is the same project we got acquainted with in [Build Images](build-images.md) part of this guide. The [olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping){target="_blank" rel="noopener" class="_"} repository contains the full source code and the `Dockerfile`. You can either fork it or to follow along and set up one of your own Go projects in a fashion described in this section.
 
 Thus, as long as you have a GitHub repo with a project and a `Dockerfile`, you can complete this part of the tutorial.
 
@@ -49,7 +49,7 @@ To set up the access to Docker Hub API:
 
 Your GitHub repository **Secrets** section would look like the following.
 
-![GitHub Secrets](../../ci-cd/images/github-secrets.png){:width="500px"}
+![GitHub Secrets](../../ci-cd/images/github-secrets.png){width="500px"}
 
 Now it will be possible to refer to these two variables from our workflows. This will open up an opportunity to publish our image to Docker Hub.
 
@@ -64,22 +64,22 @@ To set up the workflow:
 
 First, we will name this workflow:
 
-{% raw %}
+{ raw %}
 ```yaml
 name: Run CI
 ```
-{% endraw %}
+{ endraw %}
 
 Then, we will choose when we run this workflow. In our example, we are going to do it for every push against the main branch of our project:
 
-{% raw %}
+{ raw %}
 ```yaml
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
 ```
-{% endraw %}
+{ endraw %}
 
 The `workflow_dispatch` is optional. It enables to run this workflow manually from the Actions tab.
 
@@ -87,13 +87,13 @@ Now, we need to specify what we actually want to happen within our workflow. A w
 
 The first job we would like to set up is the one to build and run our tests. Let it be run on the latest Ubuntu instance:
 
-{% raw %}
+{ raw %}
 ```yaml
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 ```
-{% endraw %}
+{ endraw %}
 
 A job is a sequence of _steps_. For this simple CI pipeline we would like to:
 
@@ -108,7 +108,7 @@ Building the binary in step 4 is actually optional. It is a "smoke test". We don
 
 The following sequence of `steps` achieves the goals we just set.
 
-{% raw %}
+{ raw %}
 ```yaml
     steps:
       - name: Install Go
@@ -129,12 +129,12 @@ The following sequence of `steps` achieves the goals we just set.
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: ${{ github.event.repository.name }}:latest, ${{ github.repository }}:latest
+          tags: ${ github.event.repository.name }}:latest, ${ github.repository }}:latest
 
       - name: Run functional tests
         run:  go test -v ./...
 ```
-{% endraw %}
+{ endraw %}
 
 As is usual with YAML files, be aware of indentation. The complete workflow file for reference is available in the project's repo, under the name of `.github/workflows/ci.yml`.
 
@@ -142,7 +142,7 @@ This should be enough to test our approach to CI. Change the workflow file name 
 
 Select **Actions** from the navigation bar for your repository. Since we've enabled `workflow_dispatch` option in our Action, GitHub will have started it already. If not, select "CI/CD to Docker Hub" action on the left, and then press **Run workflow** button on the right to start the workflow.
 
-![GitHub Secrets](images/runworkflow.png){:width="500px"}
+![GitHub Secrets](images/runworkflow.png){width="500px"}
 
 Should the run fail, you can click on the failing entry to see the logs and amend the workflow YAML file accordingly.
 
@@ -157,7 +157,7 @@ In this example, let us set the push flag to `true` as we also want to push. We�
 
 Now, we can add the steps required. Start a blank new workflow, just as we did before. Let's give it a file name of `release.yml` and amend the template body to match the following.
 
-{% raw %}
+{ raw %}
 ```yaml
 name: Release to Docker Hub
 
@@ -173,8 +173,8 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${ secrets.DOCKER_HUB_USERNAME }}
+          password: ${ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Install Go
         uses: actions/setup-go@v2
@@ -195,12 +195,12 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}:latest
+          tags: ${ secrets.DOCKER_HUB_USERNAME }}/${ github.event.repository.name }}:latest
 
       - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
+        run: echo ${ steps.docker_build.outputs.digest }}
 ```
-{% endraw %}
+{ endraw %}
 
 This workflow is similar to the CI workflow, with the following changes:
 
@@ -225,11 +225,11 @@ To https://github.com/olliefr/docker-gs-ping.git
 
 This means our tag was successfully pushed to the main repo. If we switch to the GitHub UI, we would see that the workflow has already been triggered:
 
-![GitHub Secrets](images/triggerontag.png){:width="500px"}
+![GitHub Secrets](images/triggerontag.png){width="500px"}
 
 Plot twist! Despite having explained how to add secrets to the repository, we had forgotten to do it ourselves. And the workflow run results in error:
 
-![GitHub Secrets](images/loginerror.png){:width="500px"}
+![GitHub Secrets](images/loginerror.png){width="500px"}
 
 That's easy to fix. We follow our own guide and add the secrets to the repository settings. But how do we re-run the workflow? We need to remove the tag and reapply it.
 
@@ -257,7 +257,7 @@ To https://github.com/olliefr/docker-gs-ping.git
 
 And the workflow is triggered again. This time it completes without issues:
 
-![GitHub Secrets](images/cdsuccess.png){:width="500px"}
+![GitHub Secrets](images/cdsuccess.png){width="500px"}
 
 Since the image we've just pushed to Docker Hub is public, now it can be pulled by anyone, from anywhere:
 
@@ -292,7 +292,7 @@ Next, let’s look at how we can optimize the GitHub Actions workflow through bu
 
 Let us set up a Builder with a build cache. First, we need to set up the builder, and then to configure the cache. In this example, let us add the path and keys to store this under using GitHub cache for this.
 
-{% raw %}
+{ raw %}
 ```yaml
       - name: Set up Docker Buildx
         id:   buildx
@@ -302,31 +302,31 @@ Let us set up a Builder with a build cache. First, we need to set up the builder
         uses: actions/cache@v2
         with:
           path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          key: ${ runner.os }}-buildx-${ github.sha }}
           restore-keys: |
-            ${{ runner.os }}-buildx-
+            ${ runner.os }}-buildx-
 ```
-{% endraw %}
+{ endraw %}
 
 And lastly, after adding the builder and build cache snippets to the top of the Actions file, we need to add some extra attributes to the build and push step. This involves:
 
 * Setting up the builder to use the output of the buildx step, and then
 * Using the cache we set up earlier for it to store to and to retrieve
 
-{% raw %}
+{ raw %}
 ```yaml
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          builder: ${{ steps.buildx.outputs.name }}
+          builder: ${ steps.buildx.outputs.name }}
           push: false
           load: true
-          tags: ${{ github.event.repository.name }}:latest, ${{ github.repository }}:latest
+          tags: ${ github.event.repository.name }}:latest, ${ github.repository }}:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 ```
-{% endraw %}
+{ endraw %}
 
 Now, run the CI workflow again and verify that it uses the build cache by checking the workflow log.
 
@@ -342,8 +342,8 @@ You can also consider deploying your application to a public Cloud provider, suc
 
 In the next module, we’ll look into some options for doing so:
 
-[Deploy your app](deploy.md){: .button .outline-btn}
+[Deploy your app](deploy.md){ .button .outline-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

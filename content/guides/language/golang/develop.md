@@ -6,7 +6,7 @@ redirect_from:
 - /get-started/golang/develop/
 ---
 
-{% include_relative nav.html selected="3" %}
+{ include_relative nav.html selected="3" %}
 
 ## Prerequisites
 
@@ -131,7 +131,7 @@ $ docker exec -it roach ./cockroach sql --insecure
 
 An example of interaction with the SQL shell is presented below.
 
-{% raw %}
+{ raw %}
 ```console
 $ sudo docker exec -it roach ./cockroach sql --insecure
 #
@@ -162,7 +162,7 @@ Time: 14.217559ms
 root@:26257/defaultdb> quit
 oliver@hki:~$
 ```
-{% endraw %}
+{ endraw %}
 
 ### Meet the example application
 
@@ -182,7 +182,7 @@ $ git clone https://github.com/olliefr/docker-gs-ping-roach.git
 
 The application's `main.go` now includes database initialization code, as well as the code to implement a new business requirement:
 
-* An HTTP `POST` request to `/send` containing a `{ "value" : string }` JSON must save the value to the database.
+* An HTTP `POST` request to `/send` containing a `{"value" : string }` JSON must save the value to the database.
 
 We also have an update for another business requirement. The requirement _was_:
 
@@ -196,7 +196,7 @@ And _now_ it's going to be:
 
 The full source code listing of `main.go` follows.
 
-{% raw %}
+{ raw %}
 ```go
 package main
 
@@ -232,7 +232,7 @@ func main() {
 	})
 
 	e.GET("/ping", func(c echo.Context) error {
-		return c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
+		return c.JSON(http.StatusOK, struct{Status string }{tatus: "OK"})
 	})
 
 	e.POST("/send", func(c echo.Context) error {
@@ -293,7 +293,7 @@ func rootHandler(db *sql.DB, c echo.Context) error {
 
 func sendHandler(db *sql.DB, c echo.Context) error {
 
-	m := &Message{}
+	m := &Message{
 
 	if err := c.Bind(m); err != nil {
 		return c.JSON(http.StatusInternalServerError, err)
@@ -337,7 +337,7 @@ func countRecords(db *sql.DB) (int, error) {
 	return count, nil
 }
 ```
-{% endraw %}
+{ endraw %}
 
 The repository also includes the `Dockerfile`, which is almost exactly the same as the multi-stage `Dockerfile` introduced in the previous modules. It uses the official Docker Go image to build the application and then builds the final image by placing the compiled binary into the much slimmer, "distroless" image.
 
@@ -409,13 +409,13 @@ In the previous section, we have already tested querying our application with `G
 $ curl --request POST \
   --url http://localhost/send \
   --header 'content-type: application/json' \
-  --data '{"value": "Hello, Docker!"}'
+  --data '{value": "Hello, Docker!"}'
 ```
 
 The application responds with the contents of the message, which means it had been saved in the database:
 
 ```json
-{"value":"Hello, Docker!"}
+{value":"Hello, Docker!"}
 ```
 
 Let's send another message:
@@ -424,13 +424,13 @@ Let's send another message:
 $ curl --request POST \
   --url http://localhost/send \
   --header 'content-type: application/json' \
-  --data '{"value": "Hello, Oliver!"}'
+  --data '{value": "Hello, Oliver!"}'
 ```
 
 And again, we get the value of the message back:
 
 ```json
-{"value":"Hello, Oliver!"}
+{value":"Hello, Oliver!"}
 ```
 
 Let's see what the message counter says:
@@ -527,7 +527,7 @@ In this section, we’ll create a Docker Compose file to start our `docker-gs-pi
 
 In our application's directory, create a new text file named `docker-compose.yml` with the following content.
 
-{% raw %}
+{ raw %}
 ```yaml
 version: '3.8'
 
@@ -544,11 +544,11 @@ services:
     ports:
       - 80:8080
     environment:
-      - PGUSER=${PGUSER:-totoro}
-      - PGPASSWORD=${PGPASSWORD:?database password not set}
-      - PGHOST=${PGHOST:-db}
-      - PGPORT=${PGPORT:-26257}
-      - PGDATABASE=${PGDATABASE:-mydb}
+      - PGUSER=${GUSER:-totoro}
+      - PGPASSWORD=${GPASSWORD:?database password not set}
+      - PGHOST=${GHOST:-db}
+      - PGPORT=${GPORT:-26257}
+      - PGDATABASE=${GDATABASE:-mydb}
     deploy:
       restart_policy:
         condition: on-failure
@@ -572,7 +572,7 @@ networks:
   mynet:
     driver: bridge
 ```
-{% endraw %}
+{ endraw %}
 
 This Docker Compose configuration is super convenient as we do not have to type all the parameters to pass to the `docker run` command. We can declaratively do that in the Docker Compose file. The [Docker Compose documentation pages](../../compose/index.md) are quite extensive and include a full reference for the Docker Compose file format.
 
@@ -601,8 +601,8 @@ We are not going to cover any of these advanced use cases here.
 
 One of the really cool features of Docker Compose is [variable substitution](../../compose/compose-file/compose-file-v3.md#variable-substitution). You can see some examples in our Compose file, `environment` section. By means of an example:
 
-* `PGUSER=${PGUSER:-totoro}` means that inside the container, the environment variable `PGUSER` shall be set to the same value as it has on the host machine where Docker Compose is run. If there is no environment variable with this name on the host machine, the variable inside the container gets the default value of `totoro`.
-* `PGPASSWORD=${PGPASSWORD:?database password not set}` means that if the environment variable `PGPASSWORD` is not set on the host, Docker Compose will display an error. This is OK, because we don't want to hard-code default values for the password. We set the password value in the `.env` file, which is local to our machine. It is always a good idea to add `.env` to `.gitignore` to prevent the secrets being checked into the version control.
+* `PGUSER=${GUSER:-totoro}` means that inside the container, the environment variable `PGUSER` shall be set to the same value as it has on the host machine where Docker Compose is run. If there is no environment variable with this name on the host machine, the variable inside the container gets the default value of `totoro`.
+* `PGPASSWORD=${GPASSWORD:?database password not set}` means that if the environment variable `PGPASSWORD` is not set on the host, Docker Compose will display an error. This is OK, because we don't want to hard-code default values for the password. We set the password value in the `.env` file, which is local to our machine. It is always a good idea to add `.env` to `.gitignore` to prevent the secrets being checked into the version control.
 
 Other ways of dealing with undefined or empty values exist, as documented in the [variable substitution](../../compose/compose-file/compose-file-v3.md#variable-substitution) section of the Docker documentation.
 
@@ -740,8 +740,8 @@ In this module, we set up a containerised development environment with our appli
 
 In the next module, we’ll take a look at one possible approach to running functional tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .outline-btn}
+[Run your tests](run-tests.md){ .button .outline-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

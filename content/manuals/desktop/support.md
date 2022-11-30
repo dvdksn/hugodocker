@@ -6,7 +6,7 @@ title: Get support
 
 Find information on how to get support, and the scope of Docker Desktop support.
 
-{% include upgrade-cta.html
+{ include upgrade-cta.html
   body="Docker Desktop offers support for developers subscribed to a Pro, Team, or a Business tier. Upgrade now to benefit from Docker Support."
   header-text="This feature requires a paid Docker subscription"
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_desktop_support"
@@ -14,7 +14,7 @@ Find information on how to get support, and the scope of Docker Desktop support.
 
 ### How do I get Docker Desktop support?
 
-If you have a paid Docker subscription, raise a ticket through [Docker Desktop support](https://hub.docker.com/support/desktop/){:target="_blank" rel="noopener" class="_"}.
+If you have a paid Docker subscription, raise a ticket through [Docker Desktop support](https://hub.docker.com/support/desktop/){target="_blank" rel="noopener" class="_"}.
 
 Docker Community users can get support through our Github repos for-win, for-mac, for-linux, where we respond on a best-effort basis.
 
@@ -85,4 +85,4 @@ employees who are directly involved in diagnosing Docker Desktop issues.
 
 By default, Docker, Inc. will delete uploaded diagnostics bundles after 30 days. You may also request the removal of a diagnostics bundle by either specifying the diagnostics ID or via your GitHub ID (if the diagnostics ID is mentioned in a GitHub issue). Docker, Inc. will only use the data in the diagnostics bundle to investigate specific user issues but may derive high-level (non personal) metrics such as the rate of issues from it.
 
-For more information, see [Docker Data Processing Agreement](https://www.docker.com/legal/data-processing-agreement){: target="_blank" rel="noopener" class="_"}.
+For more information, see [Docker Data Processing Agreement](https://www.docker.com/legal/data-processing-agreement){ target="_blank" rel="noopener" class="_"}.

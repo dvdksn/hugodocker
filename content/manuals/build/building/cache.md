@@ -34,7 +34,7 @@ Each instruction in this Dockerfile translates (roughly) to a layer in your
 final image. You can think of image layers as a stack, with each layer adding
 more content on top of the layers that came before it:
 
-![Image layer diagram showing the above commands chained together one after the other](../images/cache-stack.svg){:.invertible}
+![Image layer diagram showing the above commands chained together one after the other](../images/cache-stack.svg){.invertible}
 
 Whenever a layer changes, that layer will need to be re-built. For example,
 suppose you make a change to your program in the `main.c` file. After this
@@ -42,13 +42,13 @@ change, the `COPY` command will have to run again in order for those changes to
 appear in the image. In other words, Docker will invalidate the cache for this
 layer.
 
-![Image layer diagram, but now with the link between COPY and WORKDIR marked as invalid](../images/cache-stack-invalidate-copy.svg){:.invertible}
+![Image layer diagram, but now with the link between COPY and WORKDIR marked as invalid](../images/cache-stack-invalidate-copy.svg){.invertible}
 
 If a layer changes, all other layers that come after it are also affected. When
 the layer with the `COPY` command gets invalidated, all layers that follow will
 need to run again, too:
 
-![Image layer diagram, but now with all links after COPY marked as invalid](../images/cache-stack-invalidate-rest.svg){:.invertible}
+![Image layer diagram, but now with all links after COPY marked as invalid](../images/cache-stack-invalidate-rest.svg){.invertible}
 
 And that's the Docker build cache in a nutshell. Once a layer changes, then all
 downstream layers need to be rebuilt as well. Even if they wouldn't build
@@ -270,7 +270,7 @@ RUN echo "the first command" && \
 ```
 
 Another shell feature that allows you to simplify and concatenate commands in a
-neat way are [`heredocs`](https://en.wikipedia.org/wiki/Here_document){:
+neat way are [`heredocs`](https://en.wikipedia.org/wiki/Here_document){
 target="blank" rel="noopener" class="\_"}. It enables you to create multi-line
 scripts with good readability:
 

@@ -14,7 +14,7 @@ You can also switch between your developer environments or your team members' en
 >
 > The Dev Environments feature is currently in [Beta](../../release-lifecycle.md#beta). We recommend that you do not use this in production environments.
 
-![Dev environment intro](../images/dev-env.PNG){:width="700px"}
+![Dev environment intro](../images/dev-env.PNG){width="700px"}
 
 ## Prerequisites
 
@@ -24,9 +24,9 @@ Dev Environments is available as part of Docker Desktop 3.5.0 release. Download 
 
 To get started with Dev Environments, you must also install the following tools and extension on your machine:
 
-- [Git](https://git-scm.com){:target="_blank" rel="noopener" class="_"}
-- [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener" class="_"}
-- [Visual Studio Code Remote Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers){:target="_blank" rel="noopener" class="_"}
+- [Git](https://git-scm.com){target="_blank" rel="noopener" class="_"}
+- [Visual Studio Code](https://code.visualstudio.com/){target="_blank" rel="noopener" class="_"}
+- [Visual Studio Code Remote Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers){target="_blank" rel="noopener" class="_"}
 
 ### Add Git to your PATH on Windows
 
@@ -36,7 +36,7 @@ If you have already installed Git, and it's not detected properly, run the follo
 
 If it doesn't detect Git as a valid command, you must reinstall Git and ensure you choose the option  **Git from the command line...** or the **Use Git and optional Unix tools...**  on the **Adjusting your PATH environment**  step.
 
-![Windows add Git to path](../images/dev-env-gitbash.png){:width="300px"}
+![Windows add Git to path](../images/dev-env-gitbash.png){width="300px"}
 
 > **Note**
 >

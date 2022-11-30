@@ -1,9 +1,7 @@
 ---
 title: Reference documentation
 linkTitle: Reference
-menu:
-  header:
-    weight: 400
+weight: 3
 description: This section includes the reference documentation for the Docker platform’s various APIs, CLIs, and file formats.
 notoc: true
 ---

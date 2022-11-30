@@ -1,19 +1,15 @@
-{{ define "main" }}
-  {{ partial "sidenav.html" . }}
-  <article class="main--center document">
-    {{ partial "breadcrumbs.html" . }}
+{{ define "left" }}
+  {{ partial "sidebar.html" . }}
+{{ end }}
+
+{{ define "center" }}
+  {{ partial "breadcrumbs.html" . }}
+  <article class="prose max-w-none dark:prose-invert px-5">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <nav>
-      <div>In this section:</div>
-      <ul>
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .Permalink }}">{{ partial "utils/title.html" . }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </nav>
   </article>
-  {{ partial "pageinfo.html" . }}
+{{ end }}
+
+{{ define "right" }}
+  {{ partial "aside.html" . }}
 {{ end }}

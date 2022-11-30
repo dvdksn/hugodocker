@@ -9,10 +9,10 @@ toc_max: 4
 toc_min: 1
 ---
 
-The Compose file is a [YAML](https://yaml.org){: target="_blank" rel="noopener" class="_"} file defining services,
+The Compose file is a [YAML](https://yaml.org){ target="_blank" rel="noopener" class="_"} file defining services,
 networks, and volumes for a Docker application. The latest and recommended
 version of the Compose file format is defined by the [Compose
-Specification](https://github.com/compose-spec/compose-spec/blob/master/spec.md){:
+Specification](https://github.com/compose-spec/compose-spec/blob/master/spec.md){
 target="_blank" rel="noopener" class="_"}. The Compose spec merges the legacy
 2.x and 3.x versions, aggregating properties across these formats and is implemented by **Compose 1.27.0+**.
 
@@ -20,16 +20,16 @@ target="_blank" rel="noopener" class="_"}. The Compose spec merges the legacy
 
 This document specifies the Compose file format used to define multi-containers applications. Distribution of this document is unlimited.
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119){: target="_blank" rel="noopener" class="_"}.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119){ target="_blank" rel="noopener" class="_"}.
 
 ### Requirements and optional attributes
 
-The Compose specification includes properties designed to target a local [OCI](https://opencontainers.org/){: target="_blank" rel="noopener" class="_"} container runtime,
+The Compose specification includes properties designed to target a local [OCI](https://opencontainers.org/){ target="_blank" rel="noopener" class="_"} container runtime,
 exposing Linux kernel specific configuration options, but also some Windows container specific properties, as well as cloud platform features related to resource placement on a cluster, replicated application distribution and scalability.
 
 We acknowledge that no Compose implementation is expected to support **all** attributes, and that support for some properties
 is Platform dependent and can only be confirmed at runtime. The definition of a versioned schema to control the supported
-properties in a Compose file, established by the [docker-compose](https://github.com/docker/compose){: target="_blank" rel="noopener" class="_"} tool where the Compose
+properties in a Compose file, established by the [docker-compose](https://github.com/docker/compose){ target="_blank" rel="noopener" class="_"} tool where the Compose
 file format was designed, doesn't offer any guarantee to the end-user attributes will be actually implemented.
 
 The specification defines the expected configuration syntax and behavior, but - until noted - supporting any of those is OPTIONAL.
@@ -136,8 +136,8 @@ secrets:
 
 networks:
   # The presence of these objects is sufficient to define them
-  front-tier: {}
-  back-tier: {}
+  front-tier: {
+  back-tier: {
 ```
 
 This example illustrates the distinction between volumes, configs and secrets. While all of them are all exposed
@@ -252,7 +252,7 @@ services:
     image: busybox
     environment:
       - COMPOSE_PROJECT_NAME
-    command: echo "I'm running ${COMPOSE_PROJECT_NAME}"
+    command: echo "I'm running ${OMPOSE_PROJECT_NAME}"
 ```
 
 ## Services top-level element
@@ -664,7 +664,7 @@ Compose implementations MUST guarantee dependency services marked with
 
 `device_cgroup_rules` defines a list of device cgroup rules for this container.
 The format is the same format the Linux kernel specifies in the [Control Groups
-Device Whitelist Controller](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/devices.html){: target="_blank" rel="noopener" class="_"}.
+Device Whitelist Controller](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/devices.html){ target="_blank" rel="noopener" class="_"}.
 
 ```yml
 device_cgroup_rules:
@@ -1172,7 +1172,7 @@ which MUST be implemented as described if supported:
 
 - `shareable` which gives the container own private IPC namespace, with a
   possibility to share it with other containers.
-- `service:{name}` which makes the container join another (`shareable`)
+- `service:{ame}` which makes the container join another (`shareable`)
    container's IPC namespace.
 
 ```yml
@@ -1294,7 +1294,7 @@ specification define specific values which MUST be implemented as described if s
 
 - `none` which disable all container networking
 - `host` which gives the container raw access to host's network interface
-- `service:{name}` which gives the containers access to the specified service only
+- `service:{ame}` which gives the containers access to the specified service only
 
 ```yml
     network_mode: "host"
@@ -1507,7 +1507,7 @@ Either specify both ports (`HOST:CONTAINER`), or just the container port. In the
 Compose implementation SHOULD automatically allocate any unassigned host port.
 
 `HOST:CONTAINER` SHOULD always be specified as a (quoted) string, to avoid conflicts
-with [yaml base-60 float](https://yaml.org/type/float.html){: target="_blank" rel="noopener" class="_"}.
+with [yaml base-60 float](https://yaml.org/type/float.html){ target="_blank" rel="noopener" class="_"}.
 
 Samples:
 
@@ -1602,7 +1602,7 @@ If `pull_policy` and `build` both presents, Compose implementations SHOULD build
 `runtime` specifies which runtime to use for the service’s containers.
 
 The value of `runtime` is specific to implementation.
-For example, `runtime` can be the name of [an implementation of OCI Runtime Spec](https://github.com/opencontainers/runtime-spec/blob/master/implementations.md){: target="_blank" rel="noopener" class="_"}, such as "runc".
+For example, `runtime` can be the name of [an implementation of OCI Runtime Spec](https://github.com/opencontainers/runtime-spec/blob/master/implementations.md){ target="_blank" rel="noopener" class="_"}, such as "runc".
 
 ```yml
 web:
@@ -1951,7 +1951,7 @@ access to that network using its alias.
 services:
   web:
     networks:
-      hostnet: {}
+      hostnet: {
 
 networks:
   hostnet:
@@ -1964,7 +1964,7 @@ services:
   web:
     ...
     networks:
-      nonet: {}
+      nonet: {
 
 networks:
   nonet:
@@ -2104,7 +2104,7 @@ should retrieve, typically by using a parameter so the Compose file doesn't need
 networks:
   network1:
     external: true
-    name: "${NETWORK_ID}"
+    name: "${ETWORK_ID}"
 ```
 
 ## Volumes top-level element
@@ -2166,7 +2166,7 @@ If `external` is set to `true` , then the resource is not managed by Compose. If
 
 
 In the example below, instead of attempting to create a volume called
-`{project_name}_db-data`, Compose looks for an existing volume simply
+`{roject_name}_db-data`, Compose looks for an existing volume simply
 called `db-data` and mounts it into the `backend` service's containers.
 
 ```yml
@@ -2232,7 +2232,7 @@ hard-coded but the actual volume ID on platform is set at runtime during deploym
 volumes:
   db-data:
     external:
-      name: ${DATABASE_VOLUME}
+      name: ${ATABASE_VOLUME}
 ```
 
 ## Configs top-level element
@@ -2286,7 +2286,7 @@ variables, but exposed to containers as hard-coded ID `http_config`.
 configs:
   http_config:
     external: true
-    name: "${HTTP_CONFIG_KEY}"
+    name: "${TTP_CONFIG_KEY}"
 ```
 
 If `external` is set to `true` , then the resource is not managed by Compose. If `external` is set to `true` and the network configuration has other attributes set besides `name`, then Compose Implementations SHOULD reject the Compose file as invalid.
@@ -2343,7 +2343,7 @@ variables, but exposed to containers as hard-coded ID `server-certificate`.
 secrets:
   server-certificate:
     external: true
-    name: "${CERTIFICATE_KEY}"
+    name: "${ERTIFICATE_KEY}"
 ```
 
 If `external` is set to `true` , then the resource is not managed by Compose. If `external` is set to `true` and the network configuration has other attributes set besides `name`, then Compose Implementations SHOULD reject the Compose file as invalid.
@@ -2404,7 +2404,7 @@ services:
 The contents of such fields are unspecified by Compose specification, and can be used to enable custom features. Compose implementation to encounter an unknown extension field MUST NOT fail, but COULD warn about unknown field.
 
 For platform extensions, it is highly recommended to prefix extension by platform/vendor name, the same way browsers add
-support for [custom CSS features](https://www.w3.org/TR/2011/REC-CSS2-20110607/syndata.html#vendor-keywords){: target="_blank" rel="noopener" class="_"}.
+support for [custom CSS features](https://www.w3.org/TR/2011/REC-CSS2-20110607/syndata.html#vendor-keywords){ target="_blank" rel="noopener" class="_"}.
 
 ```yml
 service:
@@ -2447,7 +2447,7 @@ services:
 
 ### specifying byte values
 
-Value express a byte value as a string in `{amount}{byte unit}` format:
+Value express a byte value as a string in `{mount}{yte unit}` format:
 The supported units are `b` (bytes), `k` or `kb` (kilo bytes), `m` or `mb` (mega bytes) and `g` or `gb` (giga bytes).
 
 ```
@@ -2460,7 +2460,7 @@ The supported units are `b` (bytes), `k` or `kb` (kilo bytes), `m` or `mb` (mega
 
 ### specifying durations
 
-Value express a duration as a string in the in the form of `{value}{unit}`.
+Value express a duration as a string in the in the form of `{alue}{nit}`.
 The supported units are `us` (microseconds), `ms` (milliseconds), `s` (seconds), `m` (minutes) and `h` (hours).
 Value can can combine multiple values and using without separator.
 
@@ -2474,30 +2474,30 @@ Value can can combine multiple values and using without separator.
 ## Interpolation
 
 Values in a Compose file can be set by variables, and interpolated at runtime. Compose files use a Bash-like
-syntax `${VARIABLE}`
+syntax `${ARIABLE}`
 
-Both `$VARIABLE` and `${VARIABLE}` syntax are supported. Default values can be defined inline using typical shell syntax:
+Both `$VARIABLE` and `${ARIABLE}` syntax are supported. Default values can be defined inline using typical shell syntax:
 latest
 
-- `${VARIABLE:-default}` evaluates to `default` if `VARIABLE` is unset or
+- `${ARIABLE:-default}` evaluates to `default` if `VARIABLE` is unset or
   empty in the environment.
-- `${VARIABLE-default}` evaluates to `default` only if `VARIABLE` is unset
+- `${ARIABLE-default}` evaluates to `default` only if `VARIABLE` is unset
   in the environment.
 
 Similarly, the following syntax allows you to specify mandatory variables:
 
-- `${VARIABLE:?err}` exits with an error message containing `err` if
+- `${ARIABLE:?err}` exits with an error message containing `err` if
   `VARIABLE` is unset or empty in the environment.
-- `${VARIABLE?err}` exits with an error message containing `err` if
+- `${ARIABLE?err}` exits with an error message containing `err` if
   `VARIABLE` is unset in the environment.
 
 Interpolation can also be nested:
 
-- `${VARIABLE:-${FOO}}`
-- `${VARIABLE?$FOO}`
-- `${VARIABLE:-${FOO:-default}}`
+- `${ARIABLE:-${OO}}`
+- `${ARIABLE?$FOO}`
+- `${ARIABLE:-${OO:-default}}`
 
-Other extended shell-style features, such as `${VARIABLE/foo/bar}`, are not
+Other extended shell-style features, such as `${ARIABLE/foo/bar}`, are not
 supported by the Compose specification.
 
 You can use a `$$` (double-dollar sign) when your configuration needs a literal

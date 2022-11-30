@@ -66,7 +66,7 @@ $ docker context inspect default
                 "SkipTLSVerify": false
             }
         },
-        "TLSMaterial": {},
+        "TLSMaterial": {,
         "Storage": {
             "MetadataPath": "\u003cIN MEMORY\u003e",
             "TLSPath": "\u003cIN MEMORY\u003e"
@@ -197,7 +197,7 @@ Check the contents of the export file.
 
 ```console
 $ cat docker-test.dockercontext
-meta.json0000644000000000000000000000022300000000000011023 0ustar0000000000000000{"Name":"docker-test","Metadata":{"StackOrchestrator":"swarm"},"Endpoints":{"docker":{"Host":"unix:///var/run/docker.sock","SkipTLSVerify":false}}}tls0000700000000000000000000000000000000000000007716 5ustar0000000000000000
+meta.json0000644000000000000000000000022300000000000011023 0ustar0000000000000000{Name":"docker-test","Metadata":{StackOrchestrator":"swarm"},"Endpoints":{docker":{Host":"unix:///var/run/docker.sock","SkipTLSVerify":false}}}tls0000700000000000000000000000000000000000000007716 5ustar0000000000000000
 ```
 
 This file can be imported on another host using `docker context import`. The target host must have the Docker client installed.
@@ -244,7 +244,7 @@ contexts:
   name: context
 current-context: context
 kind: Config
-preferences: {}
+preferences: {
 users:
 - name: authInfo
   user:
@@ -252,8 +252,8 @@ users:
       config:
         cmd-args: config config-helper --format=json
         cmd-path: /snap/google-cloud-sdk/77/bin/gcloud
-        expiry-key: '{.credential.token_expiry}'
-        token-key: '{.credential.access_token}'
+        expiry-key: '{credential.token_expiry}'
+        token-key: '{credential.access_token}'
       name: gcp
 ```
 

@@ -25,7 +25,7 @@ Welcome to Docker Desktop for Windows. This page contains information about Dock
 
 > Download Docker Desktop for Windows
 >
-> [Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe){: .button .primary-btn }
+> [Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe){ .button .primary-btn }
 
 _For checksums, see [Release notes](../release-notes.md)_
 
@@ -45,17 +45,17 @@ Your Windows machine must meet the following requirements to successfully instal
 - Windows 11 64-bit: Home or Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
 - Windows 10 64-bit: Home or Pro 21H1 (build 19043) or higher, or Enterprise or Education 20H2 (build 19042) or higher.
 - Enable the WSL 2 feature on Windows. For detailed instructions, refer to the
-  [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10){: target="_blank" rel="noopener" class="_"}.
+  [Microsoft documentation](https://docs.microsoft.com/en-us/windows/wsl/install-win10){ target="_blank" rel="noopener" class="_"}.
 - The following hardware prerequisites are required to successfully run
   WSL 2 on Windows 10 or Windows 11:
 
-  - 64-bit processor with [Second Level Address Translation (SLAT)](https://en.wikipedia.org/wiki/Second_Level_Address_Translation){: target="_blank" rel="noopener" class="_"}
+  - 64-bit processor with [Second Level Address Translation (SLAT)](https://en.wikipedia.org/wiki/Second_Level_Address_Translation){ target="_blank" rel="noopener" class="_"}
   - 4GB system RAM
   - BIOS-level hardware virtualization support must be enabled in the
     BIOS settings. For more information, see
     [Virtualization](../troubleshoot/topics.md#virtualization).
 
-- Download and install the [Linux kernel update package](https://docs.microsoft.com/windows/wsl/wsl2-kernel){: target="_blank" rel="noopener" class="_"}.
+- Download and install the [Linux kernel update package](https://docs.microsoft.com/windows/wsl/wsl2-kernel){ target="_blank" rel="noopener" class="_"}.
 
 </div>
 <div id="win-hyper-v" class="tab-pane fade" markdown="1">
@@ -65,13 +65,13 @@ Your Windows machine must meet the following requirements to successfully instal
 - Windows 11 64-bit: Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
 - Windows 10 64-bit: Pro 21H1 (build 19043) or higher, or Enterprise or Education 20H2 (build 19042) or higher.
 
-  For Windows 10 and Windows 11 Home, see the system requirements in the [WSL 2 backend](#wsl-2-backend){: data-toggle="tab" data-target="#win-wsl2" } tab.
+  For Windows 10 and Windows 11 Home, see the system requirements in the [WSL 2 backend](#wsl-2-backend){ data-toggle="tab" data-target="#win-wsl2" } tab.
 
 - Hyper-V and Containers Windows features must be enabled.
 - The following hardware prerequisites are required to successfully run Client
   Hyper-V on Windows 10:
 
-  - 64 bit processor with [Second Level Address Translation (SLAT)](https://en.wikipedia.org/wiki/Second_Level_Address_Translation){: target="_blank" rel="noopener" class="_"}
+  - 64 bit processor with [Second Level Address Translation (SLAT)](https://en.wikipedia.org/wiki/Second_Level_Address_Translation){ target="_blank" rel="noopener" class="_"}
   - 4GB system RAM
   - BIOS-level hardware virtualization support must be enabled in the
     BIOS settings. For more information, see
@@ -82,7 +82,7 @@ Your Windows machine must meet the following requirements to successfully instal
 
 > **Note**
 >
-> Docker only supports Docker Desktop on Windows for those versions of Windows 10 that are still within [Microsoft’s servicing timeline](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet){:target="_blank" rel="noopener" class="_"}.
+> Docker only supports Docker Desktop on Windows for those versions of Windows 10 that are still within [Microsoft’s servicing timeline](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet){target="_blank" rel="noopener" class="_"}.
 
 Containers and images created with Docker Desktop are shared between all
 user accounts on machines where it is installed. This is because all Windows
@@ -154,7 +154,7 @@ start /w "" "Docker Desktop Installer.exe" install
 The install command accepts the following flags:
 
 - `--quiet`: suppresses information output when running the installer
-- `--accept-license`: accepts the [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement){: target="_blank" rel="noopener" class="_"} now, rather than requiring it to be accepted when the application is first run
+- `--accept-license`: accepts the [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement){ target="_blank" rel="noopener" class="_"} now, rather than requiring it to be accepted when the application is first run
 - `--no-windows-containers`: disables Windows containers integration
 - `--allowed-org=<org name>`: requires the user to sign in and be part of the specified Docker Hub organization when running the application
 - `--backend=<backend name>`: selects the default backend to use for Docker Desktop, `hyper-v`, `windows` or `wsl-2` (default)
@@ -171,25 +171,25 @@ Docker Desktop does not start automatically after installation. To start Docker 
 
 1. Search for Docker, and select **Docker Desktop** in the search results.
 
-   ![search for Docker app](images/docker-app-search.png){:width="300px"}
+   ![search for Docker app](images/docker-app-search.png){width="300px"}
 
-2. The Docker menu (![whale menu](images/whale-x.svg){: .inline}) displays the Docker Subscription Service Agreement window.
+2. The Docker menu (![whale menu](images/whale-x.svg){ .inline}) displays the Docker Subscription Service Agreement window.
 
-   {% include desktop-license-update.md %}
+   { include desktop-license-update.md %}
 
 3. Select **Accept** to continue. Docker Desktop starts after you accept the terms.
 
    > **Important**
    >
    > If you do not agree to the terms, the Docker Desktop application will close and you can no longer run Docker Desktop on your machine. You can choose to accept the terms at a later date by opening Docker Desktop.
-   {: .important}
+   { .important}
 
-   For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement/). We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq){: target="\_blank" rel="noopener" class="*" id="dkr_docs_desktop_install_btl"}.
+   For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement/). We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq){ target="\_blank" rel="noopener" class="*" id="dkr_docs_desktop_install_btl"}.
 
 
 ## Updates
 
-{% include desktop-update.md %}
+{ include desktop-update.md %}
 
 ## Uninstall Docker Desktop
 

@@ -9,14 +9,19 @@ redirect_from:
 - /mackit/multi-arch/
 ---
 
+{{< tabs group=test >}}
+{{< tab name=JavaScript >}}
 Docker images can support multiple platforms, which means that a single image
 may contain variants for different architectures, and sometimes for different
 operating systems, such as Windows.
-
+{{< /tab  >}}
+{{< tab name=Go >}}
 When running an image with multi-platform support, `docker` automatically
 selects the image that matches your OS and architecture.
+{{< /tab >}}
+{{< /tabs >}}
 
-Most of the Docker Official Images on Docker Hub provide a [variety of architectures](https://github.com/docker-library/official-images#architectures-other-than-amd64){: target="_blank" rel="noopener" class="_" }.
+Most of the Docker Official Images on Docker Hub provide a [variety of architectures](https://github.com/docker-library/official-images#architectures-other-than-amd64){ target="_blank" rel="noopener" class="_" }.
 For example, the `busybox` image supports `amd64`, `arm32v5`, `arm32v6`,
 `arm32v7`, `arm64v8`, `i386`, `ppc64le`, and `s390x`. When running this image
 on an `x86_64` / `amd64` machine, the `amd64` variant is pulled and run.
@@ -65,7 +70,7 @@ binfmt-support >= 2.1.7. You can check for proper registration by checking if
 `F` is among the flags in `/proc/sys/fs/binfmt_misc/qemu-*`. While Docker
 Desktop comes preconfigured with `binfmt_misc` support for additional platforms,
 for other installations it likely needs to be installed using
-[`tonistiigi/binfmt`](https://github.com/tonistiigi/binfmt){:target="_blank" rel="noopener" class="_"}
+[`tonistiigi/binfmt`](https://github.com/tonistiigi/binfmt){target="_blank" rel="noopener" class="_"}
 image.
 
 ```console
@@ -271,6 +276,6 @@ multi-architecture support, which means you can run containers for different
 Linux architectures such as `arm`, `mips`, `ppc64le`, and even `s390x`.
 
 This does not require any special configuration in the container itself as it
-uses [qemu-static](https://wiki.qemu.org/Main_Page){: target="_blank" rel="noopener" class="_" }
+uses [qemu-static](https://wiki.qemu.org/Main_Page){ target="_blank" rel="noopener" class="_" }
 from the **Docker for Mac VM**. Because of this, you can run an ARM container,
 like the `arm32v7` or `ppc64le` variants of the busybox image.

@@ -89,7 +89,7 @@ it only connects to servers with a certificate signed by that CA.
 >
 > Using TLS and managing a CA is an advanced topic. Please familiarize yourself
 > with OpenSSL, x509, and TLS before using it in production.
-{:.important}
+{.important}
 
 ### Create a CA, server and client keys with OpenSSL
 
@@ -271,7 +271,7 @@ $ docker --tlsverify \
 > That means anyone with the keys can give any instructions to your Docker
 > daemon, giving them root access to the machine hosting the daemon. Guard
 > these keys as you would a root password!
-{:.warning}
+{.warning}
 
 ### Secure by default
 
@@ -282,7 +282,7 @@ the files to the `.docker` directory in your home directory --- and set the
 
 ```console
 $ mkdir -pv ~/.docker
-$ cp -v {ca,cert,key}.pem ~/.docker
+$ cp -v {a,cert,key}.pem ~/.docker
 
 $ export DOCKER_HOST=tcp://$HOST:2376 DOCKER_TLS_VERIFY=1
 ```
@@ -311,7 +311,7 @@ Docker in various other modes by mixing the flags.
    certificate and authenticate server based on given CA
 
 If found, the client sends its client certificate, so you just need
-to drop your keys into `~/.docker/{ca,cert,key}.pem`. Alternatively,
+to drop your keys into `~/.docker/{a,cert,key}.pem`. Alternatively,
 if you want to store your keys in another location, you can specify that
 location using the environment variable `DOCKER_CERT_PATH`.
 

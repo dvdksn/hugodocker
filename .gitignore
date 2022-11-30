@@ -1,5 +1,6 @@
 **/.DS_Store
 **/desktop.ini
+assets/css/dev.css
 .hugo_build.lock
 .vscode
 resources

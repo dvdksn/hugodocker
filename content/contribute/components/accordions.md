@@ -117,7 +117,7 @@ culpa qui officia deserunt mollit anim id est laborum.</p>
 
 This implementation makes use of the `.panel-heading` classes in
 `_utilities.scss.md`,
-along with [FontAwesome icons](http://fontawesome.io/cheatsheet/){: target="_blank" rel="noopener" class="_" }
+along with [FontAwesome icons](http://fontawesome.io/cheatsheet/){ target="_blank" rel="noopener" class="_" }
 
 > Note
 >
@@ -132,4 +132,4 @@ sample content. This works nicely for standard text. If you have a code sample,
 the padding renders as white space around the code block grey background.
 
 The `style="cursor: pointer"` tag enables the expand/collapse functionality to
-work on mobile. (You can use the [Xcode iPhone simulator](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW4){: target="_blank" rel="noopener" class="_" } to test on mobile.)
+work on mobile. (You can use the [Xcode iPhone simulator](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW4){ target="_blank" rel="noopener" class="_" } to test on mobile.)

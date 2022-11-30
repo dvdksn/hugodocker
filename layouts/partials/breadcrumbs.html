@@ -1,16 +1,12 @@
-<nav class="breadcrumbs">
-  <ol>
-  {{ template "crumbtrail" (dict "p1" . "p2" .)}}
-  </ol>
+<nav class="p-5 space-x-2 text-sm">
+  {{- template "crumbtrail" (dict "p1" . "p2" .) -}}
 </nav>
 
 {{ define "crumbtrail" }}
-{{ if .p1.Parent }}
-{{ template "crumbtrail" (dict "p1" .p1.Parent "p2" .p2 )  }}
-{{ else if not .p1.IsHome }}
-{{ template "crumbtrail" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-{{ end }}
-<li{{ if eq .p1 .p2 }} class="active" aria-current="page" {{ end }}><a title="{{ partial "utils/title" .p1 }}" href="{{ .p1.Permalink }}">{{ partial "utils/title" .p1 }}</a>
-  {{- if ne .p1 .p2 -}}<span class="material-symbols-rounded" style="vertical-align: middle">navigate_next</span>{{- end -}}
-</li>
-{{ end }}
+  {{ if and .p1.Parent .p2.Parent }}
+    {{ template "crumbtrail" (dict "p1" .p1.Parent "p2" .p2 ) }}
+  {{- end -}}
+  <a class="text-blue-light-500 dark:text-blue-dark-500" title="{{ partial "utils/title" .p1 }}" href="{{ .p1.Permalink }}"
+    >{{ partial "utils/title" .p1 }}</a
+  >{{- if ne .p1 .p2 }}<span>/</span>{{- end -}}
+{{- end -}}

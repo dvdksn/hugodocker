@@ -84,7 +84,7 @@ and how long it lasts. Usual meetups tend to last 2 hours, and start between
 
 ## Learn about the Docker Community
 
-Go to the **[Docker Community GitHub repository](https://github.com/docker/community/blob/master/README.md){:target="_blank" rel="noopener" class="_"}**
+Go to the **[Docker Community GitHub repository](https://github.com/docker/community/blob/master/README.md){target="_blank" rel="noopener" class="_"}**
 for resources and information on the community. Those pages are the most
 up-to-date for finding out about the community and making connections.
 
@@ -102,7 +102,7 @@ contribute mentoring if you have good knowledge of:
 * using Docker in some particular domain (for example, testing or deployment)
 * using Git, Go, GitHub, IRC, or other common tools
 
-Also, choose mentoring if you like to be happy. Studies show that [helping others](https://www.huffpost.com/entry/five-minute-favor-adam-rifkin_n_3805090){: target="_blank" rel="noopener" class="_"} is a great way to
+Also, choose mentoring if you like to be happy. Studies show that [helping others](https://www.huffpost.com/entry/five-minute-favor-adam-rifkin_n_3805090){ target="_blank" rel="noopener" class="_"} is a great way to
 boost your own well being.
 
 
@@ -110,11 +110,11 @@ boost your own well being.
 
 Docker users are people using Docker in their daily work. To help Docker users, visit:
 
-* the [Docker community Slack channel](https://dockr.ly/slack){: target="_blank" rel="noopener" class="_"}
-* the [Docker Community Forum](https://forums.docker.com/){: target="_blank" rel="noopener" class="_"}
-* [StackOverflow](https://stackoverflow.com/questions/tagged/docker){: target="_blank" rel="noopener" class="_"}
+* the [Docker community Slack channel](https://dockr.ly/slack){ target="_blank" rel="noopener" class="_"}
+* the [Docker Community Forum](https://forums.docker.com/){ target="_blank" rel="noopener" class="_"}
+* [StackOverflow](https://stackoverflow.com/questions/tagged/docker){ target="_blank" rel="noopener" class="_"}
 
-You can also check the lists of [open issues on the Docker docs]({{ site.repo }}/issues){: target="_blank" rel="noopener" class="_"} and [open issues on the Moby project](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Akind%2Fquestion+-label%3Astatus%2Fclaimed+-label%3Astatus%2Fassigned+no%3Aassignee){: target="_blank" rel="noopener" class="_"}.
+You can also check the lists of [open issues on the Docker docs]({ site.repo }}/issues){ target="_blank" rel="noopener" class="_"} and [open issues on the Moby project](https://github.com/moby/moby/issues?q=is%3Aopen+is%3Aissue+label%3Akind%2Fquestion+-label%3Astatus%2Fclaimed+-label%3Astatus%2Fassigned+no%3Aassignee){ target="_blank" rel="noopener" class="_"}.
 
 
 ### Docker contributors
@@ -122,8 +122,8 @@ You can also check the lists of [open issues on the Docker docs]({{ site.repo }}
 Docker contributors are people like you, interested in the open source projects
 and product documentation. Contributors may need help with IRC, Go programming,
 Markdown, or with other aspects of contributing. To help Docker contributors,
-join the [Docker community Slack channel](https://dockr.ly/slack){: target="_blank" rel="noopener" class="_"}.
+join the [Docker community Slack channel](https://dockr.ly/slack){ target="_blank" rel="noopener" class="_"}.
 
 ## Contribute to the Moby open source project
 
-{% include content/moby.md %}
+{ include content/moby.md %}

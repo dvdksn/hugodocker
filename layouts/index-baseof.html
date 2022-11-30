@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ partial "head.html" . }}
+  </head>
+  <body
+    class="text-base divide-y divide-divider-light dark:divide-divider-dark flex flex-col h-max bg-background-light dark:bg-background-dark dark:text-white"
+  >
+    <header
+      class="sticky top-0 z-10 h-16 px-4 flex bg-blue-light-500 dark:bg-blue-dark-300 text-white"
+    >
+      {{ partial "header.html" . }}
+    </header>
+    <main class="min-h-screen flex flex-col gap-16 items-center py-16">
+      <div class="space-y-5">
+        <h1 class="text-4xl">What can we help you find?</h1>
+        <div id="autocomplete"></div>
+      </div>
+      <div class="w-[1240px] px-20 lg:w-full">
+        {{ .Content }}
+      </div>
+    </main>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </body>
+</html>

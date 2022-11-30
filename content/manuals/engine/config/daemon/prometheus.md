@@ -286,5 +286,5 @@ level.
 
 ## Next steps
 
-- Read the [Prometheus documentation](https://prometheus.io/docs/introduction/overview/){: target="_blank" rel="noopener" class="_" }
-- Set up some [alerts](https://prometheus.io/docs/alerting/overview/){: target="_blank" rel="noopener" class="_" }
+- Read the [Prometheus documentation](https://prometheus.io/docs/introduction/overview/){ target="_blank" rel="noopener" class="_" }
+- Set up some [alerts](https://prometheus.io/docs/alerting/overview/){ target="_blank" rel="noopener" class="_" }

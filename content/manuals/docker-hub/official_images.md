@@ -6,13 +6,13 @@ redirect_from:
 - /docker-hub/official_repos/
 ---
 
-The [Docker Official Images](https://hub.docker.com/search?q=&type=image&image_filter=official){:target="_blank" rel="noopener" class="_"} are a
+The [Docker Official Images](https://hub.docker.com/search?q=&type=image&image_filter=official){target="_blank" rel="noopener" class="_"} are a
 curated set of Docker repositories hosted on Docker Hub. They are
 designed to:
 
 * Provide essential base OS repositories (for example,
-  [ubuntu](https://hub.docker.com/_/ubuntu/){:target="_blank" rel="noopener" class="_"},
-  [centos](https://hub.docker.com/_/centos/){:target="_blank" rel="noopener" class="_"}) that serve as the
+  [ubuntu](https://hub.docker.com/_/ubuntu/){target="_blank" rel="noopener" class="_"},
+  [centos](https://hub.docker.com/_/centos/){target="_blank" rel="noopener" class="_"}) that serve as the
   starting point for the majority of users.
 
 * Provide drop-in solutions for popular programming language runtimes, data
@@ -78,9 +78,9 @@ From a high level, an Official Image starts out as a proposal in the form
 of a set of GitHub pull requests. Detailed and objective proposal
 requirements are documented in the following GitHub repositories:
 
-* [docker-library/official-images](https://github.com/docker-library/official-images){:target="_blank" rel="noopener" class="_"}
+* [docker-library/official-images](https://github.com/docker-library/official-images){target="_blank" rel="noopener" class="_"}
 
-* [docker-library/docs](https://github.com/docker-library/docs){:target="_blank" rel="noopener" class="_"}
+* [docker-library/docs](https://github.com/docker-library/docs){target="_blank" rel="noopener" class="_"}
 
 The Docker Official Images team, with help from community contributors, formally
 review each proposal and provide feedback to the author. This initial review
@@ -88,7 +88,7 @@ process may require a bit of back-and-forth before the proposal is accepted.
 
 There are also subjective considerations during the review process. These
 subjective concerns boil down to the basic question: "is this image generally
-useful?" For example, the [python](https://hub.docker.com/_/python/){:target="_blank" rel="noopener" class="_"}
+useful?" For example, the [python](https://hub.docker.com/_/python/){target="_blank" rel="noopener" class="_"}
 Docker Official Image is "generally useful" to the larger Python developer
 community, whereas an obscure text adventure game written in Python last week is
 not.

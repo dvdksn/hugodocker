@@ -9,7 +9,7 @@ toc_max: 2
 Here you can learn about the latest changes, new features, bug fixes, and
 known issues for each Docker Hub release.
 
-Take a look at the [Docker Public Roadmap](https://github.com/docker/roadmap/projects/1){: target="_blank" rel="noopener" class="_"} to see what's coming next.
+Take a look at the [Docker Public Roadmap](https://github.com/docker/roadmap/projects/1){ target="_blank" rel="noopener" class="_"} to see what's coming next.
 
 
 ## 2022-09-21
@@ -62,7 +62,7 @@ You can now purchase or upgrade to a Docker Business subscription using a credit
 
 ### New
 
-Docker has [announced](https://www.docker.com/blog/updating-product-subscriptions/){: target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"} updates and extensions to the product subscriptions to increase productivity, collaboration, and added security for our developers and businesses. Docker subscription tiers now include Personal, Pro, Team, and Business.
+Docker has [announced](https://www.docker.com/blog/updating-product-subscriptions/){ target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"} updates and extensions to the product subscriptions to increase productivity, collaboration, and added security for our developers and businesses. Docker subscription tiers now include Personal, Pro, Team, and Business.
 
 The updated [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement) includes a change to the terms for **Docker Desktop**.
 
@@ -73,7 +73,7 @@ The updated [Docker Subscription Service Agreement](https://www.docker.com/legal
 - The existing Docker Free subscription has been renamed **Docker Personal**.
 - **No changes** to Docker Engine or any other upstream **open source** Docker or Moby project.
 
-    To understand how these changes affect you, read the [FAQs](https://www.docker.com/pricing/faq){: target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"}. For more information, see [Docker subscription overview](../subscription/index.md).
+    To understand how these changes affect you, read the [FAQs](https://www.docker.com/pricing/faq){ target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"}. For more information, see [Docker subscription overview](../subscription/index.md).
 
 ## 2021-05-05
 
@@ -155,7 +155,7 @@ to `hub.docker.com`. You can access the page at its new URL: [https://hub.docker
 
     > If you lose both your 2FA authentication device and recovery code, you may
     > not be able to recover your account.
-    {: .important }
+    { .important }
 
 ### Enhancements
 * As a security measure, when two-factor authentication is enabled, the Docker CLI requires a personal access token instead of a password to log in.

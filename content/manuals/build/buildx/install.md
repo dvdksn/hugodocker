@@ -37,9 +37,9 @@ RUN docker buildx version
 > On Windows, macOS, and Linux workstations we recommend that you install
 > [Docker Desktop](../../desktop/index.md) instead. For Linux servers, we recommend
 > that you follow the [instructions specific for your distribution](#linux-packages).
-{: .important}
+{ .important}
 
-You can also download the latest binary from the [releases page on GitHub](https://github.com/docker/buildx/releases/latest){:target="_blank" rel="noopener" class="_"}.
+You can also download the latest binary from the [releases page on GitHub](https://github.com/docker/buildx/releases/latest){target="_blank" rel="noopener" class="_"}.
 
 Rename the relevant binary and copy it to the destination matching your OS:
 

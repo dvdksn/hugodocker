@@ -4,13 +4,13 @@ keywords: Java, build, images, dockerfile
 description: Learn how to build your first Docker image by writing a Dockerfile
 ---
 
-{% include_relative nav.html selected="1" %}
+{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 
-Work through the orientation and setup in Get started [Part 1](../../get-started/index.md){:target="_blank" rel="noopener" class="_"} to understand Docker concepts. Refer to the following section for Java prerequisites.
+Work through the orientation and setup in Get started [Part 1](../../get-started/index.md){target="_blank" rel="noopener" class="_"} to understand Docker concepts. Refer to the following section for Java prerequisites.
 
-{% include guides/enable-buildkit.md %}
+{ include guides/enable-buildkit.md %}
 
 ## Overview
 
@@ -20,7 +20,7 @@ To complete this tutorial, you need the following:
 
 - Docker running locally. Follow the instructions to [download and install Docker](../../get-docker.md)
 - A Git client
-- An IDE or a text editor to edit files. We recommend using [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/){: target="_blank" rel="noopener" class="_"}.
+- An IDE or a text editor to edit files. We recommend using [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/){ target="_blank" rel="noopener" class="_"}.
 
 ## Sample application
 
@@ -37,7 +37,7 @@ $ cd spring-petclinic
 In this step, we will test the application locally without Docker, before we
 continue with building and running the application with Docker. This section
 requires you to have Java OpenJDK version 15 or later installed on your machine.
-[Download and install Java](https://jdk.java.net/){: target="_blank" rel="noopener" class="_"}
+[Download and install Java](https://jdk.java.net/){ target="_blank" rel="noopener" class="_"}
 
 If you prefer to not install Java on your machine, you can skip this step, and
 continue straight to the next section, in which we explain how to build and run
@@ -73,7 +73,7 @@ We will now continue to build and run the application in Docker.
 
 ## Create a Dockerfile for Java
 
-{% include guides/create-dockerfile.md %}
+{ include guides/create-dockerfile.md %}
 
 Next, we need to add a line in our Dockerfile that tells Docker what base image
 we would like to use for our application.
@@ -241,8 +241,8 @@ Our image that was tagged with `:v1.0.0` has been removed, but we still have the
 
 In this module, we took a look at setting up our example Java application that we'll use for the rest of the tutorial. We also created a Dockerfile that we used to build our Docker image. Then, we took a look at tagging our images and removing images. In the next module, we’ll take a look at how to:
 
-[Run your image as a container](run-containers.md){: .button .primary-btn}
+[Run your image as a container](run-containers.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Java%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

@@ -51,7 +51,7 @@ Define the application dependencies.
    @app.route('/')
    def hello():
        count = get_hit_count()
-       return 'Hello World! I have been seen {} times.\n'.format(count)
+       return 'Hello World! I have been seen { times.\n'.format(count)
     ```
 
    In this example, `redis` is the hostname of the redis container on the
@@ -120,7 +120,7 @@ Create a file called `docker-compose.yml` in your project directory and paste
 the following:
 
 ```yaml
-version: "{{ site.compose_file_v3 }}"
+version: "{ site.compose_file_v3 }}"
 services:
   web:
     build: .
@@ -224,7 +224,7 @@ Edit `docker-compose.yml` in your project directory to add a
 [bind mount](../storage/bind-mounts.md) for the `web` service:
 
 ```yaml
-version: "{{ site.compose_file_v3 }}"
+version: "{ site.compose_file_v3 }}"
 services:
   web:
     build: .
@@ -281,7 +281,7 @@ for Mac, and the general examples on how to
 ticket](https://www.virtualbox.org/ticket/14920). Newer Windows systems meet the
 requirements for [Docker Desktop for Windows](../desktop/install/windows-install.md) and do not
 need VirtualBox.
-{: .important}
+{ .important}
 
 ## Step 7: Update the application
 
@@ -293,7 +293,7 @@ Change the greeting in `app.py` and save it. For example, change the `Hello Worl
 message to `Hello from Docker!`:
 
 ```python
-return 'Hello from Docker! I have been seen {} times.\n'.format(count)
+return 'Hello from Docker! I have been seen { times.\n'.format(count)
 ```
 
 Refresh the app in your browser. The greeting should be updated, and the

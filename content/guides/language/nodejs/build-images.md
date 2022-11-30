@@ -6,13 +6,13 @@ redirect_from:
   - /get-started/nodejs/build-images/
 ---
 
-{% include_relative nav.html selected="1" %}
+{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 
 Work through the orientation and setup in Get started [Part 1](../../get-started/index.md) to understand Docker concepts.
 
-{% include guides/enable-buildkit.md %}
+{ include guides/enable-buildkit.md %}
 
 ## Overview
 
@@ -20,7 +20,7 @@ Now that we have a good overview of containers and the Docker platform, let’s 
 
 To complete this tutorial, you need the following:
 
-- Node.js version 12.18 or later. [Download Node.js](https://nodejs.org/en/){: target="_blank" rel="noopener" class="_"}
+- Node.js version 12.18 or later. [Download Node.js](https://nodejs.org/en/){ target="_blank" rel="noopener" class="_"}
 - Docker running locally: Follow the instructions to [download and install Docker](../../desktop/index.md).
 - An IDE or a text editor to edit files. We recommend using Visual Studio Code.
 
@@ -65,11 +65,11 @@ To test that the application is working properly, we’ll first POST some JSON t
 $ curl --request POST \
   --url http://localhost:8000/test \
   --header 'content-type: application/json' \
-  --data '{"msg": "testing" }'
-{"code":"success","payload":[{"msg":"testing","id":"31f23305-f5d0-4b4f-a16f-6f4c8ec93cf1","createDate":"2020-08-28T21:53:07.157Z"}]}
+  --data '{msg": "testing" }'
+{code":"success","payload":[{msg":"testing","id":"31f23305-f5d0-4b4f-a16f-6f4c8ec93cf1","createDate":"2020-08-28T21:53:07.157Z"}]}
 
 $ curl http://localhost:8000/test
-{"code":"success","meta":{"total":1,"count":1},"payload":[{"msg":"testing","id":"31f23305-f5d0-4b4f-a16f-6f4c8ec93cf1","createDate":"2020-08-28T21:53:07.157Z"}]}
+{code":"success","meta":{total":1,"count":1},"payload":[{msg":"testing","id":"31f23305-f5d0-4b4f-a16f-6f4c8ec93cf1","createDate":"2020-08-28T21:53:07.157Z"}]}
 ```
 
 Switch back to the terminal where our server is running. You should now see the following requests in the server logs.
@@ -93,7 +93,7 @@ We will now continue to build and run the application in Docker.
 
 ## Create a Dockerfile for Node.js
 
-{% include guides/create-dockerfile.md %}
+{ include guides/create-dockerfile.md %}
 
 Next, we need to add a line in our Dockerfile that tells Docker what base image
 we would like to use for our application.
@@ -106,7 +106,7 @@ FROM node:12.18.1
 
 Docker images can be inherited from other images. Therefore, instead of creating our own base image, we’ll use the official Node.js image that already has all the tools and packages that we need to run a Node.js application. You can think of this in the same way you would think about class inheritance in object oriented programming. For example, if we were able to create Docker images in JavaScript, we might write something like the following.
 
-`class MyImage extends NodeBaseImage {}`
+`class MyImage extends NodeBaseImage {`
 
 This would create a class called `MyImage` that inherited functionality from the base class `NodeBaseImage`.
 
@@ -271,8 +271,8 @@ Our image that was tagged with `:v1.0.0` has been removed but we still have the 
 
 In this module, we took a look at setting up our example Node application that we will use for the rest of the tutorial. We also created a Dockerfile that we used to build our Docker image. Then, we took a look at tagging our images and removing images. In the next module, we’ll take a look at how to:
 
-[Run your image as a container](run-containers.md){: .button .primary-btn}
+[Run your image as a container](run-containers.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

@@ -97,7 +97,7 @@ The newly created configuration file contains information about the location of 
 
 For more detailed information about how to use notary outside of the
 Docker Content Trust use cases, refer to the Notary CLI documentation
-[here](https://github.com/theupdateframework/notary/blob/master/docs/command_reference.md){:target="_blank" rel="noopener" class="_"} 
+[here](https://github.com/theupdateframework/notary/blob/master/docs/command_reference.md){target="_blank" rel="noopener" class="_"} 
 
 ## Creating Delegation Keys
 
@@ -369,7 +369,7 @@ $ notary witness registry.example.com/admin/demo targets/releases --publish
 ```
 
 More information on the `$ notary witness` command can be found 
-[here](https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#recovering-a-delegation){:target="_blank" rel="noopener" class="_"}
+[here](https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#recovering-a-delegation){target="_blank" rel="noopener" class="_"}
 
 ### Removing a Contributor's Key from a Delegation
 

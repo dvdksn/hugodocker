@@ -2,6 +2,7 @@
 description: Docker Engine swarm mode overview
 keywords: docker, container, cluster, swarm
 title: Swarm mode overview
+linkTitle: Docker Swarm
 redirect_from:
 - /api/swarm-api/
 - /engine/userguide/networking/overlay-standalone-swarm/
@@ -53,7 +54,7 @@ of Docker Engines called a *swarm*. Use the Docker CLI to create a swarm, deploy
 application services to a swarm, and manage swarm behavior.
 
 Docker Swarm mode is built into the Docker Engine. Do not confuse Docker Swarm mode
-with [Docker Classic Swarm](https://github.com/docker/classicswarm){:target="_blank" rel="noopener" class="_"}
+with [Docker Classic Swarm](https://github.com/docker/classicswarm){target="_blank" rel="noopener" class="_"}
 which is no longer actively developed.
 
 ## Feature highlights

@@ -6,12 +6,12 @@ redirect_from:
 - /get-started/golang/build-images/
 ---
 
-{% include_relative nav.html selected="1" %}
+{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 
 * Some understanding of Go and its toolchain. This is not a tutorial on Go. If
-  you are new to the language, the [Go website](https://golang.org/){: target="_blank" rel="noopener" class="_"}
+  you are new to the language, the [Go website](https://golang.org/){ target="_blank" rel="noopener" class="_"}
   is a good starting point, so go (pun intended) check it out.
 * Some awareness of basic Docker concepts. If unsure, work through the orientation
   and setup in Get started [Part 1](../../get-started/index.md).
@@ -27,7 +27,7 @@ To complete this tutorial, you need the following:
 
 - Go version 1.16 or later. You might want to [download and install Go](https://golang.org/dl/) first.
 - Docker running locally. Follow the instructions to [download and install Docker](../../desktop/index.md).
-- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/){: target="_blank" rel="noopener" class="_"}.
+- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/){ target="_blank" rel="noopener" class="_"}.
 
 ## Meet the example application
 
@@ -35,13 +35,13 @@ To avoid losing focus on Docker's features, the sample application is a minimal
 HTTP server that has only three features:
 
 * It responds with a text message containing a heart symbol ("<3") on requests to `/`.
-* It responds with `{"Status" : "OK"}` JSON to the health check request on requests to `/ping`.
+* It responds with `{Status" : "OK"}` JSON to the health check request on requests to `/ping`.
 * The port it listens on is configurable using the environment variable `HTTP_PORT`. The default value is `8080`.
 
 Thus, it somewhat mimics enough basic properties of a REST microservice to be
 useful for our learning of Docker.
 
-The source code for the application is in the [github.com/olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping){: target="_blank" rel="noopener" class="_"}
+The source code for the application is in the [github.com/olliefr/docker-gs-ping](https://github.com/olliefr/docker-gs-ping){ target="_blank" rel="noopener" class="_"}
 GitHub repository. Please feel free to clone or fork it.
 
 For our present study, we clone it to our local machine:
@@ -53,7 +53,7 @@ $ git clone https://github.com/olliefr/docker-gs-ping
 The application's `main.go` file is fairly straightforward, if you are familiar
 with Go:
 
-{% raw %}
+{ raw %}
 ```go
 package main
 
@@ -77,7 +77,7 @@ func main() {
 	})
 
 	e.GET("/ping", func(c echo.Context) error {
-		return c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
+		return c.JSON(http.StatusOK, struct{Status string }{tatus: "OK"})
 	})
 
 	httpPort := os.Getenv("HTTP_PORT")
@@ -88,7 +88,7 @@ func main() {
 	e.Logger.Fatal(e.Start(":" + httpPort))
 }
 ```
-{% endraw %}
+{ endraw %}
 
 ## Smoke test the application
 
@@ -132,7 +132,7 @@ to "dockerizing" it.
 
 ## Create a Dockerfile for the application
 
-{% include guides/create-dockerfile.md %}
+{ include guides/create-dockerfile.md %}
 
 Next, we need to add a line in our Dockerfile that tells Docker what base image
 we would like to use for our application.
@@ -423,7 +423,7 @@ running the artifacts that we'd built.
 The `Dockerfile.multistage` in the sample application's repo has the following
 content:
 
-{% raw %}
+{ raw %}
 ```dockerfile
 # syntax=docker/dockerfile:1
 
@@ -453,7 +453,7 @@ USER nonroot:nonroot
 
 ENTRYPOINT ["/docker-gs-ping"]
 ```
-{% endraw %}
+{ endraw %}
 
 Since we have two dockerfiles now, we have to tell Docker that we want to build
 using our new Dockerfile. We also tag the new image with `multistage` but this
@@ -475,7 +475,7 @@ docker-gs-ping   multistage   e3fdde09f172   About a minute ago   27.1MB
 docker-gs-ping   latest       336a3f164d0f   About an hour ago    540MB
 ```
 
-This is due to the fact that the ["distroless" base image](https://github.com/GoogleContainerTools/distroless){:target="_blank" rel="noopener" class="_"}
+This is due to the fact that the ["distroless" base image](https://github.com/GoogleContainerTools/distroless){target="_blank" rel="noopener" class="_"}
 that we have used to deploy our Go application is very barebones and is meant
 for lean deployments of static binaries.
 
@@ -492,11 +492,11 @@ that we used to build our Docker image. Then, we took a look at tagging our
 images and removing images and tags. In the next module, we’ll take a look at
 how to:
 
-[Run your image as a container](run-containers.md){: .button .outline-btn}
+[Run your image as a container](run-containers.md){ .button .outline-btn}
 
 ## Feedback
 
 Help us improve this topic by providing your feedback. Let us know what you
-think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"}
-GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"}
+think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){target="_blank" rel="noopener" class="_"}
+GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"}
 to suggest updates.

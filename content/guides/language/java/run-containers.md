@@ -4,7 +4,7 @@ keywords: Java, run, image, container,
 description: Learn how to run the image as a container.
 ---
 
-{% include_relative nav.html selected="2" %}
+{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ Now, let’s rerun the curl command from above.
 $ curl --request GET \
 --url http://localhost:8080/actuator/health \
 --header 'content-type: application/json'
-{"status":"UP"}
+{status":"UP"}
 ```
 
 Success! We were able to connect to the application running inside of our container on port 8080.
@@ -75,7 +75,7 @@ Again, let’s make sure that our container is running properly. Run the same cu
 $ curl --request GET \
 --url http://localhost:8080/actuator/health \
 --header 'content-type: application/json'
-{"status":"UP"}
+{status":"UP"}
 ```
 
 ## List containers
@@ -176,8 +176,8 @@ In this module, we took a look at running containers, publishing ports, and runn
 
 In the next module, we’ll learn how to run a database in a container and connect it to our application. See:
 
-[Use containers for development](develop.md){: .button .primary-btn}
+[Use containers for development](develop.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Java%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

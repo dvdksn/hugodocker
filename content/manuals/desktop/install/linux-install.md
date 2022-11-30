@@ -19,9 +19,9 @@ redirect_from:
 > * [Debian](debian.md)
 > * [Fedora](fedora.md)
 >
-> [RPM package](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-x86_64.rpm?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){: .button .primary-btn }
-> [DEB package](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){: .button .primary-btn }
-> [Arch package (experimental)](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-x86_64.pkg.tar.zst?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){: .button .primary-btn }
+> [RPM package](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-x86_64.rpm?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){ .button .primary-btn }
+> [DEB package](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){ .button .primary-btn }
+> [Arch package (experimental)](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.12.0-x86_64.pkg.tar.zst?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64){ .button .primary-btn }
 
 ## System requirements
 
@@ -55,14 +55,14 @@ Docker provides `.deb` and `.rpm` packages from the following Linux distribution
 and architectures:
 
 
-{% assign yes = '![yes](/assets/images/green-check.svg){: .inline style="height: 14px; margin: 0 auto"}' %}
+{ assign yes = '![yes](/assets/images/green-check.svg){ .inline style="height: 14px; margin: 0 auto"}' %}
 
 
 | Platform                | x86_64 / amd64         | 
 |:------------------------|:-----------------------|
-| [Ubuntu](ubuntu.md)     | [{{ yes }}](ubuntu.md) |
-| [Debian](debian.md)     | [{{ yes }}](debian.md) |
-| [Fedora](fedora.md)     | [{{ yes }}](fedora.md) |
+| [Ubuntu](ubuntu.md)     | [{ yes }}](ubuntu.md) |
+| [Debian](debian.md)     | [{ yes }}](debian.md) |
+| [Fedora](fedora.md)     | [{ yes }}](fedora.md) |
 
 
 >  **Note:**
@@ -137,16 +137,16 @@ Log out and log back in so that your group membership is re-evaluated.
 
     ![Docker app in Applications](images/docker-app-in-apps.png)
 
-3. Select **Docker Desktop** to start Docker. <br> The Docker menu (![whale menu](images/whale-x.svg){: .inline}) displays the Docker Subscription Service Agreement window.
+3. Select **Docker Desktop** to start Docker. <br> The Docker menu (![whale menu](images/whale-x.svg){ .inline}) displays the Docker Subscription Service Agreement window.
 
 4. Select **Accept** to continue. Docker Desktop starts after you accept the terms.
 
     > **Important**
     >
     > If you do not agree to the terms, the Docker Desktop application will close and  you can no longer run Docker Desktop on your machine. You can choose to accept the terms at a later date by opening Docker Desktop.
-    {: .important}
+    { .important}
 
-    For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement). We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq){: target="_blank" rel="noopener" class="_" id="dkr_docs_desktop_install_btl"}.
+    For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement). We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq){ target="_blank" rel="noopener" class="_" id="dkr_docs_desktop_install_btl"}.
 
 ## Differences between Docker Desktop for Linux and Docker Engine
 
@@ -182,7 +182,7 @@ $ sudo systemctl disable docker docker.socket containerd
 ```
 
 ### Switch between Docker Desktop and Docker Engine
-{: id="context" }
+{ id="context" }
 
 The Docker CLI can be used to interact with multiple Docker Engines. For example,
 you can use the same Docker CLI to control a local Docker Engine and to control
@@ -260,7 +260,7 @@ Docker Desktop for Linux runs a Virtual Machine (VM) for the following reasons:
     a VM ensures that the Docker Desktop experience for Linux users will closely
     match that of Windows and macOS.
 
-    This need to deliver a consistent experience across all major OSs will become increasingly important as we look towards adding exciting new features, such as Docker Extensions, to Docker Desktop that will benefit users across all tiers.  We’ll provide more details on these at [DockerCon22](https://www.docker.com/dockercon/){: target="_blank" rel="noopener" class="_"}. Watch this space.
+    This need to deliver a consistent experience across all major OSs will become increasingly important as we look towards adding exciting new features, such as Docker Extensions, to Docker Desktop that will benefit users across all tiers.  We’ll provide more details on these at [DockerCon22](https://www.docker.com/dockercon/){ target="_blank" rel="noopener" class="_"}. Watch this space.
 
 2. **To make use of new kernel features**
 
@@ -270,17 +270,17 @@ Docker Desktop for Linux runs a Virtual Machine (VM) for the following reasons:
 
     Container image vulnerabilities pose a security risk for the host environment. There is a large number of unofficial images that are not guaranteed to be verified for known vulnerabilities. Malicious users can push images to public registries and use different methods to trick users into pulling and running them. The VM approach mitigates this threat as any malware that gains root privileges is restricted to the VM environment without access to the host.
 
-    Why not run rootless Docker? Although this has the benefit of superficially limiting access to the root user so everything looks safer in "top", it allows unprivileged users to gain `CAP_SYS_ADMIN` in their own user namespace and access kernel APIs which are not expecting to be used by unprivileged users, resulting in [vulnerabilities](https://www.openwall.com/lists/oss-security/2022/01/18/7){: target="_blank" rel="noopener" class="_"}.
+    Why not run rootless Docker? Although this has the benefit of superficially limiting access to the root user so everything looks safer in "top", it allows unprivileged users to gain `CAP_SYS_ADMIN` in their own user namespace and access kernel APIs which are not expecting to be used by unprivileged users, resulting in [vulnerabilities](https://www.openwall.com/lists/oss-security/2022/01/18/7){ target="_blank" rel="noopener" class="_"}.
 
 4. **To provide the benefits of feature parity and enhanced security, with minimal impact on performance**
 
-    The VM utilized by DD4L uses [`virtiofs`](https://virtio-fs.gitlab.io){:target="_blank" rel="noopener" class="_"}, a shared file system that allows virtual machines to access a directory tree located on the host. Our internal benchmarking shows that with the right resource allocation to the VM, near native file system performance can be achieved with virtiofs.
+    The VM utilized by DD4L uses [`virtiofs`](https://virtio-fs.gitlab.io){target="_blank" rel="noopener" class="_"}, a shared file system that allows virtual machines to access a directory tree located on the host. Our internal benchmarking shows that with the right resource allocation to the VM, near native file system performance can be achieved with virtiofs.
 
     As such, we have adjusted the default memory available to the VM in DD4L. You can tweak this setting to your specific needs by using the **Memory** slider within the **Settings** > **Resources** tab of Docker Desktop.
 
 ## File sharing
 
-Docker Desktop for Linux uses [virtiofs](https://virtio-fs.gitlab.io/){:target="_blank" rel="noopener"}{:target="_blank" rel="noopener"} as the
+Docker Desktop for Linux uses [virtiofs](https://virtio-fs.gitlab.io/){target="_blank" rel="noopener"}{target="_blank" rel="noopener"} as the
 default (and currently only) mechanism to enable file sharing between the host
 and Docker Desktop VM. In order not to require elevated privileges, without
 unnecessarily restricting operations on the shared files, Docker Desktop runs

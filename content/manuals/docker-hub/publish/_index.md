@@ -38,7 +38,7 @@ trusted.
 
 ## Insights and analytics
 
-The [insights and analytics](/docker-hub/publish/insights-analytics){:
+The [insights and analytics](/docker-hub/publish/insights-analytics){
 target="blank" rel="noopener" class=""} service provides usage metrics for how
 the community uses your Docker images, and grants you insight into your user's
 behavior.
@@ -56,7 +56,7 @@ client tool (user agent), and more.
 Automatic vulnerability scanning using Snyk for images published to Docker Hub.
 Scanning images ensures that the published content is secure, and underlines to
 developers that it can be trusted. Scanning can be enabled on a per-repository
-basis, refer to [vulnerability scanning](/docker-hub/vulnerability-scanning/){:
+basis, refer to [vulnerability scanning](/docker-hub/vulnerability-scanning/){
 target="blank" rel="noopener" class=""} for more information about how to use
 it.
 
@@ -64,5 +64,5 @@ it.
 
 Any independent software vendor who distributes software on Docker Hub can join
 the Verified Publisher Program. Find out more by heading to the
-[Docker Verified Publisher Program](https://www.docker.com/partners/programs){:target="_blank"
+[Docker Verified Publisher Program](https://www.docker.com/partners/programs){target="_blank"
 rel="noopener" class="_"} page.

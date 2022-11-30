@@ -1,17 +1,21 @@
-{{ define "main" }}
-  <article class="main--center document">
-    {{ partial "breadcrumbs.html" . }}
+{{ define "left" }}
+  {{ partial "sidebar.html" . }}
+{{ end }}
+
+{{ define "center" }}
+  {{ partial "breadcrumbs.html" . }}
+  <article class="prose max-w-none dark:prose-invert px-5">
     <h1>{{ .Data.Plural }}</h1>
     {{ .Content }}
-    <nav>
-      <div>Browse pages by tag:</div>
-      <ul>
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .Permalink }}"><span class="material-symbols-rounded">sell</span> {{ partial "utils/title.html" . }}</a>
-          </li>
-        {{ end }}
-      </ul>
+    <div class="text-2xl my-4">Browse topics:</div>
+    <nav class="not-prose grid grid-cols-2 md:grid-cols-1 gap-4">
+      {{ range .Pages }}
+        {{ $title := partial "utils/title.html" . }}
+        {{ partial "components/card.html" (dict "title" $title "link" .Permalink "icon" .Params.icon ) }}
+      {{ end }}
     </nav>
   </article>
+{{ end }}
+
+{{ define "right" }}
 {{ end }}

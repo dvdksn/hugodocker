@@ -1,10 +1,6 @@
 ---
 description: Engine
 keywords: Engine
-menu:
-  main:
-    parent: Manuals
-    weight: 200
 redirect_from:
 - /edge/
 - /engine/ce-ee-node-activate/

@@ -3,10 +3,6 @@ description: Introduction and Overview of Compose
 linkTitle: Docker Compose
 keywords: documentation, docs, docker, compose, orchestration, containers
 title: Overview
-menu:
-  header:
-    parent: Manuals
-    weight: 400
 redirect_from:
  - /compose/cli-command/
  - /compose/networking/swarm/
@@ -40,7 +36,7 @@ so they can be run together in an isolated environment.
 A `docker-compose.yml` looks like this:
 
 ```yaml
-version: "{{ site.compose_file_v3 }}"  # optional since v1.27.0
+version: "{ site.compose_file_v3 }}"  # optional since v1.27.0
 services:
   web:
     build: .
@@ -54,7 +50,7 @@ services:
   redis:
     image: redis
 volumes:
-  logvolume01: {}
+  logvolume01: {
 ```
 
 For more information about the Compose file, see the
@@ -78,7 +74,7 @@ Compose has commands for managing the whole lifecycle of your application:
 > to support most of the previous `docker-compose` features and flags. You can
 > run Compose V2 by replacing the hyphen (`-`) with a space, using `docker compose`,
 > instead of `docker-compose`.
-{: .important}
+{ .important}
 
 If you rely on using Docker Compose as `docker-compose` (with a hyphen), you can
 set up Compose V2 to act as a drop-in replacement of the previous `docker-compose`.
@@ -86,7 +82,7 @@ Refer to the [Installing Compose](install/index.md) section for detailed instruc
 
 ## Context of Docker Compose evolution
 
-Introduction of the [Compose specification](https://github.com/compose-spec/compose-spec){:target="_blank" rel="noopener" class="_"}
+Introduction of the [Compose specification](https://github.com/compose-spec/compose-spec){target="_blank" rel="noopener" class="_"}
 makes a clean distinction between the Compose YAML file model and the `docker-compose`
 implementation. Making this change has enabled a number of enhancements, including
 adding the `compose` command directly into the Docker CLI,  being able to "up" a

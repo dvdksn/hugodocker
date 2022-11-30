@@ -4,7 +4,7 @@ keywords: Java, local, development, run,
 description: Learn how to develop your application locally.
 ---
 
-{% include_relative nav.html selected="3" %}
+{ include_relative nav.html selected="3" %}
 
 ## Prerequisites
 
@@ -118,7 +118,7 @@ You should receive the following json back from our service.
       "id": 2,
       "firstName": "Helen",
       "lastName": "Leary",
-      "specialties": [{ "id": 1, "name": "radiology", "new": false }],
+      "specialties": [{"id": 1, "name": "radiology", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -127,8 +127,8 @@ You should receive the following json back from our service.
       "firstName": "Linda",
       "lastName": "Douglas",
       "specialties": [
-        { "id": 3, "name": "dentistry", "new": false },
-        { "id": 2, "name": "surgery", "new": false }
+        {"id": 3, "name": "dentistry", "new": false },
+        {"id": 2, "name": "surgery", "new": false }
       ],
       "nrOfSpecialties": 2,
       "new": false
@@ -137,7 +137,7 @@ You should receive the following json back from our service.
       "id": 4,
       "firstName": "Rafael",
       "lastName": "Ortega",
-      "specialties": [{ "id": 2, "name": "surgery", "new": false }],
+      "specialties": [{"id": 2, "name": "surgery", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -145,7 +145,7 @@ You should receive the following json back from our service.
       "id": 5,
       "firstName": "Henry",
       "lastName": "Stevens",
-      "specialties": [{ "id": 1, "name": "radiology", "new": false }],
+      "specialties": [{"id": 1, "name": "radiology", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -292,7 +292,7 @@ You should receive the following response:
       "id": 2,
       "firstName": "Helen",
       "lastName": "Leary",
-      "specialties": [{ "id": 1, "name": "radiology", "new": false }],
+      "specialties": [{"id": 1, "name": "radiology", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -301,8 +301,8 @@ You should receive the following response:
       "firstName": "Linda",
       "lastName": "Douglas",
       "specialties": [
-        { "id": 3, "name": "dentistry", "new": false },
-        { "id": 2, "name": "surgery", "new": false }
+        {"id": 3, "name": "dentistry", "new": false },
+        {"id": 2, "name": "surgery", "new": false }
       ],
       "nrOfSpecialties": 2,
       "new": false
@@ -311,7 +311,7 @@ You should receive the following response:
       "id": 4,
       "firstName": "Rafael",
       "lastName": "Ortega",
-      "specialties": [{ "id": 2, "name": "surgery", "new": false }],
+      "specialties": [{"id": 2, "name": "surgery", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -319,7 +319,7 @@ You should receive the following response:
       "id": 5,
       "firstName": "Henry",
       "lastName": "Stevens",
-      "specialties": [{ "id": 1, "name": "radiology", "new": false }],
+      "specialties": [{"id": 1, "name": "radiology", "new": false }],
       "nrOfSpecialties": 1,
       "new": false
     },
@@ -374,7 +374,7 @@ other stuff.
 
 You can also activate the live reload option provided by SpringBoot Dev Tools.
 Check out the
-[SpringBoot documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-devtools-remote){:target="_blank"
+[SpringBoot documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html#using-boot-devtools-remote){target="_blank"
 rel="noopener" class="_"} for information on how to connect to a remote
 application.
 
@@ -387,13 +387,13 @@ changes.
 
 In the next module, we’ll take a look at how to run unit tests in Docker. See
 
-[Run your tests](run-tests.md){: .button .primary-btn}
+[Run your tests](run-tests.md){ .button .primary-btn}
 
 ## Feedback
 
 Help us improve this topic by providing your feedback. Let us know what you
 think by creating an issue in the [Docker
-Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank"
+Docs]({ site.repo }}/issues/new?title=[Java%20docs%20feedback]){target="_blank"
 rel="noopener" class="_"} GitHub repository. Alternatively, [create a
-PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest
+PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest
 updates.

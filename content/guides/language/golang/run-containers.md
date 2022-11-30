@@ -6,7 +6,7 @@ redirect_from:
 - /get-started/golang/run-containers/
 ---
 
-{% include_relative nav.html selected="2" %}
+{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 
@@ -198,8 +198,8 @@ Now, we can easily identify our container based on the name.
 
 In this module, we learned how to run containers and publish ports. We also learned to manage the lifecycle of containers. We then discussed the importance of naming our containers so that they are more easily identifiable. In the next module, we’ll learn how to run a database in a container and connect it to our application. See:
 
-[How to develop your application](develop.md){: .button .outline-btn}
+[How to develop your application](develop.md){ .button .outline-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang %20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Golang %20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

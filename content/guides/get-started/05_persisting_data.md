@@ -1,4 +1,5 @@
 ---
+weight: 5
 title: "Persist the DB"
 keywords: get started, setup, orientation, quickstart, intro, concepts, containers, docker desktop
 description: Making our DB persistent in our application
@@ -31,7 +32,7 @@ What you'll see is that the files created in one container aren't available in a
 
 2. Validate that we can see the output by `exec`ing into the container. To do so, open the Dashboard and click the first action of the container that is running the `ubuntu` image.
 
-    ![Dashboard open CLI into ubuntu container](images/dashboard-open-cli-ubuntu.png){: style=width:75% }
+    ![Dashboard open CLI into ubuntu container](images/dashboard-open-cli-ubuntu.png){ style=width:75% }
 
     You will see a terminal that is running a shell in the ubuntu container. Run the following command to see the content of the `/data.txt` file. Close this terminal afterwards again.
 
@@ -75,7 +76,7 @@ There are two main types of volumes. We will eventually use both, but we will st
 
 ## Persist the todo data
 
-By default, the todo app stores its data in a [SQLite Database](https://www.sqlite.org/index.html){:target="_blank" rel="noopener" class="_"} at
+By default, the todo app stores its data in a [SQLite Database](https://www.sqlite.org/index.html){target="_blank" rel="noopener" class="_"} at
 `/etc/todos/todo.db` in the container's filesystem. If you're not familiar with SQLite, no worries! It's simply a relational database in 
 which all of the data is stored in a single file. While this isn't the best for large-scale applications,
 it works for small demos. We'll talk about switching this to a different database engine later.
@@ -106,8 +107,8 @@ Every time you use the volume, Docker will make sure the correct data is provide
 
 4. Once the container starts up, open the app and add a few items to your todo list.
 
-    ![Items added to todo list](images/items-added.png){: style="width: 55%; " }
-    {: .text-center }
+    ![Items added to todo list](images/items-added.png){ style="width: 55%; " }
+    { .text-center }
 
 5. Stop and remove the container for the todo app. Use the Dashboard or `docker ps` to get the ID and then `docker rm -f <id>` to remove it.
 
@@ -138,10 +139,10 @@ $ docker volume inspect todo-db
     {
         "CreatedAt": "2019-09-26T02:18:36Z",
         "Driver": "local",
-        "Labels": {},
+        "Labels": {,
         "Mountpoint": "/var/lib/docker/volumes/todo-db/_data",
         "Name": "todo-db",
-        "Options": {},
+        "Options": {,
         "Scope": "local"
     }
 ]

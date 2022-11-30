@@ -27,7 +27,7 @@ or CentOS 9 (stream). Archived versions aren't supported or tested.
 
 The `centos-extras` repository must be enabled. This repository is enabled by
 default, but if you have disabled it, you need to
-[re-enable it](https://wiki.centos.org/AdditionalResources/Repositories){: target="_blank" rel="noopener" class="_" }.
+[re-enable it](https://wiki.centos.org/AdditionalResources/Repositories){ target="_blank" rel="noopener" class="_" }.
 
 The `overlay2` storage driver is recommended.
 
@@ -77,7 +77,7 @@ from the repository.
 
 #### Set up the repository
 
-{% assign download-url-base = "https://download.docker.com/linux/centos" %}
+{ assign download-url-base = "https://download.docker.com/linux/centos" %}
 
 Install the `yum-utils` package (which provides the `yum-config-manager`
 utility) and set up the repository.
@@ -87,7 +87,7 @@ $ sudo yum install -y yum-utils
 
 $ sudo yum-config-manager \
     --add-repo \
-    {{ download-url-base }}/docker-ce.repo
+    { download-url-base }}/docker-ce.repo
 ```
 
 #### Install Docker Engine
@@ -167,7 +167,7 @@ If you cannot use Docker's repository to install Docker, you can download the
 `.rpm` file for your release and install it manually. You need to download
 a new file each time you want to upgrade Docker Engine.
 
-1.  Go to [{{ download-url-base }}/]({{ download-url-base }}/){: target="_blank" rel="noopener" class="_" }
+1.  Go to [{ download-url-base }}/]({ download-url-base }}/){ target="_blank" rel="noopener" class="_" }
     and choose your version of CentOS. Then browse to `x86_64/stable/Packages/`
     and download the `.rpm` file for the Docker version you want to install.
 
@@ -208,7 +208,7 @@ To upgrade Docker Engine, download the newer package file and repeat the
 [installation procedure](#install-from-a-package), using `yum -y upgrade`
 instead of `yum -y install`, and point to the new file.
 
-{% include install-script.md %}
+{ include install-script.md %}
 
 ## Uninstall Docker Engine
 

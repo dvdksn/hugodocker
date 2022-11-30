@@ -8,7 +8,7 @@ This page provides information on how to configure and manage your Docker Deskto
 
 To navigate to **Settings** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Settings**
+- Select the Docker menu ![whale menu](../images/whale-x.svg){ .inline} and then **Settings**
 - Select the **Settings** icon from the Docker Dashboard.
 
 ## General
@@ -59,7 +59,7 @@ containers.
 > The Advanced tab is only available in Hyper-V mode, because Windows manages
 > the resources in WSL 2 mode and Windows container mode. In WSL 2
 > mode, you can configure limits on the memory, CPU, and swap size allocated
-> to the [WSL 2 utility VM](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig){:target="_blank"
+> to the [WSL 2 utility VM](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig){target="_blank"
 class="_"}.
 
 On the **Advanced** tab, you can limit resources available to Docker.
@@ -144,7 +144,7 @@ popup asking if you want to share the specified folder.
 You can select to **Share it**, in which case it is added to your Docker Desktop Shared Folders list and available to
 containers. Alternatively, you can opt not to share it by selecting **Cancel**.
 
-![Shared folder on demand](../images/shared-folder-on-demand.png){:width="600px"}
+![Shared folder on demand](../images/shared-folder-on-demand.png){width="600px"}
 
 ### Proxies
 
@@ -197,13 +197,13 @@ For more details on configuring Docker Desktop to use WSL 2, see
 The **Docker Engine** tab allows you to configure the Docker daemon to determine how your containers run.
 
 Type a JSON configuration file in the box to configure the daemon settings. For a full list of options, see the Docker Engine
-[dockerd commandline reference](/engine/reference/commandline/dockerd/){:target="_blank" rel="noopener" class="_"}.
+[dockerd commandline reference](/engine/reference/commandline/dockerd/){target="_blank" rel="noopener" class="_"}.
 
 Click **Apply & Restart** to save your settings and restart Docker Desktop.
 
 ## Experimental features
 
-{% include experimental.md %}
+{ include experimental.md %}
 
 From the **Experimental features** tab, you can sign up to the [Developer Preview program](https://www.docker.com/community/get-involved/developer-preview/).
 
@@ -224,7 +224,7 @@ using Docker commands.
 Select **Reset Kubernetes cluster** to delete all stacks and Kubernetes resources.
 
 For more information about using the Kubernetes integration with Docker Desktop,
-see [Deploy on Kubernetes](../kubernetes.md){:target="_blank" rel="noopener" class="_"}.
+see [Deploy on Kubernetes](../kubernetes.md){target="_blank" rel="noopener" class="_"}.
 
 ## Software Updates
 

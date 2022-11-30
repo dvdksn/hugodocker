@@ -6,7 +6,7 @@ toc_min: 1
 toc_max: 2
 ---
 
-{% include sign-up-cta.html
+{ include sign-up-cta.html
   body="Did you know that you can now get 10 free scans per month? Sign in to Docker to start scanning your images for vulnerabilities."
   header-text="Scan your images for free"
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_scan"
@@ -25,11 +25,11 @@ remediate the CVEs discovered.
 > **Log4j 2 CVE-2021-44228**
 >
 > Versions of `docker Scan` earlier than `v0.11.0` are not able to detect [Log4j 2
-> CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){:
+> CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){
 > target="_blank" rel="noopener" class="_"}. You must update your Docker
 > Desktop installation to 4.3.1 or higher to fix this issue. For more
 > information, see [Scan images for Log4j 2 CVE](#scan-images-for-log4j-2-cve).
-{: .important}
+{ .important}
 
 For information about the system requirements to run vulnerability scanning, see [Prerequisites](#prerequisites).
 
@@ -40,7 +40,7 @@ information about automatically scanning Docker images through Docker Hub, see
 ## Scan images for Log4j 2 CVE
 
 Docker Scan versions earlier than `v0.11.0` do not detect [Log4j 2
-CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){:
+CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){
 target="_blank" rel="noopener" class="_"} when you scan your
 images for vulnerabilities. You must update your Docker installation to the
 latest version to fix this issue.
@@ -65,9 +65,9 @@ On rpm-based distros, such as CentOS or Fedora:
 $ yum install docker-scan-plugin
 ```
 
-Alternatively, you can manually download the `docker scan` binaries from the [Docker Scan](https://github.com/docker/scan-cli-plugin/releases/tag/v0.11.0){:
+Alternatively, you can manually download the `docker scan` binaries from the [Docker Scan](https://github.com/docker/scan-cli-plugin/releases/tag/v0.11.0){
 target="_blank" rel="noopener" class="_"} GitHub repository and
-[install](https://github.com/docker/scan-cli-plugin){:
+[install](https://github.com/docker/scan-cli-plugin){
 target="_blank" rel="noopener" class="_"}  in the plugins directory.
 
 ### Verify the `docker scan` version
@@ -93,7 +93,7 @@ introduced by org.apache.logging.log4j:log4j-core@2.14.0
 ```
 
 For more information, read our blog post [Apache Log4j 2
-CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){:
+CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){
 target="_blank" rel="noopener" class="_"}.
 
 ## How to scan images
@@ -209,10 +209,10 @@ $ docker scan --json hello-world
   "ok": true,
   "dependencyCount": 0,
   "org": "docker-desktop-test",
-  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.19.0\nignore: {}\npatch: {}\n",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.19.0\nignore: {\npatch: {\n",
   "isPrivate": true,
   "licensesPolicy": {
-    "severities": {},
+    "severities": {,
     "orgLicenseRules": {
       "AGPL-1.0": {
         "licenseType": "AGPL-1.0",
@@ -241,8 +241,8 @@ $ docker scan --json hello-world
       ]
     },
     "binariesVulns": {
-      "issuesData": {},
-      "affectedPkgs": {}
+      "issuesData": {,
+      "affectedPkgs": {
     }
   },
   "summary": "No known vulnerabilities",
@@ -372,7 +372,7 @@ Tested 200 dependencies for known issues, found 157 issues.
 For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp.
 ```
 
-For more information about the vulnerability data, see [Docker Vulnerability Scanning CLI Cheat Sheet](https://goto.docker.com/rs/929-FJL-178/images/cheat-sheet-docker-desktop-vulnerability-scanning-CLI.pdf){: target="_blank" rel="noopener" class="_"}.
+For more information about the vulnerability data, see [Docker Vulnerability Scanning CLI Cheat Sheet](https://goto.docker.com/rs/929-FJL-178/images/cheat-sheet-docker-desktop-vulnerability-scanning-CLI.pdf){ target="_blank" rel="noopener" class="_"}.
 
 ### Limiting the level of vulnerabilities displayed
 
@@ -418,7 +418,7 @@ Tested 200 dependencies for known issues, found 37 issues.
 
 ## Provider authentication
 
-If you have an existing Snyk account, you can directly use your Snyk [API token](https://app.snyk.io/account){: target="_blank" rel="noopener" class="_"}:
+If you have an existing Snyk account, you can directly use your Snyk [API token](https://app.snyk.io/account){ target="_blank" rel="noopener" class="_"}:
 
 ```console
 $ docker scan --login --token SNYK_AUTH_TOKEN
@@ -438,11 +438,11 @@ To run vulnerability scanning on your Docker images, you must meet the following
     - [Download for Mac with Apple chip](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64)
     - [Download for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe)
 
-2. Sign into [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}.
+2. Sign into [Docker Hub](https://hub.docker.com){ target="_blank" rel="noopener" class="_"}.
 
 3. From the Docker Desktop menu, select **Sign in/ Create Docker ID**. Alternatively, open a terminal and run the command `docker login`.
 
-4. (Optional) You can create a [Snyk account](https://dockr.ly/3ePqVcp){: target="_blank" rel="noopener" class="_"} for scans, or use the additional monthly free scans provided by Snyk with your Docker Hub account.
+4. (Optional) You can create a [Snyk account](https://dockr.ly/3ePqVcp){ target="_blank" rel="noopener" class="_"} for scans, or use the additional monthly free scans provided by Snyk with your Docker Hub account.
 
 Check your installation by running `docker scan --version`, it should print the current version of docker scan and the Snyk engine version. For example:
 
@@ -485,4 +485,4 @@ The high-level `docker scan` command scans local images using the image name or 
 
 ## Feedback
 
-Your feedback is very important to us. Let us know your feedback by creating an issue in the [scan-cli-plugin](https://github.com/docker/scan-cli-plugin/issues/new){: target="_blank" rel="noopener" class="_"} GitHub repository.
+Your feedback is very important to us. Let us know your feedback by creating an issue in the [scan-cli-plugin](https://github.com/docker/scan-cli-plugin/issues/new){ target="_blank" rel="noopener" class="_"} GitHub repository.

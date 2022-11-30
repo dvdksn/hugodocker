@@ -4,9 +4,9 @@ keywords: Java, CI/CD, local, development
 description: Learn how to Configure CI/CD for your application
 ---
 
-{% include_relative nav.html selected="5" %}
+{ include_relative nav.html selected="5" %}
 
-This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){:target="_blank" rel="noopener" class="_"} on CI/CD best practices .
+This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){target="_blank" rel="noopener" class="_"} on CI/CD best practices .
 
 This guide contains instructions on how to:
 
@@ -18,9 +18,9 @@ This guide contains instructions on how to:
 
 ## Set up a Docker project
 
-Let’s get started. This guide uses a simple Docker project as an example. The [SimpleWhaleDemo](https://github.com/usha-mandya/SimpleWhaleDemo){:target="_blank" rel="noopener" class="_"} repository contains an Nginx alpine image. You can either clone this repository, or use your own Docker project.
+Let’s get started. This guide uses a simple Docker project as an example. The [SimpleWhaleDemo](https://github.com/usha-mandya/SimpleWhaleDemo){target="_blank" rel="noopener" class="_"} repository contains an Nginx alpine image. You can either clone this repository, or use your own Docker project.
 
-![SimpleWhaleDemo](../../ci-cd/images/simplewhaledemo.png){:width="500px"}
+![SimpleWhaleDemo](../../ci-cd/images/simplewhaledemo.png){width="500px"}
 
 Before we start, ensure you can access [Docker Hub](https://hub.docker.com/) from any workflows you create. To do this:
 
@@ -32,11 +32,11 @@ Before we start, ensure you can access [Docker Hub](https://hub.docker.com/) fro
 
 4. Let’s call this token **simplewhaleci**.
 
-    ![New access token](../../ci-cd/images/github-access-token.png){:width="500px"}
+    ![New access token](../../ci-cd/images/github-access-token.png){width="500px"}
 
 5. Now, add this Personal Access Token (PAT) as a second secret into the GitHub secrets UI with the name `DOCKER_HUB_ACCESS_TOKEN`.
 
-    ![GitHub Secrets](../../ci-cd/images/github-secrets.png){:width="500px"}
+    ![GitHub Secrets](../../ci-cd/images/github-secrets.png){width="500px"}
 
 ## Set up the GitHub Actions workflow
 
@@ -80,7 +80,7 @@ jobs:
 
 Now, we can add the steps required. The first one checks-out our repository under `$GITHUB_WORKSPACE`, so our workflow can access it. The second is to use our PAT and username to log into Docker Hub. The third is the Builder, the action  uses BuildKit under the hood through a simple Buildx action which we will also setup
 
-{% raw %}
+{ raw %}
 ```yaml
     steps:
 
@@ -90,8 +90,8 @@ Now, we can add the steps required. The first one checks-out our repository unde
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${ secrets.DOCKER_HUB_USERNAME }}
+          password: ${ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Set up Docker Buildx
         id: buildx
@@ -104,16 +104,16 @@ Now, we can add the steps required. The first one checks-out our repository unde
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags: ${ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
 
       - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
+        run: echo ${ steps.docker_build.outputs.digest }}
 ```
-{% endraw %}
+{ endraw %}
 
 Now, let the workflow run for the first time and then tweak the Dockerfile to make sure the CI is running and pushing the new image changes:
 
-![CI to Docker Hub](../../ci-cd/images/ci-to-hub.png){:width="500px"}
+![CI to Docker Hub](../../ci-cd/images/ci-to-hub.png){width="500px"}
 
 ## Optimize the workflow
 
@@ -124,46 +124,46 @@ Next, let’s look at how we can optimize the GitHub Actions workflow through bu
 
 Let us set up a Builder with a build cache. First, we need to set up cache for the builder.  In this example, let us add the path and keys to store this under using GitHub cache for this.
 
-{% raw %}
+{ raw %}
 ```yaml
 
       - name: Cache Docker layers
         uses: actions/cache@v2
         with:
           path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          key: ${ runner.os }}-buildx-${ github.sha }}
           restore-keys: |
-            ${{ runner.os }}-buildx-
+            ${ runner.os }}-buildx-
 ```
-{% endraw %}
+{ endraw %}
 
 And lastly, after adding the builder and build cache snippets to the top of the Actions file, we need to add some extra attributes to the build and push step. This involves:
 
 Setting up the builder to use the output of the buildx step, and then
 Using the cache we set up earlier for it to store to and to retrieve
 
-{% raw %}
+{ raw %}
 ```yaml
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${ secrets.DOCKER_HUB_USERNAME }}
+          password: ${ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
         with:
           context: ./
           file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
+          builder: ${ steps.buildx.outputs.name }}
           push: true
-          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags:  ${ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
+        run: echo ${ steps.docker_build.outputs.digest }}
 ```
-{% endraw %}
+{ endraw %}
 
 Now, run the workflow again and verify that it uses the build cache.
 
@@ -180,14 +180,14 @@ This involves two steps:
 
 First, let us modify our existing GitHub workflow to only push to Hub if there’s a particular tag. For example:
 
-{% raw %}
+{ raw %}
 ```yaml
 on:
   push:
     tags:
       - "v*.*.*"
 ```
-{% endraw %}
+{ endraw %}
 
 This ensures that the main CI will only trigger if we tag our commits with `V.n.n.n.` Let’s test this. For example, run the following command:
 
@@ -198,7 +198,7 @@ $ git push origin v1.0.2
 
 Now, go to GitHub and check your Actions
 
-![Push tagged version](../../ci-cd/images/push-tagged-version.png){:width="500px"}
+![Push tagged version](../../ci-cd/images/push-tagged-version.png){width="500px"}
 
 Now, let’s set up a second GitHub action file to store our latest commit as an image in the GitHub registry. You may want to do this to:
 
@@ -208,16 +208,16 @@ Now, let’s set up a second GitHub action file to store our latest commit as an
 Let’s clone our previous GitHub action and add back in our previous logic for all pushes. This will mean we have two workflow files, our previous one and our new one we will now work on.
 Next, change your Docker Hub login to a GitHub container registry login:
 
-{% raw %}
+{ raw %}
 ```yaml
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${ github.actor }}
+          password: ${ secrets.GITHUB_TOKEN }}
 ```
-{% endraw %}
+{ endraw %}
 
 To authenticate against the [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry), use the [`GITHUB_TOKEN`](https://docs.github.com/en/actions/reference/authentication-in-a-workflow) for the best security and experience.
 
@@ -226,13 +226,13 @@ You may need to [manage write and read access of GitHub Actions](https://docs.gi
 You can also use a [personal access token (PAT)](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) with the [appropriate scopes](https://docs.github.com/en/packages/getting-started-with-github-container-registry/migrating-to-github-container-registry-for-docker-images#authenticating-with-the-container-registry).
 Remember to change how the image is tagged. The following example keeps ‘latest’ as the only tag. However, you can add any logic to this if you prefer:
 
-{% raw %}
+{ raw %}
 ```yaml
-  tags: ghcr.io/${{ github.repository_owner }}/simplewhale:latest
+  tags: ghcr.io/${ github.repository_owner }}/simplewhale:latest
 ```
-{% endraw %}
+{ endraw %}
 
-![Update tagged images](../../ci-cd/images/ghcr-logic.png){:width="500px"}
+![Update tagged images](../../ci-cd/images/ghcr-logic.png){width="500px"}
 
 Now, we will have two different flows: one for our changes to master, and one for our pull requests. Next, we need to modify what we had before to ensure we are pushing our PRs to the GitHub registry rather than to Docker Hub.
 
@@ -299,8 +299,8 @@ In this module, you have learnt how to set up GitHub Actions workflow to an exis
 
 You can also consider deploying your application. For detailed instructions, see:
 
-[Deploy your application](deploy.md){: .button .primary-btn}
+[Deploy your application](deploy.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Java%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

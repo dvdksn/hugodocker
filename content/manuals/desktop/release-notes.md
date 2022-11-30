@@ -20,7 +20,7 @@ This page contains information about the new features, improvements, known issue
 >
 > The information below is applicable to all platforms, unless stated otherwise.
 
-Take a look at the [Docker Public Roadmap](https://github.com/docker/roadmap/projects/1){: target="_blank" rel="noopener" class="_"} to see what's coming next.
+Take a look at the [Docker Public Roadmap](https://github.com/docker/roadmap/projects/1){ target="_blank" rel="noopener" class="_"} to see what's coming next.
 
 For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/general.md/#releases)
 
@@ -29,7 +29,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/ge
 
 > Download Docker Desktop
 >
-> {% include desktop-install.html %}
+> { include desktop-install.html %}
 
 ### New
 
@@ -610,14 +610,14 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/ge
 
 ### Security
 
-- Update Docker Engine to v20.10.14 to address [CVE-2022-24769](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24769){: target="_blank" rel="noopener" class="_"}
+- Update Docker Engine to v20.10.14 to address [CVE-2022-24769](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24769){ target="_blank" rel="noopener" class="_"}
 - Update containerd to v1.5.11 to address [CVE-2022-24769](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24769)
 
 ### New
 
 - IT Administrators can now install Docker Desktop remotely using the command line.
 - Add  the Docker Software Bill of Materials (SBOM) CLI plugin. The new CLI plugin enables users to generate SBOMs for Docker images. For more information, see [Docker SBOM](../engine/sbom/index.md).
-- Use [cri-dockerd](https://github.com/Mirantis/cri-dockerd){: target="_blank" rel="noopener" class="_"}  for new Kubernetes clusters instead of `dockershim`. The change is transparent from the user's point of view and Kubernetes containers run on the Docker Engine as before. `cri-dockerd` allows Kubernetes to manage Docker containers using the standard [Container Runtime Interface](https://github.com/kubernetes/cri-api#readme){: target="_blank" rel="noopener" class="_"}, the same interface used to control other container runtimes. For more information, see [The Future of Dockershim is cri-dockerd](https://www.mirantis.com/blog/the-future-of-dockershim-is-cri-dockerd/){: target="_blank" rel="noopener" class="_"}.
+- Use [cri-dockerd](https://github.com/Mirantis/cri-dockerd){ target="_blank" rel="noopener" class="_"}  for new Kubernetes clusters instead of `dockershim`. The change is transparent from the user's point of view and Kubernetes containers run on the Docker Engine as before. `cri-dockerd` allows Kubernetes to manage Docker containers using the standard [Container Runtime Interface](https://github.com/kubernetes/cri-api#readme){ target="_blank" rel="noopener" class="_"}, the same interface used to control other container runtimes. For more information, see [The Future of Dockershim is cri-dockerd](https://www.mirantis.com/blog/the-future-of-dockershim-is-cri-dockerd/){ target="_blank" rel="noopener" class="_"}.
 
 ### Upgrades
 
@@ -678,12 +678,12 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/ge
 ### Security
 
 #### For all platforms 
-- Fixed [CVE-2022-0847](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0847){: target="_blank" rel="noopener" class="_"}, aka “Dirty Pipe”, an issue that could enable attackers to modify files in container images on the host, from inside a container.
+- Fixed [CVE-2022-0847](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0847){ target="_blank" rel="noopener" class="_"}, aka “Dirty Pipe”, an issue that could enable attackers to modify files in container images on the host, from inside a container.
   If using the WSL 2 backend, you must update WSL 2 by running `wsl --update`.
 
 #### For Windows 
 
-- Fixed [CVE-2022-26659](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26659){: target="_blank" rel="noopener" class="_"}, which could allow an attacker to overwrite any administrator writable file on the system during the installation or the update of Docker Desktop.
+- Fixed [CVE-2022-26659](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26659){ target="_blank" rel="noopener" class="_"}, which could allow an attacker to overwrite any administrator writable file on the system during the installation or the update of Docker Desktop.
 
 ### New
 
@@ -768,20 +768,20 @@ Alternatively, you can edit the Docker Desktop settings file located at `%APPDAT
 
 #### For Mac
 
-- Fixed [CVE-2021-44719](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44719){: target="_blank" rel="noopener" class="_"} where Docker Desktop could be used to access any user file on the host from a container, bypassing the allowed list of shared folders.
+- Fixed [CVE-2021-44719](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44719){ target="_blank" rel="noopener" class="_"} where Docker Desktop could be used to access any user file on the host from a container, bypassing the allowed list of shared folders.
 
 #### For Windows
 
-- Fixed [CVE-2022-23774](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23774){: target="_blank" rel="noopener" class="_"} where Docker Desktop allows attackers to move arbitrary files.
+- Fixed [CVE-2022-23774](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23774){ target="_blank" rel="noopener" class="_"} where Docker Desktop allows attackers to move arbitrary files.
 
 ### New
 
-- Docker Desktop 4.5.0 introduces a new version of the Docker menu which creates a consistent user experience across all operating systems. For more information, see the blog post [New Docker Menu & Improved Release Highlights with Docker Desktop 4.5](https://www.docker.com/blog/new-docker-menu-improved-release-highlights-with-docker-desktop-4-5/){: target="_blank" rel="noopener" class="_"}
+- Docker Desktop 4.5.0 introduces a new version of the Docker menu which creates a consistent user experience across all operating systems. For more information, see the blog post [New Docker Menu & Improved Release Highlights with Docker Desktop 4.5](https://www.docker.com/blog/new-docker-menu-improved-release-highlights-with-docker-desktop-4-5/){ target="_blank" rel="noopener" class="_"}
 - The 'docker version' output now displays the version of Docker Desktop installed on the machine.
 
 ### Upgrades
 
-- [Amazon ECR Credential Helper v0.6.0](https://github.com/awslabs/amazon-ecr-credential-helper/releases/tag/v0.6.0){: target="blank" rel="noopener" class=""}
+- [Amazon ECR Credential Helper v0.6.0](https://github.com/awslabs/amazon-ecr-credential-helper/releases/tag/v0.6.0){ target="blank" rel="noopener" class=""}
 
 ### Bug fixes and minor changes
 
@@ -876,7 +876,7 @@ This only affects users if they are on Docker Desktop 4.3.0, 4.3.1 and the user 
 - [Docker Engine v20.10.12](../engine/release-notes/index.md#201012)
 - [Compose v2.2.3](https://github.com/docker/compose/releases/tag/v2.2.3)
 - [Kubernetes 1.22.5](https://github.com/kubernetes/kubernetes/releases/tag/v1.22.5)
-- [docker scan v0.16.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.16.0){: target="_blank" rel="noopener" class="_"}
+- [docker scan v0.16.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.16.0){ target="_blank" rel="noopener" class="_"}
 
 ### Bug fixes and minor changes
 
@@ -925,18 +925,18 @@ This only affects users if they are on Docker Desktop 4.3.0, 4.3.1 and the user 
 
 ### Upgrades
 
-[docker scan v0.14.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.14.0){: target="_blank" rel="noopener" class="_"}
+[docker scan v0.14.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.14.0){ target="_blank" rel="noopener" class="_"}
 
 ### Security
 
 **Log4j 2 CVE-2021-44228**: We have updated the `docker scan` CLI plugin.
 This new version of `docker scan` is able to detect [Log4j 2
-CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){:
+CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){
 target="_blank" rel="noopener" class="_"} and [Log4j 2
 CVE-2021-45046](https://nvd.nist.gov/vuln/detail/CVE-2021-45046)
 
 For more information, read the blog post [Apache Log4j 2
-CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){: target="_blank" rel="noopener" class="_"}.
+CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){ target="_blank" rel="noopener" class="_"}.
 
 ## Docker Desktop 4.3.1
 2021-12-11
@@ -949,19 +949,19 @@ CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){: ta
 
 ### Upgrades
 
-[docker scan v0.11.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.11.0){: target="_blank" rel="noopener" class="_"}
+[docker scan v0.11.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.11.0){ target="_blank" rel="noopener" class="_"}
 
 ### Security
 
 **Log4j 2 CVE-2021-44228**: We have updated the `docker scan` CLI plugin for you.
 Older versions of `docker scan` in Docker Desktop 4.3.0 and earlier versions are
 not able to detect [Log4j 2
-CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){:
+CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228){
 target="_blank" rel="noopener" class="_"}.
 
 For more information, read the
 blog post [Apache Log4j 2
-CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){: target="_blank" rel="noopener" class="_"}.
+CVE-2021-44228](https://www.docker.com/blog/apache-log4j-2-cve-2021-44228/){ target="_blank" rel="noopener" class="_"}.
 
 ## Docker Desktop 4.3.0
 2021-12-02
@@ -1030,11 +1030,11 @@ actual memory usage. See
 
 **Pause/Resume**: You can now pause your Docker Desktop session when you are not actively using it and save CPU resources on your machine.
 
-- Ships [Docker Public Roadmap#226](https://github.com/docker/roadmap/issues/226){: target="_blank" rel="noopener" class="_"}
+- Ships [Docker Public Roadmap#226](https://github.com/docker/roadmap/issues/226){ target="_blank" rel="noopener" class="_"}
 
 **Software Updates**: The option to turn off automatic check for updates is now available for users on all Docker subscriptions, including Docker Personal and Docker Pro. All update-related settings have been moved to the **Software Updates** section. 
 
-- Ships [Docker Public Roadmap#228](https://github.com/docker/roadmap/issues/228){: target="_blank" rel="noopener" class="_"}
+- Ships [Docker Public Roadmap#228](https://github.com/docker/roadmap/issues/228){ target="_blank" rel="noopener" class="_"}
 
 **Window management**: The Docker Dashboard window size and position persists when you close and reopen Docker Desktop.
 
@@ -1106,7 +1106,7 @@ actual memory usage. See
 
 - **Software Updates**: The Settings tab now includes a new section to help you manage Docker Desktop updates. The **Software Updates** section notifies you whenever there's a new update and allows you to download the update or view information on what's included in the newer version. 
 - **Compose V2** You can now specify whether to use Docker Compose V2 in the General settings.
-- **Volume Management**: Volume management is now available for users on any subscription, including Docker Personal. Ships [Docker Public Roadmap#215](https://github.com/docker/roadmap/issues/215){: target="_blank" rel="noopener" class="_"}
+- **Volume Management**: Volume management is now available for users on any subscription, including Docker Personal. Ships [Docker Public Roadmap#215](https://github.com/docker/roadmap/issues/215){ target="_blank" rel="noopener" class="_"}
 
 ### Upgrades
 
@@ -1175,7 +1175,7 @@ Docker Desktop may fail to start when upgrading to 4.1.0 on some WSL-based distr
 
 ### New
 
-Docker has [announced](https://www.docker.com/blog/updating-product-subscriptions/){: target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"} updates and extensions to the product subscriptions to increase productivity, collaboration, and added security for our developers and businesses.
+Docker has [announced](https://www.docker.com/blog/updating-product-subscriptions/){ target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"} updates and extensions to the product subscriptions to increase productivity, collaboration, and added security for our developers and businesses.
 
 The updated [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement) includes a change to the terms for **Docker Desktop**.
 
@@ -1186,7 +1186,7 @@ The updated [Docker Subscription Service Agreement](https://www.docker.com/legal
 - The existing Docker Free subscription has been renamed **Docker Personal**.
 - **No changes** to Docker Engine or any other upstream **open source** Docker or Moby project.
 
-To understand how these changes affect you, read the [FAQs](https://www.docker.com/pricing/faq){: target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"}.
+To understand how these changes affect you, read the [FAQs](https://www.docker.com/pricing/faq){ target="*blank" rel="noopener" class="*" id="dkr_docs_relnotes_btl"}.
 For more information, see [Docker subscription overview](../subscription/index.md).
 
 ### Upgrades

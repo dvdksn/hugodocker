@@ -24,37 +24,37 @@ some minor bug fixes, and updated versions of Docker Compose, Docker Buildx,
 
 ### Client
 
-- Add Bash completion for Docker Compose [docker/cli#3752](https://github.com/docker/cli/pull/3752){:target="_blank" rel="noopener"}.
+- Add Bash completion for Docker Compose [docker/cli#3752](https://github.com/docker/cli/pull/3752){target="_blank" rel="noopener"}.
 
 ### Builder
 
 - Fix an issue where file-capabilities were not preserved during build
-  [moby/moby#43876](https://github.com/moby/moby/pull/43876){:target="_blank" rel="noopener"}.
+  [moby/moby#43876](https://github.com/moby/moby/pull/43876){target="_blank" rel="noopener"}.
 - Fix an issue that could result in a panic caused by a concurrent map read and
-  map write [moby/moby#44067](https://github.com/moby/moby/pull/44067){:target="_blank" rel="noopener"}.
+  map write [moby/moby#44067](https://github.com/moby/moby/pull/44067){target="_blank" rel="noopener"}.
 
 ### Daemon
 
 - Fix a security vulnerability relating to supplementary group permissions, which
   could allow a container process to bypass primary group restrictions within the
-  container [CVE-2022-36109](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36109){:target="_blank" rel="noopener"},
-  [GHSA-rc4r-wh2q-q6c4](https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4){:target="_blank" rel="noopener"}.
-- seccomp: add support for Landlock syscalls in default policy [moby/moby#43991](https://github.com/moby/moby/pull/43991){:target="_blank" rel="noopener"}.
-- seccomp: update default policy to support new syscalls introduced in kernel 5.12 - 5.16 [moby/moby#43991](https://github.com/moby/moby/pull/43991){:target="_blank" rel="noopener"}.
+  container [CVE-2022-36109](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36109){target="_blank" rel="noopener"},
+  [GHSA-rc4r-wh2q-q6c4](https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4){target="_blank" rel="noopener"}.
+- seccomp: add support for Landlock syscalls in default policy [moby/moby#43991](https://github.com/moby/moby/pull/43991){target="_blank" rel="noopener"}.
+- seccomp: update default policy to support new syscalls introduced in kernel 5.12 - 5.16 [moby/moby#43991](https://github.com/moby/moby/pull/43991){target="_blank" rel="noopener"}.
 - Fix an issue where cache lookup for image manifests would fail, resulting
-  in a redundant round-trip to the image registry [moby/moby#44109](https://github.com/moby/moby/pull/44109){:target="_blank" rel="noopener"}.
+  in a redundant round-trip to the image registry [moby/moby#44109](https://github.com/moby/moby/pull/44109){target="_blank" rel="noopener"}.
 - Fix an issue where `exec` processes and healthchecks were not terminated
-  when they timed out [moby/moby#44018](https://github.com/moby/moby/pull/44018){:target="_blank" rel="noopener"}.
+  when they timed out [moby/moby#44018](https://github.com/moby/moby/pull/44018){target="_blank" rel="noopener"}.
 
 ### Packaging
 
-- Update Docker Buildx to [v0.9.1](https://github.com/docker/buildx/releases/tag/v0.9.1){:target="_blank" rel="noopener"}.
-- Update Docker Compose to [v2.10.2](https://github.com/docker/compose/releases/tag/v2.10.2){:target="_blank" rel="noopener"}.
-- Update containerd (`containerd.io` package) to [v1.6.8](https://github.com/containerd/containerd/releases/tag/v1.6.8){:target="_blank" rel="noopener"}.
-- Update runc version to [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4){:target="_blank" rel="noopener"}.
-- Update Go runtime to [1.18.6](https://go.dev/doc/devel/release#go1.18.minor){:target="_blank" rel="noopener"},
-  which contains fixes for [CVE-2022-27664](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27664){:target="_blank" rel="noopener"} and
-  [CVE-2022-32190](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32190){:target="_blank" rel="noopener"}.
+- Update Docker Buildx to [v0.9.1](https://github.com/docker/buildx/releases/tag/v0.9.1){target="_blank" rel="noopener"}.
+- Update Docker Compose to [v2.10.2](https://github.com/docker/compose/releases/tag/v2.10.2){target="_blank" rel="noopener"}.
+- Update containerd (`containerd.io` package) to [v1.6.8](https://github.com/containerd/containerd/releases/tag/v1.6.8){target="_blank" rel="noopener"}.
+- Update runc version to [v1.1.4](https://github.com/opencontainers/runc/releases/tag/v1.1.4){target="_blank" rel="noopener"}.
+- Update Go runtime to [1.18.6](https://go.dev/doc/devel/release#go1.18.minor){target="_blank" rel="noopener"},
+  which contains fixes for [CVE-2022-27664](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27664){target="_blank" rel="noopener"} and
+  [CVE-2022-32190](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32190){target="_blank" rel="noopener"}.
 
 ## 20.10.17
 2022-06-06
@@ -64,53 +64,53 @@ This release of Docker Engine comes with updated versions of Docker Compose and 
 
 ### Client
 
-- Remove asterisk from docker commands in zsh completion script [docker/cli#3648](https://github.com/docker/cli/pull/3648){:target="_blank" rel="noopener"}.
+- Remove asterisk from docker commands in zsh completion script [docker/cli#3648](https://github.com/docker/cli/pull/3648){target="_blank" rel="noopener"}.
 
 ### Networking
 
-- Fix Windows port conflict with published ports in host mode for overlay [moby/moby#43644](https://github.com/moby/moby/pull/43644){:target="_blank" rel="noopener"}.
-- Ensure performance tuning is always applied to libnetwork sandboxes [moby/moby#43683](https://github.com/moby/moby/pull/43683){:target="_blank" rel="noopener"}.
+- Fix Windows port conflict with published ports in host mode for overlay [moby/moby#43644](https://github.com/moby/moby/pull/43644){target="_blank" rel="noopener"}.
+- Ensure performance tuning is always applied to libnetwork sandboxes [moby/moby#43683](https://github.com/moby/moby/pull/43683){target="_blank" rel="noopener"}.
 
 ### Packaging
 
-- Update Docker Compose to [v2.6.0](https://github.com/docker/compose/releases/tag/v2.6.0){:target="_blank" rel="noopener"}.
+- Update Docker Compose to [v2.6.0](https://github.com/docker/compose/releases/tag/v2.6.0){target="_blank" rel="noopener"}.
 - Update containerd (`containerd.io` package) to [v1.6.6](https://github.com/containerd/containerd/releases/tag/v1.6.6),
-  which contains a fix for [CVE-2022-31030](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31030){:target="_blank" rel="noopener"}
+  which contains a fix for [CVE-2022-31030](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31030){target="_blank" rel="noopener"}
 - Update runc version to [v1.1.2](https://github.com/opencontainers/runc/releases/tag/v1.1.2), which contains a fix for
-  [CVE-2022-29162](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29162){:target="_blank" rel="noopener"}.
-- Update Go runtime to [1.17.11](https://go.dev/doc/devel/release#go1.17.minor){:target="_blank" rel="noopener"},
-  which contains fixes for [CVE-2022-30634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30634){:target="_blank" rel="noopener"},
-  [CVE-2022-30629](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30629){:target="_blank" rel="noopener"},
-  [CVE-2022-30580](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30580){:target="_blank" rel="noopener"} and
-  [CVE-2022-29804](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29804){:target="_blank" rel="noopener"}
+  [CVE-2022-29162](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29162){target="_blank" rel="noopener"}.
+- Update Go runtime to [1.17.11](https://go.dev/doc/devel/release#go1.17.minor){target="_blank" rel="noopener"},
+  which contains fixes for [CVE-2022-30634](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30634){target="_blank" rel="noopener"},
+  [CVE-2022-30629](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30629){target="_blank" rel="noopener"},
+  [CVE-2022-30580](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30580){target="_blank" rel="noopener"} and
+  [CVE-2022-29804](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29804){target="_blank" rel="noopener"}
 
 ## 20.10.16
 2022-05-12
 
 This release of Docker Engine fixes a regression in the Docker CLI builds for
 macOS, fixes an issue with `docker stats` when using containerd 1.5 and up,
-and updates the Go runtime to include a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){:target="_blank" rel="noopener"}.
+and updates the Go runtime to include a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){target="_blank" rel="noopener"}.
 
 ### Client
 
 - Fixed a regression in binaries for macOS introduced in [20.10.15](#201015), which
-  resulted in a panic [docker/cli#43426](https://github.com/docker/cli/pull/3592){:target="_blank" rel="noopener"}.
+  resulted in a panic [docker/cli#43426](https://github.com/docker/cli/pull/3592){target="_blank" rel="noopener"}.
 - Update golang.org/x/sys dependency which contains a fix for
-  [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){:target="_blank" rel="noopener"}.
+  [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){target="_blank" rel="noopener"}.
 
 ### Daemon
 
 - Fixed an issue where `docker stats` was showing empty stats when running with
-  containerd 1.5.0 or up [moby/moby#43567](https://github.com/moby/moby/pull/43567){:target="_blank" rel="noopener"}.
-- Updated the `golang.org/x/sys` build-time dependency which contains a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){:target="_blank" rel="noopener"}.
+  containerd 1.5.0 or up [moby/moby#43567](https://github.com/moby/moby/pull/43567){target="_blank" rel="noopener"}.
+- Updated the `golang.org/x/sys` build-time dependency which contains a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){target="_blank" rel="noopener"}.
 
 ### Packaging
 
-- Updated Go runtime to [1.17.10](https://go.dev/doc/devel/release#go1.17.minor){:target="_blank" rel="noopener"},
-  which contains a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){:target="_blank" rel="noopener"}.
+- Updated Go runtime to [1.17.10](https://go.dev/doc/devel/release#go1.17.minor){target="_blank" rel="noopener"},
+  which contains a fix for [CVE-2022-29526](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29526){target="_blank" rel="noopener"}.
 - Used "weak" dependencies for the `docker scan` CLI plugin, to prevent a
   "conflicting requests" error when users performed an off-line installation from
-  downloaded RPM packages [docker/docker-ce-packaging#659](https://github.com/docker/docker-ce-packaging/pull/659){:target="_blank" rel="noopener"}.
+  downloaded RPM packages [docker/docker-ce-packaging#659](https://github.com/docker/docker-ce-packaging/pull/659){target="_blank" rel="noopener"}.
 
 ## 20.10.15
 2022-05-05
@@ -120,9 +120,9 @@ This release of Docker Engine comes with updated versions of the `compose`,
 
 > **Known issues**
 > 
-> We've identified an issue with the [macOS CLI binaries](https://download.docker.com/mac/static/stable/){:target="_blank" rel="noopener" class="_"}
+> We've identified an issue with the [macOS CLI binaries](https://download.docker.com/mac/static/stable/){target="_blank" rel="noopener" class="_"}
 > in the 20.10.15 release. This issue has been resolved in the [20.10.16](#201016) release.
-{:.important}
+{.important}
 
 ### Daemon
 
@@ -277,7 +277,7 @@ to learn how to use the `docker scan` command to check if images are vulnerable.
 >
 > Refer to the [HTTP/HTTPS proxy section](../../config/daemon/systemd.md#httphttps-proxy)
 > to learn how to configure the Docker Daemon to use a proxy server.
-{: .important }
+{ .important }
 
 
 ### Distribution
@@ -307,7 +307,7 @@ to learn how to use the `docker scan` command to check if images are vulnerable.
 >
 > Refer to the [HTTP/HTTPS proxy section](../../config/daemon/systemd.md#httphttps-proxy)
 > to learn how to configure the Docker Daemon to use a proxy server.
-{: .important }
+{ .important }
 
 
 ### Builder
@@ -348,7 +348,7 @@ well as updated versions of the containerd.io package.
 >
 > Refer to the [HTTP/HTTPS proxy section](../../config/daemon/systemd.md#httphttps-proxy)
 > to learn how to configure the Docker Daemon to use a proxy server.
-{: .important }
+{ .important }
 
 ### Client
 
@@ -393,7 +393,7 @@ well as updated versions of the containerd.io package.
 >
 > Refer to the [HTTP/HTTPS proxy section](../../config/daemon/systemd.md#httphttps-proxy)
 > to learn how to configure the Docker Daemon to use a proxy server.
-{: .important }
+{ .important }
 
 ### Deprecation
 

@@ -99,7 +99,7 @@ A `metadata.json` file is required at the root of the image filesystem.
 ```json
 {
   "vm": {
-    "image": "${DESKTOP_PLUGIN_IMAGE}"
+    "image": "${ESKTOP_PLUGIN_IMAGE}"
   },
   "ui": {
     "dashboard-tab": {
@@ -115,8 +115,8 @@ For more information on the `metadata.json`, see [Metadata](../../extensions/MET
 
 > **Warning**
 >
-> Do not replace the `${DESKTOP_PLUGIN_IMAGE}` placeholder in the `metadata.json` file. The placeholder is replaced automatically with the correct image name when the extension is installed.
-{: .warning}
+> Do not replace the `${ESKTOP_PLUGIN_IMAGE}` placeholder in the `metadata.json` file. The placeholder is replaced automatically with the correct image name when the extension is installed.
+{ .warning}
 
 ## What's next?
 
