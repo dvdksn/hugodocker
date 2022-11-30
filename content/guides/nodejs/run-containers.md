@@ -4,9 +4,8 @@ keywords: get started, Node JS, run, container,
 description: Learn how to run the image as a container.
 redirect_from:
 - /get-started/nodejs/run-containers/
+weight: 2
 ---
-
-{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 

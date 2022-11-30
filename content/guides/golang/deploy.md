@@ -2,9 +2,8 @@
 title: "Deploy your app"
 keywords: deploy, ACI, ECS, local, development, Go, Golang, cloud, deployment
 description: Learn how to deploy your application
+weight: 6
 ---
-
-{ include_relative nav.html selected="6" %}
 
 { include deploy.md %}
 

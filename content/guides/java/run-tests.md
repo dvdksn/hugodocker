@@ -2,9 +2,8 @@
 title: "Run your tests"
 keywords: Java, build, test
 description: How to build and run your Tests
+weight: 4
 ---
-
-{ include_relative nav.html selected="4" %}
 
 ## Prerequisites
 

@@ -4,9 +4,8 @@ keywords: ci, cd, ci/cd, continuous integration, continuous deployment, deployme
 description: Learn how to set up CI/CD pipeline for your application.
 redirect_from:
 - /get-started/golang/configure-ci-cd/
+weight: 5
 ---
-
-{ include_relative nav.html selected="5" %}
 
 This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){target="_blank" rel="noopener" class="_"} on CI/CD best practices.
 

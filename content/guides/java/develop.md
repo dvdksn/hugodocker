@@ -2,9 +2,8 @@
 title: "Use containers for development"
 keywords: Java, local, development, run,
 description: Learn how to develop your application locally.
+weight: 3
 ---
-
-{ include_relative nav.html selected="3" %}
 
 ## Prerequisites
 

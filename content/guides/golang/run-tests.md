@@ -4,6 +4,7 @@ keywords: build, go, golang, test
 description: How to build and run your Go tests in a container
 redirect_from:
 - /get-started/golang/run-tests/
+weight: 4
 ---
 
 { include_relative nav.html selected="4" %}

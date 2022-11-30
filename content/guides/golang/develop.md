@@ -4,9 +4,8 @@ keywords: get started, go, golang, local, development
 description: Learn how to develop your application locally.
 redirect_from:
 - /get-started/golang/develop/
+weight: 3
 ---
-
-{ include_relative nav.html selected="3" %}
 
 ## Prerequisites
 

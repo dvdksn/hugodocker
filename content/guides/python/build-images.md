@@ -2,9 +2,8 @@
 title: "Build your Python image"
 keywords: python, build, images, dockerfile
 description: Learn how to build your first Docker image by writing a Dockerfile
+weight: 1
 ---
-
-{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 

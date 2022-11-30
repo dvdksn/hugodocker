@@ -14,11 +14,7 @@
       {{ partial "header.html" . }}
     </header>
     <main class="min-h-screen flex flex-col gap-16 items-center py-16">
-      <div class="space-y-5">
-        <h1 class="text-4xl">What can we help you find?</h1>
-        <div id="autocomplete"></div>
-      </div>
-      <div class="w-[1240px] px-20 lg:w-full">
+      <div class="prose max-w-none w-[1240px] px-20 lg:w-full">
         {{ .Content }}
       </div>
     </main>

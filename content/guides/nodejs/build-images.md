@@ -2,11 +2,8 @@
 title: "Build your Node image"
 keywords: containers, images, node.js, node, dockerfiles, node, coding, build, push, run
 description: Learn how to build your first Docker image by writing a Dockerfile
-redirect_from:
-  - /get-started/nodejs/build-images/
+weight: 1
 ---
-
-{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 

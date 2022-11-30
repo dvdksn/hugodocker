@@ -1,10 +1,9 @@
 ---
 title: "Configure CI/CD for your application"
-keywords: CI/CD, GitHub Actions, NodeJS, local, development
-description: Learn how to develop your application locally.
+keywords: python, CI/CD, local, development
+description: Learn how to Configure CI/CD for your application
+weight: 4
 ---
-
-{ include_relative nav.html selected="5" %}
 
 This page guides you through the process of setting up a GitHub Action CI/CD pipeline with Docker containers. Before setting up a new pipeline, we recommend that you take a look at [Ben's blog](https://www.docker.com/blog/best-practices-for-using-docker-hub-for-ci-cd/){target="_blank" rel="noopener" class="_"} on CI/CD best practices .
 
@@ -39,7 +38,7 @@ Before we start, ensure you can access [Docker Hub](https://hub.docker.com/) fro
 
 ## Set up the GitHub Actions workflow
 
-In the previous section, we created a PAT and added it to GitHub to ensure we can access Docker Hub from any workflow. Now, let’s set up our GitHub Actions workflow to build and store our images in Hub. We can achieve this by creating two Docker actions in the YAML file below:
+In the previous section, we created a PAT and added it to GitHub to ensure we can access Docker Hub from any workflow. Now, let’s set up our GitHub Actions workflow to build and store our images in Hub. We can achieve this by creating two Docker actions:
 
 1. The first action enables us to log in to Docker Hub using the secrets we stored in the GitHub Repository.
 2. The second one is the build and push action.
@@ -139,8 +138,8 @@ Let us set up a Builder with a build cache. First, we need to set up cache for t
 
 And lastly, after adding the builder and build cache snippets to the top of the Actions file, we need to add some extra attributes to the build and push step. This involves:
 
-Setting up the builder to use the output of the buildx step, and then
-Using the cache we set up earlier for it to store to and to retrieve
+ - Setting up the builder to use the output of the buildx step, and then
+ - Using the cache we set up earlier for it to store to and to retrieve
 
 { raw %}
 ```yaml
@@ -157,7 +156,7 @@ Using the cache we set up earlier for it to store to and to retrieve
           file: ./Dockerfile
           builder: ${ steps.buildx.outputs.name }}
           push: true
-          tags: ${ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags:  ${ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
       - name: Image digest
@@ -189,7 +188,7 @@ on:
 ```
 { endraw %}
 
-This ensures that the main CI will only trigger if we tag our commits with `V.n.n.n.` Let’s test this. For example, run the following command:
+This ensures that the main CI will only trigger if we tag our commits with `Vn.n.n.` Let’s test this. For example, run the following command:
 
 ```console
 $ git tag -a v1.0.2
@@ -242,8 +241,8 @@ In this module, you have learnt how to set up GitHub Actions workflow to an exis
 
 You can also consider deploying your application. For detailed instructions, see:
 
-[Deploy your app](/deploy.md){ .button .primary-btn}
+[Deploy your app](deploy.md){ .button .primary-btn}
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({ site.repo }}/issues/new?title=[Python%20docs%20feedback]){target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({ site.repo }}/pulls){target="_blank" rel="noopener" class="_"} to suggest updates.

@@ -2,9 +2,8 @@
 title: "Run your image as a container"
 keywords: Java, run, image, container,
 description: Learn how to run the image as a container.
+weight: 2
 ---
-
-{ include_relative nav.html selected="2" %}
 
 ## Prerequisites
 

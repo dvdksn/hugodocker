@@ -2,9 +2,8 @@
 title: "Run your Tests using Node.js and Mocha frameworks"
 keywords: Node.js, build, Mocha, test
 description: How to Build and Run your Tests using Node.js and Mocha frameworks
+weight: 4
 ---
-
-{ include_relative nav.html selected="4" %}
 
 ## Prerequisites
 

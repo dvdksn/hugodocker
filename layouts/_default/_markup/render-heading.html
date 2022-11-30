@@ -1,6 +1,10 @@
 {{ $anchorString := .Attributes.id | default .Anchor }}
 <a class="relative -top-12" name="{{ $anchorString }}"></a>
-<h{{ .Level }}>
+<h{{ .Level }}
+  {{ with .Attributes.class }}
+    class="{{ . }}"
+  {{ end }}
+>
   <span class="group not-prose">
     <a class="text-black dark:text-white no-underline group-hover:underline" href="#{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}</a>
     <span class="invisible align-bottom group-hover:visible anchor-icon material-symbols-rounded">link</span>

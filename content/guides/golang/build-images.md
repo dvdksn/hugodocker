@@ -4,9 +4,8 @@ keywords: containers, images, go, golang, dockerfiles, coding, build, push, run
 description: Learn how to build your first Docker image by writing a Dockerfile
 redirect_from:
 - /get-started/golang/build-images/
+weight: 1
 ---
-
-{ include_relative nav.html selected="1" %}
 
 ## Prerequisites
 
