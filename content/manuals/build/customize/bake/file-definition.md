@@ -1,6 +1,7 @@
 ---
 title: "Bake file definition"
 keywords: build, buildx, bake, buildkit, hcl, json, compose
+notoc: true
 redirect_from:
 - /build/bake/file-definition/
 fetch_remote:

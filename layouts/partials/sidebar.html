@@ -10,11 +10,11 @@
     {{ with (site.GetPage "/tags" ) }}
       <li class="flex items-center gap-1">
         <span
-          class="text-lg text-blue-dark-500 dark:text-blue-dark-500 material-symbols-rounded"
+          class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded"
           >tag</span
         >
         <a
-          class="text-gray-light-600 dark:text-gray-dark-700 hover:underline hover:text-black hover:dark:text-white"
+          class="text-gray-light dark:text-gray-dark hover:underline hover:text-black hover:dark:text-white"
           href="{{ .Permalink }}"
           >{{ .LinkTitle }}</a
         >

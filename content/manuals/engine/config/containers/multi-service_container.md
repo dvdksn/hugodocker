@@ -1,16 +1,18 @@
 ---
 description: How to run more than one process in a container
 keywords: docker, supervisor, process management
+tags:
+  - container
 redirect_from:
-- /articles/using_supervisord/
-- /engine/admin/multi-service_container/
-- /engine/admin/using_supervisord/
-- /engine/articles/using_supervisord/
+  - /articles/using_supervisord/
+  - /engine/admin/multi-service_container/
+  - /engine/admin/using_supervisord/
+  - /engine/articles/using_supervisord/
 title: Run multiple services in a container
 ---
 
-A container's main running process is the `ENTRYPOINT` and/or `CMD` at the
-end of the `Dockerfile`. It is generally recommended that you separate areas of
+A container's main running process is the `ENTRYPOINT` and/or `CMD` at the end
+of the `Dockerfile`. It is generally recommended that you separate areas of
 concern by using one service per container. That service may fork into multiple
 processes (for example, Apache web server starts multiple worker processes).
 It's ok to have multiple processes, but to get the most benefit out of Docker,
@@ -40,13 +42,13 @@ this in a few different ways.
 
   # Start the first process
   ./my_first_process &
-  
+
   # Start the second process
   ./my_second_process &
-  
+
   # Wait for any process to exit
   wait -n
-  
+
   # Exit with status of process that exited first
   exit $?
   ```
@@ -63,26 +65,26 @@ this in a few different ways.
   ```
 
 - If you have one main process that needs to start first and stay running but
-  you temporarily need to run some other processes (perhaps to interact with
-  the main process) then you can use bash's job control to facilitate that.
-  First, the wrapper script:
+  you temporarily need to run some other processes (perhaps to interact with the
+  main process) then you can use bash's job control to facilitate that. First,
+  the wrapper script:
 
   ```bash
   #!/bin/bash
-  
+
   # turn on bash's job control
   set -m
-  
+
   # Start the primary process and put it in the background
   ./my_main_process &
-  
+
   # Start the helper process
   ./my_helper_process
-  
+
   # the my_helper_process might need to know how to wait on the
   # primary process to start before it does its work and returns
-  
-  
+
+
   # now we bring the primary process back into the foreground
   # and leave it there
   fg %1

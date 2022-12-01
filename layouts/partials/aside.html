@@ -33,22 +33,27 @@
         >
       </p>
     {{ end }}
-    {{ with .GetTerms "tags" }}
-      <div class="text-lg pb-2">Tags</div>
+  </div>
+  {{ with .GetTerms "tags" }}
+    <div>
+      <div class="text-lg mb-2">Tags</div>
       {{ range . }}
-        <a
-          class="inline-flex items-center py-1 px-2 rounded-md hover:no-underline hover:text-white hover:bg-blue-light-400 dark:hover:bg-blue-dark-100"
-          href="{{ .Permalink }}"
-          ><span class="text-lg material-symbols-rounded">tag</span
-          >{{ .LinkTitle }}</a
-        >
+        <div class="inline-flex items-center px-2">
+          <span class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded">tag</span>
+          <a class="hover:underline" href="{{ .Permalink }}"
+            >{{ .LinkTitle }}</a
+          >
+        </div>
       {{ end }}
-    {{ end }}
-  </div>
-  <div>
-    <div class="text-lg pb-2">Table of contents</div>
-    {{ .TableOfContents }}
-  </div>
+    </div>
+  {{ end }}
+
+  {{ if ne .Params.notoc true }}
+    <div>
+      <div class="text-lg pb-2">Table of contents</div>
+      {{ .TableOfContents }}
+    </div>
+  {{ end }}
   {{ $related := .Site.RegularPages.Related . }}
   {{ with $related }}
     <div>

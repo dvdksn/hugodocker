@@ -5,7 +5,7 @@ tags:
 - Docker Desktop
 title: Docker Desktop
 aliases:
-- /desktop/opensource/
+- /manuals/desktop/opensource/
 - /docker-for-mac/dashboard/
 - /docker-for-mac/opensource/
 - /docker-for-windows/dashboard/

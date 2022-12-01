@@ -3,9 +3,27 @@ languageCode: en-us
 title: Docker Docs
 refLinksErrorLevel: WARNING
 enableGitInfo: true
+tableOfContents:
+  startLevel: 2
+  endLevel: 4
 
 params:
-  private: false
+  analytics:
+    google: GTM-WL2QLG5
+    onetrust: 8e0ebfd9-035d-4ec2-9b2f-a2de9c09f906
+    hotjar: 3169877
+  versions:
+    latest_engine_api_version: "1.41"
+    docker_ce_version: "20.10"
+    compose_v1_version: "1.29.2"
+    compose_version: "v2.13.0"
+    compose_file_v3: "3.9"
+    compose_file_v2: "2.4"
+    machine_version: "0.16.0"
+    distribution_version: "2.7"
+    compose_switch_version: "1.0.4"
+    buildkit_version: "0.10.5"
+    min_api_threshold: 1.40
 
 markup:
   goldmark:
@@ -16,6 +34,16 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
+
+related:
+  includeNewer: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: keywords
+      weight: 40
+  threshold: 80
+  toLower: false
 
 module:
   imports:

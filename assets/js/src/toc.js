@@ -2,7 +2,7 @@ const toc = document.querySelector("#TableOfContents")
 
 if (toc) {
   const prose = document.querySelector("article.prose")
-  const headings = prose.querySelectorAll("h2, h3")
+  const headings = prose.querySelectorAll("h2, h3, h4")
   // grab the yposition and targets for all anchor links
   const anchorLinks = Array.from(headings)
     .map((h) => h.previousElementSibling)
