@@ -72,11 +72,17 @@ outputFormats:
     isPlainText: true
     mediaType: "application/json"
     notAlternative: true
+  redirects:
+    baseName: redirects
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
 
 outputs:
   home:
     - html
     - algolia
+    - redirects
   term:
     - html
     - json
