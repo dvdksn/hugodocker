@@ -1,6 +1,7 @@
 ---
 title: Registries
 icon: warehouse
+lead: A Docker registry stores Docker images.
 ---
 
 A Docker registry stores Docker images. Docker Hub is a public registry that

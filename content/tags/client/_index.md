@@ -1,6 +1,9 @@
 ---
 title: Docker client
 icon: terminal
+lead:
+  The Docker client is the primary way that many Docker users interact with
+  Docker.
 ---
 
 The Docker client (`docker`) is the primary way that many Docker users interact

@@ -1,6 +1,9 @@
 ---
 title: Docker Desktop
 icon: desktop_windows
+lead:
+  Docker Desktop is an easy-to-install application for your Mac, Windows or
+  Linux environment.
 ---
 
 Docker Desktop is an easy-to-install application for your Mac, Windows or Linux

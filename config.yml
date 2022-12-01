@@ -49,6 +49,9 @@ outputs:
   home:
     - html
     - algolia
+  term:
+    - html
+    - json
 
 taxonomies:
   tag: tags

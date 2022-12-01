@@ -1,6 +1,7 @@
 ---
 title: Containers
 icon: grid_view
+lead: A container is a runnable instance of an image. 
 ---
 
 A container is a runnable instance of an image. You can create, start, stop,

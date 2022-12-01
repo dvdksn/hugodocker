@@ -1,17 +1,29 @@
-{{ define "main" }}
+{{ define "left" }}
+  {{ partial "sidebar.html" . }}
+{{ end }}
+
+{{ define "center" }}
   {{ partial "breadcrumbs.html" . }}
   <article class="prose max-w-none dark:prose-invert">
-    <h1><span class="material-symbols-rounded">sell</span> {{ .Title }}</h1>
+    <h1 class="flex items-center">
+      <span
+        class="text-4xl text-blue-dark-500 dark:text-blue-dark-500 material-symbols-rounded"
+        >tag</span
+      >&nbsp;{{ .Title }}
+    </h1>
     {{ .Content }}
+    {{ with (index site.Taxonomies.tags .Data.Term) }}
+    <hr>
     <nav>
-      <div>Pages with this tag:</div>
+      <div class="text-xl">Pages with this tag:</div>
       <ul>
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .Permalink }}">{{ partial "utils/title.html" . }}</a>
-          </li>
+        {{ range . | first 5 }}
+        <li>
+          <a href="{{ .Page.Permalink }}">{{ partial "utils/title.html" .Page }}</a>
+        </li>
         {{ end }}
       </ul>
     </nav>
+    {{ end }}
   </article>
 {{ end }}

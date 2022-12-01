@@ -5,6 +5,22 @@
       {{ template "nodeWalk" (dict "item" . "ctx" $ctx) }}
     {{ end }}
   </ul>
+  <hr />
+  <ul class="mt-4 ml-4">
+    {{ with (site.GetPage "/tags" ) }}
+      <li class="flex items-center gap-1">
+        <span
+          class="text-lg text-blue-dark-500 dark:text-blue-dark-500 material-symbols-rounded"
+          >tag</span
+        >
+        <a
+          class="text-gray-light-600 dark:text-gray-dark-700 hover:underline hover:text-black hover:dark:text-white"
+          href="{{ .Permalink }}"
+          >{{ .LinkTitle }}</a
+        >
+      </li>
+    {{ end }}
+  </ul>
 </nav>
 
 {{ define "nodeWalk" }}
@@ -17,13 +33,13 @@
       data-expanded="true"
     {{ end }}
     {{ if $isCurrent }}
-      class="pl-3 -ml-[2px] border-l-4 border-blue-light dark:border-blue-dark-400
-      bg-blue-light-200 dark:bg-gray-dark-300"
+      class="pl-3 -ml-[2px] border-l-4 border-blue-light dark:border-blue-dark
+      bg-blue-light-200 dark:bg-blue-dark-300"
     {{ else }}
-      class="pl-3"
+      class="pl-3 hover:bg-gray-light-200 hover:dark:bg-gray-dark-300"
     {{ end }}
   >
-    <span class="flex items-center py-2">
+    <span class="flex items-center">
       {{ if .item.Pages }}
         <button
           class="sidebar-expander material-symbols-rounded -my-1 -ml-[3px] md:text-[28px]"
@@ -33,13 +49,10 @@
       {{ end }}
       <a
         {{ if $isCurrent }}
-          class="max-w-full truncate hover:font-medium hover:text-black
-          dark:hover:text-white hover:no-underline font-medium text-black
-          dark:text-white" aria-current="page"
+          class="py-2 max-w-full w-full truncate font-medium"
+          aria-current="page"
         {{ else }}
-          class="max-w-full truncate hover:font-medium hover:text-black
-          dark:hover:text-white hover:no-underline text-gray-light-600
-          dark:text-gray-dark-700"
+          class="py-2 max-w-full w-full truncate hover:font-medium"
         {{ end }}
         href="{{ .item.Permalink }}"
         title="{{ $title }}"

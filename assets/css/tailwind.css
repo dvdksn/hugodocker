@@ -23,4 +23,8 @@
   @apply text-blue-light dark:text-blue-dark underline-offset-2 hover:underline;
 }
 
+hr {
+  @apply border-divider-light dark:border-divider-dark;
+}
+
 /* see also: tailwind.config.js */

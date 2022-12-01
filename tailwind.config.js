@@ -54,6 +54,10 @@ module.exports = {
             a: {
               fontWeight: 400
             },
+            hr: {
+              marginTop: "2em",
+              marginBottom: "1em"
+            },
             h1: {
               fontWeight: "500",
               fontSize: "2.5rem",
