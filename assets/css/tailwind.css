@@ -27,4 +27,12 @@ hr {
   @apply border-divider-light dark:border-divider-dark;
 }
 
+.sidebar-hover {
+  @apply hover:bg-gray-light-200 hover:dark:bg-gray-dark-200;
+}
+
+.sidebar-underline {
+  @apply underline underline-offset-4 decoration-4 decoration-blue-light dark:decoration-blue-dark;
+}
+
 /* see also: tailwind.config.js */

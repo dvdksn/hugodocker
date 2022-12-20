@@ -52,7 +52,7 @@ module.exports = {
               lineHeight: 1.5
             },
             a: {
-              fontWeight: 400
+              fontWeight: 400,
             },
             hr: {
               marginTop: "2em",
@@ -96,7 +96,7 @@ module.exports = {
       xs: ["0.7143rem", { letterSpacing: "0.015em", fontWeight: 500 }],
       sm: "0.851rem",
       base: ["14px", {}],
-      lg: ["1.1429rem", { fontWeight: 500 }],
+      lg: ["1.1429rem", 1.75],
       xl: ["1.2857rem", { letterSpacing: "-0.015em", fontWeight: 500 }],
       "2xl": ["1.5rem", { letterSpacing: "-0.015em", fontWeight: 500 }],
       "3xl": ["2rem", { fontWeight: 500 }],

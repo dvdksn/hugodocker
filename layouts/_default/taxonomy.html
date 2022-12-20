@@ -2,19 +2,22 @@
   {{ partial "sidebar.html" . }}
 {{ end }}
 
-{{ define "center" }}
+{{ define "main" }}
   {{ partial "breadcrumbs.html" . }}
   <article class="prose max-w-none dark:prose-invert px-5">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <hr>
-    <div class="text-2xl my-4">Browse docs by tag:</div>
-    <nav class="not-prose grid grid-cols-2 md:grid-cols-1 gap-4">
-      {{ range .Pages }}
-        {{ $title := partial "utils/title.html" . }}
-        {{ partial "components/card.html" (dict "title" $title "link" .Permalink "icon" "tag" "description" .Params.lead) }}
+    <hr />
+    <div class="text-2xl my-4">Browse docs by topic:</div>
+    {{ range .Pages }}
+      {{ $title := partial "utils/title.html" . }}
+      {{ $firstLetter := slicestr $title 0 1 | upper }}
+      {{ if not (in ($.Scratch.Get "letters") $firstLetter) }}
+        {{ $.Scratch.Add "letters" $firstLetter }}
+        {{ $.RenderString (printf "## %s" $firstLetter) }}
       {{ end }}
-    </nav>
+      <p><a href="{{ .Permalink }}">{{ $title }}</a>: {{ .Params.lead }}</p>
+    {{ end }}
   </article>
 {{ end }}
 

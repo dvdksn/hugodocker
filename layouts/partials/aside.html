@@ -1,10 +1,10 @@
 <aside class="space-y-4 lg:hidden">
   <div class="space-y-2">
-    <div class="text-lg pb-2">Page details</div>
+    <div class="text-lg pb-2">{{ T "pageDetails" }}</div>
     {{ with .ReadingTime }}
       <p class="flex items-center gap-2">
         <span class="material-symbols-rounded">schedule</span>
-        <span>{{ . }} minute read</span>
+        <span>{{ T "readingTime" . }}</span>
       </p>
     {{ end }}
     {{ if .File }}
@@ -13,7 +13,7 @@
         ><a
           class="link"
           href="https://github.com/docker/docs/edit/main/content/{{ .File.Path }}"
-          >Edit this page
+          >{{ T "editPage" }}
           <span class="align-middle text-base material-symbols-rounded"
             >open_in_new</span
           ></a
@@ -26,7 +26,7 @@
           target="_blank"
           rel="noopener"
           href="https://github.com/docker/docs/issues/new?body=File: [content/{{ .File.Path }}]({{ .Permalink }})"
-          >Request changes
+          >{{ T "requestChanges" }}
           <span class="align-middle text-base material-symbols-rounded"
             >open_in_new</span
           ></a
@@ -34,12 +34,15 @@
       </p>
     {{ end }}
   </div>
-  {{ with .GetTerms "tags" }}
+  {{ with .GetTerms "topics" }}
     <div>
-      <div class="text-lg mb-2">Tags</div>
+      <div class="text-lg mb-2">{{ i18n "topics" }}</div>
       {{ range . }}
         <div class="inline-flex items-center px-2">
-          <span class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded">tag</span>
+          <span
+            class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded"
+            >tag</span
+          >
           <a class="hover:underline" href="{{ .Permalink }}"
             >{{ .LinkTitle }}</a
           >
@@ -50,14 +53,14 @@
 
   {{ if ne .Params.notoc true }}
     <div>
-      <div class="text-lg pb-2">Table of contents</div>
+      <div class="text-lg pb-2">{{ T "tableOfContents" }}</div>
       {{ .TableOfContents }}
     </div>
   {{ end }}
   {{ $related := .Site.RegularPages.Related . }}
   {{ with $related }}
     <div>
-      <div class="text-lg pb-2">Related content</div>
+      <div class="text-lg pb-2">{{ T "relatedContent" }}</div>
       <ul class="ml-3">
         {{ range first 5 . }}
           <li class="list-disc">

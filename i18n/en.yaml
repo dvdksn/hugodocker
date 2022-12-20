@@ -1,0 +1,28 @@
+homeTitle:
+  other: Docker onboarding guide
+
+homeCopy:
+  other:
+    "Want to use Docker, but don't know where to start? This guide contains
+    step-by-step instructions on how to get started with Docker:"
+
+pageDetails:
+  other: Page details
+
+readingTime:
+  other: "{{ . }} minute read"
+
+editPage:
+  other: Edit this page
+
+requestChanges:
+  other: Request changes
+
+tableOfContents:
+  other: Table of contents
+
+relatedContent:
+  other: Related content
+
+topics:
+  other: Topics

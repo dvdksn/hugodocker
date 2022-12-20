@@ -2,28 +2,28 @@
   {{ partial "sidebar.html" . }}
 {{ end }}
 
-{{ define "center" }}
+{{ define "main" }}
   {{ partial "breadcrumbs.html" . }}
   <article class="prose max-w-none dark:prose-invert">
-    <h1 class="flex items-center">
-      <span
-        class="text-4xl text-blue-dark-500 dark:text-blue-dark-500 material-symbols-rounded"
-        >tag</span
-      >&nbsp;{{ .Title }}
+    <h1 class="flex items-center select-none">
+      <span class="text-4xl material-symbols-rounded">tag</span>
+      <span class="select-text">{{ .Title }}</span>
     </h1>
     {{ .Content }}
-    {{ with (index site.Taxonomies.tags .Data.Term) }}
-    <hr>
-    <nav>
-      <div class="text-xl">Pages with this tag:</div>
-      <ul>
-        {{ range . | first 5 }}
-        <li>
-          <a href="{{ .Page.Permalink }}">{{ partial "utils/title.html" .Page }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </nav>
+    {{ with (index site.Taxonomies.topics .Data.Term) }}
+      <hr />
+      <nav>
+        <div class="text-xl">Pages about this topic:</div>
+        <ul>
+          {{ range . | first 5 }}
+            <li>
+              <a href="{{ .Page.Permalink }}"
+                >{{ partial "utils/title.html" .Page }}</a
+              >
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
     {{ end }}
   </article>
 {{ end }}

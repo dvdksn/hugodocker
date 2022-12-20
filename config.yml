@@ -1,6 +1,4 @@
 baseURL: https://docs.docker.com/
-languageCode: en-us
-title: Docker Docs
 refLinksErrorLevel: WARNING
 enableGitInfo: true
 tableOfContents:
@@ -38,7 +36,7 @@ markup:
 related:
   includeNewer: true
   indices:
-    - name: tags
+    - name: topics
       weight: 100
     - name: keywords
       weight: 40
@@ -50,19 +48,13 @@ module:
     - path: github.com/moby/moby
       mounts:
         - source: docs/api
-          target: content/reference/engine
+          target: content/reference/engine/prev
           includeFiles: "*.md"
-    - path: github.com/docker/buildx
-      mounts:
-        - source: docs/reference
-          target: content/reference/cli
+        - source: docs/api
+          target: static/reference/engine
+          includeFiles: "*.yaml"
     - path: github.com/docker/cli
       mounts:
-        - source: docs/reference/commandline
-          target: content/reference/cli
-          excludeFiles: "{index,cli}.md"
-        - source: docs/reference/commandline/cli.md
-          target: content/manuals/cli/using-the-cli.md
         - source: docs/reference/builder.md
           target: content/reference/dockerfile.md
 
@@ -88,7 +80,15 @@ outputs:
     - json
 
 taxonomies:
-  tag: tags
+  topic: topics
+
+languages:
+  en:
+    languageName: English
+    title: Docker docs
+  sv:
+    languageName: Swedish
+    title: Docker dokumentation
 
 menus:
   footer:

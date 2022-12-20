@@ -4,18 +4,6 @@
 
 {{ $name := trim (.Get "name") " " }}
 
-{{ with .Parent.Get "group" }}
-  {{ if eq . "os" }}
-    {{ $osList := "max, windows, linux" }}
-    {{ if not (in $osList .name) }}
-      {{- errorf "unsupported 'os' tab name, use one of '%s': %s" $osList .Position -}}
-    {{ end }}
-  {{ end }}
-  {{ if eq . "lang" }}
-
-  {{ end }}
-{{ end }}
-
 {{ if not (.Parent.Scratch.Get "tabs") }}
   {{ .Parent.Scratch.Set "tabs" slice }}
 {{ end }}

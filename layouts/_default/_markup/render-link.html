@@ -10,5 +10,5 @@
     ></a
   >
 {{ else }}
-  <a href="{{ ref .Page .Destination }}">{{ .Text | safeHTML }}</a>
+  <a class="link" href="{{ ref .Page .Destination }}">{{ .Text | safeHTML }}</a>
 {{ end }}

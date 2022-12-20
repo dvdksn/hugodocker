@@ -1,78 +1,35 @@
 <nav id="sectiontree" class="w-[300px] flex flex-col md:text-lg md:w-full">
-  {{ $ctx := . }}
-  <ul class="py-2">
-    {{ range site.Home.Sections }}
-      {{ template "nodeWalk" (dict "item" . "ctx" $ctx) }}
-    {{ end }}
-  </ul>
-  <hr />
-  <ul class="mt-4 ml-4">
-    {{ with (site.GetPage "/tags" ) }}
-      <li class="flex items-center gap-1">
-        <span
-          class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded"
-          >tag</span
-        >
-        <a
-          class="text-gray-light dark:text-gray-dark hover:underline hover:text-black hover:dark:text-white"
-          href="{{ .Permalink }}"
-          >{{ .LinkTitle }}</a
-        >
-      </li>
-    {{ end }}
-  </ul>
-</nav>
-
-{{ define "nodeWalk" }}
-  {{ $ctx := .ctx }}
-  {{ $isCurrent := eq .ctx.Permalink .item.Permalink }}
-  {{ $isExpanded := or ($isCurrent) (.item.IsAncestor .ctx) }}
-  {{ $title := partial "utils/title.html" .item }}
-  <li
-    {{ with $isExpanded }}
-      data-expanded="true"
-    {{ end }}
-    {{ if $isCurrent }}
-      class="pl-3 -ml-[2px] border-l-4 border-blue-light dark:border-blue-dark
-      bg-blue-light-200 dark:bg-blue-dark-300"
-    {{ else }}
-      class="pl-3 hover:bg-gray-light-200 hover:dark:bg-gray-dark-300"
-    {{ end }}
-  >
-    <span class="flex items-center">
-      {{ if .item.Pages }}
-        <button
-          class="sidebar-expander material-symbols-rounded -my-1 -ml-[3px] md:text-[28px]"
-        >
-          {{- cond $isExpanded "expand_more" "chevron_right" -}}
-        </button>
-      {{ end }}
+  {{ if or (eq .CurrentSection site.Home) (eq .Section "topics") }}
+    {{ partial "sidebar-home.html" . }}
+  {{ else }}
+    <div>
       <a
-        {{ if $isCurrent }}
-          class="py-2 max-w-full w-full truncate font-medium"
-          aria-current="page"
-        {{ else }}
-          class="py-2 max-w-full w-full truncate hover:font-medium"
-        {{ end }}
-        href="{{ .item.Permalink }}"
-        title="{{ $title }}"
-        >{{ $title }}</a
+        class="px-2 flex items-center gap-1 sidebar-hover"
+        href="{{ site.Home.Permalink }}"
       >
-    </span>
-  </li>
-  {{ with .item.Pages }}
-    <ul
-      {{ if not $isExpanded }}
-        class="hidden ml-5 border-l-2 border-gray-light-300 md:ml-[21px]
-        dark:border-gray-dark-400"
-      {{ else }}
-        class="ml-5 border-l-2 border-gray-light-300 dark:border-gray-dark-400
-        md:ml-[21px]"
+        <span class="text-lg material-symbols-rounded">arrow_back</span>
+        <span>All sections</span></a
+      >
+      {{ if (or .IsPage .IsSection) }}
+        {{ partial "sidebar-sections.html" . }}
       {{ end }}
-    >
-      {{ range . }}
-        {{ template "nodeWalk" (dict "item" . "ctx" $ctx) }}
-      {{ end }}
-    </ul>
+    </div>
   {{ end }}
-{{ end }}
+  {{ with (site.GetPage "/topics") }}
+    <hr class="my-2" />
+    <div
+      class="text-gray-light-600 dark:text-gray-dark-600 flex items-center gap-1
+      {{ if eq $ . }}
+        border-l-4 border-blue-light dark:border-blue-dark sidebar-hover
+        bg-blue-light-200 dark:bg-blue-dark-100 pl-2
+      {{ end }}"
+    >
+      <span class="text-lg material-symbols-rounded">tag</span>
+      <a
+        class="hover:underline hover:text-black hover:dark:text-white"
+        href="{{ .Permalink }}"
+        >{{ .LinkTitle }}</a
+      >
+    </div>
+  {{ end }}
+</nav>

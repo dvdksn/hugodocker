@@ -2,7 +2,7 @@
   {{ partial "sidebar.html" . }}
 {{ end }}
 
-{{ define "center" }}
+{{ define "main" }}
   {{ partial "breadcrumbs.html" . }}
   <article class="prose max-w-none dark:prose-invert">
     <h1>{{ .Title }}</h1>
@@ -30,6 +30,11 @@
             class="p-2 text-white {{ index $badgeColors $key }} rounded uppercase"
             >{{ $key }}</span
           >&nbsp;&nbsp;<code>{{ $path }}</code>
+          {{ $curlExample := printf
+`curl -X %s \
+    "%sapi%s"` ($key | upper) (index $openapi.servers 0).url $path
+          }}
+          {{ highlight $curlExample "console" }}
           {{ $properties.description | $.RenderString (dict "display" "block") }}
           {{ with $properties.parameters }}
             <table>

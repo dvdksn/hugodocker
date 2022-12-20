@@ -2,15 +2,8 @@
 {{ $default := (index (.Scratch.Get "tabs") 0).name }}
 {{ $group := .Get "group" }}
 
-{{ $names := slice }}
-{{ range (.Scratch.Get "tabs") }}
-  {{ $names = $names | append .name }}
-{{ end }}
-{{ $names = delimit $names " " }}
-
-
 <div
-  x-data="{ selected: '{{ $default }}' }"
+  x-data="{ selected: '{{ $default | urlize }}' }"
   {{ with $group }}
     @tab-select.window="$event.detail.group === '{{ . }}' ? selected =
     $event.detail.name : null"
@@ -24,13 +17,13 @@
     {{ range (.Scratch.Get "tabs") }}
       <button
         class="p-1"
-        :class="selected === '{{ .name }}' &&
+        :class="selected === '{{ .name | urlize }}' &&
           'border-blue-light-500 border-b-4 dark:border-b-blue-dark-600'"
         {{ if $group }}
           @click="$dispatch('tab-select', { group: '{{ $group }}', name:
-          '{{ .name }}'})"
+          '{{ .name | urlize }}'})"
         {{ else }}
-          @click="selected = '{{ .name }}'"
+          @click="selected = '{{ .name | urlize }}'"
         {{ end }}
       >
         {{ .name }}
@@ -42,7 +35,7 @@
       <div
         class="prose max-w-none dark:prose-invert"
         aria-role="tab"
-        :class="selected !== '{{ .name }}' && 'hidden'"
+        :class="selected !== '{{ .name | urlize }}' && 'hidden'"
       >
         {{ .content | $.Page.RenderString (dict "display" "block") }}
       </div>
