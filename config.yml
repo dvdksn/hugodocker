@@ -1,3 +1,4 @@
+title: Docker Docs
 baseURL: https://hugodocker.netlify.app/
 refLinksErrorLevel: WARNING
 enableGitInfo: true
@@ -49,7 +50,10 @@ module:
       mounts:
         - source: docs/api
           target: content/reference/engine/prev
-          includeFiles: "*.md"
+          includeFiles: "v1.*.md"
+        - source: docs/api
+          target: content/reference/engine
+          includeFiles: "version-history.md"
         - source: docs/api
           target: static/reference/engine
           includeFiles: "*.yaml"
@@ -85,10 +89,6 @@ taxonomies:
 languages:
   en:
     languageName: English
-    title: Docker docs
-  sv:
-    languageName: Swedish
-    title: Docker dokumentation
 
 menus:
   footer:

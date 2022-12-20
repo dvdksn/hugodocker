@@ -31,8 +31,8 @@
             >{{ $key }}</span
           >&nbsp;&nbsp;<code>{{ $path }}</code>
           {{ $curlExample := printf
-`curl -X %s \
-    "%sapi%s"` ($key | upper) (index $openapi.servers 0).url $path
+            `curl -X %s \
+            "%sapi%s"` ($key | upper) (index $openapi.servers 0).url $path
           }}
           {{ highlight $curlExample "console" }}
           {{ $properties.description | $.RenderString (dict "display" "block") }}
@@ -40,11 +40,11 @@
             <table>
               <thead>
                 <tr>
-                  <th>Parameter</th>
-                  <th>Type</th>
-                  <th>Value</th>
-                  <th>Required</th>
-                  <th>Description</th>
+                  <th>{{ T "apiPropParam" }}</th>
+                  <th>{{ T "apiPropType" }}</th>
+                  <th>{{ T "apiPropValue" }}</th>
+                  <th>{{ T "apiPropReq" }}</th>
+                  <th>{{ T "apiPropDesc" }}</th>
                 </tr>
               </thead>
               {{ range . }}
@@ -81,14 +81,15 @@
                     {{ if (index $openapi.components.examples $component) }}
                       <div>
                         <span
-                          >Example for Response Code: {{ $responseCode }}</span
+                          >{{ T "apiExampleResponseCode" }}:
+                          {{ $responseCode }}</span
                         >
                         <pre><code>{{ (index $openapi.components.examples $component).value | jsonify (dict "indent" "  ") }}</code></pre>
                       </div>
                     {{ end }}
                   {{ end }}
                 {{ else }}
-                  Example Response:
+                  {{ T "apiExampleResponse" }}:
                   <pre><code>
               {{- $example.value | jsonify (dict "indent" "  ") }}
               </code></pre>

@@ -1,6 +1,6 @@
 <aside class="space-y-4 w-[300px] lg:hidden">
   <div>
-    <div class="text-lg pb-2">Resources</div>
+    <div class="text-lg pb-2">{{ T "tableOfContents" }}</div>
     <nav id="TableOfContents">
       <ul>
         {{ $openapi := index site.Data.api .Params.apidata }}

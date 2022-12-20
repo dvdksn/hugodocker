@@ -1,11 +1,18 @@
 ---
+title: Home
+hero:
+  image: /assets/images/laptop.svg
+  heading: Docker onboarding guide
+  copy: |
+    Want to use Docker, but don't know where to start? This guide contains
+    step-by-step instructions on how to get started with Docker:
+
+    [Guide: get started](./guides/_index.md)
+skip_read_time: true
 description: Home page for Docker's documentation
 keywords: Docker, documentation, manual, guide, reference, api, samples
 layout: wide
-title: Docker Documentation
 notoc: true
-notags: true
-skip_read_time: true
 grid:
   - title: "Get started"
     description:

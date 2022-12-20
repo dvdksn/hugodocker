@@ -2,6 +2,7 @@
 {{ $default := (index (.Scratch.Get "tabs") 0).name }}
 {{ $group := .Get "group" }}
 
+
 <div
   x-data="{ selected: '{{ $default | urlize }}' }"
   {{ with $group }}
