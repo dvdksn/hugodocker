@@ -4,6 +4,8 @@
 
 {{ define "main" }}
   {{ $data := index site.Data.cli .Params.datafile }}
+  {{ .Scratch.Set "headings" slice }}
+  {{ .Scratch.Set "subheadings" slice }}
   {{ partial "breadcrumbs.html" . }}
   <article class="prose max-w-none dark:prose-invert">
     <h1>{{ partial "utils/title.html" . }}</h1>
@@ -42,61 +44,85 @@
         This command works with the Swarm orchestrator.
       </p>
     {{ end }}
-    <h2>Usage</h2>
-    {{ highlight (strings.Replace $data.usage "\t" "") "console" }}
-    <h2>Description</h2>
-    {{ $data.long | .RenderString (dict "display" "block") }}
+    {{ with $data.usage }}
+      {{ $heading := dict "level" 2 "text" "Usage" }}
+      {{ partial "heading.html" $heading }}
+      {{ $.Scratch.Add "headings" $heading }}
+      {{ highlight (strings.Replace . "\t" "") "console" }}
+    {{ end }}
+    {{ with $data.long }}
+      {{ $heading := dict "level" 2 "text" "Description" }}
+      {{ partial "heading.html" $heading }}
+      {{ $subHeadings := (strings.FindRE `(?m:#{3,4} .*)` .) }}
+      {{ $.Scratch.Add "headings" $heading }}
+      {{ range $subHeadings }}
+        {{ $lvl := strings.Count "#" . }}
+        {{ $txt := strings.TrimLeft "# " . }}
+        {{ $.Scratch.Add "headings" (dict "level" $lvl "text" $txt) }}
+      {{ end }}
+      {{ . | $.RenderString (dict "display" "block") }}
+    {{ end }}
     {{ with $data.options }}
-    <h2>Options</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Option</th>
-          <th>Short</th>
-          <th>Default</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{ range . }}
+      {{ $heading := dict "level" 2 "text" "Options" }}
+      {{ partial "heading.html" $heading }}
+      {{ $.Scratch.Add "headings" $heading }}
+      <table>
+        <thead>
           <tr>
-            <td><code>--{{ .option }}</code></td>
-            <td><code>-{{ .shorthand }}</code></td>
-            <td><code>{{ .default_value }}</code></td>
-            <td>
-              {{ with .min_api_version }}
-                {{ partial "components/badge.html" (dict "color" "blue" "content" (printf "API %s+" .)) }}
-              {{ end }}
-              {{ with .deprecated }}
-                {{ partial "components/badge.html" (dict "color" "red" "content" "Deprecated") }}
-              {{ end }}
-              {{ with .experimental }}
-                {{ partial "components/badge.html" (dict "color" "amber" "content" "experimental (daemon)") }}
-              {{ end }}
-              {{ with .experimentalcli }}
-                {{ partial "components/badge.html" (dict "color" "amber" "content" "experimental (CLI)") }}
-              {{ end }}
-              {{ with .kubernetes }}
-                {{ partial "components/badge.html" (dict "color" "blue" "content" "Kubernetes") }}
-              {{ end }}
-              {{ with .swarm }}
-                {{ partial "components/badge.html" (dict "color" "blue" "content" "Swarm") }}
-              {{ end }}
-              {{ $.RenderString .description }}
-            </td>
+            <th>Option</th>
+            <th>Short</th>
+            <th>Default</th>
+            <th>Description</th>
           </tr>
-        {{ end }}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {{ range . }}
+            <tr>
+              <td><code>--{{ .option }}</code></td>
+              <td><code>-{{ .shorthand }}</code></td>
+              <td><code>{{ .default_value }}</code></td>
+              <td>
+                {{ with .min_api_version }}
+                  {{ partial "components/badge.html" (dict "color" "blue" "content" (printf "API %s+" .)) }}
+                {{ end }}
+                {{ with .deprecated }}
+                  {{ partial "components/badge.html" (dict "color" "red" "content" "Deprecated") }}
+                {{ end }}
+                {{ with .experimental }}
+                  {{ partial "components/badge.html" (dict "color" "amber" "content" "experimental (daemon)") }}
+                {{ end }}
+                {{ with .experimentalcli }}
+                  {{ partial "components/badge.html" (dict "color" "amber" "content" "experimental (CLI)") }}
+                {{ end }}
+                {{ with .kubernetes }}
+                  {{ partial "components/badge.html" (dict "color" "blue" "content" "Kubernetes") }}
+                {{ end }}
+                {{ with .swarm }}
+                  {{ partial "components/badge.html" (dict "color" "blue" "content" "Swarm") }}
+                {{ end }}
+                {{ $.RenderString .description }}
+              </td>
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
     {{ end }}
     {{ with $data.examples }}
-    <h2>Examples</h2>
-    {{ $.RenderString (dict "display" "block") . }}
+      {{ $heading := dict "level" 2 "text" "Examples" }}
+      {{ partial "heading.html" $heading }}
+      {{ $subHeadings := (strings.FindRE `(?m:#{3,4} .*)` .) }}
+      {{ $.Scratch.Add "headings" $heading }}
+      {{ range $subHeadings }}
+        {{ $lvl := strings.Count "#" . }}
+        {{ $txt := strings.TrimLeft "# " . }}
+        {{ $.Scratch.Add "headings" (dict "level" $lvl "text" $txt) }}
+      {{ end }}
+      {{ $.RenderString (dict "display" "block") . }}
     {{ end }}
     {{ .Content }}
   </article>
 {{ end }}
 
 {{ define "right" }}
-  {{ partial "aside.html" . }}
+  {{ partial "cli-aside.html" . }}
 {{ end }}

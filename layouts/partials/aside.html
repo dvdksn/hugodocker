@@ -1,72 +1,9 @@
 <aside class="space-y-4 lg:hidden">
   <div class="space-y-2">
-    <div class="text-lg pb-2">{{ T "pageDetails" }}</div>
-    {{ if and .ReadingTime (ne .Params.skip_read_time true) }}
-      <p class="flex items-center gap-2">
-        <span class="material-symbols-rounded">schedule</span>
-        <span>{{ T "readingTime" .ReadingTime }}</span>
-      </p>
-    {{ end }}
-    {{ if .File }}
-      <p class="flex items-center gap-2">
-        <span class="material-symbols-rounded">edit</span
-        ><a
-          class="link"
-          href="https://github.com/docker/docs/edit/main/content/{{ .File.Path }}"
-          >{{ T "editPage" }}
-          <span class="align-middle text-base material-symbols-rounded"
-            >open_in_new</span
-          ></a
-        >
-      </p>
-      <p class="flex items-center gap-2">
-        <span class="material-symbols-rounded">done</span
-        ><a
-          class="link"
-          target="_blank"
-          rel="noopener"
-          href="https://github.com/docker/docs/issues/new?body=File: [content/{{ .File.Path }}]({{ .Permalink }})"
-          >{{ T "requestChanges" }}
-          <span class="align-middle text-base material-symbols-rounded"
-            >open_in_new</span
-          ></a
-        >
-      </p>
-    {{ end }}
+    {{ partial "reading-time.html" . }}
+    {{ partial "github-links.html" . }}
   </div>
-  {{ with .GetTerms "topics" }}
-    <div>
-      <div class="text-lg mb-2">{{ T "topics" }}</div>
-      {{ range . }}
-        <div class="inline-flex items-center px-2">
-          <span
-            class="text-lg text-gray-light dark:text-gray-dark material-symbols-rounded"
-            >tag</span
-          >
-          <a class="hover:underline" href="{{ .Permalink }}"
-            >{{ .LinkTitle }}</a
-          >
-        </div>
-      {{ end }}
-    </div>
-  {{ end }}
-  {{ if ne .Params.notoc true }}
-    <div>
-      <div class="text-lg pb-2">{{ T "tableOfContents" }}</div>
-      {{ .TableOfContents }}
-    </div>
-  {{ end }}
-  {{ $related := .Site.RegularPages.Related . }}
-  {{ with $related }}
-    <div>
-      <div class="text-lg pb-2">{{ T "relatedContent" }}</div>
-      <ul class="ml-3">
-        {{ range first 5 . }}
-          <li class="list-disc">
-            <a class="link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  {{ end }}
+  {{ partial "topic-links.html" . }}
+  {{ partial "toc-default.html" . }}
+  {{ partial "related-content.html" . }}
 </aside>

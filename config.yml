@@ -26,6 +26,8 @@ params:
 
 markup:
   goldmark:
+    extensions:
+      typographer: false
     parser:
       attribute:
         block: true

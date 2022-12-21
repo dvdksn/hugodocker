@@ -1,21 +1,3 @@
 <aside class="space-y-4 w-[300px] lg:hidden">
-  <div>
-    <div class="text-lg pb-2">{{ T "tableOfContents" }}</div>
-    <nav id="TableOfContents">
-      <ul>
-        {{ $openapi := index site.Data.api .Params.apidata }}
-        {{ range $path, $pathKeys := $openapi.paths }}
-          {{ range $key, $properties := $pathKeys }}
-            {{ if in "get put patch post delete" $key }}
-              <li>
-                <a href="#{{ $properties.operationId | default (urlize $properties.summary) }}"
-                  >{{ $properties.summary }}</a
-                >
-              </li>
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </ul>
-    </nav>
-  </div>
+  {{ partial "toc-api.html" . }}
 </aside>

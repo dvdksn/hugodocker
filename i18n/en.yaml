@@ -1,7 +1,5 @@
-## aside/toc:
+## aside/toc strings:
 
-pageDetails:
-  other: Page details
 readingTime:
   other: "{{ . }} minute read"
 editPage:
