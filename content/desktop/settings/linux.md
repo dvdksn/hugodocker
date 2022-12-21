@@ -10,7 +10,7 @@ This page provides information on how to configure and manage your Docker Deskto
 
 To navigate to **Settings** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Settings**
+- Select the Docker menu ![whale menu](../images/whale-x.svg) and then **Settings**
 - Select the **Settings** icon from the Docker Dashboard.
 
 ## General
@@ -166,7 +166,7 @@ using Docker commands.
 Select **Reset Kubernetes cluster** to delete all stacks and Kubernetes resources.
 
 For more information about using the Kubernetes integration with Docker Desktop,
-see [Deploy on Kubernetes](../kubernetes.md){:target="_blank" rel="noopener" class="_"}.
+see [Deploy on Kubernetes](../kubernetes.md).
 
 ## Software Updates
 
@@ -199,7 +199,7 @@ For more information about Docker extensions, see [Extensions](../extensions/ind
 
 On the **Feature control** tab you can control your settings for **Beta features** and **Experimental features**.
 
-You can also sign up to the [Developer Preview program](https://www.docker.com/community/get-involved/developer-preview/){:target="_blank" rel="noopener" class="_"} from the **Features in development** tab.
+You can also sign up to the [Developer Preview program](https://www.docker.com/community/get-involved/developer-preview/) from the **Features in development** tab.
 
 ### Beta features
 

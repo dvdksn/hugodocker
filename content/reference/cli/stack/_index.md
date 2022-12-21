@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_stack
 title: docker stack
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/stack/
 ---
 <!--

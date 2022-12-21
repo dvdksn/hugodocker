@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_build
 title: docker image build
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_build/
 ---
 <!--

@@ -46,7 +46,7 @@ Before you convert a user account to an organization, ensure that you have compl
 >
 > When you convert a Docker Pro subscription to an organization, the account
 will be migrated to a Team plan and will be charged $35 per month for 5 seats. For more information,
-see [Docker Pricing](https://www.docker.com/pricing){: target="_blank" rel="noopener" class="_"}.
+see [Docker Pricing](https://www.docker.com/pricing).
 
 1. Ensure you have removed your user account from all teams and organizations and that you have a new Docker ID before you convert an account. See the [Prerequisites](#prerequisites) section for details.
 

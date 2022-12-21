@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_port
 title: docker port
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/port/
 ---
 <!--

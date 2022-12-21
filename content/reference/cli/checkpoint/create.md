@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_checkpoint_create
 title: docker checkpoint create
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/checkpoint_create/
 ---
 <!--

@@ -79,10 +79,10 @@ aliases:
 - /apidocs/overview/
 ---
 
-[Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} is a service provided by Docker for
+[Docker Hub](https://hub.docker.com) is a service provided by Docker for
 finding and sharing container images with your team. It is the world’s largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers.
 
-Users get access to free public repositories for storing and sharing images or can choose a [subscription plan](https://www.docker.com/pricing){: target="_blank" rel="noopener" class="_"} for private repositories.
+Users get access to free public repositories for storing and sharing images or can choose a [subscription plan](https://www.docker.com/pricing) for private repositories.
 
 Docker Hub provides the following major features:
 
@@ -98,13 +98,13 @@ GitHub and Bitbucket and push them to Docker Hub.
 * [Webhooks](webhooks.md): Trigger actions after a successful push
   to a repository to integrate Docker Hub with other services.
 
-Docker provides a [Docker Hub CLI](https://github.com/docker/hub-tool#readme){: target="_blank" rel="noopener" class="_"} tool (currently experimental) and an API that allows you to interact with Docker Hub. Browse through the [Docker Hub API](/docker-hub/api/latest/){: target="_blank" rel="noopener" class="_"} documentation to explore the supported endpoints.
+Docker provides a [Docker Hub CLI](https://github.com/docker/hub-tool#readme) documentation to explore the supported endpoints.
 
 The following section contains step-by-step instructions on how to easily get started with Docker Hub.
 
 ### Step 1: Sign up for a Docker account
 
-Let's start by creating a [Docker ID](https://hub.docker.com/signup){: target="_blank" rel="noopener" class="_"}.
+Let's start by creating a [Docker ID](https://hub.docker.com/signup).
 
 A Docker ID grants you access to Docker Hub repositories and allows you to explore images that are available from the community and verified publishers. You'll also need a Docker ID to share images on Docker Hub.
 
@@ -112,7 +112,7 @@ A Docker ID grants you access to Docker Hub repositories and allows you to explo
 
 To create a repository:
 
-1. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}.
+1. Sign in to [Docker Hub](https://hub.docker.com).
 2. Click **Create a Repository** on the Docker Hub welcome page.
 3. Name it **&lt;your-username&gt;/my-private-repo**.
 4. Set the visibility to **Private**.

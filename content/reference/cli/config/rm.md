@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_config_rm
 title: docker config rm
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/config_rm/
 ---
 <!--

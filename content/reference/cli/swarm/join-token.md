@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_swarm_join-token
 title: docker swarm join-token
-redirect_from:
+aliases:
   - /engine/reference/commandline/swarm_join_token/
   - /edge/engine/reference/commandline/swarm_join_token/
   - /edge/engine/reference/commandline/swarm_join-token/

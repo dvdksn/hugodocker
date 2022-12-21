@@ -7,7 +7,7 @@ keywords: build, buildkit
 
 ## Overview
 
-[BuildKit](https://github.com/moby/buildkit){:target="blank" rel="noopener" class=""}
+[BuildKit](https://github.com/moby/buildkit)
 is an improved backend to replace the legacy builder. It comes with new and much
 improved functionality for improving your builds' performance and the
 reusability of your Dockerfiles. It also introduces support for handling more
@@ -32,14 +32,14 @@ files to be read or uploaded before the work can begin.
 
 ## LLB
 
-At the core of BuildKit is a [Low-Level Build (LLB)](https://github.com/moby/buildkit#exploring-llb){:target="blank" rel="noopener" class=""}
+At the core of BuildKit is a [Low-Level Build (LLB)](https://github.com/moby/buildkit#exploring-llb)
 definition format. LLB is an intermediate binary format that allows developers
 to extend BuildKit. LLB defines a content-addressable dependency graph that can
 be used to put together very complex build definitions. It also supports
 features not exposed in Dockerfiles, like direct data mounting and nested
 invocation.
 
-![Directed acyclic graph (DAG)](../images/buildkit-dag.svg){:class="invertible" style="width:60%"}
+![Directed acyclic graph (DAG)](../images/buildkit-dag.svg)
 
 Everything about execution and caching of your builds is defined in LLB. The
 caching model is entirely rewritten compared to the legacy builder. Rather than
@@ -48,7 +48,7 @@ graphs and content mounted to specific operations. This makes it much faster,
 more precise, and portable. The build cache can even be exported to a registry,
 where it can be pulled on-demand by subsequent invocations on any host.
 
-LLB can be generated directly using a [golang client package](https://pkg.go.dev/github.com/moby/buildkit/client/llb){:target="blank" rel="noopener" class=""}
+LLB can be generated directly using a [golang client package](https://pkg.go.dev/github.com/moby/buildkit/client/llb)
 that allows defining the relationships between your build operations using Go
 language primitives. This gives you full power to run anything you can imagine,
 but will probably not be how most people will define their builds. Instead,
@@ -101,5 +101,5 @@ And restart the Docker daemon.
 > **Warning**
 >
 > BuildKit only supports building Linux containers. Windows support is tracked
-> in [`moby/buildkit#616`](https://github.com/moby/buildkit/issues/616){:target="blank" rel="noopener" class=""}
-{: .warning}
+> in [`moby/buildkit#616`](https://github.com/moby/buildkit/issues/616)
+

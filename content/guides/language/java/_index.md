@@ -25,4 +25,4 @@ provided in this guide.
 
 Let’s get started!
 
-[Build your first Java image](build-images.md){: .button .primary-btn}
+[Build your first Java image](build-images.md)

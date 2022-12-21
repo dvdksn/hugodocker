@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_stack_deploy
 title: docker stack deploy
-redirect_from:
+aliases:
   - /compose/bundles/
   - /engine/reference/commandline/deploy/
   - /edge/engine/reference/commandline/deploy/

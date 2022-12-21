@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_trust
 title: docker trust
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/trust/
 ---
 <!--

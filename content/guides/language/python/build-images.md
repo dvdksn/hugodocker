@@ -17,9 +17,9 @@ Now that we have a good overview of containers and the Docker platform, let’s 
 
 To complete this tutorial, you need the following:
 
-- Python version 3.8 or later. [Download Python](https://www.python.org/downloads/){: target="_blank" rel="noopener" class="_"}
+- Python version 3.8 or later. [Download Python](https://www.python.org/downloads/)
 - Docker running locally. Follow the instructions to [download and install Docker](../../desktop/index.md)
-- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/Download){: target="_blank" rel="noopener" class="_"}.
+- An IDE or a text editor to edit files. We recommend using [Visual Studio Code](https://code.visualstudio.com/Download).
 
 ## Sample application
 
@@ -234,8 +234,8 @@ Our image that was tagged with `:v1.0.0` has been removed, but we still have the
 
 In this module, we took a look at setting up our example Python application that we will use for the rest of the tutorial. We also created a Dockerfile that we used to build our Docker image. Then, we took a look at tagging our images and removing images. In the next module we’ll take a look at how to:
 
-[Run your image as a container](run-containers.md){: .button .primary-btn}
+[Run your image as a container](run-containers.md)
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Python%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Python%20docs%20feedback]) to suggest updates.

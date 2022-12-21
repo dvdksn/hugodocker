@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_run
 title: docker compose run
-redirect_from:
+aliases:
 - /compose/reference/run/
 ---
 <!--

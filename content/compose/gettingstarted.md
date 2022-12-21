@@ -112,7 +112,7 @@ This tells Docker to:
 >Important
 >
 >Check that the `Dockerfile` has no file extension like `.txt`. Some editors may append this file extension automatically and which results in an error when you run the application.
-{: .important}
+
 
 For more information on how to write Dockerfiles, see the
 [Docker user guide](../develop/index.md)
@@ -277,7 +277,7 @@ for Mac, and the general examples on how to
 ticket](https://www.virtualbox.org/ticket/14920). Newer Windows systems meet the
 requirements for [Docker Desktop for Windows](../desktop/install/windows-install.md) and do not
 need VirtualBox.
-{: .important}
+
 
 ## Step 7: Update the application
 

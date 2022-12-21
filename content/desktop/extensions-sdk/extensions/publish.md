@@ -6,9 +6,9 @@ keywords: Docker, extensions, publish
 
 ## Submit your extension to the marketplace
 
-Docker Desktop displays published extensions in [the Extensions Marketplace](https://hub.docker.com/search?q=&type=extension){: target="_blank" rel="noopener" class="_" }. The Extensions Marketplace is a curated space where developers can discover extensions to improve their developer experience and propose their own extension to be available for all Desktop users.
+Docker Desktop displays published extensions in [the Extensions Marketplace](https://hub.docker.com/search?q=&type=extension). The Extensions Marketplace is a curated space where developers can discover extensions to improve their developer experience and propose their own extension to be available for all Desktop users.
 
-If you want to publish your extension in the Marketplace, you can submit your extension [here](https://www.docker.com/products/extensions/submissions/){: target="_blank" rel="noopener" class="_" }.
+If you want to publish your extension in the Marketplace, you can submit your extension [here](https://www.docker.com/products/extensions/submissions/).
 
 All extensions submitted to the Extension Marketplace are reviewed and approved by the Docker Extension team before listing. This review process ensures a level of trust, security, and quality for developers using Docker Extensions and allows for extension developers to get feedback.
 
@@ -28,7 +28,7 @@ These guidelines don't replace Docker's terms of service or guarantee approval. 
 - Test your extension with potential users
 - Test your extension for crashes, bugs, and performance issues
 - Test your extension on various platforms (Mac, Windows, Linux)
-- Read the [Terms of Service](https://www.docker.com/legal/extensions_marketplace_developer_agreement/){: target="_blank" rel="noopener" class="_" }
+- Read the [Terms of Service](https://www.docker.com/legal/extensions_marketplace_developer_agreement/)
 
 ### After you submit
 

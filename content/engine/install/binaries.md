@@ -30,7 +30,7 @@ aliases:
 > On Windows and Mac, we recommend that you install [Docker Desktop](../../desktop/index.md)
 > instead. For Linux, we recommend that you follow the instructions specific for
 > your distribution.
-{: .important}
+
 
 If you want to try Docker or use it in a testing environment, but you're not on
 a supported platform, you can try installing from static binaries. If possible,
@@ -85,7 +85,7 @@ instructions for enabling and configuring AppArmor or SELinux.
 > If either of the security mechanisms is enabled, do not disable it as a
 > work-around to make Docker or its containers run. Instead, configure it
 > correctly to fix any problems.
-{:.warning}
+
 
 ##### Docker daemon considerations
 

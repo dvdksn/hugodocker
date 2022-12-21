@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_manifest_create
 title: docker manifest create
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/manifest_create/
 ---
 <!--

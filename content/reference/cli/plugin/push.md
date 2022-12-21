@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_plugin_push
 title: docker plugin push
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/plugin_push/
 ---
 <!--

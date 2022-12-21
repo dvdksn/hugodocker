@@ -305,7 +305,7 @@ of the image.
 > Thus, if you use content trust, the swarm manager receives the request
 > pre-resolved. In this case, if the client cannot resolve the image to a
 > digest, the request fails.
-{: id="image_resolution_with_trust" }
+
 
 If the manager can't resolve the tag to a digest, each worker
 node is responsible for resolving the tag to a digest, and different nodes may

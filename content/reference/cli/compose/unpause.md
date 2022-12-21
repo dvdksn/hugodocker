@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_unpause
 title: docker compose unpause
-redirect_from:
+aliases:
 - /compose/reference/unpause/
 ---
 <!--

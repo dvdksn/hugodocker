@@ -5,13 +5,13 @@ keywords: ci, github actions, gha, buildkit, buildx
 ---
 
 This page contains instructions on configuring your BuildKit instances when
-using our [Setup Buildx Action](https://github.com/docker/setup-buildx-action){:target="blank" rel="noopener" class=""}.
+using our [Setup Buildx Action](https://github.com/docker/setup-buildx-action).
 
 ## BuildKit container logs
 
 To display BuildKit container logs when using the `docker-container` driver,
-you must either [enable step debug logging](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging){:target="blank" rel="noopener" class=""},
-or set the `--debug` buildkitd flag in the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx){:target="blank" rel="noopener" class=""} action:
+you must either [enable step debug logging](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging),
+or set the `--debug` buildkitd flag in the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx) action:
 
 ```yaml
 name: ci

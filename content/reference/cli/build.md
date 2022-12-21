@@ -3,7 +3,7 @@ datafolder: engine-cli
 datafile: docker_build
 title: docker build
 layout: cli
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/build/
 ---
 <!--

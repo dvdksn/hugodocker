@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_plugin_upgrade
 title: docker plugin upgrade
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/plugin_upgrade/
 ---
 <!--

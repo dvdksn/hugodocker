@@ -19,10 +19,10 @@ Buildx supports the following exporters:
 - `local`: exports the build root filesystem into a local directory.
 - `tar`: packs the build root filesystem into a local tarball.
 - `oci`: exports the build result to the local filesystem in the
-  [OCI image layout](https://github.com/opencontainers/image-spec/blob/v1.0.1/image-layout.md){:target="blank" rel="noopener" class="_"}
+  [OCI image layout](https://github.com/opencontainers/image-spec/blob/v1.0.1/image-layout.md)
   format.
 - `docker`: exports the build result to the local filesystem in the
-  [Docker image](https://github.com/docker/docker/blob/v20.10.2/image/spec/v1.2.md){:target="blank" rel="noopener" class="_"}
+  [Docker image](https://github.com/docker/docker/blob/v20.10.2/image/spec/v1.2.md)
   format.
 - `cacheonly`: doesn't export a build output, but runs the build and creates a
   cache.
@@ -185,7 +185,7 @@ WARNING: No output specified with docker-container driver.
 ## Multiple exporters
 
 You can only specify a single exporter for any given build (see
-[this pull request](https://github.com/moby/buildkit/pull/2760) for details){:target="blank" rel="noopener" class="_"}.
+[this pull request](https://github.com/moby/buildkit/pull/2760) for details).
 But you can perform multiple builds one after another to export the same content
 twice. BuildKit caches the build, so unless any of the layers change, all
 successive builds following the first are instant.
@@ -243,8 +243,8 @@ the previous compression algorithm.
 
 > **Note**
 >
-> The `gzip` and `estargz` compression methods use the [`compress/gzip` package](https://pkg.go.dev/compress/gzip){: target="blank" rel="noopener" class="_" },
-> while `zstd` uses the [`github.com/klauspost/compress/zstd` package](https://github.com/klauspost/compress/tree/master/zstd){: target="blank" rel="noopener" class="_" }.
+> The `gzip` and `estargz` compression methods use the [`compress/gzip` package](https://pkg.go.dev/compress/gzip),
+> while `zstd` uses the [`github.com/klauspost/compress/zstd` package](https://github.com/klauspost/compress/tree/master/zstd).
 
 ### OCI media types
 

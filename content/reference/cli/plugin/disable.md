@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_plugin_disable
 title: docker plugin disable
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/plugin_disable/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_stop
 title: docker container stop
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_stop/
 ---
 <!--

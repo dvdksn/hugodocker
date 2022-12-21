@@ -29,10 +29,10 @@ This page contains information on:
 
 To navigate to **Troubleshoot** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Troubleshoot**
+- Select the Docker menu ![whale menu](../images/whale-x.svg) and then **Troubleshoot**
 - Select the **Troubleshoot** icon from the Docker Dashboard
 
-![Troubleshoot Docker Desktop](../images/troubleshoot.png){:width="600px"}
+![Troubleshoot Docker Desktop](../images/troubleshoot.png)
 
 The Troubleshoot page contains the following options:
 
@@ -54,14 +54,14 @@ If you are a Mac user, you also have the option to **Uninstall** Docker Desktop 
 
 ### Diagnose from the app
 
-Make sure you are signed in to Docker Desktop and your [Docker Hub](https://hub.docker.com/){:target="_blank" rel="noopener" class="_"} account.
+Make sure you are signed in to Docker Desktop and your [Docker Hub](https://hub.docker.com/) account.
 
 1. From **Troubleshoot**, select **Get support**. 
 This opens the in-app **Support** page and starts collecting the diagnostics.
-    ![Diagnose & Feedback](../images/diagnose-support.png){:width="600px"}
+    ![Diagnose & Feedback](../images/diagnose-support.png)
 2. When the diagnostics collection process is complete, click **Upload to get a Diagnostic ID**.
 3. When the diagnostics have been uploaded, Docker Desktop prints a diagnostic ID. Copy this ID.
-4. If you have a paid Docker subscription, click **Contact Support**. This opens the [Docker Desktop support](https://hub.docker.com/support/desktop/){:target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID you copied in step four to the **Diagnostics ID** field. 
+4. If you have a paid Docker subscription, click **Contact Support**. This opens the [Docker Desktop support](https://hub.docker.com/support/desktop/) form. Fill in the information required and add the ID you copied in step four to the **Diagnostics ID** field. 
 5. Click **Submit** to request Docker Desktop support.
    > **Note**
     >
@@ -78,9 +78,9 @@ Docker Desktop cannot start.
 First, locate the `com.docker.diagnose` tool. It is located at:
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#windows1">Windows</a></li>
-<li><a data-toggle="tab" data-target="#mac1">Mac</a></li>
-<li><a data-toggle="tab" data-target="#linux1">Linux</a></li>
+<li class="active"><a data-toggle="tab" data->Windows</a></li>
+<li><a data-toggle="tab" data->Mac</a></li>
+<li><a data-toggle="tab" data->Linux</a></li>
 </ul>
 <div class="tab-content">
 <div id="windows1" class="tab-pane fade in active" markdown="1">
@@ -119,8 +119,8 @@ composed of your user ID and a timestamp. Ensure you provide the full diagnostic
 To view the contents of the diagnostic file, run:
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#mac2">Mac</a></li>
-<li><a data-toggle="tab" data-target="#linux2">Linux</a></li>
+<li class="active"><a data-toggle="tab" data->Mac</a></li>
+<li><a data-toggle="tab" data->Linux</a></li>
 </ul>
 <div class="tab-content">
 <div id="mac2" class="tab-pane fade in active" markdown="1">
@@ -139,7 +139,7 @@ $ unzip –l /tmp/BE9AFAAF-F68B-41D0-9D12-84760E6B8740/20190905152051.zip
 </div>
 </div>
 
-If you have a paid Docker subscription, open the [Docker Desktop support](https://hub.docker.com/support/desktop/){:target="_blank" rel="noopener" class="_"} form. Fill in the information required and add the ID to the Diagnostics ID field. Click **Submit** to request Docker Desktop support.
+If you have a paid Docker subscription, open the [Docker Desktop support](https://hub.docker.com/support/desktop/) form. Fill in the information required and add the ID to the Diagnostics ID field. Click **Submit** to request Docker Desktop support.
 
 ### Self-diagnose tool
 
@@ -148,9 +148,9 @@ Docker Desktop contains a self-diagnose tool which helps you to identify some co
 First, locate the `com.docker.diagnose` tool. It is located at:
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#windows3">Windows</a></li>
-<li><a data-toggle="tab" data-target="#mac3">Mac</a></li>
-<li><a data-toggle="tab" data-target="#linux3">Linux</a></li>
+<li class="active"><a data-toggle="tab" data->Windows</a></li>
+<li><a data-toggle="tab" data->Mac</a></li>
+<li><a data-toggle="tab" data->Linux</a></li>
 </ul>
 <div class="tab-content">
 <div id="windows3" class="tab-pane fade in active" markdown="1">
@@ -185,17 +185,17 @@ $ <tool location> check
 The tool runs a suite of checks and displays **PASS** or **FAIL** next to each check. If there are any failures, it highlights the most relevant at the end of the report.
 
 You can then create and issue on GitHub:
-- [For Linux](https://github.com/docker/desktop-linux/issues){:target="_blank" rel="noopener" class="_"}
-- [For Mac](https://github.com/docker/for-mac/issues){:target="_blank" rel="noopener" class="_"}
-- [For Windows](https://github.com/docker/for-win/issues){:target="_blank" rel="noopener" class="_"}
+- [For Linux](https://github.com/docker/desktop-linux/issues)
+- [For Mac](https://github.com/docker/for-mac/issues)
+- [For Windows](https://github.com/docker/for-win/issues)
 
 ## Check the logs
 
 In addition to using the diagnose option to submit logs, you can browse the logs yourself.
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#mac4">Mac</a></li>
-<li><a data-toggle="tab" data-target="#linux4">Linux</a></li>
+<li class="active"><a data-toggle="tab" data->Mac</a></li>
+<li><a data-toggle="tab" data->Linux</a></li>
 </ul>
 <div class="tab-content">
 <div id="mac4" class="tab-pane fade in active" markdown="1">

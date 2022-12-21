@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_system
 title: docker system
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/system/
 ---
 <!--

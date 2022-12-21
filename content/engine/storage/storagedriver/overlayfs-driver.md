@@ -42,7 +42,7 @@ prerequisites:
     > installs will continue to run, but produce an error. This is to allow
     > users to migrate their data. In a future version, this will be a fatal
     > error, which will prevent Docker from starting.
-    {:.warning}
+    
 
 - Changing the storage driver makes existing containers and images inaccessible
   on the local system. Use `docker save` to save any images you have built or

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_ps
 title: docker ps
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/ps/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_run
 title: docker container run
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_rm/
 ---
 <!--

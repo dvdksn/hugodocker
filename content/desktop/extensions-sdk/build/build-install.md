@@ -41,7 +41,7 @@ Before the image is built, it is also possible to validate only the metadata.jso
 $ docker extension validate /path/to/metadata.json
 ```
 
-The JSON schema used to validate the `metadata.json` file against can be found under the [releases page](https://github.com/docker/extensions-sdk/releases/latest){:target="_blank" rel="noopener" class="_"}.
+The JSON schema used to validate the `metadata.json` file against can be found under the [releases page](https://github.com/docker/extensions-sdk/releases/latest).
 
 ## Install the extension
 

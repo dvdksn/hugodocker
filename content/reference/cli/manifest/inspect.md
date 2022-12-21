@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_manifest_inspect
 title: docker manifest inspect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/manifest_inspect/
 ---
 <!--

@@ -80,7 +80,7 @@ Docker depend on Docker containers, you can use a process manager such as
 >
 > Do not try to combine Docker restart policies with host-level process managers,
 > because this creates conflicts.
-{:.warning}
+
 
 To use a process manager, configure it to start your container or service using
 the same `docker start` or `docker service` command you would normally use to
@@ -98,4 +98,4 @@ running and starts/restart it if not.
 > the container. Docker does not recommend this approach, because it is
 > platform-dependent and even differs within different versions of a given Linux
 > distribution.
-{:.warning}
+

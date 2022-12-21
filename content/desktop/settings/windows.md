@@ -10,7 +10,7 @@ This page provides information on how to configure and manage your Docker Deskto
 
 To navigate to **Settings** either:
 
-- Select the Docker menu ![whale menu](../images/whale-x.svg){: .inline} and then **Settings**
+- Select the Docker menu ![whale menu](../images/whale-x.svg) and then **Settings**
 - Select the **Settings** icon from the Docker Dashboard.
 
 ## General
@@ -63,8 +63,8 @@ containers.
 > The Advanced tab is only available in Hyper-V mode, because Windows manages
 > the resources in WSL 2 mode and Windows container mode. In WSL 2
 > mode, you can configure limits on the memory, CPU, and swap size allocated
-> to the [WSL 2 utility VM](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig){:target="_blank"
-class="_"}.
+> to the [WSL 2 utility VM](https://docs.microsoft.com/en-us/windows/wsl/wsl-config#configure-global-options-with-wslconfig){:
+}.
 
 On the **Advanced** tab, you can limit resources available to Docker.
 
@@ -123,7 +123,7 @@ File share settings are:
 >   better if they are stored in the Linux VM, using a [data volume](../../storage/volumes.md)
 >   (named volume) or [data container](../../storage/volumes.md).
 > * Docker Desktop sets permissions to read/write/execute for users, groups and
->   others [0777 or a+rwx](https://chmodcommand.com/chmod-0777/){:target="_blank" rel="noopener" class="_"}.
+>   others [0777 or a+rwx](https://chmodcommand.com/chmod-0777/).
 >   This is not configurable. See [Permissions errors on data directories for shared volumes](../troubleshoot/topics.md).
 > * Windows presents a case-insensitive view of the filesystem to applications while Linux is case-sensitive.
 >   On Linux, it is possible to create two separate files: `test` and `Test`,
@@ -148,7 +148,7 @@ popup asking if you want to share the specified folder.
 You can select to **Share it**, in which case it is added to your Docker Desktop Shared Folders list and available to
 containers. Alternatively, you can opt not to share it by selecting **Cancel**.
 
-![Shared folder on demand](../images/shared-folder-on-demand.png){:width="600px"}
+![Shared folder on demand](../images/shared-folder-on-demand.png)
 
 ### Proxies
 
@@ -247,7 +247,7 @@ using Docker commands.
 Select **Reset Kubernetes cluster** to delete all stacks and Kubernetes resources.
 
 For more information about using the Kubernetes integration with Docker Desktop,
-see [Deploy on Kubernetes](../kubernetes.md){:target="_blank" rel="noopener" class="_"}.
+see [Deploy on Kubernetes](../kubernetes.md).
 
 ## Software Updates
 
@@ -280,7 +280,7 @@ For more information about Docker extensions, see [Extensions](../extensions/ind
 
 On the **Feature control** tab you can control your settings for **Beta features** and **Experimental features**.
 
-You can also sign up to the [Developer Preview Program](https://www.docker.com/community/get-involved/developer-preview/){:target="_blank" rel="noopener" class="_"} from the **Features in development** tab.
+You can also sign up to the [Developer Preview Program](https://www.docker.com/community/get-involved/developer-preview/) from the **Features in development** tab.
 
 ### Beta features
 

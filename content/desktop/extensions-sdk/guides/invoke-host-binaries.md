@@ -54,10 +54,10 @@ provided by the extension with the `ddClient.extension.host.cli.exec()` function
 In this example, the binary returns a string as result, obtained by `result?.stdout`, as soon as the extension view is rendered.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#react-app" data-group="react">For React</a></li>
-  <li><a data-toggle="tab" data-target="#vue-app" data-group="vue">For Vue</a></li>
-  <li><a data-toggle="tab" data-target="#angular-app" data-group="angular">For Angular</a></li>
-  <li><a data-toggle="tab" data-target="#svelte-app" data-group="svelte">For Svelte</a></li>
+  <li class="active"><a data-toggle="tab" data->For React</a></li>
+  <li><a data-toggle="tab" data->For Vue</a></li>
+  <li><a data-toggle="tab" data->For Angular</a></li>
+  <li><a data-toggle="tab" data->For Svelte</a></li>
 </ul>
 
 <div class="tab-content">
@@ -97,9 +97,9 @@ export function App() {
 <br/>
 
 > **Important**
-> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue)
 > and let us know you'd like a sample with Vue.
-{: .important }
+
 
   </div>
   <div id="angular-app" class="tab-pane fade" markdown="1">
@@ -107,9 +107,9 @@ export function App() {
 <br/>
 
 > **Important**
-> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular)
 > and let us know you'd like a sample with Angular.
-{: .important }
+
 
   </div>
   <div id="svelte-app" class="tab-pane fade" markdown="1">
@@ -117,9 +117,9 @@ export function App() {
 <br/>
 
 > **Important**
-> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte)
 > and let us know you'd like a sample with Svelte.
-{: .important }
+
 
   </div>
 </div>

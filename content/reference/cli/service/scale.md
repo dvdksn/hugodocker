@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_service_scale
 title: docker service scale
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/service_scale/
 ---
 <!--

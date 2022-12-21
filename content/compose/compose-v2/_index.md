@@ -17,7 +17,7 @@ weight: 50
 > to support most of the previous `docker-compose` features and flags. You can
 > run Compose V2 by replacing the hyphen (`-`) with a space, using `docker compose`,
 > instead of `docker-compose`.
-{: .important}
+
 
 If you rely on using Docker Compose as `docker-compose` (with a hyphen), you can
 set up Compose V2 to act as a drop-in replacement of the previous `docker-compose`.
@@ -25,7 +25,7 @@ Refer to the [Installing Compose](../install/index.md) section for detailed inst
 
 ## Context of Docker Compose evolution
 
-Introduction of the [Compose specification](https://github.com/compose-spec/compose-spec){:target="_blank" rel="noopener" class="_"}
+Introduction of the [Compose specification](https://github.com/compose-spec/compose-spec)
 makes a clean distinction between the Compose YAML file model and the `docker-compose`
 implementation. Making this change has enabled a number of enhancements, including
 adding the `compose` command directly into the Docker CLI,  being able to "up" a

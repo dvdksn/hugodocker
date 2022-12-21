@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_network_connect
 title: docker network connect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/network_connect/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_save
 title: docker image save
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_save/
 ---
 <!--

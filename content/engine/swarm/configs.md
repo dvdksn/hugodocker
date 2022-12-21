@@ -263,7 +263,7 @@ This example assumes that you have PowerShell installed.
     docker service create
         --name my-iis
         --publish published=8000,target=8000
-        --config src=homepage,target="\inetpub\wwwroot\index.html"
+        --config src=homepage,
         microsoft/iis:nanoserver
     ```
 

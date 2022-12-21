@@ -85,7 +85,7 @@ bar
 > Avoid using your root directory, `/`, as the `PATH` for your build context,
 > as it causes the build to transfer the entire contents of your hard drive to
 > the daemon.
-{:.warning}
+
 
 ## `URL` context
 

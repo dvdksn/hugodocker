@@ -89,7 +89,7 @@ it only connects to servers with a certificate signed by that CA.
 >
 > Using TLS and managing a CA is an advanced topic. Please familiarize yourself
 > with OpenSSL, x509, and TLS before using it in production.
-{:.important}
+
 
 ### Create a CA, server and client keys with OpenSSL
 
@@ -271,7 +271,7 @@ $ docker --tlsverify \
 > That means anyone with the keys can give any instructions to your Docker
 > daemon, giving them root access to the machine hosting the daemon. Guard
 > these keys as you would a root password!
-{:.warning}
+
 
 ### Secure by default
 

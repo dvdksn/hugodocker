@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_system_prune
 title: docker system prune
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/system_prune/
 ---
 <!--

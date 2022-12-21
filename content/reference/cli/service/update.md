@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_service_update
 title: docker service update
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/service_update/
 ---
 <!--

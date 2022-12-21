@@ -5,13 +5,13 @@ title: Uninstall Docker Desktop
 ---
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#tab3">Windows</a></li>
-  <li><a data-toggle="tab" data-target="#tab4">Mac</a></li>
-  <li><a data-toggle="tab" data-target="#tab5">Linux</a></li>
-  <li><a data-toggle="tab" data-target="#tab6">Ubuntu</a></li>
-  <li><a data-toggle="tab" data-target="#tab7">Debian</a></li>
-  <li><a data-toggle="tab" data-target="#tab8">Fedora</a></li>
-  <li><a data-toggle="tab" data-target="#tab9">Arch</a></li>
+  <li class="active"><a data-toggle="tab" data->Windows</a></li>
+  <li><a data-toggle="tab" data->Mac</a></li>
+  <li><a data-toggle="tab" data->Linux</a></li>
+  <li><a data-toggle="tab" data->Ubuntu</a></li>
+  <li><a data-toggle="tab" data->Debian</a></li>
+  <li><a data-toggle="tab" data->Fedora</a></li>
+  <li><a data-toggle="tab" data->Arch</a></li>
 </ul>
 <div class="tab-content">
 <div id="tab3" class="tab-pane fade in active" markdown="1">

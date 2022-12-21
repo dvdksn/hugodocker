@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_swarm_init
 title: docker swarm init
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/swarm_init/
 ---
 <!--

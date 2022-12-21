@@ -23,7 +23,7 @@ refer to the
 > possible for remote non-root users to gain root access on the host. For more
 > information on how to use TLS certificates to secure this connection, check
 > [Protect the Docker daemon socket](../../engine/security/protect-access.md).
-{: .warning}
+
 
 You can configure Docker to accept remote connections. This can be done using
 the `docker.service` systemd unit file for Linux distributions using systemd. Or

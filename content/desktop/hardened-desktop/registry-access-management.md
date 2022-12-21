@@ -26,7 +26,7 @@ You need to [configure a registry.json to enforce sign-in](../../docker-hub/conf
 
 To configure Registry Access Management permissions:
 
-1. Sign in to your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account as an organization owner.
+1. Sign in to your [Docker Hub](https://hub.docker.com) account as an organization owner.
 2. Select an organization and then navigate to the **Settings** tab on the **Organizations** page and select **Registry Access**.
 3. Toggle on Registry Access Management to set the permissions for your registry.
 
@@ -41,7 +41,7 @@ To configure Registry Access Management permissions:
    >
    > Once you add a registry, it takes up to 24 hours for the changes to be enforced on your developers’ machines. If you want to apply the changes sooner, you must force a Docker logout on your developers’ machine and have the developers re-authenticate for Docker Desktop.
 
-![Registry Access Management](../../docker-hub/images/registry-access-management.png){:width="700px"}
+![Registry Access Management](../../docker-hub/images/registry-access-management.png)
 
 ## Verify the restrictions
 

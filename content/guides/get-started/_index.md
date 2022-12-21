@@ -112,4 +112,4 @@ In this section, you learned about containers and images.
 
 In the next section, you'll containerize your first application.
 
-[Containerize an application](02_our_app.md){: .button .primary-btn}
+[Containerize an application](02_our_app.md)

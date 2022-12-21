@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_stop
 title: docker compose stop
-redirect_from:
+aliases:
 - /compose/reference/stop/
 ---
 <!--

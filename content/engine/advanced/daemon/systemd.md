@@ -48,8 +48,8 @@ settings, you need to add this configuration in the Docker systemd service file.
 > mode"_ tab below if you are running Docker in rootless mode.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#rootful">regular install</a></li>
-  <li><a data-toggle="tab" data-target="#rootless">rootless mode</a></li>
+  <li class="active"><a data-toggle="tab" data->regular install</a></li>
+  <li><a data-toggle="tab" data->rootless mode</a></li>
 </ul>
 <div class="tab-content">
 <div id="rootful" class="tab-pane fade in active" markdown="1">

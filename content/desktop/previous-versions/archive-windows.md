@@ -18,7 +18,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/19507/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/19507/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 18.06.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.06.1-ce)
@@ -40,7 +40,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/19098/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/19098/Docker%20for%20Windows%20Installer.exe)
 
 * New
   - Renewed signing certificate. The installer may show a Windows Defender popup until the renewed certificate is allowlisted. Click "More info" to view the app is published by "Docker Inc" and run it.
@@ -54,7 +54,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/19075/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/19075/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 18.06.0-ce](https://github.com/docker/docker-ce/releases/tag/v18.06.0-ce)
@@ -83,7 +83,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/17513/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/17513/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 18.03.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.1-ce)
@@ -100,7 +100,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/17438/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/17438/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 18.03.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.1-ce)
@@ -117,7 +117,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/16762/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/16762/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 18.03.0-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.0-ce)
@@ -153,7 +153,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/15139/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/15139/Docker%20for%20Windows%20Installer.exe)
 
 * Bug fixes and minor changes
   - Fix linuxkit port-forwarder sometimes not being able to start. Fixes [docker/for-win#1506](https://github.com/docker/for-win/issues/1506)
@@ -167,7 +167,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/15048/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/15048/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 17.12.0-ce](https://github.com/docker/docker-ce/releases/tag/v17.12.0-ce)
@@ -195,7 +195,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/14687/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/14687/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 17.09.1-ce](https://github.com/docker/docker-ce/releases/tag/v17.09.1-ce)
@@ -216,7 +216,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/13620/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/13620/Docker%20for%20Windows%20Installer.exe)
 
 * Bug fixes
   - Fix Docker For Windows unable to start in some cases: removed use of libgmp sometimes causing the vpnkit process to die.
@@ -227,7 +227,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/13529/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/13529/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 17.09.0-ce](https://github.com/docker/docker-ce/releases/tag/v17.09.0-ce)
@@ -270,7 +270,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/13194/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/13194/Docker%20for%20Windows%20Installer.exe)
 
 * Upgrades
   - [Docker 17.06.2-ce](https://github.com/docker/docker-ce/releases/tag/v17.06.2-ce)
@@ -282,7 +282,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/13025/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/13025/Docker%20for%20Windows%20Installer.exe)
 
 **Upgrades**
 
@@ -301,7 +301,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/12627/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/12627/Docker%20for%20Windows%20Installer.exe)
 
 **Upgrades**
 
@@ -345,7 +345,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/12058/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/12058/Docker%20for%20Windows%20Installer.exe)
 
 **Upgrades**
 
@@ -357,7 +357,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/10743/Docker%20for%20Windows%20Installer.exe){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/10743/Docker%20for%20Windows%20Installer.exe)
 
 **New**
 
@@ -396,7 +396,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.13.1.10072/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.13.1.10072/InstallDocker.msi)
 
 **Upgrades**
 
@@ -417,7 +417,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.13.0.9795/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.13.0.9795/InstallDocker.msi)
 
 **Upgrades**
 
@@ -464,7 +464,7 @@ This page contains release notes for older versions of Docker Desktop for Window
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.12.5.9503/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.12.5.9503/InstallDocker.msi)
 
 **Upgrades**
 
@@ -481,7 +481,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.12.3.8488/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.12.3.8488/InstallDocker.msi)
 
 **New**
 
@@ -568,7 +568,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.12.1.7135/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.12.1.7135/InstallDocker.msi)
 
 >**Important Note**:
 >
@@ -667,7 +667,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [For Windows](https://download.docker.com/win/stable/1.12.0.5968/InstallDocker.msi){: .accept-eula }
+> [For Windows](https://download.docker.com/win/stable/1.12.0.5968/InstallDocker.msi)
 
 * First stable release
 

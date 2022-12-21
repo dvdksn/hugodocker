@@ -24,4 +24,4 @@ provided in this guide.
 
 Let's get started!
 
-[Build your Node.js image](build-images.md){: .button .primary-btn}
+[Build your Node.js image](build-images.md)

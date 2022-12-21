@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_attach
 title: docker container attach
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_attach/
 ---
 <!--

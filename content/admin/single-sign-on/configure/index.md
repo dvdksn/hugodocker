@@ -4,17 +4,17 @@ keywords: configure, sso, docker hub, hub
 title: Configure
 ---
 
-To configure SSO, sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} to complete the IdP server configuration process. You can only configure SSO with a single IdP.  When this is complete, log back in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} and complete the SSO enablement process.
+To configure SSO, sign in to [Docker Hub](https://hub.docker.com) and complete the SSO enablement process.
 
 > **Important**
 >
 > If your IdP setup requires an Entity ID and the ACS URL, you must select the
 > **SAML** tab in the **Authentication Method** section. For example, if your
 > Azure AD Open ID Connect (OIDC) setup uses SAML configuration within Azure
-> AD, you must select **SAML**. If you are [configuring Open ID Connect with Azure AD](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-openid-settings){: target="_blank" rel="noopener" class="_"} select
+> AD, you must select **SAML**. If you are [configuring Open ID Connect with Azure AD](https://docs.microsoft.com/en-us/powerapps/maker/portals/configure/configure-openid-settings) select
 > **Azure AD** as the authentication method. Also, IdP initiated connections
 > aren't supported at this time.
-{: .important}
+
 
 The following video walks you through the process of configuring SSO.
 
@@ -23,23 +23,23 @@ The following video walks you through the process of configuring SSO.
 ### Configuring your IdP
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#saml-2">SAML 2.0</a></li>
-<li><a data-toggle="tab" data-target="#azure-ad">Azure AD (OIDC)</a></li>
+<li class="active"><a data-toggle="tab" data->SAML 2.0</a></li>
+<li><a data-toggle="tab" data->Azure AD (OIDC)</a></li>
 </ul>
 <div class="tab-content">
 <div id="saml-2" class="tab-pane fade in active" markdown="1">
 
 #### SAML 2.0
 
-1. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} as an administrator and navigate to **Organizations** and select the organization that you want to enable SSO on.
+1. Sign in to [Docker Hub](https://hub.docker.com) as an administrator and navigate to **Organizations** and select the organization that you want to enable SSO on.
 2. Select **Settings** and select the **Security** tab.
 3. Select an authentication method for **SAML 2.0**.
 
-    ![SSO SAML1](/single-sign-on/images/sso-saml1.png){:width="500px"}
+    ![SSO SAML1](/single-sign-on/images/sso-saml1.png)
 
 4. In the Identity Provider Set Up, copy the **Entity ID**, **ACS URL** and **Certificate Download URL**.
 
-    ![SSO SAML2](/single-sign-on/images/sso-saml2.png){:width="500px"}
+    ![SSO SAML2](/single-sign-on/images/sso-saml2.png)
 
 5. Sign in to your IdP to complete the IdP server configuration process. Refer to your IdP documentation for detailed instructions.
 
@@ -48,11 +48,11 @@ The following video walks you through the process of configuring SSO.
     > The NameID is your email address and is set as the default.
     > For example, yourname@mycompany.com. The optional `name` attribute is also supported. This attribute name must be lower-cased. _The following is an example of this attribute in Okta._
 
-    ![SSO Attribute](/single-sign-on/images/sso-attribute.png){:width="500px"}
+    ![SSO Attribute](/single-sign-on/images/sso-attribute.png)
 
 6. Complete the fields in the **Configuration Settings** section and select **Save**. If you want to change your IdP, you must delete your existing provider and configure SSO with your new IdP.
 
-    ![SSO SAML3](/single-sign-on/images/sso-saml3.png){:width="500px"}
+    ![SSO SAML3](/single-sign-on/images/sso-saml3.png)
 
 7. Proceed to **add your domain** before you test and enforce SSO.
 
@@ -69,12 +69,12 @@ The following video walks you through the process of configuring SSO.
 > Azure AD. This connection is a basic OIDC connection, and there are no
 > special customizations available when using it.
 
-1. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} as an administrator and navigate to **Organizations** and select the organization that you want to enable SSO on.
+1. Sign in to [Docker Hub](https://hub.docker.com) as an administrator and navigate to **Organizations** and select the organization that you want to enable SSO on.
 2. Select **Settings** and select the **Security** tab.
 3. Select an authentication method for **Azure AD**.
 4. In the Identity Provider Set Up, copy the **Redirect URL / Reply URL**.
 
-    ![SSO Azure AD OIDC](/single-sign-on/images/sso-azure-oidc.png){:width="500px"}
+    ![SSO Azure AD OIDC](/single-sign-on/images/sso-azure-oidc.png)
 
 5. Sign in to your IdP to complete the IdP server configuration process. Refer to your IdP documentation for detailed instructions.
 
@@ -85,7 +85,7 @@ The following video walks you through the process of configuring SSO.
 
 6. Complete the fields in the **Configuration Settings** section and click **Save**. If you want to change your IdP, you must delete your existing provider and configure SSO with your new IdP.
 
-    ![SSO Azure3](/single-sign-on/images/sso-azure3.png){:width="500px"}
+    ![SSO Azure3](/single-sign-on/images/sso-azure3.png)
 
 7. Proceed to **add your domain** before you test and enforce SSO.
 
@@ -102,7 +102,7 @@ Select **Add Domain** and specify the corporate domain you’d like to manage wi
 > Public domains such as gmail.com, outlook.com, etc aren't permitted.
 > Also, the email domain should be set as the primary email.
 
-![SSO Domain](/single-sign-on/images/sso-domain.png){:width="500px"}
+![SSO Domain](/single-sign-on/images/sso-domain.png)
 
 ## Domain verification
 
@@ -155,4 +155,4 @@ Admins can force users to authenticate with Docker Desktop by provisioning a reg
     > forced to authenticate through your IdP and can sign in to Docker using
     > their personal credentials.
 
-![SSO Enforced](/single-sign-on/images/sso-enforce.png){:width="500px"}
+![SSO Enforced](/single-sign-on/images/sso-enforce.png)

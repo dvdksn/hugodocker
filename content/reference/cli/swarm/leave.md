@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_swarm_leave
 title: docker swarm leave
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/swarm_leave/
 ---
 <!--

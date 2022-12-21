@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_stack_ps
 title: docker stack ps
-redirect_from:
+aliases:
   - /engine/reference/commandline/stack_tasks/
   - /edge/engine/reference/commandline/stack_ps/
   - /edge/engine/reference/commandline/stack_tasks/

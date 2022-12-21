@@ -32,7 +32,7 @@ To view data in the chart:
 >
 > Hovering your cursor over the chart displays a tooltip, showing precise data
 > for points in time.
-{: .tip }
+
 
 ### Share
 
@@ -50,8 +50,8 @@ to quickly share statistics with others in your organization.
 ## Exporting analytics data
 
 You can export the analytics data either from the web dashboard, or using the
-[DVP Data API](/docker-hub/api/dvp/){: target="_blank" rel="noopener"
-class="_"}. All members of an organization have access to the analytics data.
+[DVP Data API](/docker-hub/api/dvp/){: 
+}. All members of an organization have access to the analytics data.
 
 The data is available as a downloadable CSV file, in a weekly (Monday through
 Sunday) or monthly format. Monthly data is available from the first day of the
@@ -63,8 +63,8 @@ can analyze it manually as a spreadsheet.
 Here's how to export usage data for your organization's images using the Docker
 Hub website.
 
-1.  Sign in to [Docker Hub](https://hub.docker.com/){: target="_blank"
-    rel="noopener" class="_"} and select **Organizations**.
+1.  Sign in to [Docker Hub](https://hub.docker.com/){: 
+    } and select **Organizations**.
 
 2.  Choose your organization and select **Insights and analytics**.
 
@@ -82,7 +82,7 @@ Hub website.
 The HTTP API endpoints are available at:
 `https://hub.docker.com/api/publisher/analytics/v1`. Learn how to export data
 using the API in the [DVP Data API documentation](/docker-hub/api/dvp/){:
-target="_blank" rel="noopener" class="_"}.
+.
 
 ## Data points
 
@@ -155,7 +155,7 @@ user grants you more insight into your users' behavior.
 The following table describes the rules applied for determining intent behind
 pulls. To provide feedback or ask questions about these rules,
 [fill out the Google Form](https://forms.gle/nb7beTUQz9wzXy1b6){:
-target="_blank" rel="noopener" class="_"}.
+.
 
 | Starting event | Reference | Followed by                                                     | Resulting action | Use case(s)                                                                                                    | Notes                                                                                                                                                                                                                                                                                          |
 | :------------- | :-------- | :-------------------------------------------------------------- | :--------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -192,7 +192,7 @@ consumers of content on Docker Hub remain completely anonymous.
 > **Important**
 >
 > Docker never shares any Personally Identifiable Information (PII) as part of
-> analytics data. {: .important }
+> analytics data. 
 
 The summary dataset includes Unique IP address count. This data point only
 includes the number of distinct unique IP addresses that request an image.

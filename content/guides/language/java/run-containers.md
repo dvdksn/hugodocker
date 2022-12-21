@@ -174,8 +174,8 @@ In this module, we took a look at running containers, publishing ports, and runn
 
 In the next module, we’ll learn how to run a database in a container and connect it to our application. See:
 
-[Use containers for development](develop.md){: .button .primary-btn}
+[Use containers for development](develop.md)
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Java%20docs%20feedback]) to suggest updates.

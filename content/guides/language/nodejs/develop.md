@@ -182,7 +182,7 @@ We pass the `--build` flag so Docker compiles our image and then starts it.
 
 If all goes well, you should see something similar:
 
-  ![node-compile](images/node-compile.png){:width="800px"}
+  ![node-compile](images/node-compile.png)
 
 Now let’s test our API endpoint. Run the following curl command:
 
@@ -204,7 +204,7 @@ We’ll use the debugger that comes with the Chrome browser. Open Chrome on your
 
 It opens the following screen.
 
-  ![Chrome-inspect](images/chrome-inspect.png){:width="800px"}
+  ![Chrome-inspect](images/chrome-inspect.png)
 
 Click the **Open dedicated DevTools for Node** link. This opens the DevTools that are connected to the running Node.js process inside our container.
 
@@ -220,7 +220,7 @@ Add the following code above the existing `server.use()` statement, and save the
 
 If you take a look at the terminal where our Compose application is running, you’ll see that nodemon noticed the changes and reloaded our application.
 
- ![nodemon](images/nodemon.png){:width="800px"}
+ ![nodemon](images/nodemon.png)
 
 Navigate back to the Chrome DevTools and set a breakpoint on the line containing the `return res.json({ "foo": "bar" })` statement, and then run the following curl command to trigger the breakpoint.
 
@@ -236,8 +236,8 @@ In this module, we took a look at creating a general development image that we c
 
 In the next module, we’ll take a look at how to run unit tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .primary-btn}
+[Run your tests](run-tests.md)
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Node.js%20docs%20feedback]) to suggest updates.

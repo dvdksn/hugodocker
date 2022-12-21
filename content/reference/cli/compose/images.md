@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_images
 title: docker compose images
-redirect_from:
+aliases:
 - /compose/reference/images/
 ---
 <!--

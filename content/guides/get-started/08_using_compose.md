@@ -265,7 +265,7 @@ Now that we have our `docker-compose.yml` file, we can start it up!
     > and ready before trying to connect to it. Docker doesn't have any built-in
     > support to wait for another container to be fully up, running, and ready
     > before starting another container. For Node-based projects, you can use
-    > the [wait-port](https://github.com/dwmkerr/wait-port){:target="_blank" rel="noopener" class="_"}
+    > the [wait-port](https://github.com/dwmkerr/wait-port)
     > dependency. Similar projects exist for other languages/frameworks.
 
 4. At this point, you should be able to open your app and see it running. And hey! We're down to a single command!
@@ -297,7 +297,7 @@ for the entire app. The containers will stop and the network will be removed.
 >remove the volumes, you will need to add the `--volumes` flag.
 >
 >The Docker Dashboard does _not_ remove volumes when you delete the app stack.
-{: .warning}
+
 
 Once torn down, you can switch to another project, run `docker compose up` and be ready to contribute to that project! It really
 doesn't get much simpler than that!
@@ -311,4 +311,4 @@ using into the appropriate compose format.
 At this point, you're starting to wrap up the tutorial. However, there are a few best practices about
 image building you should cover, as there is a big issue with the Dockerfile you've been using. 
 
-[Image-building best practices](09_image_best.md){: .button  .primary-btn}
+[Image-building best practices](09_image_best.md)

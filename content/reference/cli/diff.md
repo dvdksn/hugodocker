@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_diff
 title: docker diff
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/diff/
 ---
 <!--

@@ -15,8 +15,8 @@ Follow the guide below to build a basic Docker Extension quickly. The Quickstart
 ## Prerequisites
 
 - [Docker Desktop](../release-notes.md)
-- [NodeJS](https://nodejs.org/){:target="_blank" rel="noopener" class="_"}
-- [Go](https://go.dev/dl/){:target="_blank" rel="noopener" class="_"}
+- [NodeJS](https://nodejs.org/)
+- [Go](https://go.dev/dl/)
 
 ## Step one: Set up your directory
 

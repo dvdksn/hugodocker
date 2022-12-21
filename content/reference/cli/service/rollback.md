@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_service_rollback
 title: docker service rollback
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/service_rollback/
 ---
 <!--

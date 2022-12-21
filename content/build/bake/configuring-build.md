@@ -134,7 +134,7 @@ $ docker buildx bake --set app.args.mybuildarg=bar --set app.platform=linux/arm6
 }
 ```
 
-Pattern matching syntax defined in [https://golang.org/pkg/path/#Match](https://golang.org/pkg/path/#Match){:target="blank" rel="noopener" class=""}
+Pattern matching syntax defined in [https://golang.org/pkg/path/#Match](https://golang.org/pkg/path/#Match)
 is also supported:
 
 ```console

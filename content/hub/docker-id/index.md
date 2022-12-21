@@ -46,11 +46,11 @@ You can also sign in through the CLI using the `docker login` command. For more 
 stored in your home directory in `.docker/config.json`. The password is base64-encoded in this file.
 >
 > We recommend using one of the [Docker credential helpers](https://github.com/docker/docker-credential-helpers) for secure storage of passwords. For extra security, you can also use a [personal access token](../docker-hub/access-tokens.md) to log in instead, which is still encoded in this file (without a Docker credential helper) but doesn't allow admin actions (such as changing the password).
-{:.warning}
+
 
 ## Troubleshooting
 
-If you run into trouble with your Docker ID account, know that we are here to help! If you want to retrieve or reset your password, [enter your email address](https://id.docker.com/reset-password/){: target="_blank" rel="noopener" class="_"} for additional instructions.
+If you run into trouble with your Docker ID account, know that we are here to help! If you want to retrieve or reset your password, [enter your email address](https://id.docker.com/reset-password/) for additional instructions.
 
 You can use the [Docker forums](https://forums.docker.com/) to ask questions amongst other Docker community members, while our [hub-feedback GitHub repository](https://github.com/docker/hub-feedback) allows you to provide feedback on how we can better improve the experience with Docker Hub.
 

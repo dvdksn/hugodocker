@@ -6,8 +6,8 @@ toc_max: 2
 ---
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#tab3">FAQs</a></li>
-  <li><a data-toggle="tab" data-target="#tab4">Limitations and Known Issues</a></li>
+  <li class="active"><a data-toggle="tab" data->FAQs</a></li>
+  <li><a data-toggle="tab" data->Limitations and Known Issues</a></li>
 </ul>
 <div class="tab-content">
 <div id="tab3" class="tab-pane fade in active" markdown="1">

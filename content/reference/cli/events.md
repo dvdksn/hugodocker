@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_events
 title: docker events
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/events/
 ---
 <!--

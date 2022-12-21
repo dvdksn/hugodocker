@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_service_logs
 title: docker service logs
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/service_logs/
 ---
 <!--

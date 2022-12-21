@@ -11,11 +11,11 @@ When configuring repositories, your private repositories let you keep your conta
 
 You can make an existing repository private by going to its **Settings** tab and select **Make private**.
 
-![Repo make private](../../images/repo-make-private.png){: style="max-width: 60%"}
+![Repo make private](../../images/repo-make-private.png)
 
 You get one free private repository with your Docker Hub user account (not
 available for organizations you're a member of). If you need more private
-repositories for your user account, upgrade your Docker Hub subscription from your [Billing Information](https://hub.docker.com/billing/plan){: target="_blank" rel="noopener" class="_"} page.
+repositories for your user account, upgrade your Docker Hub subscription from your [Billing Information](https://hub.docker.com/billing/plan) page.
 
 Once you've created a private repository, you can `push` and `pull` images to and
 from it using Docker.
@@ -28,7 +28,7 @@ You can choose collaborators and manage their access to a private
 repository from that repository's **Settings** page. You can also toggle the
 repository's status between public and private, if you have an available
 repository slot open. Otherwise, you can upgrade your
-[Docker Hub](https://hub.docker.com/account/billing-plans/){: target="_blank" rel="noopener" class="_"} subscription.
+[Docker Hub](https://hub.docker.com/account/billing-plans/) subscription.
 
 ### Permissions reference
 

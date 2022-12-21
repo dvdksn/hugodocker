@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_trust_signer_remove
 title: docker trust signer remove
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/trust_signer_remove/
 ---
 <!--

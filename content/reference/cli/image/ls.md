@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_ls
 title: docker image ls
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_ls/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_history
 title: docker image history
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_history/
 ---
 <!--

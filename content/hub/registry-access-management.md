@@ -20,7 +20,7 @@ Download Docker Desktop v4.8 or a later release.
 
 To configure Registry Access Management permissions, perform the following steps:
 
-1. Sign into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account as an organization owner.
+1. Sign into your [Docker Hub](https://hub.docker.com) account as an organization owner.
 2. Select an organization, navigate to the **Settings** tab on the **Organizations** page and click **Registry Access**.
 3. Enable Registry Access Management to set the permissions for your registry.
 
@@ -35,7 +35,7 @@ To configure Registry Access Management permissions, perform the following steps
    >
    > Once you add a registry, it can take up to 24 hours for the changes to be enforced on your developers’ machines. If you want to apply the changes sooner, you must force a Docker logout on your developers’ machine and have the developers re-authenticate for Docker Desktop. Also, there is no limit on the number of registries you can add. See the [Caveats](#caveats) section to learn more about limitations when using this feature.
 
-![Registry Access Management](images/registry-access-management.png){:width="700px"}
+![Registry Access Management](images/registry-access-management.png)
 
 ## Enforce authentication
 

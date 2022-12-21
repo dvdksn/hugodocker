@@ -15,7 +15,7 @@ Organization owners can invite new members to an organization via Docker ID, ema
 
 Use the following steps to invite members to your organization via Docker ID or email address. To invite a large amount of members to your organization, the recommended method is to [invite members via CSV file](#invite-members-via-csv-file).
 
-1. Go to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Go to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, select **Invite Member**.
 3. Select **Emails Or Docker IDs**.
 4. Enter the Docker IDs or email addresses that you want to invite, up to a maximum of 1000. Separate multiple entries by a comma, semicolon, or space.
@@ -33,7 +33,7 @@ Use the following steps to invite members to your organization via Docker ID or 
 
 To invite multiple members to your organization via a CSV file containing email addresses:
 
-1. Go to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Go to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, select **Invite Member**.
 3. Select **CSV Upload**.
 4. Select a team from the drop-down list to add all invited users to that team.
@@ -74,7 +74,7 @@ Organization owners can add a member to one or more teams within an organization
 
 To add a member to a team:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, click the additional options from the table menu and select **Add to team**.
 
     > **Note**
@@ -91,7 +91,7 @@ To add a member to a team:
 
 To resend an invitation if the invite is pending or declined:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com) and select your organization.
 2. In the **Members** tab, locate the invitee and select **Resend invitation** from the table menu.
 3. Click **Invite** to confirm.
 
@@ -99,19 +99,19 @@ To resend an invitation if the invite is pending or declined:
 
 To remove a member from an organization:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, select Remove member from the table menu.
 3. When prompted, click **Remove** to confirm.
 
 To remove an invitee from an organization:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, locate the invitee you would like to remove and select **Remove invitee** from the table menu.
 3. When prompted, click **Remove** to confirm.
 
 To remove a member from a specific team:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. Click on the **Teams** tab and select the team from the list.
 3. Click the **X** next to the user’s name to remove them from the team.
 4. When prompted, click **Remove** to confirm.
@@ -131,5 +131,5 @@ The CSV file contains the following fields:
 
 To export a CSV file of the organization's members:
 
-1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, and select your organization.
+1. Navigate to **Organizations** in [Docker Hub](https://hub.docker.com), and select your organization.
 2. In the **Members** tab, select **Export members** to download the CSV file.

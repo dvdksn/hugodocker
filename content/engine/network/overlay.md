@@ -97,7 +97,7 @@ automatically rotate the keys every 12 hours.
 > Overlay network encryption is not supported on Windows. If a Windows node
 > attempts to connect to an encrypted overlay network, no error is detected but
 > the node cannot communicate.
-{: .warning }
+
 
 #### Swarm mode overlay networks and standalone containers
 

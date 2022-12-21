@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_inspect
 title: docker container inspect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_inspect/
 ---
 <!--

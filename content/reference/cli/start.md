@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_start
 title: docker start
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/start/
 ---
 <!--

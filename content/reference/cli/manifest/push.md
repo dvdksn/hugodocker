@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_manifest_push
 title: docker manifest push
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/manifest_push/
 ---
 <!--

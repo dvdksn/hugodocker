@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_load
 title: docker image load
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_load/
 ---
 <!--

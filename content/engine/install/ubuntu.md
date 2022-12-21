@@ -117,8 +117,8 @@ Docker from the repository.
 
    > Receiving a GPG error when running `apt-get update`?
    >
-   > Your default [umask](https://en.wikipedia.org/wiki/Umask){: target="blank"
-   > rel="noopener" } may be incorrectly configured, preventing detection of the
+   > Your default [umask](https://en.wikipedia.org/wiki/Umask){: 
+   >  } may be incorrectly configured, preventing detection of the
    > repository public key file. Try granting read permission for the Docker
    > public key file before updating the package index:
    >
@@ -130,8 +130,8 @@ Docker from the repository.
 2. Install Docker Engine, containerd, and Docker Compose.
 
    <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" data-target="#tab-latest">Latest</a></li>
-    <li><a data-toggle="tab" data-target="#tab-version">Specific version</a></li>
+    <li class="active"><a data-toggle="tab" data->Latest</a></li>
+    <li><a data-toggle="tab" data->Specific version</a></li>
    </ul>
    <div class="tab-content">
    <br>
@@ -199,7 +199,7 @@ download the `deb` file for your release and install it manually. You need to
 download a new file each time you want to upgrade Docker Engine.
 
 1. Go to [`{{ download-url-base }}/dists/`]({{ download-url-base }}/dists/){:
-   target="_blank" rel="noopener" class="_" }.
+   .
 
 2. Select your Ubuntu version in the list.
 

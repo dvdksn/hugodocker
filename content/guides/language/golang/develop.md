@@ -738,8 +738,8 @@ In this module, we set up a containerised development environment with our appli
 
 In the next module, we’ll take a look at one possible approach to running functional tests in Docker. See:
 
-[Run your tests](run-tests.md){: .button .outline-btn}
+[Run your tests](run-tests.md)
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Golang%20docs%20feedback]) to suggest updates.

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_create
 title: docker create
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/create/
 ---
 <!--

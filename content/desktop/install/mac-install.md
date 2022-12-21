@@ -20,8 +20,8 @@ aliases:
 
 This page contains information about system requirements, download URLs, and instructions on how to install Docker Desktop for Mac.
 
-[Mac with Intel chip](https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64){: .button .primary-btn }
-[Mac with Apple silicon](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64){: .button .primary-btn }
+[Mac with Intel chip](https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64)
+[Mac with Apple silicon](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64)
 
 *For checksums, see [Release notes](../release-notes.md).*
 
@@ -30,8 +30,8 @@ This page contains information about system requirements, download URLs, and ins
 Your Mac must meet the following requirements to install Docker Desktop successfully.
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#mac-intel">Mac with Intel chip</a></li>
-<li><a data-toggle="tab" data-target="#mac-apple-silicon">Mac with Apple silicon</a></li>
+<li class="active"><a data-toggle="tab" data->Mac with Intel chip</a></li>
+<li><a data-toggle="tab" data->Mac with Apple silicon</a></li>
 </ul>
 <div class="tab-content">
 <div id="mac-intel" class="tab-pane fade in active" markdown="1">
@@ -74,7 +74,7 @@ Your Mac must meet the following requirements to install Docker Desktop successf
 
 2. Double-click `Docker.app` in the **Applications** folder to start Docker.
 
-3. The Docker menu (![whale menu](images/whale-x.svg){: .inline}) displays the Docker Subscription Service Agreement window.
+3. The Docker menu (![whale menu](images/whale-x.svg)) displays the Docker Subscription Service Agreement window.
 
     {% include desktop-license-update.md %}
 
@@ -83,9 +83,9 @@ Your Mac must meet the following requirements to install Docker Desktop successf
     > **Important**
     >
     > If you do not agree to the terms, the Docker Desktop application will close and  you can no longer run Docker Desktop on your machine. You can choose to accept the terms at a later date by opening Docker Desktop.
-    {: .important}
+    
 
-    For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement){: target="_blank" rel="noopener" class="_" }. We recommend that you also read the [FAQs](https://www.docker.com/pricing/faq){: target="_blank" rel="noopener" class="_"}.
+    For more information, see [Docker Desktop Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement).
 
 ### Install from the command line
 
@@ -100,9 +100,9 @@ $ sudo hdiutil detach /Volumes/Docker
 As macOS typically performs security checks the first time an application is used, the `install` command can take several minutes to run.
 
 The `install` command accepts the following flags:
-- `--accept-license`: accepts the [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement){: target="_blank" rel="noopener" class="_"} now, rather than requiring it to be accepted when the application is first run
+- `--accept-license`: accepts the [Docker Subscription Service Agreement](https://www.docker.com/legal/docker-subscription-service-agreement) now, rather than requiring it to be accepted when the application is first run
 - `--allowed-org=<org name>`: requires the user to sign in and be part of the specified Docker Hub organization when running the application
-- `--user=<username>`: Performs the privileged configurations once during installation. This removes the need for the user to grant root privileges on first run. For more information, see [Privileged helper permission requirements](../mac/permission-requirements.md#permission-requirements){: target="_blank" rel="noopener" class="_"}. To find the username, enter `ls /Users` in the CLI.
+- `--user=<username>`: Performs the privileged configurations once during installation. This removes the need for the user to grant root privileges on first run. For more information, see [Privileged helper permission requirements](../mac/permission-requirements.md#permission-requirements). To find the username, enter `ls /Users` in the CLI.
 - `--admin-settings`: Automatically creates an `admin-settings.json` file which is used by admins to control certain Docker Desktop settings on client machines within their organization. For more information, see [Settings Management](../hardened-desktop/settings-management/index.md).
   - It must be used together with the `--allowed-org=<org name>` flag. 
   - For example:

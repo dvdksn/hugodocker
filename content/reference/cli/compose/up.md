@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_up
 title: docker compose up
-redirect_from:
+aliases:
 - /compose/reference/up/
 - /compose/reference/scale/
 ---

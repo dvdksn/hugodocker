@@ -13,15 +13,15 @@ don't worry. This guide doesn't require JavaScript experience.
 To complete this guide, you'll need the following:
 
 - Docker running locally. Follow the instructions to [download and install Docker](../get-docker.md).
-- A [Git client](https://git-scm.com/downloads){:target="_blank" rel="noopener" class="_"}.
-- An IDE or a text editor to edit files. Docker recommends using [Visual Studio Code](https://code.visualstudio.com/){:target="_blank" rel="noopener" class="_"}.
+- A [Git client](https://git-scm.com/downloads).
+- An IDE or a text editor to edit files. Docker recommends using [Visual Studio Code](https://code.visualstudio.com/).
 - A conceptual understanding of [containers and images](../get-started/overview.md/#docker-objects).
 
 ## Get the app
 
 Before you can run the application, you need to get the application source code onto your machine.
 
-1. Clone the [getting-started repository](https://github.com/docker/getting-started/tree/master){:target="_blank" rel="noopener" class="_"} using the following command:
+1. Clone the [getting-started repository](https://github.com/docker/getting-started/tree/master) using the following command:
 
    ```console
    $ git clone https://github.com/docker/getting-started.git
@@ -29,18 +29,18 @@ Before you can run the application, you need to get the application source code 
 
 2. View the contents of the cloned repository. Inside the `getting-started/app` directory you should see `package.json` and two subdirectories (`src` and `spec`).
 
-    ![Screenshot of Visual Studio Code opened with the app loaded](images/ide-screenshot.png){: style="width:650px;margin-top:20px;"}
-    {: .text-center }
+    ![Screenshot of Visual Studio Code opened with the app loaded](images/ide-screenshot.png)
+    
 
 ## Build the app's container image
 
-In order to build the [container image](../get-started/overview.md/#docker-objects){:target="_blank" rel="noopener" class="_"}, you'll need to use a `Dockerfile`. A Dockerfile is simply a text-based file with no file extension. A Dockerfile contains a script of instructions that Docker uses to create a container image.
+In order to build the [container image](../get-started/overview.md/#docker-objects), you'll need to use a `Dockerfile`. A Dockerfile is simply a text-based file with no file extension. A Dockerfile contains a script of instructions that Docker uses to create a container image.
 
 1. In the `app` directory, the same location as the `package.json` file, create a file named `Dockerfile`. You can use the following commands below to create a Dockerfile based on your operating system.
 
    <ul class="nav nav-tabs">
-     <li class="active"><a data-toggle="tab" data-target="#mac-linux">Mac / Linux</a></li>
-     <li><a data-toggle="tab" data-target="#windows">Windows</a></li>
+     <li class="active"><a data-toggle="tab" data->Mac / Linux</a></li>
+     <li><a data-toggle="tab" data->Windows</a></li>
    </ul>
    <div class="tab-content">
    <div id="mac-linux" class="tab-pane fade in active" markdown="1">
@@ -112,7 +112,7 @@ In order to build the [container image](../get-started/overview.md/#docker-objec
 
 ## Start an app container
 
-Now that you have an image, you can run the application in a [container](../get-started/overview.md/#docker-objects){:target="_blank" rel="noopener" class="_"}. To do so, you will use the `docker run` command.
+Now that you have an image, you can run the application in a [container](../get-started/overview.md/#docker-objects). To do so, you will use the `docker run` command.
 
 1. Start your container using the `docker run` command and specify the name of the image you just created:
 
@@ -123,11 +123,11 @@ Now that you have an image, you can run the application in a [container](../get-
    You use the `-d` flag to run the new container in "detached" mode (in the background). You also use the `-p` flag to create a mapping between the host's port 3000 to the container's port 3000.
    Without the port mapping, you wouldn't be able to access the application.
 
-2. After a few seconds, open your web browser to [http://localhost:3000](http://localhost:3000){:target="_blank" rel="noopener" class="_"}.
+2. After a few seconds, open your web browser to [http://localhost:3000](http://localhost:3000).
    You should see your app.
 
-   ![Empty Todo List](images/todo-list-empty.png){: style="width:450px;margin-top:20px;"}
-   {: .text-center }
+   ![Empty Todo List](images/todo-list-empty.png)
+   
 
 3. Go ahead and add an item or two and see that it works as you expect. You can mark items as complete and remove items. Your frontend is successfully storing items in the backend.
 
@@ -144,4 +144,4 @@ In this short section, you learned the basics about creating a Dockerfile to bui
 
 Next, you're going to make a modification to your app and learn how to update your running application with a new image. Along the way, you'll learn a few other useful commands.
 
-[Update the application](03_updating_app.md){: .button .primary-btn}
+[Update the application](03_updating_app.md)

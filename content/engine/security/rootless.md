@@ -51,12 +51,12 @@ testuser:231072:65536
 > Note: We recommend that you use the Ubuntu kernel.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#hint-ubuntu">Ubuntu</a></li>
-  <li><a data-toggle="tab" data-target="#hint-debian">Debian GNU/Linux</a></li>
-  <li><a data-toggle="tab" data-target="#hint-arch">Arch Linux</a></li>
-  <li><a data-toggle="tab" data-target="#hint-opensuse-sles">openSUSE and SLES</a></li>
-  <li><a data-toggle="tab" data-target="#hint-centos8-rhel8-fedora">CentOS 8, RHEL 8 and Fedora</a></li>
-  <li><a data-toggle="tab" data-target="#hint-centos7-rhel7">CentOS 7 and RHEL 7</a></li>
+  <li class="active"><a data-toggle="tab" data->Ubuntu</a></li>
+  <li><a data-toggle="tab" data->Debian GNU/Linux</a></li>
+  <li><a data-toggle="tab" data->Arch Linux</a></li>
+  <li><a data-toggle="tab" data->openSUSE and SLES</a></li>
+  <li><a data-toggle="tab" data->CentOS 8, RHEL 8 and Fedora</a></li>
+  <li><a data-toggle="tab" data->CentOS 7 and RHEL 7</a></li>
 </ul>
 <div class="tab-content">
 
@@ -144,8 +144,8 @@ testuser:231072:65536
 > `$ sudo systemctl disable --now docker.service docker.socket`
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#install-with-packages">With packages (RPM/DEB)</a></li>
-  <li><a data-toggle="tab" data-target="#install-without-packages">Without packages</a></li>
+  <li class="active"><a data-toggle="tab" data->With packages (RPM/DEB)</a></li>
+  <li><a data-toggle="tab" data->Without packages</a></li>
 </ul>
 <div class="tab-content">
 
@@ -177,7 +177,7 @@ $ sudo apt-get install -y docker-ce-rootless-extras
 </div>
 <div id="install-without-packages" class="tab-pane fade in" markdown="1">
 If you do not have permission to run package managers like `apt-get` and `dnf`,
-consider using the installation script available at [https://get.docker.com/rootless](https://get.docker.com/rootless){: target="_blank" rel="noopener" class="_" }.
+consider using the installation script available at [https://get.docker.com/rootless](https://get.docker.com/rootless).
 Since static packages are not available for `s390x`, hence it is not supported for `s390x`.
 
 ```console
@@ -231,8 +231,8 @@ $ rm -f containerd containerd-shim containerd-shim-runc-v2 ctr docker docker-ini
 
 ### Daemon
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#usage-with-systemd">With systemd (Highly recommended)</a></li>
-  <li><a data-toggle="tab" data-target="#usage-without-systemd">Without systemd</a></li>
+  <li class="active"><a data-toggle="tab" data->With systemd (Highly recommended)</a></li>
+  <li><a data-toggle="tab" data->Without systemd</a></li>
 </ul>
 <div class="tab-content">
 

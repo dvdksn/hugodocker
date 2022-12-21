@@ -29,7 +29,7 @@ Each subsequent click on the extension tab will also open Chrome Dev Tools. To s
 $ docker extension dev reset <name-of-your-extensions>
 ```
 
-After an extension is deployed, it is also possible to open Chrome DevTools from the UI extension part using a variation of the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code){:target="_blank" rel="noopener" class="_"}. Click on the extension tab, and then hit the key sequence `up, up, down, down, left, right, left, right, p, d, t`.
+After an extension is deployed, it is also possible to open Chrome DevTools from the UI extension part using a variation of the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code). Click on the extension tab, and then hit the key sequence `up, up, down, down, left, right, left, right, p, d, t`.
 
 ### Hot reloading whilst developing the UI
 

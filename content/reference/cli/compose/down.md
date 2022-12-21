@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_down
 title: docker compose down
-redirect_from:
+aliases:
 - /compose/reference/down/
 ---
 <!--

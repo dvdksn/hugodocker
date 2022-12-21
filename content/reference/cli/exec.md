@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_exec
 title: docker exec
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/exec/
 ---
 <!--

@@ -34,7 +34,7 @@ aliases:
 
    ![Docker Quick Start tutorial](images/docker-tutorial-linux.png)
 
-To run the Quick Start Guide on demand, select ![whale menu](images/whale-x.svg){: .inline} and then choose **Quick Start Guide**.
+To run the Quick Start Guide on demand, select ![whale menu](images/whale-x.svg) and then choose **Quick Start Guide**.
 
 For a more detailed guide, see [Get started](../get-started/index.md).
 
@@ -64,7 +64,7 @@ After two-factor authentication is enabled:
 
 ### Credentials management for Linux users
 
-Docker Desktop relies on [`pass`](https://www.passwordstore.org/){: target="_blank" rel="noopener" class="_"} to store credentials in gpg2-encrypted files.
+Docker Desktop relies on [`pass`](https://www.passwordstore.org/) to store credentials in gpg2-encrypted files.
 Before signing in to Docker Hub from the Docker Dashboard or the Docker menu, you must initialize `pass`.
 Docker Desktop displays a warning if you've not initialized `pass`.
 

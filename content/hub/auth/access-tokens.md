@@ -12,14 +12,14 @@ Using personal access tokens provides some advantages over a password:
   it if you find any suspicious activity.
 * When using an access token, you can't perform any admin activity on the account, including changing the password. It protects your account if your computer is compromised.
   
-Docker provides a [Docker Hub CLI](https://github.com/docker/hub-tool#readme){: target="_blank" rel="noopener" class="_"}
-tool (currently experimental) and an API that allows you to interact with Docker Hub. Browse through the [Docker Hub API](/docker-hub/api/latest/){: target="_blank" rel="noopener" class="_"} documentation to explore the supported endpoints.
+Docker provides a [Docker Hub CLI](https://github.com/docker/hub-tool#readme)
+tool (currently experimental) and an API that allows you to interact with Docker Hub. Browse through the [Docker Hub API](/docker-hub/api/latest/) documentation to explore the supported endpoints.
 
 > **Important**
 >
 > Treat access tokens like your password and keep them secret. Store your
 > tokens securely (for example, in a credential manager).
-{: .important}
+
 
 Access tokens are valuable for building integrations, as you can issue
 multiple tokens &ndash; one for each integration &ndash; and revoke them at
@@ -40,7 +40,7 @@ The following video walks you through the process of managing access tokens.
 
 To create your access token:
 
-1. Log in to [hub.docker.com](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}.
+1. Log in to [hub.docker.com](https://hub.docker.com).
 
 2. Click on your username in the top right corner and select **[Account Settings](https://hub.docker.com/settings/general)**.
 
@@ -50,7 +50,7 @@ To create your access token:
    will be used, or set a purpose for the token. You can view the following access
    permissions from the drop-down:
 
-      ![PAT Menu](images/hub-create-token.png){:width="700px"}
+      ![PAT Menu](images/hub-create-token.png)
 
    The access permissions are scopes that set restrictions in your
    repositories. For example, for Read & Write permissions, an automation
@@ -60,7 +60,7 @@ To create your access token:
 5. Copy the token that appears on the screen and save it. You will not be able
    to retrieve the token once you close this prompt.
 
-      ![Copy Token](images/hub-copy-token.png){:width="700px"}
+      ![Copy Token](images/hub-copy-token.png)
 
 ## Use an access token
 
@@ -81,16 +81,16 @@ a password.
 
 You can rename, activate, deactivate, or delete a token as needed.
 
-1. Access your tokens under **[Account Settings > Security](https://hub.docker.com/settings/security){: target="_blank" rel="noopener" class="_"}**.
+1. Access your tokens under **[Account Settings > Security](https://hub.docker.com/settings/security)**.
    This page shows an overview of all your tokens. You can also view the number
    of tokens that are activated and deactivated in the toolbar.
 
-   ![Delete or Edit](images/hub-delete-edit-token.png){:width="700px"}
+   ![Delete or Edit](images/hub-delete-edit-token.png)
 
 2. Select a token and click **Delete** or **Edit**, or use the menu on
    the far right of a token row to bring up the edit screen. You can also
    select multiple tokens to delete at once.
 
-      ![Modify Token](images/hub-edit-token.png){:width="700px"}
+      ![Modify Token](images/hub-edit-token.png)
 
 3. After modifying the token, click the **Save** button to save your changes.

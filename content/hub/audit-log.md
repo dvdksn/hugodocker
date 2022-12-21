@@ -22,7 +22,7 @@ To view the audit logs:
 1. Sign into an owner account for the organization in Docker Hub.
 2. Select your organization from the list and then click on the **Activity** tab.
 
-    ![Organization activity tab](images/org-activity-tab.png){:width="700px"}
+    ![Organization activity tab](images/org-activity-tab.png)
 
 The audit logs begin tracking activities from the date the feature is live, that is from **25 January 2021**. Activities that took place before this date are not captured.
 
@@ -34,7 +34,7 @@ The audit logs begin tracking activities from the date the feature is live, that
 
 By default, all activities that occur at organization and repository levels are displayed on the **Activity** tab. Use the calendar option to select a date range and customize your results. After you have selected a date range, the **Activity** tab displays the audit logs of all the activities that occurred during that period.
 
-![Activities list](images/activity-list.png){:width="600px"}
+![Activities list](images/activity-list.png)
 
 > **Note**
 >
@@ -42,7 +42,7 @@ By default, all activities that occur at organization and repository levels are 
 
 Click the **All Activities** drop-down list to view activities that are specific to an organization or a repository. After choosing **Organization** or **Repository**, you can further refine the results using the **All Actions** drop-down list. If you select the **Activities** tab from the **Repository** view, you can only filter repository-level activities.
 
-![Refine org activities](images/org-all-actions.png){:width="600px"}
+![Refine org activities](images/org-all-actions.png)
 
 
 ## Audit logs event definitions

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_secret_ls
 title: docker secret ls
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/secret_ls/
 ---
 <!--

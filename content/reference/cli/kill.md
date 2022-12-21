@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_kill
 title: docker kill
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/kill/
 ---
 <!--

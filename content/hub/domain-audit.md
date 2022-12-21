@@ -19,7 +19,7 @@ You can add uncaptured users to your organization to gain visibility into their 
 
 To audit your domains:
 
-1. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} as an administrator of your organization.
+1. Sign in to [Docker Hub](https://hub.docker.com) as an administrator of your organization.
 
 2. Select **Organizations** and then select your organization.
 

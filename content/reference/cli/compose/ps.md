@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_ps
 title: docker compose ps
-redirect_from:
+aliases:
 - /compose/reference/ps/
 ---
 <!--

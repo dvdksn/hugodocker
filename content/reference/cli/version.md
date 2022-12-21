@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_version
 title: docker version
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/version/
 ---
 <!--

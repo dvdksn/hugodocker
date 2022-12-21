@@ -90,7 +90,7 @@ If you need to specify volume driver options, you must use `--mount`.
 >         --mount 'type=volume,src=<VOLUME-NAME>,dst=<CONTAINER-PATH>,volume-driver=local,volume-opt=type=nfs,volume-opt=device=<nfs-server>:<nfs-path>,"volume-opt=o=addr=<nfs-address>,vers=4,soft,timeo=180,bg,tcp,rw"'
 >         --name myservice \
 >         <IMAGE>
-> {: .warning}
+> 
 
 
 The examples below show both the `--mount` and `-v` syntax where possible, and
@@ -155,8 +155,8 @@ them both unless you remove the `devtest` container and the `myvol2` volume
 after running the first one.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-run"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-run"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-run" class="tab-pane fade in active" markdown="1">
@@ -302,8 +302,8 @@ content.
 The `--mount` and `-v` examples have the same end result.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-empty-run"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-empty-run"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-empty-run" class="tab-pane fade in active" markdown="1">
@@ -356,8 +356,8 @@ them using commas.
 The `--mount` and `-v` examples have the same result.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-readonly"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-readonly"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-readonly" class="tab-pane fade in active" markdown="1">

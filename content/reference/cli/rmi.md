@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_rmi
 title: docker rmi
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/rmi/
 ---
 <!--

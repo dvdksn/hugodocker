@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_trust_key
 title: docker trust key
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/trust_key/
 ---
 <!--

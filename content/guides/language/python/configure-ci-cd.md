@@ -14,8 +14,8 @@ In this module, you have learnt how to set up GitHub Actions workflow to an exis
 
 You can also consider deploying your application. For detailed instructions, see:
 
-[Deploy your app](deploy.md){: .button .primary-btn}
+[Deploy your app](deploy.md)
 
 ## Feedback
 
-Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Python%20docs%20feedback]){:target="_blank" rel="noopener" class="_"} GitHub repository. Alternatively, [create a PR]({{ site.repo }}/pulls){:target="_blank" rel="noopener" class="_"} to suggest updates.
+Help us improve this topic by providing your feedback. Let us know what you think by creating an issue in the [Docker Docs]({{ site.repo }}/issues/new?title=[Python%20docs%20feedback]) to suggest updates.

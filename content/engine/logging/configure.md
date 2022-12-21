@@ -147,7 +147,7 @@ STDERR or STDOUT streams block.
 > When the buffer is full and a new message is enqueued, the oldest message in
 > memory is dropped.  Dropping messages is often preferred to blocking the
 > log-writing process of an application.
-{: .warning}
+
 
 The `mode` log option controls whether to use the `blocking` (default) or
 `non-blocking` message delivery.

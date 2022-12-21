@@ -66,8 +66,8 @@ To use a `tmpfs` mount in a container, use the `--tmpfs` flag, or use the
 second uses the `--tmpfs` flag.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-run"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#tmpfs-run"><code>--tmpfs</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>--tmpfs</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-run" class="tab-pane fade in active" markdown="1">

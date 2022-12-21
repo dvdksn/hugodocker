@@ -6,9 +6,9 @@ aliases:
 - /docker-hub/publish/store-migration/
 ---
 
-The [Publisher Center](https://hub.docker.com/publisher/center){: target="_blank" rel="noopener" class="_"} (previously known as Docker Store) was used by Docker trusted partners until recently to publish their verified content on Docker Hub. Docker Hub and the Publisher Center serve similar purposes. Our new streamlined model uses public repositories as the universal mechanism for image publishing, and our goal is to create a unified and seamless experience for our users.
+The [Publisher Center](https://hub.docker.com/publisher/center) (previously known as Docker Store) was used by Docker trusted partners until recently to publish their verified content on Docker Hub. Docker Hub and the Publisher Center serve similar purposes. Our new streamlined model uses public repositories as the universal mechanism for image publishing, and our goal is to create a unified and seamless experience for our users.
 
-Additionally, we’ve moved away from a payment-for-images model and are instead focusing on improving the quality of the content provided on Docker Hub through our Trusted Content programs such as [Docker Official Images](../official_images.md), [Docker Verified Publishers](../publish/index.md), and the [Docker Open Source Program](https://www.docker.com/community/open-source/application/){: target="_blank" rel="noopener" class="_"}. Therefore, Docker has decided to retire the Publisher Center in stages and invest resources to improve Docker Hub.
+Additionally, we’ve moved away from a payment-for-images model and are instead focusing on improving the quality of the content provided on Docker Hub through our Trusted Content programs such as [Docker Official Images](../official_images.md), [Docker Verified Publishers](../publish/index.md), and the [Docker Open Source Program](https://www.docker.com/community/open-source/application/). Therefore, Docker has decided to retire the Publisher Center in stages and invest resources to improve Docker Hub.
 
 Docker will issue brown-out periods before fully retiring the Publisher Center. The first brown-out period is on **April 21 2022 4:00 pm - 10:00 pm UTC**. You can confirm if you are affected during the brown-out periods by sending us an email at `publisher-support@docker.com`.
 
@@ -28,7 +28,7 @@ The following sections provide recommendations for publishers to migrate content
 
 ### Download data from the Publisher Center
 
-1. Take a snapshot of the data you’d like to retain. If there are any reports that you’d like to keep, log into your Docker Hub account as an owner and  click [Publisher Center](https://hub.docker.com/publisher/center){: target="_blank" rel="noopener" class="_"}.
+1. Take a snapshot of the data you’d like to retain. If there are any reports that you’d like to keep, log into your Docker Hub account as an owner and  click [Publisher Center](https://hub.docker.com/publisher/center).
 2. Select **Analytics**. You’ll now see the available data for your product. Choose the timeframe you need and capture that data before you migrate.
 3. Complete the following steps for each repository that you own:
 
@@ -39,7 +39,7 @@ The following sections provide recommendations for publishers to migrate content
 
 ### Create your new Docker organization
 
-1. Create a new namespace/organization in [Docker Hub](https://hub.docker.com/orgs){: target="_blank" rel="noopener" class="_"}.
+1. Create a new namespace/organization in [Docker Hub](https://hub.docker.com/orgs).
 For step-by-step instructions, see [Teams and Organizations](../orgs.md). For information about creating repositories, see [Repositories](../repos/index.md).
 2. As part of creating a new organization, we recommend that you create a secure group alias or email login as a backup administrator login.
 3. When you create a new organization, we recommend that you use a name similar to the one you used in the Publisher Center.
@@ -71,7 +71,7 @@ Docker Verified Publisher partners enjoy benefits such as:
 - Co-marketing opportunities including social shares, amplifying blog posts, the exclusive right to sponsor DockerCon, etc.
 - And more!
 
-[Contact us](https://www.docker.com/partners/programs/){: target="_blank" rel="noopener" class="_"} to learn more about the Docker Verified Publisher program.
+[Contact us](https://www.docker.com/partners/programs/) to learn more about the Docker Verified Publisher program.
 
 ## Support
 

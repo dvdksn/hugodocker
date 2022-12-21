@@ -24,24 +24,24 @@ To begin, you should identify which users you will need to add to your Docker Te
       - Windows: `C:\Program Files\Docker\Docker`
    - If your organization doesn't use device management software, you may survey your users.
 2. Instruct all your Docker users in your organization to update their existing Docker account's email address to an address that's in your organization's domain, or to create a new account using an email address in your organization's domain.
-   - To update an account's email address, instruct your users to sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}, go to [Account Settings](https://hub.docker.com/settings/general){: target="_blank" rel="noopener" class="_"}, and update the email address to their email address in your organization's domain.
-   - To create a new account, instruct your users to go [sign up](https://hub.docker.com/signup){: target="_blank" rel="noopener" class="_"} using their email address in your organization's domain.
+   - To update an account's email address, instruct your users to sign in to [Docker Hub](https://hub.docker.com), and update the email address to their email address in your organization's domain.
+   - To create a new account, instruct your users to go [sign up](https://hub.docker.com/signup) using their email address in your organization's domain.
 3. Ask your Docker sales representative to provide a list of Docker accounts that use an email address in your organization's domain.
 
 ## Step 2: Invite owners
 
 Now that you have a Docker Business organization, it's time to start adding owners to help you set up and manage your organization. Owners can add or remove members, and configure Single Sign-on as well as other security settings.
 
-To add an owner, invite a user to the **owners** team. For more details, see [Invite members](../docker-hub/members.md/#invite-members){: target="_blank" rel="noopener" class="_"}.
+To add an owner, invite a user to the **owners** team. For more details, see [Invite members](../docker-hub/members.md/#invite-members).
 
 ## Step 3: Invite members
 
-Add members to your organization using a CSV file, or by entering their email addresses. For more details, see [Invite members](../docker-hub/members.md/#invite-members){: target="_blank" rel="noopener" class="_"}
+Add members to your organization using a CSV file, or by entering their email addresses. For more details, see [Invite members](../docker-hub/members.md/#invite-members)
 
 ## Step 4: Enforce sign-in for Docker Desktop
 
 By default, members of your organization can use Docker Desktop on their machines without signing in to any Docker account. To ensure that a user signs in to a Docker account that is a member of your organization and that the
-organization’s settings apply to the user’s session, you can use a `registry.json` file. For details, see [Configure registry.json to enforce sign-in](../docker-hub/configure-sign-in.md){: target="_blank" rel="noopener" class="_"}.
+organization’s settings apply to the user’s session, you can use a `registry.json` file. For details, see [Configure registry.json to enforce sign-in](../docker-hub/configure-sign-in.md).
 
 ## What's next
 

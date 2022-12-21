@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_manifest_annotate
 title: docker manifest annotate
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/manifest_annotate/
 ---
 <!--

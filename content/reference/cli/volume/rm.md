@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_volume_rm
 title: docker volume rm
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/volume_rm/
 ---
 <!--

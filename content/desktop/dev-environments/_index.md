@@ -2,7 +2,6 @@
 description: Dev Environments
 keywords: Dev Environments, share, local, Compose
 title: Dev Environments
-layout: wide
 weight: 800
 ---
 
@@ -16,20 +15,20 @@ It uses tools built into code editors that allows Docker to access code mounted 
 
 You can use Dev Environments through the intuitive GUI in Docker Dashboard or straight from you terminal with the new [`docker dev` CLI plugin](dev-cli.md).
 
-![Dev environment intro](../images/dev-env.PNG){:width="700px"}
+![Dev environment intro](../images/dev-env.PNG)
 
 ## How does it work?
 
 >**Changes to Dev Environments with Docker Desktop 4.13**
 >
 >Docker has simplified how you configure your dev environment project. All you need to get started is a `compose-dev.yaml` file. If you have an existing project with a `.docker/` folder this is automatically migrated the next time you launch.
-{: .important}
+
 
 Dev Environments is powered by [Docker Compose](/compose/). This allows Dev Environments to take advantage of all the benefits and features of Compose whilst adding an intuitive GUI where you can launch environments with the click of a button.
 
 Every dev environment you want to run needs a `compose-dev.yaml` file which configures your application's services and lives in your project directory. You don't need to be an expert in Docker Compose or write a `compose-dev.yaml` file from scratch as Dev Environments creates a starter `compose-dev.yaml` files based on the main language in your project. 
 
-You can also use the many [sample dev environments](https://github.com/docker/awesome-compose){:target="_blank" rel="noopener" class="_"} as a starting point for how to integrate different services. Alternatively, see [Set up a dev environment](set-up.md) for more information. 
+You can also use the many [sample dev environments](https://github.com/docker/awesome-compose) as a starting point for how to integrate different services. Alternatively, see [Set up a dev environment](set-up.md) for more information. 
 
 ## What's next?
 

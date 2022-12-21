@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_top
 title: docker compose top
-redirect_from:
+aliases:
 - /compose/reference/top/
 ---
 <!--

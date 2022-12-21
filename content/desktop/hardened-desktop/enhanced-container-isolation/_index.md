@@ -47,7 +47,7 @@ For more information on how Enhanced Container Isolation work, see [How does it 
 >**Important**
 >
 >Enhanced Container Isolation is currently incompatible with WSL and does not protect Kubernetes pods. For more information on known limitations and workarounds, see [FAQs and known issues](faq.md).
-{: .important}
+
 
 ### How do I enable Enhanced Container Isolation?
 
@@ -82,7 +82,7 @@ For this to take effect:
 >Important
   >
   >Selecting **Restart** from the Docker menu isn't enough as it only restarts some components of Docker Desktop.
-  {: .important}
+  
 
 ### What do users see when this setting is enforced by an admin?
 

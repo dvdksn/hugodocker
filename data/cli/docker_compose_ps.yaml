@@ -94,7 +94,7 @@ examples: |-
     ```
 
     The JSON output allows you to use the information in other tools for further
-    processing, for example, using the [`jq` utility](https://stedolan.github.io/jq/){:target="_blank" rel="noopener" class="_"}
+    processing, for example, using the [`jq` utility](https://stedolan.github.io/jq/)
     to pretty-print the JSON:
 
     ```console

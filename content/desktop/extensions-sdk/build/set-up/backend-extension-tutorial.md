@@ -54,14 +54,14 @@ Here is the extension folder structure with a backend:
 1. Contains everything required to build the backend and copy it in the extension's container filesystem.
 2. The source folder that contains the backend code of the extension
 
-Although you can start from an empty directory or from the `vm-ui extension` [sample](https://github.com/docker/extensions-sdk/tree/main/samples){:target="_blank" rel="noopener" class="_"},
+Although you can start from an empty directory or from the `vm-ui extension` [sample](https://github.com/docker/extensions-sdk/tree/main/samples),
 it is highly recommended that you start from the `docker extension init` command and change it to suit your needs.
 
 > **Tip**
 >
 > The `docker extension init` generates a Go backend. But you can still use it as a starting point for
 > your own extension and use any other language like Node.js, Python, Java, .Net, or any other language and framework.
-{: .tip }
+
 
 On this tutorial, the backend service simply exposes one route that returns a JSON payload that says "Hello".
 
@@ -76,14 +76,14 @@ On this tutorial, the backend service simply exposes one route that returns a JS
 > on the host. On the other hand, because some Docker Desktop users are running in constrained environments where they
 > can't open ports on their machines. So, when choosing the language and framework for your backend, make sure it
 > supports sockets connection.
-{: .important}
+
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#go-app" data-group="go">Go</a></li>
-  <li><a data-toggle="tab" data-target="#node-app" data-group="node">Node</a></li>
-  <li><a data-toggle="tab" data-target="#python-app" data-group="python">Python</a></li>
-  <li><a data-toggle="tab" data-target="#java-app" data-group="java">Java</a></li>
-  <li><a data-toggle="tab" data-target="#net-app" data-group="net">.Net</a></li>
+  <li class="active"><a data-toggle="tab" data->Go</a></li>
+  <li><a data-toggle="tab" data->Node</a></li>
+  <li><a data-toggle="tab" data->Python</a></li>
+  <li><a data-toggle="tab" data->Java</a></li>
+  <li><a data-toggle="tab" data->.Net</a></li>
 </ul>
 
 <div class="tab-content">
@@ -147,9 +147,9 @@ type HTTPMessageBody struct {
 
 > **Important**
 >
-> We don't have a working example for Node yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Node){: target="_blank" rel="noopener" class="_"}
+> We don't have a working example for Node yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Node)
 > and let us know you'd like a sample for Node.
-{: .important }
+
 
   </div>
   <div id="python-app" class="tab-pane fade" markdown="1">
@@ -158,9 +158,9 @@ type HTTPMessageBody struct {
 
 > **Important**
 >
-> We don't have a working example for Python yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Python){: target="_blank" rel="noopener" class="_"}
+> We don't have a working example for Python yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Python)
 > and let us know you'd like a sample for Python.
-{: .important }
+
 
   </div>
   <div id="java-app" class="tab-pane fade" markdown="1">
@@ -169,9 +169,9 @@ type HTTPMessageBody struct {
 
 > **Important**
 >
-> We don't have a working example for Java yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Java){: target="_blank" rel="noopener" class="_"}
+> We don't have a working example for Java yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Java)
 > and let us know you'd like a sample for Java.
-{: .important }
+
 
   </div>
   <div id="net-app" class="tab-pane fade" markdown="1">
@@ -180,9 +180,9 @@ type HTTPMessageBody struct {
 
 > **Important**
 >
-> We don't have a working example for .Net. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=.Net){: target="_blank" rel="noopener" class="_"}
+> We don't have a working example for .Net. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=.Net)
 > and let us know you'd like a sample for .Net.
-{: .important }
+
 
   </div>
 </div>
@@ -194,11 +194,11 @@ type HTTPMessageBody struct {
 > When using the `docker extension init`, it creates a `Dockerfile` that already contains what is needed for a Go backend.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#go-dockerfile" data-group="go">For Go</a></li>
-  <li><a data-toggle="tab" data-target="#node-dockerfile" data-group="node">For Node</a></li>
-  <li><a data-toggle="tab" data-target="#python-dockerfile" data-group="python">For Python</a></li>
-  <li><a data-toggle="tab" data-target="#java-dockerfile" data-group="java">For Java</a></li>
-  <li><a data-toggle="tab" data-target="#net-dockerfile" data-group="net">.For Net</a></li>
+  <li class="active"><a data-toggle="tab" data->For Go</a></li>
+  <li><a data-toggle="tab" data->For Node</a></li>
+  <li><a data-toggle="tab" data->For Python</a></li>
+  <li><a data-toggle="tab" data->For Java</a></li>
+  <li><a data-toggle="tab" data->.For Net</a></li>
 </ul>
 
 <div class="tab-content">
@@ -215,7 +215,7 @@ To deploy your Go backend when installing the extension, you need first to confi
 > 
 > To ease version management, you can reuse the same image to build the frontend, build the
 backend service, and package the extension.
-{: .tip }
+
 
 ```dockerfile
 # syntax=docker/dockerfile:1
@@ -249,9 +249,9 @@ CMD /service -socket /run/guest-services/extension-allthethings-extension.sock
 
 > **Important**
 >
-> We don't have a working Dockerfile for Node yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Node){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Node yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Node)
 > and let us know you'd like a Dockerfile for Node.
-{: .important }
+
 
   </div>
   <div id="python-dockerfile" class="tab-pane fade" markdown="1">
@@ -260,9 +260,9 @@ CMD /service -socket /run/guest-services/extension-allthethings-extension.sock
 
 > **Important**
 >
-> We don't have a working Dockerfile for Python yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Python){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Python yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Python)
 > and let us know you'd like a Dockerfile for Python.
-{: .important }
+
 
   </div>
   <div id="java-dockerfile" class="tab-pane fade" markdown="1">
@@ -271,9 +271,9 @@ CMD /service -socket /run/guest-services/extension-allthethings-extension.sock
 
 > **Important**
 >
-> We don't have a working Dockerfile for Java yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Java){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Java yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=Java)
 > and let us know you'd like a Dockerfile for Java.
-{: .important }
+
 
   </div>
   <div id="net-dockerfile" class="tab-pane fade" markdown="1">
@@ -282,9 +282,9 @@ CMD /service -socket /run/guest-services/extension-allthethings-extension.sock
 
 > **Important**
 >
-> We don't have a working Dockerfile for .Net. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=.Net){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for .Net. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.25798127=.Net)
 > and let us know you'd like a Dockerfile for .Net.
-{: .important }
+
 
   </div>
 </div>
@@ -311,7 +311,7 @@ For more information on the `vm` section of the `metadata.json`, see [Metadata](
 > **Warning**
 >
 > Do not replace the `${DESKTOP_PLUGIN_IMAGE}` placeholder in the `metadata.json` file. The placeholder is replaced automatically with the correct image name when the extension is installed.
-{: .warning}
+
 
 ## Invoke the extension backend from your frontend
 
@@ -321,10 +321,10 @@ Use the Docker Desktop Client object and then invoke the `/hello` route from the
 extension.vm.service.get` that returns the body of the response.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#react-app" data-group="react">React</a></li>
-  <li><a data-toggle="tab" data-target="#vue-app" data-group="vue">Vue</a></li>
-  <li><a data-toggle="tab" data-target="#angular-app" data-group="angular">Angular</a></li>
-  <li><a data-toggle="tab" data-target="#svelte-app" data-group="svelte">Svelte</a></li>
+  <li class="active"><a data-toggle="tab" data->React</a></li>
+  <li><a data-toggle="tab" data->Vue</a></li>
+  <li><a data-toggle="tab" data->Angular</a></li>
+  <li><a data-toggle="tab" data->Svelte</a></li>
 </ul>
 
 <div class="tab-content">
@@ -367,9 +367,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue)
 > and let us know you'd like a sample with Vue.
-{: .important }
+
 
   </div>
   <div id="angular-app" class="tab-pane fade" markdown="1">
@@ -378,9 +378,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular)
 > and let us know you'd like a sample with Angular.
-{: .important }
+
 
   </div>
   <div id="svelte-app" class="tab-pane fade" markdown="1">
@@ -389,9 +389,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte)
 > and let us know you'd like a sample with Svelte.
-{: .important }
+
 
   </div>
 </div>
@@ -419,7 +419,7 @@ when you need to debug it.
 > You may need to enable the "Show system containers" option in Docker Desktop to see the backend container running
 > under the extension compose project in the containers tab of the dashboard.
 > See [how to show extension containers](../test-debug.md#show-the-extension-containers) for more information.
-{: .tip }
+
 
 Open Docker Desktop Dashboard and click on the containers tab. You should see the response from the backend service
 call displayed.

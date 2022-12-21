@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_network_ls
 title: docker network ls
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/network_ls/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_secret_create
 title: docker secret create
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/secret_create/
 ---
 <!--

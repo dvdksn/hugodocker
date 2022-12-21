@@ -34,7 +34,7 @@ include examples of customizing the output format.
 > ```
 > {% endraw %}
 >
-{:.important}
+
 
 ## join
 

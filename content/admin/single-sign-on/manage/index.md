@@ -22,7 +22,7 @@ To add a guest to your organization in Docker Hub if they aren’t verified thro
 
 To remove a user from an organization:
 
-1. Sign in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} as an administrator of your organization.
+1. Sign in to [Docker Hub](https://hub.docker.com) as an administrator of your organization.
 2. Select the organization from the list. The organization page displays a list of user.
 3. Select the **x** next to a member’s name to remove them from all the teams in the organization.
 4. Select **Remove** to confirm. The member will receive an email notification confirming the removal.
@@ -37,7 +37,7 @@ To remove a user from an organization:
 
 When you disable SSO, you can delete the connection to remove the configuration settings and the added domains. Once you delete this connection, it can't be undone. Users must authenticate with their Docker ID and password or create a password reset if they don't have one.
 
-![Delete SSO](/single-sign-on/images/delete-sso.png){:width="500px"}
+![Delete SSO](/single-sign-on/images/delete-sso.png)
 
 ## FAQs
 

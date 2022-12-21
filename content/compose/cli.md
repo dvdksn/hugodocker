@@ -18,9 +18,9 @@ This page provides the usage information for the `docker compose` Command.
 > to support most of the previous `docker-compose` features and flags. You can
 > run Compose V2 by replacing the hyphen (`-`) with a space, using `docker compose`,
 > instead of `docker-compose`.
-{: .important}
 
-For more information about Docker Compose V2 GA, see the blog post [Announcing Compose V2 General Availability](https://www.docker.com/blog/announcing-compose-v2-general-availability/){: target="_blank" rel="noopener" class="_"}.
+
+For more information about Docker Compose V2 GA, see the blog post [Announcing Compose V2 General Availability](https://www.docker.com/blog/announcing-compose-v2-general-availability/).
 
 ## Command options overview and help
 

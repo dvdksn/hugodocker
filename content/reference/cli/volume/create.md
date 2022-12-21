@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_volume_create
 title: docker volume create
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/volume_create/
 ---
 <!--

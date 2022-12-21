@@ -40,7 +40,7 @@ at `/usr/local/bin/kubectl` on Mac and at `C:\>Program Files\Docker\Docker\Resou
 variable, so you may need to type the full path of the command or add it to
 the `PATH`.
 
-The kubectl binary is not automatically packaged with Docker Desktop for Linux. To install the kubectl command for Linux, see [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/){:target="_blank" rel="noopener" class="_"}. It should be installed at `/usr/local/bin/kubectl`.
+The kubectl binary is not automatically packaged with Docker Desktop for Linux. To install the kubectl command for Linux, see [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/). It should be installed at `/usr/local/bin/kubectl`.
 
 If you have already installed `kubectl` and it is
 pointing to some other environment, such as `minikube` or a GKE cluster, ensure you change the context so that `kubectl` is pointing to `docker-desktop`:
@@ -69,7 +69,7 @@ docker-desktop       Ready     master    3h        v1.19.7
 ```
 
 For more information about `kubectl`, see the
-[`kubectl` documentation](https://kubernetes.io/docs/reference/kubectl/overview/){:target="_blank" rel="noopener" class="_"}.
+[`kubectl` documentation](https://kubernetes.io/docs/reference/kubectl/overview/).
 
 ## Disable Kubernetes
 

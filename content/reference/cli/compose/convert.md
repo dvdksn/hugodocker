@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_convert
 title: docker compose convert
-redirect_from:
+aliases:
 - /compose/reference/config/
 ---
 <!--

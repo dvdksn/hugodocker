@@ -1550,7 +1550,7 @@ restart: "on-failure"
 restart: "unless-stopped"
 ```
 
-{: id="cpu-and-other-resources"}
+
 
 ### cpu_count, cpu_percent, cpu\_shares, cpu\_period, cpu\_quota, cpus, cpuset, domainname, hostname, ipc, mac\_address, mem\_limit, memswap\_limit, mem\_swappiness, mem\_reservation, oom_kill_disable, oom_score_adj, privileged, read\_only, shm\_size, stdin\_open, tty, user, working\_dir
 
@@ -1732,7 +1732,7 @@ volumes:
 > Deprecated in [version 2.1](compose-versioning.md#version-21) file format.
 >
 > external.name was deprecated in version 2.1 file format use `name` instead.
-{: .important }
+
 
 ### labels
 

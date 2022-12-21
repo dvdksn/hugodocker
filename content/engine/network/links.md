@@ -19,7 +19,7 @@ between containers in a more controlled way.
 >
 > See [Differences between user-defined bridges and the default bridge](bridge.md#differences-between-user-defined-bridges-and-the-default-bridge)
 > for some alternatives to using `--link`.
-{:.warning}
+
 
 The information in this section explains legacy container links within the
 Docker default `bridge` network which is created automatically when you install
@@ -270,7 +270,7 @@ target container of information related to the source container.
 > from Docker within a container are made available to *any* container
 > that links to it. This could have serious security implications if sensitive
 > data is stored in them.
-{:.warning}
+
 
 Docker sets an `<alias>_NAME` environment variable for each target container
 listed in the `--link` parameter. For example, if a new container called

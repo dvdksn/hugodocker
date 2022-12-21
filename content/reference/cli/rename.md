@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_rename
 title: docker rename
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/rename/
 ---
 <!--

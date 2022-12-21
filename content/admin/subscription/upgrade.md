@@ -9,7 +9,7 @@ aliases:
 
 This page contains information on how to purchase a Docker paid subscription. It also contains information on how to upgrade your existing subscription and update your billing information.
 
-You can upgrade from Docker Personal to a Pro, Team, or a Business subscription from a Personal subscription. When you upgrade to a paid subscription, you can immediately use all the features and entitlements offered in your new subscription. For detailed information on features available in each subscription, see [Docker Pricing](https://www.docker.com/pricing){: target="_blank" rel="noopener" class="_"}.
+You can upgrade from Docker Personal to a Pro, Team, or a Business subscription from a Personal subscription. When you upgrade to a paid subscription, you can immediately use all the features and entitlements offered in your new subscription. For detailed information on features available in each subscription, see [Docker Pricing](https://www.docker.com/pricing).
 
 ## Upgrade to a Pro, Team, or Business subscription
 
@@ -17,7 +17,7 @@ The following section contains information on how to purchase a Docker  subscrip
 
 To purchase a Pro, Team, or Business subscription:
 
-1. Log into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account.
+1. Log into your [Docker Hub](https://hub.docker.com) account.
 
 2. To upgrade your Personal subscription, click **Upgrade**. To upgrade your Pro or Team subscription, open the drop-down menu next to your username in the top-right corner and select **Billing**. On the **Billing Details** page, click **Change plan** to navigate to the pricing page.
 
@@ -38,7 +38,7 @@ To purchase a Pro, Team, or Business subscription:
 
 To upgrade from a monthly subscription to an annual subscription:
 
-1. Log into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account as an organization owner or with your personal account.
+1. Log into your [Docker Hub](https://hub.docker.com) account as an organization owner or with your personal account.
 2. Open the drop-down menu next to your username in the top-right corner and select **Billing**.
 3. Select your personal account or organization from the left-hand menu and select the **Payment Methods** tab.
 4. Select **switch to annual billing**
@@ -52,7 +52,7 @@ You must be an owner of the organization to make changes to the billing informat
 
 To update the billing information for your organization or personal account:
 
-1. Log into your [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"} account as an organization owner or with your personal account.
+1. Log into your [Docker Hub](https://hub.docker.com) account as an organization owner or with your personal account.
 
 2. Open the drop-down menu next to your username in the top-right corner and select **Billing**.
 

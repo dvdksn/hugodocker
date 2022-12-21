@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_checkpoint_ls
 title: docker checkpoint ls
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/checkpoint_ls/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_export
 title: docker export
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/export/
 ---
 <!--

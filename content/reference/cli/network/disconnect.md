@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_network_disconnect
 title: docker network disconnect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/network_disconnect/
 ---
 <!--

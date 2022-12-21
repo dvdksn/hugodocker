@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_search
 title: docker search
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/search/
 ---
 <!--

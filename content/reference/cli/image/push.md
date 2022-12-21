@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_image_push
 title: docker image push
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/image_push/
 ---
 <!--

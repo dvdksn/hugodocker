@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_commit
 title: docker commit
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/commit/
 ---
 <!--

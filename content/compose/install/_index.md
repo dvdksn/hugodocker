@@ -22,7 +22,7 @@ Docker Desktop is available on:
 - [Mac](../../desktop/install/mac-install.md)
 - [Windows](../../desktop/install/windows-install.md)
 
-If you have already installed Docker Desktop, you can check which version of Compose you have by selecting **About Docker Desktop** from the Docker menu ![whale menu](../../desktop/images/whale-x.svg){: .inline}
+If you have already installed Docker Desktop, you can check which version of Compose you have by selecting **About Docker Desktop** from the Docker menu ![whale menu](../../desktop/images/whale-x.svg)
 
 ### Scenario two: Install the Compose plugin
 
@@ -33,7 +33,7 @@ If you already have Docker Engine and Docker CLI installed, you can install the 
 >Note
 >
 >This is only available on Linux
-{: .important}
+
 
 ### Scenario three: Install the Compose standalone 
 
@@ -42,4 +42,4 @@ You can [install the Compose standalone](other.md) on Linux or on Windows Server
 >Note
 >
 >This install scenario is no longer supported.
-{: .important}
+

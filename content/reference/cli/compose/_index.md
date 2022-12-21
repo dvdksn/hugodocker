@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose
 title: docker compose
-redirect_from:
+aliases:
 - /compose/reference/docker-compose/
 - /compose/reference/help/
 ---

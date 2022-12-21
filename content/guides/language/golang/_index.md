@@ -10,7 +10,7 @@ toc_max: 2
 In this guide, you will learn how to create a containerized Go application using
 Docker.
 
-Why [Go](https://golang.org/){:target="_blank" rel="noopener" class="_"}? Go is
+Why [Go](https://golang.org/)? Go is
 an open-source programming language that lets you build simple, reliable, and
 efficient software. Go is undeniably a major player in the modern Cloud
 ecosystem; both Docker and Kubernetes are written in Go.
@@ -20,8 +20,8 @@ ecosystem; both Docker and Kubernetes are written in Go.
 > **Acknowledgment**
 >
 > We'd like to thank
-> [Oliver Frolovs](https://twitter.com/nocturnalgopher){:target="_blank"
-> rel="noopener" class="_"} for his contribution to the Golang get started
+> [Oliver Frolovs](https://twitter.com/nocturnalgopher){:
+> } for his contribution to the Golang get started
 > guide.
 
 In this guide, you’ll learn how to:
@@ -32,12 +32,12 @@ In this guide, you’ll learn how to:
 - Set up a local development environment to connect a database to the container
 - Use Docker Compose to run your Go application and other services it requires
 - Configure a CI/CD pipeline for your application using
-  [GitHub Actions](https://docs.github.com/en/actions){:target="_blank"
-  rel="noopener" class="_"}
+  [GitHub Actions](https://docs.github.com/en/actions){:
+  }
 
 You can containerize your own Go application using the examples and resources
 provided after you complete the Go getting started modules.
 
 Let's get started!
 
-[Build your Go image](build-images.md){: .button .outline-btn}
+[Build your Go image](build-images.md)

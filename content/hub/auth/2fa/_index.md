@@ -25,7 +25,7 @@ Authenticator with a registered YubiKey.
 > **Note:**
 > Two-factor authentication is currently in beta. Feel free to provide feedback
 > at the [Docker Hub feedback repo](https://github.com/docker/hub-feedback/issues).
-{: .important}
+
 
 ## Enable two-factor authentication
 
@@ -42,7 +42,7 @@ The next page will remind you to download an authenticator app. Click **Set up**
 >
 > Your recovery code can be used to recover your account in the event you lose
 > access to your authenticator app.
-{: .important }
+
 
 ![Recovery code example](../images/2fa-recovery-code.png)
 
@@ -63,4 +63,4 @@ in to your Docker Hub account, you will be asked for a security code.
 > create at least one personal access token. Otherwise, you will be unable to
 > log in to your account from the Docker CLI. See [Managing access tokens](../access-tokens)
 > for more information.
-{: .important }
+

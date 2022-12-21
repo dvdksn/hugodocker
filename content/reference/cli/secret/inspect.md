@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_secret_inspect
 title: docker secret inspect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/secret_inspect/
 ---
 <!--

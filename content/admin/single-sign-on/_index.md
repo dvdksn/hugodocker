@@ -4,7 +4,7 @@ keywords: Single Sign-on, SSO, sign-on
 title: Overview
 ---
 
-This section is for administrators who want to enable Docker Single Sign-on (SSO) for their businesses. Docker SSO allows users to authenticate using their identity providers (IdPs)  to access Docker. You can enable SSO on organizations that are part of the Docker Business subscription. To upgrade your existing account to a Docker Business subscription, see [Upgrade your subscription](../subscription/upgrade/){:target="blank" rel="noopener" class=""}.
+This section is for administrators who want to enable Docker Single Sign-on (SSO) for their businesses. Docker SSO allows users to authenticate using their identity providers (IdPs)  to access Docker. You can enable SSO on organizations that are part of the Docker Business subscription. To upgrade your existing account to a Docker Business subscription, see [Upgrade your subscription](../subscription/upgrade/).
 
 When SSO is enabled, users are redirected to your provider’s authentication page to sign in. They cannot authenticate using their Docker login credentials  (Docker ID and password). Docker currently supports Service Provider Initiated SSO flow. Your users must sign in to Docker Hub or Docker Desktop to initiate the SSO authentication process.
 
@@ -24,4 +24,4 @@ Currently, enabling SSO on a single organization is supported. However, single l
 
 The following diagram shows how Single Sign-on (SSO) operates and is managed in Docker Hub and Docker Desktop. In addition, it provides information on how to authenticate between your IdPs.
 
-[![SSO architecture](images/sso-architecture.png)](images/sso-architecture.png){: target="_blank" rel="noopener" class="_"}
+[![SSO architecture](images/sso-architecture.png)](images/sso-architecture.png)

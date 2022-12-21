@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_swarm_unlock
 title: docker swarm unlock
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/swarm_unlock/
 ---
 <!--

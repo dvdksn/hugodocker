@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_top
 title: docker container top
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_top/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_unpause
 title: docker unpause
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/unpause/
 ---
 <!--

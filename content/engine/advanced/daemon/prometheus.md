@@ -67,9 +67,9 @@ job definition at the bottom of the file. Docker Desktop for Mac and Docker Desk
 need a slightly different configuration.
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#linux-config" data-group="linux">Docker for Linux</a></li>
-<li><a data-toggle="tab" data-target="#mac-config" data-group="mac">Docker Desktop for Mac</a></li>
-<li><a data-toggle="tab" data-target="#win-config" data-group="win">Docker Desktop for Windows</a></li>
+<li class="active"><a data-toggle="tab" data->Docker for Linux</a></li>
+<li><a data-toggle="tab" data->Docker Desktop for Mac</a></li>
+<li><a data-toggle="tab" data->Docker Desktop for Windows</a></li>
 </ul>
 
 <div class="tab-content">
@@ -199,9 +199,9 @@ scrape_configs:
 Next, start a single-replica Prometheus service using this configuration.
 
 <ul class="nav nav-tabs">
-<li class="active"><a data-toggle="tab" data-target="#linux-run" data-group="linux">Docker for Linux</a></li>
-<li><a data-toggle="tab" data-target="#mac-run" data-group="mac">Docker Desktop for Mac</a></li>
-<li><a data-toggle="tab" data-target="#win-run" data-group="win">Docker Desktop for Windows or Windows Server</a></li>
+<li class="active"><a data-toggle="tab" data->Docker for Linux</a></li>
+<li><a data-toggle="tab" data->Docker Desktop for Mac</a></li>
+<li><a data-toggle="tab" data->Docker Desktop for Windows or Windows Server</a></li>
 </ul>
 
 <div class="tab-content">
@@ -286,5 +286,5 @@ level.
 
 ## Next steps
 
-- Read the [Prometheus documentation](https://prometheus.io/docs/introduction/overview/){: target="_blank" rel="noopener" class="_" }
-- Set up some [alerts](https://prometheus.io/docs/alerting/overview/){: target="_blank" rel="noopener" class="_" }
+- Read the [Prometheus documentation](https://prometheus.io/docs/introduction/overview/)
+- Set up some [alerts](https://prometheus.io/docs/alerting/overview/)

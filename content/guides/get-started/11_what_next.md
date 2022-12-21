@@ -22,8 +22,8 @@ a container quitting) and then work to make **actual state** reflect the expecte
 ## Cloud Native Computing Foundation projects
 
 The CNCF is a vendor-neutral home for various open-source projects, including Kubernetes, Prometheus, 
-Envoy, Linkerd, NATS, and more! You can view the [graduated and incubated projects here](https://www.cncf.io/projects/){:target="_blank" rel="noopener" class="_"}
-and the entire [CNCF Landscape here](https://landscape.cncf.io/){:target="_blank" rel="noopener" class="_"}. There are a LOT of projects to help
+Envoy, Linkerd, NATS, and more! You can view the [graduated and incubated projects here](https://www.cncf.io/projects/)
+and the entire [CNCF Landscape here](https://landscape.cncf.io/). There are a LOT of projects to help
 solve problems around monitoring, logging, security, image registries, messaging, and more!
 
 So, if you're new to the container landscape and cloud-native application development, welcome! Please

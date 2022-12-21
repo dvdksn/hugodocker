@@ -100,8 +100,8 @@ can't run them both unless you remove the `devtest` container after running the
 first one.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-run"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-run"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-run" class="tab-pane fade in active" markdown="1">
@@ -171,8 +171,8 @@ most cases, this would result in a non-functioning container.
 The `--mount` and `-v` examples have the same end result.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-empty-run"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-empty-run"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-empty-run" class="tab-pane fade in active" markdown="1">
@@ -225,8 +225,8 @@ them by commas.
 The `--mount` and `-v` examples have the same result.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-readonly"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-readonly"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-readonly" class="tab-pane fade in active" markdown="1">
@@ -294,7 +294,7 @@ control whether `/mnt/a` and/or `/tmp/a` would exist.
 > Warning
 >
 > Mount propagation doesn't work with Docker Desktop.
-{: .warning }
+
 
 | Propagation setting | Description                                                                                                                                                                                                         |
 |:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -309,7 +309,7 @@ Before you can set bind propagation on a mount point, the host filesystem needs
 to already support bind propagation.
 
 For more information about bind propagation, see the
-[Linux kernel documentation for shared subtree](https://www.kernel.org/doc/Documentation/filesystems/sharedsubtree.txt){: target="_blank" rel="noopener" class="_"}.
+[Linux kernel documentation for shared subtree](https://www.kernel.org/doc/Documentation/filesystems/sharedsubtree.txt).
 
 The following example mounts the `target/` directory into the container twice,
 and the second mount sets both the `ro` option and the `rslave` bind propagation
@@ -318,8 +318,8 @@ option.
 The `--mount` and `-v` examples have the same result.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-group="mount" data-target="#mount-propagation"><code>--mount</code></a></li>
-  <li><a data-toggle="tab" data-group="volume" data-target="#v-propagation"><code>-v</code></a></li>
+  <li class="active"><a data-toggle="tab" data-group="mount" data-><code>--mount</code></a></li>
+  <li><a data-toggle="tab" data-group="volume" data-><code>-v</code></a></li>
 </ul>
 <div class="tab-content">
 <div id="mount-propagation" class="tab-pane fade in active" markdown="1">
@@ -368,7 +368,7 @@ inoperable and you may need to relabel the host machine files by hand.
 > **Important**: When using bind mounts with services, selinux labels
 > (`:Z` and `:z`), as well as `:ro` are ignored. See
 > [moby/moby #32579](https://github.com/moby/moby/issues/32579) for details.
-{:.important}
+
 
 This example sets the `z` option to specify that multiple containers can share
 the bind mount's contents:

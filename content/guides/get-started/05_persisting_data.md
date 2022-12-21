@@ -73,7 +73,7 @@ There are two main types of volumes. We will eventually use both, but we will st
 
 ## Persist the todo data
 
-By default, the todo app stores its data in a [SQLite Database](https://www.sqlite.org/index.html){:target="_blank" rel="noopener" class="_"} at
+By default, the todo app stores its data in a [SQLite Database](https://www.sqlite.org/index.html) at
 `/etc/todos/todo.db` in the container's filesystem. If you're not familiar with SQLite, no worries! It's simply a relational database in 
 which all of the data is stored in a single file. While this isn't the best for large-scale applications,
 it works for small demos. We'll talk about switching this to a different database engine later.
@@ -104,8 +104,8 @@ Every time you use the volume, Docker will make sure the correct data is provide
 
 4. Once the container starts up, open the app and add a few items to your todo list.
 
-    ![Items added to todo list](images/items-added.png){: style="width: 55%; " }
-    {: .text-center }
+    ![Items added to todo list](images/items-added.png)
+    
 
 5. Stop and remove the container for the todo app. Use the Dashboard or `docker ps` to get the ID and then `docker rm -f <id>` to remove it.
 
@@ -161,4 +161,4 @@ At this point, you have a functioning application that can survive restarts! You
 However, you saw earlier that rebuilding images for every change takes quite a bit of time. There's got to be a better
 way to make changes, right? With bind mounts (which was hinted at earlier), there is a better way!
 
-[Use bind mounts](06_bind_mounts.md){: .button  .primary-btn}
+[Use bind mounts](06_bind_mounts.md)

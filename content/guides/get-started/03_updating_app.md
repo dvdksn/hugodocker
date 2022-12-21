@@ -20,7 +20,7 @@ In the steps below, you will change the "empty text" when you don't have any tod
     ...
     ```
 
-2. Build your updated version of the image, using the same `docker build` command you used in [part 2](./02_our_app.md/#build-the-apps-container-image){:target="_blank" rel="noopener" class="_"}.
+2. Build your updated version of the image, using the same `docker build` command you used in [part 2](./02_our_app.md/#build-the-apps-container-image).
 
     ```console
     $ docker build -t getting-started .
@@ -46,8 +46,8 @@ The error occurred because you aren't able to start the new container while your
 To remove a container, you first need to stop it. Once it has stopped, you can remove it. You can remove the old container using the CLI or Docker Desktop's graphical interface. Choose the option that you're most comfortable with.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#cli">CLI</a></li>
-  <li><a data-toggle="tab" data-target="#gui">Docker Desktop</a></li>
+  <li class="active"><a data-toggle="tab" data->CLI</a></li>
+  <li><a data-toggle="tab" data->Docker Desktop</a></li>
 </ul>
 <div class="tab-content">
 <div id="cli" class="tab-pane fade in active" markdown="1">
@@ -98,10 +98,10 @@ To remove a container, you first need to stop it. Once it has stopped, you can r
     $ docker run -dp 3000:3000 getting-started
     ```
 
-2. Refresh your browser on [http://localhost:3000](http://localhost:3000){:target="_blank" rel="noopener" class="_"} and you should see your updated help text.
+2. Refresh your browser on [http://localhost:3000](http://localhost:3000) and you should see your updated help text.
 
-![Updated application with updated empty text](images/todo-list-updated-empty-text.png){: style="width:55%" }
-{: .text-center }
+![Updated application with updated empty text](images/todo-list-updated-empty-text.png)
+
 
 ## Next steps
 
@@ -114,4 +114,4 @@ how to see code updates without needing to rebuild and start a new container eve
 
 Before talking about persistence, you'll see how to share these images with others.
 
-[Share the application](04_sharing_app.md){: .button .primary-btn}
+[Share the application](04_sharing_app.md)

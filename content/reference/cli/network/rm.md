@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_network_rm
 title: docker network rm
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/network_rm/
 ---
 <!--

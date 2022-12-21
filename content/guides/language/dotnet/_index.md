@@ -26,4 +26,4 @@ provided in this guide.
 
 Let's get started!
 
-[Build your first .NET image](build-images.md){: .button .primary-btn}
+[Build your first .NET image](build-images.md)

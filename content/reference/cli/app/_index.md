@@ -3,7 +3,7 @@ datafolder: docker-app
 datafile: docker_app
 title: docker app
 layout: cli
-redirect_from:
+aliases:
   - /engine/reference/commandline/app_merge/
   - /engine/reference/commandline/app_split/
   - /app/working-with-app/

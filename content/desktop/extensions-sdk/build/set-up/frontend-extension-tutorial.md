@@ -24,9 +24,9 @@ The quickest way to create a new extension is to run `docker extension init my-e
 > The `docker extension init` generates a React based extension. But you can still use it as a starting point for
 > your own extension and use any other frontend framework, like Vue, Angular, Svelte, etc. or event stay with
 > vanilla Javascript.
-{: .tip }
 
-Although you can start from an empty directory or from the `react-extension` [sample folder](https://github.com/docker/extensions-sdk/tree/main/samples){:target="_blank" rel="noopener" class="_"},
+
+Although you can start from an empty directory or from the `react-extension` [sample folder](https://github.com/docker/extensions-sdk/tree/main/samples),
 it's highly recommended that you start from the `docker extension init` command and change it to suit your needs.
 
 ```bash
@@ -64,10 +64,10 @@ that are used to populate the extension's card in the Marketplace. Here is an ex
 extension:
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#react-dockerfile" data-group="react">For React</a></li>
-  <li><a data-toggle="tab" data-target="#vue-dockerfile" data-group="vue">For Vue</a></li>
-  <li><a data-toggle="tab" data-target="#angular-dockerfile" data-group="angular">For Angular</a></li>
-  <li><a data-toggle="tab" data-target="#svelte-dockerfile" data-group="svelte">For Svelte</a></li>
+  <li class="active"><a data-toggle="tab" data->For React</a></li>
+  <li><a data-toggle="tab" data->For Vue</a></li>
+  <li><a data-toggle="tab" data->For Angular</a></li>
+  <li><a data-toggle="tab" data->For Svelte</a></li>
 </ul>
 
 <div class="tab-content">
@@ -112,9 +112,9 @@ COPY --from=client-builder /ui/build ui
 
 > **Important**
 >
-> We don't have a working Dockerfile for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue)
 > and let us know you'd like a Dockerfile for Vue.
-{: .important }
+
 
   </div>
   <div id="angular-dockerfile" class="tab-pane fade" markdown="1">
@@ -123,9 +123,9 @@ COPY --from=client-builder /ui/build ui
 
 > **Important**
 >
-> We don't have a working Dockerfile for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular)
 > and let us know you'd like a Dockerfile for Angular.
-{: .important }
+
 
   </div>
   <div id="svelte-dockerfile" class="tab-pane fade" markdown="1">
@@ -134,9 +134,9 @@ COPY --from=client-builder /ui/build ui
 
 > **Important**
 >
-> We don't have a working Dockerfile for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte){: target="_blank" rel="noopener" class="_"}
+> We don't have a working Dockerfile for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte)
 > and let us know you'd like a Dockerfile for Svelte.
-{: .important }
+
 
   </div>
 </div>
@@ -214,10 +214,10 @@ For example, you can use the `docker.cli.exec` function to get the list of all t
 command and display the result in a table.
 
 <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" data-target="#react-app" data-group="react">React</a></li>
-  <li><a data-toggle="tab" data-target="#vue-app" data-group="vue">Vue</a></li>
-  <li><a data-toggle="tab" data-target="#angular-app" data-group="angular">Angular</a></li>
-  <li><a data-toggle="tab" data-target="#svelte-app" data-group="svelte">Svelte</a></li>
+  <li class="active"><a data-toggle="tab" data->React</a></li>
+  <li><a data-toggle="tab" data->Vue</a></li>
+  <li><a data-toggle="tab" data->Angular</a></li>
+  <li><a data-toggle="tab" data->Svelte</a></li>
 </ul>
 
 <div class="tab-content">
@@ -309,9 +309,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Vue yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Vue)
 > and let us know you'd like a sample with Vue.
-{: .important }
+
   
   </div>
   <div id="angular-app" class="tab-pane fade" markdown="1">
@@ -320,9 +320,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Angular yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Angular)
 > and let us know you'd like a sample with Angular.
-{: .important }
+
 
   </div>
   <div id="svelte-app" class="tab-pane fade" markdown="1">
@@ -331,9 +331,9 @@ export function App() {
 
 > **Important**
 >
-> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte){: target="_blank" rel="noopener" class="_"}
+> We don't have an example for Svelte yet. [Fill out the form](https://docs.google.com/forms/d/e/1FAIpQLSdxJDGFJl5oJ06rG7uqtw1rsSBZpUhv_s9HHtw80cytkh2X-Q/viewform?usp=pp_url&entry.1333218187=Svelte)
 > and let us know you'd like a sample with Svelte.
-{: .important }
+
 
   </div>
 </div>

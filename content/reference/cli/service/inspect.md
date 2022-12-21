@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_service_inspect
 title: docker service inspect
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/service_inspect/
 ---
 <!--

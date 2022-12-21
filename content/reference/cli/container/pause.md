@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_pause
 title: docker container pause
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_pause/
 ---
 <!--

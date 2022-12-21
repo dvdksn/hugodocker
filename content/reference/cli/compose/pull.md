@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_pull
 title: docker compose pull
-redirect_from:
+aliases:
 - /compose/reference/pull/
 ---
 <!--

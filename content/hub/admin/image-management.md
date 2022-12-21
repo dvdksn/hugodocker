@@ -10,7 +10,7 @@ title: Advanced Image Management dashboard
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_image-mgmt"
 %}
 
-The **Advanced Image Management** dashboard allows you to manage Docker images across all repositories. [Upgrade](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){: target="_blank" rel="noopener" class="_"} your existing subscription to start using the Advanced Image Management dashboard. [Personal Access Tokens](../docker-hub/access-tokens.md) (PATs) are recommended when using automated flows and API integrations for added security. It's easier to manage your account if it becomes compromised and the account owner can remove them from Docker Hub.
+The **Advanced Image Management** dashboard allows you to manage Docker images across all repositories. [Upgrade](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade) your existing subscription to start using the Advanced Image Management dashboard. [Personal Access Tokens](../docker-hub/access-tokens.md) (PATs) are recommended when using automated flows and API integrations for added security. It's easier to manage your account if it becomes compromised and the account owner can remove them from Docker Hub.
 
 The Advanced Image Management dashboard provides a snapshot of your existing images and allows you to view, sort, and filter images by tags, activity status, and date, and contains options to clean up your workspace by deleting images that are no longer required.
 
@@ -24,23 +24,23 @@ With the new Advanced Image Management dashboard, all of this is now simpler and
 
 To access the  Advanced Image Management dashboard:
 
-1. Log in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}.
+1. Log in to [Docker Hub](https://hub.docker.com).
 2. Click **Repositories** from the main menu and select a repository from the list.
 3. Click **General** or **Tags**, and click **Go to Advanced Image Management**.
 
-   ![Advanced image management dashboard](images/advanced-image-general.png){:width="700px"}
+   ![Advanced image management dashboard](images/advanced-image-general.png)
 
 4. In the dashboard you can sort and filter by active, inactive and untagged images.
 
     > **Note**
     >
-    > You must be logged in as a Docker Pro, Team, or a Business user to use the Advanced Image Management dashboard. Click [Upgrade](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade){: target="_blank" rel="noopener"class="_"} to upgrade your existing subscription.
+    > You must be logged in as a Docker Pro, Team, or a Business user to use the Advanced Image Management dashboard. Click [Upgrade](https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade) to upgrade your existing subscription.
 
 ## View images
 
 The Advanced Image Management dashboard provides a snapshot of your existing images and allows you to view images by tags, activity status and date, and also allows you to clean up your workspace by deleting images that are no longer required.
 
-![Advanced image management dashboard](images/image-management-dashboard.png){:width="700px"}
+![Advanced image management dashboard](images/image-management-dashboard.png)
 
 ## Delete images
 
@@ -48,12 +48,12 @@ You must be logged in as a Docker Pro, Team, or a Business user and have admin a
 
 To delete an inactive image:
 
-1. Log in to [Docker Hub](https://hub.docker.com){: target="_blank" rel="noopener" class="_"}.
+1. Log in to [Docker Hub](https://hub.docker.com).
 2. Click **Repositories** from the main menu and select a repository from the list.
 3. Click **General** or **Tags**, and click **Go to Advanced Image Management**.
 4. Enable the **Inactive** filter to view your inactive tags.
 
-    ![Advanced image management dashboard](images/dashboard-delete-image.png){:width="700px"}
+    ![Advanced image management dashboard](images/dashboard-delete-image.png)
 
 5. Select the images that you want to delete from the repository and click the delete icon.
 
@@ -69,4 +69,4 @@ The Advanced Image Management API endpoints allow you to manage Docker images ac
 
 ## Feedback
 
-Thank you for trying out the Advanced Image Management dashboard. Your feedback is very important to us. Let us know your feedback by creating an issue in the [hub-feedback](https://github.com/docker/hub-feedback/issues){: target="_blank" rel="noopener" class="_"} GitHub repository.
+Thank you for trying out the Advanced Image Management dashboard. Your feedback is very important to us. Let us know your feedback by creating an issue in the [hub-feedback](https://github.com/docker/hub-feedback/issues) GitHub repository.

@@ -18,7 +18,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/26764/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/26764/Docker.dmg)
 
 * Upgrades
   - [Docker 18.06.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.06.1-ce)
@@ -32,7 +32,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/26399/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/26399/Docker.dmg)
 
 * Upgrades
   - [Docker 18.06.0-ce](https://github.com/docker/docker-ce/releases/tag/v18.06.0-ce)
@@ -67,7 +67,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/24312/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/24312/Docker.dmg)
 
 * Upgrades
   - [Docker 18.03.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.1-ce)
@@ -83,7 +83,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/24245/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/24245/Docker.dmg)
 
 * Upgrades
   - [Docker 18.03.1-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.1-ce)
@@ -99,7 +99,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/23751/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/23751/Docker.dmg)
 
 * Bug fixes and minor changes
   - Fix Upgrade straight from 17.09 versions where Docker for Mac cannot restart once the upgrade has been performed. Fixes [docker/for-mac#2739](https://github.com/docker/for-mac/issues/2739)
@@ -110,7 +110,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/23608/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/23608/Docker.dmg)
 
 * Upgrades
   - [Docker 18.03.0-ce](https://github.com/docker/docker-ce/releases/tag/v18.03.0-ce)
@@ -142,7 +142,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/23011/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/23011/Docker.dmg)
 
 * Bug fixes and minor changes
   - Revert the default disk format to qcow2 for users running macOS 10.13 (High Sierra). There are confirmed reports of file corruption using the raw format which uses sparse files on APFS. Note this change only takes effect after a reset to factory defaults (from the Whale menu -> Preferences -> Reset). Related to [docker/for-mac#2625](https://github.com/docker/for-mac/issues/2625)
@@ -154,7 +154,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/21805/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/21805/Docker.dmg)
 
 * Bug fixes and minor changes
   - Fix error during resize/create Docker.raw disk image in some cases. Fixes [docker/for-mac#2383](https://github.com/docker/for-mac/issues/2383), [docker/for-mac#2447](https://github.com/docker/for-mac/issues/2447), [docker/for-mac#2453], (https://github.com/docker/for-mac/issues/2453), [docker/for-mac#2420](https://github.com/docker/for-mac/issues/2420)
@@ -171,7 +171,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/21698/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/21698/Docker.dmg)
 
 * Bug fixes and minor changes
   - Fix for `docker push` to an insecure registry. Fixes [docker/for-mac#2392](https://github.com/docker/for-mac/issues/2392)
@@ -183,7 +183,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/21698/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/21698/Docker.dmg)
 
 * Upgrades
   - [Docker 17.12.0-ce](https://github.com/docker/docker-ce/releases/tag/v17.12.0-ce)
@@ -215,7 +215,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/21090/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/21090/Docker.dmg)
 
 * Upgrades
   - [Docker 17.09.1-ce](https://github.com/docker/docker-ce/releases/tag/v17.09.1-ce)
@@ -231,7 +231,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Mac with Intel chip](https://download.docker.com/mac/stable/19611/Docker.dmg){: .accept-eula }
+> [Mac with Intel chip](https://download.docker.com/mac/stable/19611/Docker.dmg)
 
 * Bug fix
   - Fix Docker For Mac unable to start in some cases : removed use of libgmp sometimes causing the vpnkit process to die.
@@ -242,7 +242,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/19543/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/19543/Docker.dmg)
 
 * Bug fix
   - Do not show Toolbox migration assistant when there are existing Docker For Mac data.
@@ -253,7 +253,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/19506/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/19506/Docker.dmg)
 
 * Upgrades
   - [Docker 17.09.0-ce](https://github.com/docker/docker-ce/releases/tag/v17.09.0-ce)
@@ -292,7 +292,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/19124/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/19124/Docker.dmg)
 
 * Upgrades
   - [Docker 17.06.2-ce](https://github.com/docker/docker-ce/releases/tag/v17.06.2-ce)
@@ -304,7 +304,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/18950/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/18950/Docker.dmg)
 
 **Upgrades**
 - [Docker 17.06.1-ce-rc1](https://github.com/docker/docker-ce/releases/tag/v17.06.1-ce-rc1)
@@ -323,7 +323,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/18433/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/18433/Docker.dmg)
 
 **Upgrades**
 
@@ -372,7 +372,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/17661/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/17661/Docker.dmg)
 
 **Upgrades**
 
@@ -384,7 +384,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/16048/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/16048/Docker.dmg)
 
 **Upgrades**
 
@@ -397,7 +397,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/15583/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/15583/Docker.dmg)
 
 **New**
 
@@ -445,7 +445,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/15353/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/15353/Docker.dmg)
 
 **Upgrades**
 
@@ -466,7 +466,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/15072/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/15072/Docker.dmg)
 
 **Upgrades**
 
@@ -524,7 +524,7 @@ This page contains release notes for older versions of Docker Desktop for Mac.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/14777/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/14777/Docker.dmg)
 
 **Upgrades**
 
@@ -541,7 +541,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/13776/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/13776/Docker.dmg)
 
 **Upgrades**
 
@@ -612,7 +612,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/1.12.1.12133/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/1.12.1.12133/Docker.dmg)
 
 **New**
 
@@ -696,7 +696,7 @@ We did not distribute a 1.12.4 stable release
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/11213/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/11213/Docker.dmg)
 
 This bug fix release contains osxfs improvements. The fixed issues may have
 been seen as failures with apt-get and npm in containers, missed inotify
@@ -719,7 +719,7 @@ events or unexpected unmounts.
 >
 > {%- include eula.md -%}
 >
-> [Download](https://download.docker.com/mac/stable/10871/Docker.dmg){: .accept-eula }
+> [Download](https://download.docker.com/mac/stable/10871/Docker.dmg)
 
 * First stable release
 

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_pull
 title: docker pull
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/pull/
 ---
 <!--

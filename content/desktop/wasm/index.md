@@ -8,8 +8,8 @@ weight: 1000
 
 Wasm (short for WebAssembly) is a fast, light alternative to the Linux and
 Windows containers you’re using in Docker today (with
-[some tradeoffs](https://www.docker.com/blog/docker-wasm-technical-preview/){:target="_blank"
-rel="noopener" class="_"}).
+[some tradeoffs](https://www.docker.com/blog/docker-wasm-technical-preview/){:
+}).
 
 This page provides information about the new ability to run Wasm applications
 alongside your Linux containers in Docker.
@@ -32,7 +32,7 @@ To use the Docker+Wasm integration, developers must turn on the
 > [containerd image store](../containerd/index.md) feature. If you’re not
 > already using the containerd image store, then pre-existing images and
 > containers will be inaccessible.
-{: .important}
+
 
 ## Usage examples
 
@@ -215,4 +215,4 @@ Update your Docker Desktop to the latest version and try again.
 Thanks for trying the new Docker+Wasm integration. Give feedback or report any
 bugs you may find through the issues tracker on the
 [public roadmap item](https://github.com/docker/roadmap/issues/426){:
-target="_blank" rel="noopener" class="_"}.
+.

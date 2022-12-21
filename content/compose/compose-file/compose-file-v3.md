@@ -26,7 +26,7 @@ Here is a sample Compose file from the voting app sample used in the
 topic on [Deploying an app to a Swarm](https://github.com/docker/labs/blob/master/beginner/chapters/votingapp.md):
 
 <div class="panel panel-default">
-    <div class="panel-heading collapsed" data-toggle="collapse" data-target="#collapseSample1" style="cursor: pointer">
+    <div class="panel-heading collapsed" data-toggle="collapse" data->
     Example Compose file version 3
     <i class="chevron fa fa-fw"></i></div>
     <div class="collapse block" id="collapseSample1">
@@ -208,7 +208,7 @@ This results in an image named `webapp` and tagged `tag`, built from `./dir`.
 > The `build` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
 > The `docker stack` command does not build images before deploying.
-{: .important }
+
 
 #### context
 
@@ -419,7 +419,7 @@ cap_drop:
 >
 > The `cap_add` and `cap_drop` options are ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### cgroup_parent
 
@@ -433,7 +433,7 @@ cgroup_parent: m-executor-abcd
 >
 > The `cgroup_parent` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### command
 
@@ -515,7 +515,7 @@ the service's task containers.
   because they are mounted in a temporary filesystem, so if you set the writable
   bit, it is ignored. The executable bit can be set. If you aren't familiar with
   UNIX file permission modes, you may find this
-  [permissions calculator](http://permissions-calculator.org/){: target="_blank" rel="noopener" class="_" }
+  [permissions calculator](http://permissions-calculator.org/)
   useful.
 
 The following example sets the name of `my_config` to `redis_config` within the
@@ -562,7 +562,7 @@ an error.
 >
 > The `container_name` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### credential_spec
 
@@ -897,8 +897,8 @@ services or containers in a swarm.
 on non swarm deployments, use
 [Compose file format version 2 CPU, memory, and other resource options](compose-file-v2.md#cpu-and-other-resources).
 If you have further questions, refer to the discussion on the GitHub
-issue [docker/compose/4513](https://github.com/docker/compose/issues/4513){: target="_blank" rel="noopener" class="_"}.
-{: .important}
+issue [docker/compose/4513](https://github.com/docker/compose/issues/4513).
+
 
 ##### Out Of Memory Exceptions (OOME)
 
@@ -1024,7 +1024,7 @@ devices:
 >
 > The `devices` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### dns
 
@@ -1224,7 +1224,7 @@ external_links:
 >
 > The `external_links` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### extra_hosts
 
@@ -1379,7 +1379,7 @@ labels:
 > `--link` is sharing environmental variables between containers. However, you
 > can use other mechanisms such as volumes to share environment variables between
 > containers in a more controlled way.
-{:.warning}
+
 
 Link to containers in another service. Either specify both the service name and
 a link alias (`"SERVICE:ALIAS"`), or just the service name.
@@ -1412,7 +1412,7 @@ Links also express dependency between services in the same way as
 >
 > The `links` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md)
-{: .important }
+
 
 ### logging
 
@@ -1518,7 +1518,7 @@ network_mode: "container:[container name/id]"
 > * This option is ignored when
 >   [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md).
 > * `network_mode: "host"` cannot be mixed with [links](#links).
-{: .important }
+
 
 ### networks
 
@@ -1747,7 +1747,7 @@ container is stopped (manually or otherwise).
 >
 > The `restart` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md).
-{: .important }
+
 
 ### secrets
 
@@ -1759,7 +1759,7 @@ configuration. Two different syntax variants are supported.
 > The secret must already exist or be
 > [defined in the top-level `secrets` configuration](#secrets-configuration-reference)
 > of the compose file, or stack deployment fails.
-{: .important }
+
 
 For more information on secrets, see [secrets](../../engine/swarm/secrets.md).
 
@@ -1813,7 +1813,7 @@ the service's task containers.
   in a temporary filesystem, so if you set the writable bit, it is ignored. The
   executable bit can be set. If you aren't familiar with UNIX file permission
   modes, you may find this
-  [permissions calculator](http://permissions-calculator.org/){: target="_blank" rel="noopener" class="_" }
+  [permissions calculator](http://permissions-calculator.org/)
   useful.
 
 The following example sets name of the `my_secret` to `redis_secret` within the
@@ -1858,7 +1858,7 @@ security_opt:
 >
 > The `security_opt` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md).
-{: .important }
+
 
 ### stop_grace_period
 
@@ -1974,7 +1974,7 @@ more information.
 >
 > The `userns_mode` option is ignored when
 > [deploying a stack in swarm mode](../../engine/reference/commandline/stack_deploy.md).
-{: .important }
+
 
 ### volumes
 
@@ -2299,7 +2299,7 @@ volumes:
 > Deprecated in [version 3.4](compose-versioning.md#version-34) file format.
 >
 > external.name was deprecated in version 3.4 file format use `name` instead.
-{: .important }
+
 
 You can also specify the name of the volume separately from the name used to
 refer to it within the Compose file:
@@ -2319,7 +2319,7 @@ volumes:
 > automatically created when it is defined by a service. As service tasks are
 > scheduled on new nodes, [swarmkit](https://github.com/docker/swarmkit/blob/master/README.md)
 > creates the volume on the local node. To learn more, see [moby/moby#29976](https://github.com/moby/moby/issues/29976).
-{: .important }
+
 
 ### labels
 
@@ -2501,7 +2501,7 @@ Enable IPv6 networking on this network.
 >
 > `enable_ipv6` requires you to use a version 2 Compose file, as this directive
 > is not yet supported in Swarm mode.
-{: .warning }
+
 
 ### ipam
 
@@ -2593,7 +2593,7 @@ networks:
 > Deprecated in [version 3.5](compose-versioning.md#version-35) file format.
 >
 > external.name was deprecated in version 3.5 file format use `name` instead.
-{: .important }
+
 
 You can also specify the name of the network separately from the name used to
 refer to it within the Compose file:

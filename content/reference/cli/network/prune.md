@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_network_prune
 title: docker network prune
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/network_prune/
 ---
 <!--

@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_import
 title: docker import
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/import/
 ---
 <!--

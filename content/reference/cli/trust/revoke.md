@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_trust_revoke
 title: docker trust revoke
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/trust_revoke/
 ---
 <!--

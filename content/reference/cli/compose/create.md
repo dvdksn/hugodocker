@@ -3,7 +3,7 @@ layout: cli
 datafolder: compose-cli
 datafile: docker_compose_create
 title: docker compose create
-redirect_from:
+aliases:
 - /compose/reference/create/
 ---
 <!--

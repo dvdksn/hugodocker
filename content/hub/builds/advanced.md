@@ -7,7 +7,7 @@ aliases:
 ---
 
 {% include upgrade-cta.html
-  body="The Automated Builds feature is available for Docker Pro, Team, and Business users. Upgrade now to automatically build and push your images. If you are using automated builds for an open-source project, you can join our [Open Source Community](https://www.docker.com/community/open-source/application){: target='_blank' rel='noopener' class='_'} program to learn how Docker can support your project on Docker Hub."
+  body="The Automated Builds feature is available for Docker Pro, Team, and Business users. Upgrade now to automatically build and push your images. If you are using automated builds for an open-source project, you can join our [Open Source Community](https://www.docker.com/community/open-source/application) program to learn how Docker can support your project on Docker Hub."
   header-text="This feature requires a Docker subscription"
   target-url="https://www.docker.com/pricing?utm_source=docker&utm_medium=webreferral&utm_campaign=docs_driven_upgrade_auto_builds"
 %}
@@ -64,10 +64,10 @@ repository at the same directory level as your Dockerfile. Create a file called
 builder process can execute, such as `docker` and `bash` commands (prefixed
 appropriately with `#!/bin/bash`).
 
-These hooks will be running on an instance of [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/){:target="_blank" rel="noopener" class="_"},
+These hooks will be running on an instance of [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/),
 a distro based on Red Hat Enterprise Linux (RHEL), which includes interpreters
 such as Perl or Python, and utilities such as `git` or `curl`. Refer to the
-[Amazon Linux 2 documentation](https://aws.amazon.com/amazon-linux-2/faqs/){:target="_blank" rel="noopener" class="_"}
+[Amazon Linux 2 documentation](https://aws.amazon.com/amazon-linux-2/faqs/)
 for the full list of available interpreters and utilities.
 
 ## Custom build phase hooks

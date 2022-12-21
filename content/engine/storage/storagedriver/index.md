@@ -374,7 +374,7 @@ layers are the same.
     > additional tools such as `awk` or `sed`. To learn more about formatting
     > the output of docker commands using the `--format` flag, refer to the
     > [format command and log output section](../../config/formatting.md).
-    > We also pretty-printed the JSON output using the [`jq` utility](https://stedolan.github.io/jq/){: target="_blank" rel="noopener" class="_" }
+    > We also pretty-printed the JSON output using the [`jq` utility](https://stedolan.github.io/jq/)
     > for readability.
 
 ### Copying makes containers efficient

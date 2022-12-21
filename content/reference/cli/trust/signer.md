@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_trust_signer
 title: docker trust signer
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/trust_signer/
 ---
 <!--

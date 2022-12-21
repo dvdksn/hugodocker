@@ -9,7 +9,7 @@ Docker GitHub Actions in your CI pipelines.
 
 ## Push to multi-registries
 
-The following workflow will connect you to Docker Hub and [GitHub Container Registry](https://github.com/docker/login-action#github-container-registry){:target="blank" rel="noopener" class=""}
+The following workflow will connect you to Docker Hub and [GitHub Container Registry](https://github.com/docker/login-action#github-container-registry)
 and push the image to both registries:
 
 {% raw %}
@@ -64,9 +64,9 @@ jobs:
 
 ## Manage tags and labels
 
-If you want an "automatic" tag management and [OCI Image Format Specification](https://github.com/opencontainers/image-spec/blob/master/annotations.md){:target="blank" rel="noopener" class=""}
+If you want an "automatic" tag management and [OCI Image Format Specification](https://github.com/opencontainers/image-spec/blob/master/annotations.md)
 for labels, you can do it in a dedicated setup step. The following workflow
-will use the [Docker Metadata Action](https://github.com/docker/metadata-action){:target="blank" rel="noopener" class=""}
+will use the [Docker Metadata Action](https://github.com/docker/metadata-action)
 to handle tags and labels based on GitHub Actions events and Git metadata:
 
 {% raw %}
@@ -149,9 +149,9 @@ the `platforms` option, as described in the following example.
 
 > **Note**
 >
-> - For a list of available platforms, see the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx){:target="blank" rel="noopener" class=""}
+> - For a list of available platforms, see the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx)
 >   action.
-> - If you want support for more platforms, you can use QEMU with the [Docker Setup QEMU](https://github.com/docker/setup-qemu-action){:target="blank" rel="noopener" class=""}
+> - If you want support for more platforms, you can use QEMU with the [Docker Setup QEMU](https://github.com/docker/setup-qemu-action)
 >   action.
 
 {% raw %}
@@ -296,9 +296,9 @@ jobs:
 
 > **Warning**
 >
-> This cache exporter is experimental. Please provide feedback on [BuildKit repository](https://github.com/moby/buildkit){:target="blank" rel="noopener" class=""}
+> This cache exporter is experimental. Please provide feedback on [BuildKit repository](https://github.com/moby/buildkit)
 > if you experience any issues.
-{: .warning }
+
 
 The [GitHub Actions cache exporter](../../cache/backends/gha.md)
 backend uses the [GitHub Cache API](https://github.com/tonistiigi/go-actions-cache/blob/master/api.md)
@@ -348,12 +348,12 @@ jobs:
 
 > **Warning**
 >
-> At the moment, old cache entries aren't deleted, so the cache size [keeps growing](https://github.com/docker/build-push-action/issues/252){:target="blank" rel="noopener" class=""}.
-> The following example uses the `Move cache` step as a workaround (see [`moby/buildkit#1896`](https://github.com/moby/buildkit/issues/1896){:target="blank" rel="noopener" class=""}
+> At the moment, old cache entries aren't deleted, so the cache size [keeps growing](https://github.com/docker/build-push-action/issues/252).
+> The following example uses the `Move cache` step as a workaround (see [`moby/buildkit#1896`](https://github.com/moby/buildkit/issues/1896)
 > for more info).
-{: .warning }
 
-You can also leverage [GitHub cache](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows){:target="blank" rel="noopener" class=""}
+
+You can also leverage [GitHub cache](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows)
 using the [actions/cache](https://github.com/actions/cache) and [local cache exporter](../../cache/backends/local.md)
 with this action:
 
@@ -412,7 +412,7 @@ jobs:
 
 ## Secrets
 
-In the following example uses and exposes the [`GITHUB_TOKEN` secret](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret){:target="blank" rel="noopener" class=""}
+In the following example uses and exposes the [`GITHUB_TOKEN` secret](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret)
 as provided by GitHub in your workflow.
 
 First, create a `Dockerfile` that uses the secret:
@@ -471,7 +471,7 @@ jobs:
 >   "MY_SECRET=./secret.txt"
 > ```
 
-If you're using [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets){:target="blank" rel="noopener" class=""}
+If you're using [GitHub secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 and need to handle multi-line value, you will need to place the key-value pair
 between quotes:
 
@@ -615,7 +615,7 @@ jobs:
 
 ## Local registry
 
-For testing purposes you may need to create a [local registry](https://hub.docker.com/_/registry){:target="blank" rel="noopener" class=""}
+For testing purposes you may need to create a [local registry](https://hub.docker.com/_/registry)
 to push images into:
 
 ```yaml
@@ -662,10 +662,10 @@ jobs:
 ## Share built image between jobs
 
 As each job is isolated in its own runner, you can't use your built image
-between jobs, except if you're using [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners){:target="blank" rel="noopener" class=""}
-However, you can [pass data between jobs](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow){:target="blank" rel="noopener" class=""}
-in a workflow using the [actions/upload-artifact](https://github.com/actions/upload-artifact){:target="blank" rel="noopener" class=""}
-and [actions/download-artifact](https://github.com/actions/download-artifact){:target="blank" rel="noopener" class=""}
+between jobs, except if you're using [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)
+However, you can [pass data between jobs](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow)
+in a workflow using the [actions/upload-artifact](https://github.com/actions/upload-artifact)
+and [actions/download-artifact](https://github.com/actions/download-artifact)
 actions:
 
 ```yaml
@@ -769,7 +769,7 @@ jobs:
 
 ### Use image in subsequent steps
 
-By default, the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx){:target="blank" rel="noopener" class=""}
+By default, the [Docker Setup Buildx](https://github.com/marketplace/actions/docker-setup-buildx)
 action uses `docker-container` as a build driver, so built Docker images aren't
 loaded automatically.
 
@@ -879,7 +879,7 @@ jobs:
 ## Update Docker Hub repository description
 
 You can update the Docker Hub repository description using a third party action
-called [Docker Hub Description](https://github.com/peter-evans/dockerhub-description){:target="blank" rel="noopener" class=""}
+called [Docker Hub Description](https://github.com/peter-evans/dockerhub-description)
 with this action:
 
 {% raw %}

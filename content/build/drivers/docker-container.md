@@ -42,7 +42,7 @@ pass to `--driver-opt`:
 ## Usage
 
 When you run a build, Buildx pulls the specified `image` (by default,
-[`moby/buildkit`](https://hub.docker.com/r/moby/buildkit)){:target="blank" rel="noopener" class=""}.
+[`moby/buildkit`](https://hub.docker.com/r/moby/buildkit)).
 When the container has started, Buildx submits the build submitted to the
 containerized build server.
 
@@ -120,7 +120,7 @@ container
 
 ## QEMU
 
-The `docker-container` driver supports using [QEMU](https://www.qemu.org/){:target="blank" rel="noopener" class=""}
+The `docker-container` driver supports using [QEMU](https://www.qemu.org/)
 (user mode) to build non-native platforms. Use the `--platform` flag to specify
 which architectures that you want to build for.
 

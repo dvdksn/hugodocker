@@ -3,7 +3,7 @@ layout: cli
 datafolder: engine-cli
 datafile: docker_container_restart
 title: docker container restart
-redirect_from:
+aliases:
   - /edge/engine/reference/commandline/container_restart/
 ---
 <!--
