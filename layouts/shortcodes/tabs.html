@@ -11,10 +11,7 @@
   {{ end }}
   aria-role="tabpanel"
 >
-  <div
-    aria-role="tablist"
-    class="space-x-2 border-divider-light border-b-2 my-4 dark:border-divider-dark"
-  >
+  <div aria-role="tablist" class="space-x-2">
     {{ range (.Scratch.Get "tabs") }}
       <button
         class="p-1"
@@ -31,6 +28,7 @@
       </button>
     {{ end }}
   </div>
+  <hr class="mt-0" />
   <div>
     {{ range (.Scratch.Get "tabs") }}
       <div
@@ -42,4 +40,5 @@
       </div>
     {{ end }}
   </div>
+  <hr />
 </div>

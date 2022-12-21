@@ -24,9 +24,9 @@ In addition, the Docker Dashboard allows you to:
 
 ## The Docker menu
 
-Docker Desktop also provides an easy-access tray icon that appears in the taskbar and is referred to as the Docker menu ![whale menu](../../assets/images/whale-x.svg).
+Docker Desktop also provides an easy-access tray icon that appears in the taskbar and is referred to as the Docker menu {{< inline-image src="../../assets/images/whale-x.svg" alt="whale menu" >}}.
 
-To display the Docker menu, right-click on the ![whale menu](../../assets/images/whale-x.svg) icon. It displays the following options:
+To display the Docker menu, right-click on the {{< inline-image src="../../assets/images/whale-x.svg" alt="whale menu" >}} icon. It displays the following options:
 
 - **Dashboard**. This takes you to the Docker Dashboard.
 - **Sign in/Create Dock Id**

@@ -52,7 +52,7 @@ module.exports = {
               lineHeight: 1.5
             },
             a: {
-              fontWeight: 400,
+              fontWeight: 400
             },
             hr: {
               marginTop: "2em",
@@ -85,6 +85,26 @@ module.exports = {
               fontWeight: 500,
               fontSize: "1.1429",
               lineHeight: 1.75
+            },
+            code: {
+              display: "inline-block",
+              margin: "0 !important",
+              fontWeight: 400,
+              padding: "2px 4px",
+              border: "1px solid",
+              borderRadius: theme("spacing.1"),
+              background: theme("colors.gray.light.200"),
+              borderColor: theme("colors.gray.light.300"),
+              ".dark &": {
+                background: theme("colors.gray.dark.200"),
+                borderColor: theme("colors.gray.dark.300")
+              }
+            },
+            "code::before": {
+              content: '""'
+            },
+            "code::after": {
+              content: '""'
             }
           }
         }
