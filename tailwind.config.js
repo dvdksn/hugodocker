@@ -89,6 +89,7 @@ module.exports = {
             code: {
               display: "inline-block",
               margin: "0 !important",
+              whiteSpace: "nowrap",
               fontWeight: 400,
               padding: "2px 4px",
               border: "1px solid",

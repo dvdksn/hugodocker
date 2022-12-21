@@ -1,6 +1,5 @@
 ---
 title: Images
-icon: line_style
 lead:
   An image is a read-only template with instructions for creating a Docker
   container.

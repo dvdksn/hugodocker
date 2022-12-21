@@ -1,7 +1,5 @@
 ---
 title: Base image
-description:
-keywords:
 lead:
   A base image is the image that is used to create all of your container images.
 ---

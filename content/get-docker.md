@@ -2,8 +2,6 @@
 description: Home page for Get Docker
 keywords: Docker, download, documentation, manual
 title: Get Docker
-topics:
-- Install
 aliases:
   - /install/
   - /install/overview/

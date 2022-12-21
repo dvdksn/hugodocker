@@ -1,6 +1,8 @@
 ---
 description: Advanced Image Management dashboard
 keywords: dashboard, images, image management, inactive
+topics:
+- image
 title: Advanced Image Management dashboard
 ---
 

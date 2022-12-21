@@ -1,6 +1,5 @@
 ---
-title: Registries
-icon: warehouse
+title: Registry
 lead: A Docker registry stores Docker images.
 ---
 

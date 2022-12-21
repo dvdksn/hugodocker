@@ -1,6 +1,5 @@
 ---
 title: Docker daemon
-icon: memory
 lead:
   The Docker daemon listens for Docker API requests and manages Docker objects.
 ---

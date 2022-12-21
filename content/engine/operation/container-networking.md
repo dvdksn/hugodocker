@@ -2,6 +2,7 @@
 title: Container networking
 topics:
 - container
+- networking
 description: How networking works from the container's point of view
 keywords: networking, container, standalone
 aliases:

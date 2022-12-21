@@ -3,6 +3,7 @@ title: Create a base image
 description: How to create base images
 topics:
 - base-image
+- image
 keywords: images, base image, examples
 aliases:
 - /articles/baseimages/

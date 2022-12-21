@@ -2,6 +2,8 @@
 title: "Deploy to Swarm"
 keywords: swarm, swarm services, stacks
 description: Learn how to describe and deploy a simple application on Docker Swarm.
+topics: 
+- networking
 aliases:
 - /get-started/part4/
 ---

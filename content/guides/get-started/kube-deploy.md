@@ -2,6 +2,8 @@
 title: "Deploy to Kubernetes"
 keywords: kubernetes, pods, deployments, kubernetes services
 description: Learn how to describe and deploy a simple application on Kubernetes.
+topics:
+- networking
 ---
 
 ## Prerequisites
