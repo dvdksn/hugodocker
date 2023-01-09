@@ -2,9 +2,6 @@
   pre {
     @apply p-3 border rounded-sm border-gray-light-200 dark:border-gray-dark-400;
   }
-  a code {
-    color: "var(--tw-prose-code)";
-  }
 }
 
 .chroma {

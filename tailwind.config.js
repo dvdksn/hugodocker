@@ -86,7 +86,7 @@ module.exports = {
               fontSize: "1.1429",
               lineHeight: 1.75
             },
-            code: {
+            ":not(pre) > code": {
               display: "inline-block",
               margin: "0 !important",
               whiteSpace: "nowrap",
