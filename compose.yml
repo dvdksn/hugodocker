@@ -2,7 +2,6 @@ services:
   server:
     build:
       context: .
-    image: myhugo
     volumes:
       - "${PWD}:/src"
     ports:
