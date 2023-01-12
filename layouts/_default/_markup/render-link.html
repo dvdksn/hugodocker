@@ -1,4 +1,4 @@
-{{ if (strings.HasPrefix .Destination "http") }}
+{{- if (strings.HasPrefix .Destination "http") -}}
   <a
     class="link"
     href="{{ .Destination | safeURL }}"
@@ -9,6 +9,6 @@
       >open_in_new</span
     ></a
   >
-{{ else }}
+{{- else -}}
   <a class="link" href="{{ ref .Page .Destination }}">{{ .Text | safeHTML }}</a>
-{{ end }}
+{{- end -}}
